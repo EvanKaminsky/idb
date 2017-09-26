@@ -1,5 +1,7 @@
-# [App Name Pending]
+# TipsyMix
 The TTP Project's IDB
+
+https://tipsymix-ttp.appspot.com
 
 ## Helpful Links
 [Assignment](https://www.cs.utexas.edu/users/downing/cs373/projects/IDB1.html)  

@@ -1,4 +1,3 @@
-
 # GCP Flash + App Engine Reference
 https://cloud.google.com/appengine/docs/standard/python/getting-started/python-standard-env
 
@@ -14,5 +13,8 @@ python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 # Start the local dev server on Port 8080
 dev_appserver.py app.yaml
 
+# Deploy app
+gcloud app deploy
 
-
+# View deployment
+gcloud app browse

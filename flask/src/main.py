@@ -19,6 +19,10 @@ app = Flask(__name__)
 
 # Sample App HTML, as provided by GCP Flask + App Engine #
 
+@app.route('/')
+def hello():
+    return form()
+
 # Request handler that displays a form using the form.html template
 @app.route('/form')
 def form():
