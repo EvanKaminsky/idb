@@ -15,7 +15,7 @@ Polls is a simple API allowing consumers to view polls and vote in them.
     + page (optional) - What page of the results to return
     + pagesize (optional) - Number of results per page
     
-### Get Cocktails [GET]
+### Query [GET]
 
 + Response 200 (application/json)
 
@@ -67,27 +67,35 @@ Polls is a simple API allowing consumers to view polls and vote in them.
             "stdname": "raspberry-collins",
             "name": "Raspberry Collins",
             "image": "internal/5693234.jpeg",
+            "color": 0xBC1301,
             "description": "Find out what happens when you add raspberries to this classic gin drink."
+            "abv": 0.15,
+            "video": "https://www.youtube.com/watch?v=CPIpicaoe"
             "ingredients": [
                 {
                     "ingredient": "Gin",
                     "quantity": "2 oz",
+                    "id": 843923,
                     "url": "tipsymix.com/api/ingredients/gin"
                 }, {
                     "ingredient": "Simple syrup",
                     "quantity": "1/4 oz",
+                    "id": 134932,
                     "url": "tipsymix.com/api/ingredients/simple-syrup"
                 }, {
                     "ingredient": "Raspberries",
                     "quantity": "2",
-                    "url": ""
+                    "id": ,
+                    "url":
                 }, {
                     "ingredient": "Fresh lemon juice",
                     "quantity": "1 oz",
+                    "id": 4328532,
                     "url": "tipsymix.com/api/ingredients/lemon-juice"
                 }, {
                     "ingredient": "Club soda",
                     "quantity": "1 oz",
+                    "id": 2345,
                     "url": "tipsymix.com/api/ingredients/club-soda"
                 }
             ],
@@ -107,11 +115,18 @@ Polls is a simple API allowing consumers to view polls and vote in them.
             "brands": [
                 {
                     "brand": "Beefeater",
+                    "id": 82944,
                     "url": "tipsymix.com/api/brands/beefeater"
                 }
             ],
             "instructions": "In a highball glass, muddle the raspberries and simple syrup...",
-            "country": ""
+            "countries": [
+                {
+                    "label": "USA",
+                    "id": 1341,
+                    "url": "tipsymix.com/api/countries/usa"
+                }
+            ]
         }
 
 ## Ingredient Detail [/api/ingredients/{slug}]
@@ -121,7 +136,52 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ### Ingredient Data [GET]
 
-+ Response 200
++ Response 200 (application/json)
+
+        {
+            "id": 4625843,
+            "stdname": "campari",
+            "name": "Campari",
+            "image": "internal/4625843.jpeg",
+            "color": 0xA81510,
+            "description": "Campari is an alcoholic liqueur, considered an apéritif, obtained from the infusion of herbs and fruit...",
+            "abv": 0.21
+            "brands": [
+                {
+                    "label": "Campari",
+                    "id": 74244
+                    "url": "tipsymix.com/api/brands/campari"
+                }
+            ],
+            "cocktails": [
+                {
+                    "label": "Campari Orange",
+                    "id": 894352
+                    "url": "tipsymix.com/api/cocktails/campari-orange"
+                }, {
+                    "label": "Americano",
+                    "id": 995123
+                    "url": "tipsymix.com/api/cocktails/americano"
+                }, {
+                    "label": "Negroni",
+                    "id": 2848
+                    "url": "tipsymix.com/api/cocktails/negroni"
+                }
+            ],
+            "tags": [
+                "Bitter",
+                "Herbal",
+                "Aperitif",
+                "Evening"
+            ],
+            "countries": [
+                {
+                    "label": "Italy",
+                    "id": 2342
+                    "url": "tipsymix.com/api/counries/italy"
+                }
+            ]
+        }
 
 ## Brand Detail [/api/brands/{slug}]
 
@@ -130,7 +190,45 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ### Brand Data [GET]
 
-+ Response 200
++ Response 200 (application/json)
+
+        {
+            "id": 842321,
+            "stdname": "jagermeister",
+            "name": "Mast-Jägermeister",
+            "image": "internal/842321.jpeg",
+            "color": 0x161E29,
+            "description": "Mast-Jägermeister SE is a German liquor company owned by the Findel-Mast family.",
+            "ingredients": [
+                {
+                    "label": "Jägermeister",
+                    "id": 98743
+                    "url": "tipsymix.com/api/ingredients/jagermeister"
+                }
+            ],
+            "cocktails": [
+                {
+                    "label": "Jäger Bomb",
+                    "id": 67684
+                    "url": "tipsymix.com/api/cocktails/jagerbomb"
+                }, {
+                    "label": "Monster Bomb",
+                    "id": 998732
+                    "url": "tipsymix.com/api/cocktails/monsterbomb"
+                }
+            ],
+            "tags": [
+                "one-hit wonder"
+            ],
+            "website": "www.jaegermeister.de",
+            "countries": [
+                {
+                    "label": "Germany",
+                    "id": 1687
+                    "url": "tipsymix.com/api/counries/germany"
+                }
+            ]
+        }
 
 ## Country Detail [/api/countries/{slug}]
 
@@ -139,79 +237,70 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ### Country Data [GET]
 
-+ Response 200
-
-
-
-## Sample [/test]
-### Get Questions [GET]
-
 + Response 200 (application/json)
 
-        [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
-        ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ Request (application/json)
-
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
+            "id": 9735,
+            "stdname": "germany",
+            "name": "Germany",
+            "image": "internal/9735.jpeg",
+            "color": 0x132414,
+            "description": "Germany is a federal parliamentary republic in central-western Europe",
+            "continent": "Europe",
+            "ingredients": [
+                {
+                    "label": "Jägermeister",
+                    "id": 98743
+                    "url": "tipsymix.com/api/ingredients/jagermeister"
+                }, {
+                    "label": "Korn",
+                    "id": 1354884
+                    "url": "tipsymix.com/api/ingredients/korn
+                }, {
+                    "label": "Egg liquor",
+                    "id": 498732
+                    "url": "tipsymix.com/api/ingredients/egg-liquor"
+                }, {
+                    "label": "Brandy",
+                    "id": 76543
+                    "url": "tipsymix.com/api/ingredients/brandy"
+                }
+            ],
+            "cocktails": [
+                {
+                    "label": "Black Magic",
+                    "id": 67684
+                    "url": "tipsymix.com/api/cocktails/black-magic"
+                }, {
+                    "label": "Goldfinger",
+                    "id": 468432
+                    "url": "tipsymix.com/api/cocktails/goldfinger"
+                }, {
+                    "label": "Golden Sunset",
+                    "id": 765423
+                    "url": "tipsymix.com/api/ingredients/golden-sunset"
+                }, {
+                    "label": "Kirsch & Coffee",
+                    "id": 159976
+                    "url": "tipsymix.com/api/ingredients/kirsh-coffee"
+                }
+            ],
+            "brands": [
+                {
+                    "label": "Verpoorten",
+                    "id": 1687
+                    "url": "tipsymix.com/api/brands/verpoorten"
+                }, {
+                    "label": "Mast-Jägermeister",
+                    "id": 842321
+                    "url": "tipsymix.com/api/brands/jagermeister"
+                }, {
+                    "label": "Asbach",
+                    "id": 983434
+                    "url": "tipsymix.com/api/brands/asbach"
+                }
+            ],
+            "tags": [
+                "WWII"
             ]
         }
-
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
-            }
