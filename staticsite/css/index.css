@@ -8,6 +8,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color: white;
+}
+
 h1 {
   color: white;
   text-align: center;
@@ -22,6 +26,7 @@ h1 {
 
 #navbar > .row > .col-md-2:hover {
   text-shadow: 0 0 3px white;
+  color: white;
 }
 
 #searchForm {

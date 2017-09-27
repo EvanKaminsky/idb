@@ -10,6 +10,14 @@ h1 {
   font-size: 56px;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
 .col-md-2 {
   color: white;
 }
