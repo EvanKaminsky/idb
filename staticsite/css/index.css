@@ -4,6 +4,10 @@ body {
   background-repeat: no-repeat;
 }
 
+a {
+  color: white;
+}
+
 h1 {
   color: white;
   text-align: center;
