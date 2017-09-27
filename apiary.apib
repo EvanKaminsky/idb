@@ -1,13 +1,150 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://http://tipsymix.com
 
-# EvanKaminsky
+# TipsyMix
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Questions Collection [/questions]
+## Search Query [/api/search{?category,query,filter,count,page,pagesize}]
 
-### List All Questions [GET]
++ Parameters
+    + category (optional) - Type of model to search for (empty = intelligent search)
+    + query (optional) - Search query to run
+    + filter (optional) - How to filter the results
+    + count (optional) - How many results to create
+    + page (optional) - What page of the results to return
+    + pagesize (optional) - Number of results per page
+    
+### Get Cocktails [GET]
+
++ Response 200 (application/json)
+
+        {
+            "category": "cocktail",
+            "query": "raspberry",
+            "filter": "",
+            "totalCount": 90,
+            "totalPages": 30,
+            "count": 3
+            "page": 2
+            "results": [
+                {
+                    "id": 2349542,
+                    "stdname": "raspberry-margarita",
+                    "label": "Raspberry Margarita",
+                    "image": "internal/2349542.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-margarita",
+                    "color": 0xA81503
+                }, {
+                    "id": 2349299,
+                    "stdname": "raspberry-mojito",
+                    "label": "Raspberry Mojito",
+                    "image": "internal/2349299.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-mojito",
+                    "color": 0xDA3A13
+                }, {
+                    "id": 5693234,
+                    "stdname": "raspberry-collins",
+                    "label": "Raspberry Collins",
+                    "image": "internal/5693234.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-collins",
+                    "color": 0xBC1301
+                }
+            ]
+        }
+
+## Cocktail Detail [/api/cocktails/{slug}]
+
++ Parameters
+    + slug - identifier for detail page, either an ID number or standardized name
+
+### Cocktail Data [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": 5693234,
+            "stdname": "raspberry-collins",
+            "name": "Raspberry Collins",
+            "image": "internal/5693234.jpeg",
+            "description": "Find out what happens when you add raspberries to this classic gin drink."
+            "ingredients": [
+                {
+                    "ingredient": "Gin",
+                    "quantity": "2 oz",
+                    "url": "tipsymix.com/api/ingredients/gin"
+                }, {
+                    "ingredient": "Simple syrup",
+                    "quantity": "1/4 oz",
+                    "url": "tipsymix.com/api/ingredients/simple-syrup"
+                }, {
+                    "ingredient": "Raspberries",
+                    "quantity": "2",
+                    "url": ""
+                }, {
+                    "ingredient": "Fresh lemon juice",
+                    "quantity": "1 oz",
+                    "url": "tipsymix.com/api/ingredients/lemon-juice"
+                }, {
+                    "ingredient": "Club soda",
+                    "quantity": "1 oz",
+                    "url": "tipsymix.com/api/ingredients/club-soda"
+                }
+            ],
+            "garnish": "1 lemon wheel, mint sprig, and raspberries",
+            "glass": "Highball",
+            "base spirit": "Gin",
+            "preparation": "Stirred",
+            "tags": [
+                "Summer",
+                "Fruity",
+                "Citrus",
+                "Sweet",
+                "Dinner",
+                "Evening",
+                "Modern Classics"
+            ],
+            "brands": [
+                {
+                    "brand": "Beefeater",
+                    "url": "tipsymix.com/api/brands/beefeater"
+                }
+            ],
+            "instructions": "In a highball glass, muddle the raspberries and simple syrup...",
+            "country": ""
+        }
+
+## Ingredient Detail [/api/ingredients/{slug}]
+
++ Parameters
+    + slug - identifier for detail page, either an ID number or standardized name
+
+### Ingredient Data [GET]
+
++ Response 200
+
+## Brand Detail [/api/brands/{slug}]
+
++ Parameters
+    + slug - identifier for detail page, either an ID number or standardized name
+
+### Brand Data [GET]
+
++ Response 200
+
+## Country Detail [/api/countries/{slug}]
+
++ Parameters
+    + slug - identifier for detail page, either an ID number or standardized name
+
+### Country Data [GET]
+
++ Response 200
+
+
+
+## Sample [/test]
+### Get Questions [GET]
 
 + Response 200 (application/json)
 
