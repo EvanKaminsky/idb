@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/EvanKaminsky/idb.svg?branch=master)](https://travis-ci.org/EvanKaminsky/idb)
+
 # TipsyMix
 The TTP Project's IDB
 
@@ -6,7 +8,8 @@ https://tipsymix-ttp.appspot.com
 ## Helpful Links
 [Assignment](https://www.cs.utexas.edu/users/downing/cs373/projects/IDB1.html)  
 [Slack](https://ttp-project.slack.com/messages/C76A1MN20/)  
-[Trello](https://trello.com/thettpproject)  
+[Trello](https://trello.com/thettpproject) 
+[Travis CI](https://travis-ci.org/EvanKaminsky/idb)
 [Apiary Editor](https://app.apiary.io/evankaminsky/editor)  
 [Apiary Docs](http://docs.evankaminsky.apiary.io)  
 [PlanIt Poker](https://www.planitpoker.com/board/#/room/f6918f6b455c4725b4db0bf34f2256ae)  
