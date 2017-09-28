@@ -18,6 +18,18 @@ h1 {
   font-size: 56px;
 }
 
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+li {
+  color:white;
+}
+
 #navbar {
   color: white;
   font-size: 16px;

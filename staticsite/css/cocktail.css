@@ -23,13 +23,14 @@ p {
 }
 
 .cocktail-box{
-  background-color: #ff8c8c;
+  background-color: #8C9E1F;
   padding-top: 20px;
   margin-bottom: 20px;
 }
 
 .btn-info {
   margin-bottom: 10px;
+  background-color: #574227;
 }
 
 .container .img-responsive {
