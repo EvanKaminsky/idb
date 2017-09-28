@@ -4,11 +4,15 @@ body {
   background-repeat: no-repeat;
 }
 
-a {
+#navbar > a {
   color: white;
 }
 
-a:hover {
+#navbar > a:hover {
+  color: white;
+}
+
+a {
   color: white;
 }
 
@@ -16,6 +20,18 @@ h1 {
   color: white;
   text-align: center;
   font-size: 56px;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+li {
+  color:white;
 }
 
 #navbar {

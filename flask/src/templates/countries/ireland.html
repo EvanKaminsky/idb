@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blue Lagoon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="{{url_for('static', filename='css/index.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/cocktail.css')}}" rel="stylesheet">
+  </head>
+
+  <div id = "navbar" class = "container">
+    <div class = "row">
+      <div class = "col-md-2"><a href="../index.html">Home</a></div>
+      <div class = "col-md-2"><a href="../cocktails.html">Cocktails</a></div>
+      <div class = "col-md-2"><a href="../ingredients.html">Ingredients</a></div>
+      <div class = "col-md-2"><a href="../brands.html">Brands</a></div>
+      <div class = "col-md-2"><a href="../countries.html">Countries</a></div>
+      <div class = "col-md-2"><a href="../about.html">About</a></div>
+    </div>
+  </div>
+
+  <body>
+    <h1>Tipsy Mix</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div id = "searchForm">
+      <input type="text" class="search" placeholder="Search by ingredients, cocktail, country, or brand"><br>
+      <input type="submit" class="searchButton" placeholder="Search">
+    </div>
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6 cocktail-box">
+      <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1200px-Flag_of_Ireland.svg.png"/>
+      <h2>Ireland</h2>
+      <h3>National Liquor</h3>
+      Irish whiskey, Poitin
+      <h3>Ingredients</h3>
+      <p>Whiskey, Poitin</p>
+      <h3>Brands</h3>
+      <p>Baileys Irish Cream, Guinness, Jameson Irish Whiskey</p>
+    </div>
+    <div class = "col-md-3"></div>
+    </section>
+  </body>
+
+</html>

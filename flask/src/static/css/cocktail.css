@@ -23,6 +23,24 @@ p {
 }
 
 .cocktail-box{
-  background-color: #ff8c8c;
-  padding-top: 50px;
+  background-color: #8C9E1F;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cocktail-box a {
+  color: red;
+  font-weight: 400;
+}
+
+
+.btn-info {
+  margin-bottom: 10px;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+.container .img-responsive {
+  display: block;
+  max-height: 200px;
 }

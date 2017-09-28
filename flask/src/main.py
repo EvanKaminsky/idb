@@ -17,6 +17,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
+# Search Views #
+
 @app.route('/')
 @app.route('/index.html')
 def default():
@@ -46,4 +48,27 @@ def ingredients():
 @app.route('/about.html')
 def about():
     return render_template('about.html')
+
+
+# Individual Views #
+
+@app.route('/brands/<name>')
+def brand(name):
+    return render_template('/brands/' + name)
+
+
+@app.route('/cocktails/<name>')
+def cocktail(name):
+    print('/cocktails/' + name + '.html')
+    return render_template('/cocktails/' + name)
+
+
+@app.route('/ingredients/<name>')
+def ingredient(name):
+    return render_template('/ingredients/' + name)
+
+
+@app.route('/countries/<name>')
+def country(name):
+    return render_template('/countries/' + name)
 
