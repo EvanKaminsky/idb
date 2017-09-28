@@ -1,0 +1,103 @@
+body {
+  background-image: url(../assets/backgrounds/index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.col-md-2 {
+  color: white;
+}
+
+#about {
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+#navbar {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+#navbar > .row > .col-md-2:hover {
+  text-shadow: 0 0 3px white;
+  transition: 0.5s;
+}
+
+#navbar > .row > .col-md-2 {
+  transition: 0.5s;
+}
+
+#names {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#searchForm {
+  text-align: center;
+}
+
+.search{
+	/*font-family: Century Gothic, sans-serif;*/
+  color: white;
+  width: 700px;
+  height: 50px;
+  padding: 7px 7px;
+  font-size: 18px;
+  background-color: transparent;
+  background-size: 20px 20px;
+  border-width: 1px;
+  border-style: solid;
+	border-radius: 5px;
+  border-color: white;
+	margin: 0px;
+  outline: 0;
+  transition: all 1s;
+}
+
+.search::placeholder{
+  color: white;
+}
+
+.search:hover {
+  cursor: text;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.search:focus {
+  cursor: text;
+  width: 725px;
+  opacity: 1;
+	box-shadow: 0 0 10px #FFFFFF;
+}
+
+.searchButton {
+  font-size: 18px;
+  height: 50px;
+  padding: 7px 7px;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-size: 20px 20px;
+  border-width: 1px;
+  border-style: solid;
+	border-radius: 5px;
+  border-color: white;
+  transition: all 0.5s;
+}

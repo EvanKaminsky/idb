@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tipsy Mix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="{{url_for('static', filename='css/index.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/cocktail.css')}}" rel="stylesheet">
+  </head>
+
+  <div id = "navbar" class = "container">
+    <div class = "row">
+      <div class = "col-md-2"><a href="index.html">Home</a></div>
+      <div class = "col-md-2"><a href="cocktails.html">Cocktails</a></div>
+      <div class = "col-md-2"><a href="ingredients.html">Ingredients</a></div>
+      <div class = "col-md-2"><a href="brands.html">Brands</a></div>
+      <div class = "col-md-2"><a href="countries.html">Countries</a></div>
+      <div class = "col-md-2"><a href="about.html">About</a></div>
+    </div>
+  </div>
+
+  <body>
+    <h1>Tipsy Mix</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div id = "searchForm">
+      <input type="text" class="search" placeholder="Search by ingredients, cocktail, country, or brand"><br>
+      <input type="submit" class="searchButton" placeholder="Search">
+    </div>
+
+
+    <section class = "container">
+      <div class = "row">
+      	<div class = "col-md-3 cocktail-box">
+      	  <img class= "img-responsive" src="http://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2015/09/Temporary-438x328.jpg" />
+      	  <h5>Cheezer</h5>
+      	  <p>Vodka, Rum, Sprite</p>
+      	</div>
+      	<div class = "col-md-3 col-md-offset-1 cocktail-box">
+      	  <img class="img-responsive" src="https://assets.bonappetit.com/photos/57bf2cda6a6acdf3485df6c8/master/w_625,c_limit/cosmopolitan-cocktail.jpg" />
+      	  <h5>A Suh Drink</h5>
+      	  <p>Vodka, Lemon Lime Gatorade, Pepper, ...</p>
+      	</div>
+      	<div class = "col-md-3 col-md-offset-1 cocktail-box">
+      	  <img class="img-responsive" src="https://assets.bonappetit.com/photos/57bf2cd54395c0582bb6301b/master/w_625,c_limit/mojito-cocktail.jpg"/>
+      	  <h5>The Slurple McPurple</h5>
+      	  <p>Vodka, Lemon, Queso, Eggs</p>
+      	</div>
+      </div>
+    </section>
+  </body>
+
+</html>

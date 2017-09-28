@@ -17,25 +17,33 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-# Sample App HTML, as provided by GCP Flask + App Engine #
-
 @app.route('/')
-def hello():
-    return form()
-
-# Request handler that displays a form using the form.html template
-@app.route('/form')
-def form():
-    return render_template('form.html')
+@app.route('/index.html')
+def default():
+    return render_template('index.html')
 
 
-# Request handler that handles the information from the submitted form
-@app.route('/submitted', methods=['POST'])
-def submitted_form():
-    name = request.form['name']
-    email = request.form['email']
-    site = request.form['site_url']
-    comments = request.form['comments']
-    return render_template('submitted_form.html', name=name, email=email, site=site, comments=comments)
+@app.route('/brands.html')
+def brands():
+    return render_template('brands.html')
 
+
+@app.route('/cocktails.html')
+def cocktails():
+    return render_template('cocktails.html')
+
+
+@app.route('/countries.html')
+def countries():
+    return render_template('countries.html')
+
+
+@app.route('/ingredients.html')
+def ingredients():
+    return render_template('ingredients.html')
+
+
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
 

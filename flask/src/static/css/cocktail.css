@@ -1,0 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-image: none;
+  background-color: #000;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+}
+
+h5 {
+  color: #FFF;
+  font-weight: 660;
+  font-size: 150%;
+}
+
+p {
+  color: #FFF;
+  font-size: 100%;
+}
+
+.cocktail-box{
+  background-color: #ff8c8c;
+  padding-top: 50px;
+}
