@@ -25,8 +25,14 @@ p {
 .cocktail-box{
   background-color: #ff8c8c;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-info {
   margin-bottom: 10px;
+}
+
+.container .img-responsive {
+  display: block;
+  max-height: 200px;
 }
