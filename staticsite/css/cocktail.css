@@ -24,5 +24,9 @@ p {
 
 .cocktail-box{
   background-color: #ff8c8c;
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+.btn-info {
+  margin-bottom: 10px;
 }
