@@ -38,6 +38,10 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
+#about > a {
+  color: blue;
+}
+
 #navbar {
   color: white;
   font-size: 16px;
