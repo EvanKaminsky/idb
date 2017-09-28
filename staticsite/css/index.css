@@ -4,11 +4,11 @@ body {
   background-repeat: no-repeat;
 }
 
-a {
+#navbar > a {
   color: white;
 }
 
-a:hover {
+#navbar > a:hover {
   color: white;
 }
 
