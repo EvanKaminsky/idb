@@ -36,7 +36,8 @@ p {
 
 .btn-info {
   margin-bottom: 10px;
-  background-color: #574227;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .container .img-responsive {
