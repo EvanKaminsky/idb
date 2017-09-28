@@ -22,10 +22,24 @@ a:hover {
   color: white;
 }
 
+#names > .row > .col-md-2:hover > img {
+  box-shadow: 0 0 17px #FFFFFF;
+  transition: 0.5s;
+}
+
+#names > .row > .col-md-2 > img {
+  transition: 0.5s;
+}
+
 #about {
   color: white;
   align-self: center;
   text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#about > a {
+  color: blue;
 }
 
 #navbar {
