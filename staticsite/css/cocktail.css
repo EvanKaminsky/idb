@@ -28,6 +28,12 @@ p {
   margin-bottom: 20px;
 }
 
+.cocktail-box a {
+  color: red;
+  font-weight: 400;
+}
+
+
 .btn-info {
   margin-bottom: 10px;
   background-color: #574227;
