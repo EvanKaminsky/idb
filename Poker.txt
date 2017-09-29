@@ -1,0 +1,75 @@
+User Stories
+
+1) As a college student, I want to create a small bar in my 
+apartment on a limited budget. I want to quickly be able to 
+browse popular and classic drink recipes so I can decide 
+what ingredients to purchase.
+
+Estimate: 8 (story point scale)
+Actual: 1 (hours)
+
+2) As a designated driver, I want to find virgin cocktails 
+so I can enjoy the night with my friends while being able to 
+drive home safe at night.
+
+Estimate: 20 (story point scale)
+Actual: 4 (hours)
+
+3) As a tech-savvy user, I would like to view this site on 
+both desktop and mobile.
+
+Estimate: 2 (story point scale)
+Actual: 1 (hours)
+
+4) As a bar patron, I want to see whether I was served the 
+correct drink. I would like to compare what I see to a 
+correct picture of the cocktail.
+
+Estimate: 13 (story point scale)
+Actual: 2 (hours)
+
+5) As a brand ambassador, I want to see what drinks I can 
+make with my brand to promote it at an upcoming event.
+
+Estimate: 13 (story point scale)
+Actual: 3 (hours)
+
+6) As someone with Celiac Disease, I want to be able to 
+search a cocktail and then read more about its ingredients 
+because I want to know if the cocktail I'm having is 
+gluten-free.
+
+Estimate: 13 (story point scale)
+Actual: 2 (hours)
+
+7) As a patriot, I want to see what drinks come from my 
+favorite country.
+
+Estimate: 8 (story point scale)
+Actual: 1 (hours)
+
+8) As a bartender, I want to search by brand for 
+recommended cocktails so I can maintain my bar's brand 
+alignment.
+
+Estimate: 8 (story point scale)
+Actual: 1 (hours)
+
+9) As a user, I want to search for cocktails made with 
+specific brands of alcohol because I have a few favorites.
+
+Estimate: 13 (story point scale)
+Actual: 1 (hours)
+
+10) As a user, I want to search for a specific cocktail 
+because I don't know how to make it, but I want one!
+
+Estimate: 3 (story point scale)
+Actual: 1 (hours)
+
+11) As a college student, I want to search for drink 
+recipes based on ingredients because I don't have a 
+lot of supplies.
+
+Estimate: 8 (story point scale)
+Actual: 2 (hours)
