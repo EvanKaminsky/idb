@@ -1,5 +1,9 @@
 .DS_Store
-.idea/
-__pycache__/
 *.tmp
 *.pyc
+.idea/
+__pycache__/
+env/
+lib/
+node_modules/
+bundle.js
