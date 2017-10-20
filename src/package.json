@@ -2,8 +2,9 @@
   "name": "tipsy-mix",
   "version": "0.0.2",
   "author": "The TTP Project",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "NPM requirements file for the React frontend",
+  "main": "index.html -> app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -17,9 +18,9 @@
     "webpack": "^1.12.12"
   },
   "dependencies": {
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-bootstrap":"0.31.3"
-  },
-  "private": true
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-bootstrap":"0.31.3",
+    "react-router-dom": "4.2.2"
+  }
 }
