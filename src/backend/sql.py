@@ -7,6 +7,10 @@ def sql_select(select_q, from_q, where_q):
 	# implement this
 	return {}
 
+# Fetch all instances of a class
+def sql_fetchAll(category):
+	return sql_select(*, category.upper(), None)
+
 # Utility method to return the name of the many-to-many linking tables
 def getLinkTableName(table1, table2):
     if table1 == "COCKTAIL":

@@ -1,3 +1,8 @@
+
+from PIL import Image
+import urllib.request
+import io
+
 import engine
 from sql import sql_select
 from sql import getLinkTableName
@@ -208,7 +213,29 @@ def countryDetail(slug):
 
 # Infers a color for a card based on an image url
 def inferColor(imageurl):
-    return DEFAULT_CARD_COLOR
+    with urllib.request.urlopen(imageurl) as url:
+        fileio = io.BytesIO(url.read())
+
+    try:
+        img = Image.open(fileio)
+        r, g, b = get_average_color(0,0,min(*im.size))
+    except Exception as e:
+        return DEFAULT_CARD_COLOR
+    return ((r & 0xFF) << 16) + ((g & 0xFF) << 8) + (b & 0xFF) ;
+
+# Returns a 3-tuple of the average R, G, and B values in the given PIL image
+#   bounded by a square of width n with top-left corner at (x,y)
+def get_average_color(x, y, n, image):
+    r, g, b = 0, 0, 0
+    count = 0
+    for s in range(x, x+n+1):
+        for t in range(y, y+n+1):
+            pixlr, pixlg, pixlb = image[s, t]
+            r += pixlr
+            g += pixlg
+            b += pixlb
+            count += 1
+    return ((r//count), (g//count), (b//count))
 
 # Looks up the id number associated with a given standardized name
 def idLookup(slug, type):
