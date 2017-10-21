@@ -5,12 +5,13 @@ def runSearch(category, query, filterRules, count, page, pageSize)
 	category = inferCategory(category, query, filterRules, count, page, pageSize)
 	page = page if page else 1
 	pageSize = pageSize if pageSize else 10
-	count = count if count else 30
-	if page > count // pageSize
+	if page > count // pageSize:
 		page = 1
 
     allEntries = sql_fetchAll(category)
     results = [x for x in allEntries if ((query in x.get("name")) && checkFilterRules(x, filterRules))]
+    if count:
+    	results = results[0:count]
     trimmedResults = results[(page-1)*pageSize: (page-1)*pageSize + pageSize]
 
 	return {
