@@ -6,7 +6,6 @@ module.exports = {
         path: __dirname + '/frontend/static',
         filename: "bundle.js"
     },
-
     module: {
         loaders: [{
             test: /\.js?$/,
