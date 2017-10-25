@@ -1,13 +1,28 @@
 import React from 'react';
 
-import Page from "./Page.js";
+import "../../static/css/index.css"
+let backgroundURL = "/static/public/index.jpg";
+
+const background = {
+    backgroundImage: 'url(' + backgroundURL + ')',
+    flex: 1,
+    resizeMode: 'cover', // or 'stretch'
+};
 
 export default class HomePage extends React.Component {
     render() {
         return (
-            <div>
-                <Page title="Home"/>
-            </div>
+            <body style={background}>
+            <br/>
+                <h1>Tipsy Mix</h1>
+                <br/>
+
+                <div id = "searchForm">
+                    <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand"/>
+                    <br/>
+                    <input type="submit" className="searchButton" placeholder="Search"/>
+                </div>
+            </body>
         )
     }
 }
