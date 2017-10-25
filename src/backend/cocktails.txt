@@ -1,6 +1,6 @@
 1 Singani
 2 Soju
-3  Cachaca
+3 Cachaca
 4 Whisky
 5 Bourbon
 6 Pisco
@@ -81,4 +81,3 @@
 81 White Russian
 82 B-52 shot
 83 Atomic Cat
-84 
