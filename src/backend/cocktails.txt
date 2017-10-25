@@ -1,0 +1,84 @@
+1 Singani
+2 Soju
+3  Cachaca
+4 Whisky
+5 Bourbon
+6 Pisco
+7 Caesar
+8 Maotai
+9 Tequila
+10 Mojito
+11 Guinness
+12 Becherovka
+13 Nsafufuo
+14 Nihonshu
+15 Mama Juana
+16 Schnapps
+17 Brennivín
+18 Waragi
+19 Jinmen gaoliang
+20 Slivovitz
+21 Raki
+22 Sangria
+23 Kumis
+24 Pitorro
+25 Chibuku
+26 Chapalo
+27 Arak
+28 Grappa
+29 Ouzo
+30 Arak
+31 Sombai
+32 Sang som rum
+33 Gin
+34 Fernet
+35 Kilimanjaro Lager
+36 Rakshi
+37 Rum
+38 Singapore sling
+39 Vodka
+40 Koskenkorva Viina
+41 Port wine
+42 Canelazo
+43 Tej
+44 Jenever
+45 Guaro
+46 Unicum
+47 Pastis
+48 Horilka
+49 Tuba
+50 Akevitt
+51 Riga Black Balsam
+52 Rhum Barbancourt
+53 Vana Tallinn
+54 Akvavit
+55 Seco Herrerano
+56 Tuica
+57 Mastika
+58 Rakia
+59 Aguardiente
+60 Cosmopolitan
+61 Screaming Orgasm
+62 Sex On The Beach
+63 Baby Guinness shot
+64 Swimming Pool
+65 Shit On Grass
+66 Almond Joy Martini
+67 Caribou Lou
+68 Blue Lady
+69 Black Russian
+70 Margarita
+71 Irish Flag
+72 Apple Martini
+73 Bubble Gum Shot
+74 Tequila Sunrise
+75 French Connection
+76 Blue Hawaiian
+77 Grasshopper
+78 Long Island Iced Tea
+79 German Chocolate Cake shooter
+80 Godfather
+81 White Russian
+82 B-52 shot
+83 Atomic Cat
+84 
