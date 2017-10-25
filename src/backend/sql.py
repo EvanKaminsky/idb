@@ -18,11 +18,13 @@ def sql_select(select_q, from_q, where_q):
     if(where_q not None):
         qString += " WHERE "+str(where_q)
 	result = db.execute(qString)
-	return {}
+	desc = result.description
+	col_names = [col[0] for col in desc]
+	return [dict(itertools.izip(col_names, x)) for x in result.fetchAll()]
 
 # Fetch all instances of a class
 def sql_fetchAll(category):
-	return sql_select(*, category.upper(), None)
+	return sql_select("*", category.upper(), None)
 
 # Utility method to return the name of the many-to-many linking tables
 def getLinkTableName(table1, table2):
