@@ -1,0 +1,21 @@
+[
+  {
+    "id": cocktailID,
+    "stdname": stdname,
+    "name": name,
+    "image": image,
+    "color": color,
+    "description": description,
+    "abv": abv,
+    "video": video,
+    "garnish": garnish,
+    "glass": glass,
+    "base_spirit": spirit,
+    "preparation": preparation,
+    "instructions": instructions,
+    "ingredients": ingredients,
+    "brands": brands,
+    "countries": countries,
+    "tags": tags
+  }
+]
