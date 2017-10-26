@@ -1,21 +1,52 @@
 [
   {
-    "id": cocktailID,
-    "stdname": stdname,
-    "name": name,
-    "image": image,
-    "color": color,
-    "description": description,
-    "abv": abv,
-    "video": video,
-    "garnish": garnish,
-    "glass": glass,
-    "base_spirit": spirit,
-    "preparation": preparation,
-    "instructions": instructions,
-    "ingredients": ingredients,
-    "brands": brands,
-    "countries": countries,
-    "tags": tags
+    "id": "",
+    "stdname": "like-hand-grenade",
+    "name": "Like Hand Grenade",
+    "image": "http://www.1001cocktails.com/images/like-hand-grenade-5504.jpg",
+    "color": "green",
+    "description": "",
+    "abv": "",
+    "video": "",
+    "garnish": "",
+    "glass": "Collins",
+    "base_spirit": "Gin",
+    "preparation": "",
+    "instructions": "",
+    "ingredients":
+      {
+        "gin": "1 1/2 oz",
+        "grain alcohol": "1 1/2 oz",
+        "melon liqueur": "1 1/2 oz",
+        "rum": "1 1/2 oz",
+        "vodka": "1 1/2 oz"
+      },
+    "brands": ["Blackwoods"],
+    "countries": "",
+    "tags": ""
+  },
+  {
+    "id": "",
+    "stdname": "flaming-lamborghini",
+    "name": "Flaming Lamborghini",
+    "image": "http://www.1001cocktails.com/images/flaming-lamborghini-5541.jpg",
+    "color": "blue",
+    "description": "",
+    "abv": "",
+    "video": "",
+    "garnish": "",
+    "glass": "Cocktail",
+    "base_spirit": "Sambuca",
+    "preparation": "",
+    "instructions": "",
+    "ingredients": {
+      "coffee liqueur": "1 oz",
+      "sambuca": "1 oz",
+      "blue curacao liqueur": "1 oz",
+      "Irish cream": "1 oz"
+    },
+    "brands": ["Kahlua", "Tia Maria", "Bailey's"],
+    "countries": "",
+    "tags": ""
   }
 ]

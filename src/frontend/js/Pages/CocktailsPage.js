@@ -43,7 +43,6 @@ export default class CocktailsPage extends React.Component {
                   <input type="submit" class="searchButton" placeholder="Search" />
                 </div>
 
-
                 <section class = "container">
                   <div class = "row">
                     <div class = "col-md-3 cocktail-box">
