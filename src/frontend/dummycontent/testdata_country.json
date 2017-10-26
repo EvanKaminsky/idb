@@ -1,0 +1,67 @@
+[
+  {
+      "id": 9735,
+      "stdname": "germany",
+      "name": "Germany",
+      "image": "internal/9735.jpeg",
+      "color": "0x132414",
+      "description": "Germany is a federal parliamentary republic in central-western Europe",
+      "continent": "Europe",
+      "ingredients": [
+          {
+              "label": "Jägermeister",
+              "id": 98743,
+              "url": "tipsymix.com/api/ingredients/jagermeister"
+          }, {
+              "label": "Korn",
+              "id": 1354884,
+              "url": "tipsymix.com/api/ingredients/korn"
+          }, {
+              "label": "Egg liquor",
+              "id": 498732,
+              "url": "tipsymix.com/api/ingredients/egg-liquor"
+          }, {
+              "label": "Brandy",
+              "id": 76543,
+              "url": "tipsymix.com/api/ingredients/brandy"
+          }
+      ],
+      "cocktails": [
+          {
+              "label": "Black Magic",
+              "id": 67684,
+              "url": "tipsymix.com/api/cocktails/black-magic"
+          }, {
+              "label": "Goldfinger",
+              "id": 468432,
+              "url": "tipsymix.com/api/cocktails/goldfinger"
+          }, {
+              "label": "Golden Sunset",
+              "id": 765423,
+              "url": "tipsymix.com/api/ingredients/golden-sunset"
+          }, {
+              "label": "Kirsch & Coffee",
+              "id": 159976,
+              "url": "tipsymix.com/api/ingredients/kirsh-coffee"
+          }
+      ],
+      "brands": [
+          {
+              "label": "Verpoorten",
+              "id": 1687,
+              "url": "tipsymix.com/api/brands/verpoorten"
+          }, {
+              "label": "Mast-Jägermeister",
+              "id": 842321,
+              "url": "tipsymix.com/api/brands/jagermeister"
+          }, {
+              "label": "Asbach",
+              "id": 983434,
+              "url": "tipsymix.com/api/brands/asbach"
+          }
+      ],
+      "tags": [
+          "WWII"
+      ]
+  }
+]
