@@ -1,4 +1,4 @@
-class cocktail_model extends React.Component {
+class country_model extends React.Component {
   render() {
     return (
       <div class = "col-md-6 cocktail-box">

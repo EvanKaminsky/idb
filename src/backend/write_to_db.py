@@ -1,32 +1,59 @@
-import sqlite3
+import os
+import sys
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from itertools import islice
 
-conn = sqlite3.connect('example.db')
+# Fill this out
+engine_internal = create_engine("mysql+mysqlconnector://%s:%s@%s/%s"
+     % ("youruser", "yourpassword", "yourhostname.com:3306",
+     "yourdatabasename"),
+     pool_size=3, pool_recycle=3600)
 
-c = conn.cursor()
+Internal = sessionmaker(bind=engine_internal)
+
+c = Internal()
+
+color_const = 255
 
 with open('brands.txt') as br:
-    for line1 in br:
-        s = line1.split(' ')
-        a = [int(s[0]), s[1].lower(), s[1]]
-        c.execute('INSERT INTO BRANDS values (?, ?, ?)', a)
+    while True:
+        s = list(islice(br, 6))
+        s[0] = int(s[0])
+        s.insert(4, color_const)
+        c.execute('INSERT INTO BRANDS values (?, ?, ?, ?, ?, ?, ?)', s)
+        if not s:
+            break
 
 with open('cocktails.txt') as co:
-    for line2 in co:
-        s = line2.split(' ')
-        a = [int(s[0]), s[1].lower(), s[1]]
-        c.execute('INSERT INTO BRANDS values (?, ?, ?)', a)
+    while True:
+        s = list(islice(co, 6))
+        s[0] = int(s[0])
+        s.insert(4, color_const)
+        c.execute('INSERT INTO COCKTAILS values (?, ?, ?, ?, ?, ?, ?)', s)
+        if not s:
+            break
 
 with open('countries.txt') as cu:
-    for line3 in cu:
-        s = line3.split(' ')
-        a = [int(s[0]), s[1].lower(), s[1]]
-        c.execute('INSERT INTO BRANDS values (?, ?, ?)', a)
+    while True:
+        s = list(islice(cu, 6))
+        s[0] = int(s[0])
+        s.insert(4, color_const)
+        c.execute('INSERT INTO COUNTRIES values (?, ?, ?, ?, ?, ?, ?)', s)
+        if not s:
+            break
 
-with open('brands.txt') as ig:
-    for line4 in ig:
-        s = line4.split(' ')
-        a = [int(s[0]), s[1].lower(), s[1]]
-        c.execute('INSERT INTO BRANDS values (?, ?, ?)', a)
+with open('ingredients.txt') as ig:
+    while True:
+        s = list(islice(br, 6))
+        s[0] = int(s[0])
+        s.insert(4, color_const)
+        c.execute('INSERT INTO INGREDIENTS values (?, ?, ?, ?, ?, ?, ?)', s)
+        if not s:
+            break
 
 with open('cocktail_country.txt') as cc:
     for line5 in cc:
@@ -35,13 +62,22 @@ with open('cocktail_country.txt') as cc:
         c.execute('INSERT INTO COCKTAIL_COUNTRY values (?, ?)', a)
 
 with open('cocktail_ingredient.txt') as cc:
-    for line5 in cc:
-        s = line5.split(' ')
+    for line6 in cc:
+        s = line6.split(' ')
         a = [int(s[0]), int(s[1])]
         c.execute('INSERT INTO COCKTAIL_INGREDIENT values (?, ?)', a)
 
 with open('ingredient_brand.txt') as cc:
-    for line5 in cc:
-        s = line5.split(' ')
+    for line7 in cc:
+        s = line7.split(' ')
         a = [int(s[0]), int(s[1])]
         c.execute('INSERT INTO INGREDIENT_BRAND values (?, ?)', a)
+
+with open('brand_country.txt') as cc:
+    for line8 in cc:
+        s = line8.split(' ')
+        a = [int(s[0]), int(s[1])]
+        c.execute('INSERT INTO BRAND_COUNTRY values (?, ?)', a)
+
+c.commit()
+c.close()
