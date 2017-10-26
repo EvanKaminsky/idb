@@ -29,8 +29,12 @@ export default class TipsyNavbar extends React.Component {
                             <NavItem eventKey={4}>Brands</NavItem>
                         </LinkContainer>
 
+                        <LinkContainer to="/countries">
+                            <NavItem eventKey={5}>Countries</NavItem>
+                         </LinkContainer>
+
                          <LinkContainer to="/about">
-                            <NavItem eventKey={5}>About</NavItem>
+                            <NavItem eventKey={6}>About</NavItem>
                          </LinkContainer>
                     </Nav>
 

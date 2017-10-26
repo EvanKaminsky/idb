@@ -7,6 +7,7 @@ import CocktailsPage    from './Pages/CocktailsPage.js';
 import IngredientsPage  from './Pages/IngredientsPage.js';
 import BrandsPage       from './Pages/BrandsPage.js';
 import AboutPage        from './Pages/AboutPage.js';
+import CountriesPage        from './Pages/CountriesPage.js';
 
 import TipsyNavbar from "./TipsyNavbar.js";
 
@@ -22,6 +23,7 @@ ReactDOM.render((
                 <Route path='/ingredients'  component={IngredientsPage}/>
                 <Route path='/brands'       component={BrandsPage}/>
                 <Route path='/about'        component={AboutPage}/>
+                <Route path='/countries'    component={CountriesPage}/>
             </Switch>
 
         </div>

@@ -14,6 +14,24 @@ const background = {
 const url = "https://tipsymix-ttp.appspot.com/api/cocktails/api/search"
 
 export default class IngredientsPage extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            ingredients: [],
+        }
+    }
+
+    componentDidMount() {
+        fetch(url).then(response => {
+            return response.json()
+        }).then(data => {
+            this.setState({ingredients: data.result});
+            console.log("state", this.state.ingredients);
+        }).catch((error) => {
+            console.error(error);
+        })
+    }
+
     render() {
         return (
             <body style = {background}>
@@ -23,7 +41,6 @@ export default class IngredientsPage extends React.Component {
                   <input type="text" class="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br />
                   <input type="submit" class="searchButton" placeholder="Search" />
                 </div>
-
 
                 <section class = "container">
                   <div class = "row">
