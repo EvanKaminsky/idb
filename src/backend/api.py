@@ -28,7 +28,7 @@ DEFAULT_CARD_COLOR = 0x5ff442
 #   + page (?int) - What page of the results to return
 #   + pagesize (?int) - Number of results per page
 def search(category, query, filterRules, count, page, pageSize):
-    return engine.runSearch(category, query, filterRules, count, page, pageSize)
+    return engine.runSearch(category.capitalize(), query, filterRules, count, page, pageSize)
 
 # /api/cocktails/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name

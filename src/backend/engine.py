@@ -31,4 +31,4 @@ def inferCategory(category, query, filterRules, count, page, pageSize):
         return category
     else
         # implement this
-        return "cmon"
+        return "COCKTAIL"
