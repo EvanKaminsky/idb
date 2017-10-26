@@ -29,7 +29,7 @@ DEFAULT_CARD_COLOR = 0x5ff442
 #   + page (?int) - What page of the results to return
 #   + pagesize (?int) - Number of results per page
 def search(category, query, filterRules, count, page, pageSize):
-    return engine.runSearch(category, query, filterRules, count, page, pageSize)
+    return engine.runSearch(category.capitalize(), query, filterRules, count, page, pageSize)
 
 # /api/cocktails/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name
@@ -355,19 +355,19 @@ def brandsInCountryQuery(ID):
 
 # returns the list of tags associated with a given cocktail
 def tagsInCocktailQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "COCKTAIL_TAGS", "cocktailID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "COCKTAIL_TAGS", "cocktailID = "+str(ID))]
 
 # returns the list of tags associated with a given brand
 def tagsInBrandQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "BRAND_TAGS", "brandID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "BRAND_TAGS", "brandID = "+str(ID))]
 
 # returns the list of tags associated with a given ingredient
 def tagsInIngredientQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "INGREDIENT_TAGS", "ingredientID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "INGREDIENT_TAGS", "ingredientID = "+str(ID))]
 
 # returns the list of tags associated with a given country
 def tagsInCountryQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "COUNTRY_TAGS", "countryID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "COUNTRY_TAGS", "countryID = "+str(ID))]
 
 ################ Instance Queries #################
 

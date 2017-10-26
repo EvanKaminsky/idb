@@ -8,10 +8,7 @@ from sqlalchemy.orm import sessionmaker
 from itertools import islice
 
 # Fill this out
-engine_internal = create_engine("mysql+mysqlconnector://%s:%s@%s/%s"
-     % ("youruser", "yourpassword", "yourhostname.com:3306",
-     "yourdatabasename"),
-     pool_size=3, pool_recycle=3600)
+engine_internal = create_engine('mysql+mysqldb://root:tipsymix@/tipsy_backend?unix_socket=/cloudsql/tipsymix-ttp:tipsy-db')
 
 Internal = sessionmaker(bind=engine_internal)
 
