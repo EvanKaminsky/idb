@@ -5,6 +5,8 @@ import Page from "./Page.js";
 import "../../static/css/about.css"
 let backgroundURL = "/static/public/index.jpg";
 
+var data = require('json-loader!../../dummycontent/testdata_brand.json');
+
 const background = {
     backgroundImage: 'url(' + backgroundURL + ')',
     flex: 1,
@@ -14,6 +16,25 @@ const background = {
 const url = "https://tipsymix-ttp.appspot.com/api/cocktails/api/search"
 
 export default class BrandsPage extends React.Component {
+    constructor() {
+        console.log(data);
+        super();
+        this.state = {
+            brands: data,
+        }
+    }
+
+    componentDidMount() {
+        fetch(url).then(response => {
+            return response.json()
+        }).then(data => {
+            this.setState({brands: data.result});
+            console.log("state", this.state.brands);
+        }).catch((error) => {
+            console.error(error);
+        })
+    }
+
     render() {
         return (
             <body style = {background}>
@@ -24,30 +45,18 @@ export default class BrandsPage extends React.Component {
                   <input type="submit" class="searchButton" placeholder="Search" />
                 </div>
 
-
                 <section class = "container">
                   <div class = "row">
-                    <div class = "col-md-3 cocktail-box">
-                      <img class= "img-responsive" src="http://thecocktailgeek.com/wp-content/uploads/2014/07/Blackwoods-Logo.png" />
-                      <h5>Blackwoods</h5>
-                      <p>Vodka, Gin</p>
-                    <a href="brands/blackwoods.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
-
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="https://wine-searcher1.freetls.fastly.net/images/labels/66/10/olmeca-gold-tequila-mexico-10426610.jpg" />
-                      <h5>Olmeca</h5>
-                      <p>Tequila</p>
-                      <a href="brands/olmeca.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
-
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="https://cdn.shopify.com/s/files/1/1780/9427/products/martell-cognac-xo-2_530x.png?v=1505577633"/>
-                      <h5>Martell</h5>
-                      <p>Cognac</p>
-                      <a href="brands/martell.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
-
+                  {this.state.brands.map(function(brand, i) {
+                            return(
+                                <div class = "col-md-3 col-md-offset-1 cocktail-box">
+                                  <img class= "img-responsive" src={"" + brand.image} />
+                                  <h5>{brand.name}</h5>
+                                  <p>{brand.description}</p>
+                                <a href={"" + brand.stdname} class="btn btn-info btn-log" role ="button">More</a>
+                                </div>
+                            );
+                        })}
                   </div>
                 </section>
               </body>

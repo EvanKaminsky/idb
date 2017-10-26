@@ -1,8 +1,15 @@
-class brand_model extends React.Component {
+export default class brand_model extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            brand: ""
+        };
+    }
+
   render() {
     return (
       <div class = "col-md-6 cocktail-box">
-      <img class="img-responsive" src="{this.brands.image}" />
+      <img class="img-responsive" src={"" + this.brands.image} />
       <h2>{this.brands.name}</h2>
       <h3>Details</h3>
       <p>{this.brands.details}</p>

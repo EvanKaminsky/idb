@@ -47,7 +47,7 @@ export default class AboutPage extends React.Component {
                 <div class = "col-md-1"></div>
                 <div class = "col-md-2">
                   <h3>Rohit</h3>
-                  <img class="img-responsive" src="{{url_for('static', filename='assets/faces/rohit.jpg')}}" />
+                  <img class="img-responsive" src="../../static/assets/faces/rohit.jpg" />
                   <p>Hi, my name is Rohit and I'm a junior CS major at UT. I'm interested in AI and machine learning as possible topics to study in the future.</p>
                   <p>For this project, I got multiple instances of each model and labeled all their attributes. I also contributed to the technical report.</p>
                   <p>Commits: 0</p>
@@ -56,7 +56,7 @@ export default class AboutPage extends React.Component {
                 </div>
                 <div class = "col-md-2">
                   <h3>Mica</h3>
-                  <img class="img-responsive" src="{{url_for('static', filename='assets/faces/mica.jpg')}}" />
+                  <img class="img-responsive" src="../../static/assets/faces/mica.jpg" />
                   <p>I'm Mica, a senior computer science major with a UTeach minor. I'm interested in computer science as a tool in education, so much so it is the topic of my undergraduate thesis, and after working in industry I want to teach high school computer science.</p>
                   <p>I worked on the front-end design of the static website using Bootstrap, CSS, and HTML and contributed to the creation of user stories.</p>
                   <p>Commits: 13</p>
@@ -65,7 +65,7 @@ export default class AboutPage extends React.Component {
                 </div>
                 <div class = "col-md-2">
                   <h3>Abhi</h3>
-                  <img class="img-responsive" src="{{url_for('static', filename='assets/faces/abhi.jpg')}}" />
+                  <img class="img-responsive" src="../../static/assets/faces/abhi.jpg" />
                   <p>Hello, I'm Abhi Ilindra. I'm a CS major interested in computational linguistics as well as natural language processing.</p>
                   <p>In this project I worked primarily on front-end design, using React and Bootstrap. I also helped document the site in the technical report and create user stories.</p>
                   <p>Commits: 16</p>
@@ -74,7 +74,7 @@ export default class AboutPage extends React.Component {
                 </div>
                 <div class = "col-md-2">
                   <h3>Evan</h3>
-                  <img class="img-responsive" src="{{url_for('static', filename='assets/faces/evan.jpg')}}" />
+                  <img class="img-responsive" src="../../static/assets/faces/evan.jpg" />
                   <p>My name is Evan Kaminsky and I’m a junior at UT Austin. I’m currently taking AI and software engineering, and plan on doing research in systems.</p>
                   <p>For this project, I’ll be working on our React frontend and managing Google Cloud Platform.</p>
                   <p>Commits: 14</p>
@@ -83,7 +83,7 @@ export default class AboutPage extends React.Component {
                 </div>
                 <div class = "col-md-2">
                   <h3>Balazs</h3>
-                  <img class="img-responsive" src="{{url_for('static', filename='assets/faces/balazs.jpg')}}" />
+                  <img class="img-responsive" src="../../static/assets/faces/balazs.jpg" />
                   <p>Hi, my name is Balazs and I'm a junior at UT majoring in CS(Turing) and Pure Math. I'm interested in computation/complexity theory as well as graphics for possible future research, but I plan to work in software development for some time after college.</p>
                   <p>For this project, I created our API writeup, helped design our models, and contributed to the technical report.</p>
                   <p>Commits: 4</p>
