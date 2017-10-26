@@ -177,7 +177,7 @@ for x in range(len(strings) - 1):
                 ingredients_file.write('\n')
                 ingredients_file.write('NULL')
                 ingredients_file.write('\n')
-                ingredients_file.write('NULL')
+                ingredients_file.write('0')
                 ingredients_file.write('\n')
 
             cocktail_ingredient_file.write(cocktails_dict[cocktail_name])
@@ -272,7 +272,7 @@ for i in range(len(brands)):
         ingredients_file.write('\n')
         ingredients_file.write('NULL')
         ingredients_file.write('\n')
-        ingredients_file.write('NULL')
+        ingredients_file.write('0')
         ingredients_file.write('\n')
 
     ingredient_brand_file.write(ingredients_dict[ingred_name])

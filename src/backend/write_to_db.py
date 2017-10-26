@@ -51,6 +51,7 @@ with open('ingredients.txt') as ig:
         s = list(islice(br, 6))
         s[0] = int(s[0])
         s.insert(4, color_const)
+        s[6] = int(s[6])
         c.execute('INSERT INTO INGREDIENTS values (?, ?, ?, ?, ?, ?, ?)', s)
         if not s:
             break
