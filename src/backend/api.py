@@ -1,4 +1,3 @@
-
 from PIL import Image
 import urllib.request
 import io
@@ -11,7 +10,7 @@ from sql import getLinkTableName
 # The return format is JSON objects (python dictionaries/lists) as defined in apiary
 # Author: Balazs
 
-###################
+################c###
 ###  Constants  ###
 ###################
 
@@ -355,19 +354,19 @@ def brandsInCountryQuery(ID):
 
 # returns the list of tags associated with a given cocktail
 def tagsInCocktailQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "COCKTAIL_TAGS", "cocktailID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "COCKTAIL_TAGS", "cocktailID = "+str(ID))]
 
 # returns the list of tags associated with a given brand
 def tagsInBrandQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "BRAND_TAGS", "brandID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "BRAND_TAGS", "brandID = "+str(ID))]
 
 # returns the list of tags associated with a given ingredient
 def tagsInIngredientQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "INGREDIENT_TAGS", "ingredientID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "INGREDIENT_TAGS", "ingredientID = "+str(ID))]
 
 # returns the list of tags associated with a given country
 def tagsInCountryQuery(ID):
-    return return [match.get("tagID") for match in sql_select("tagID", "COUNTRY_TAGS", "countryID = "+str(ID))]
+    return [match.get("tagID") for match in sql_select("tagID", "COUNTRY_TAGS", "countryID = "+str(ID))]
 
 ################ Instance Queries #################
 
