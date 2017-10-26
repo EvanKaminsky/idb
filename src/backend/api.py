@@ -1,4 +1,3 @@
-
 from PIL import Image
 import urllib.request
 import io
@@ -11,7 +10,7 @@ from sql import getLinkTableName
 # The return format is JSON objects (python dictionaries/lists) as defined in apiary
 # Author: Balazs
 
-###################
+################c###
 ###  Constants  ###
 ###################
 

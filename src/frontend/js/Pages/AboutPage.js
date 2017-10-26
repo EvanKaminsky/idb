@@ -1,6 +1,8 @@
 import React from 'react';
 
-import "../../static/css/about.css"
+import "../../static/css/cocktail.css"
+import RohitFace from "../../static/assets/faces/rohit.jpg"
+
 let backgroundURL = "/static/public/index.jpg";
 
 const background = {
