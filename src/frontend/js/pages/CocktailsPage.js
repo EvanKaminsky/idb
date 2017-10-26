@@ -2,19 +2,11 @@ import React from 'react';
 
 /* Local Imports */
 import "../../static/css/about.css"
-let backgroundURL = "/static/public/index.jpg";
 
 /* Test Data */
-const data = require('json-loader!../../dummycontent/testdata_cocktail.json');
+const data = require('json-loader!../../spoof/testdata_cocktail.json');
 
-/* Image Style */
-const background = {
-    backgroundImage: 'url(' + backgroundURL + ')',
-    flex: 1,
-    resizeMode: 'cover'
-};
-
-/* Page with a grid of cocktails */
+/* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
 
     constructor() {
@@ -35,7 +27,7 @@ export default class CocktailsPage extends React.Component {
 
     render() {
         return (
-            <body style = {background}>
+            <body style = {backgroundStyle}>
 
             <h1>Tipsy Mix</h1>
 

@@ -2,17 +2,10 @@ import React from 'react';
 
 /* Local Imports */
 import "../../static/css/about.css"
-let backgroundURL = "/static/public/index.jpg";
+import "../constants.js"
 
 /* Test Data */
-const data = require('json-loader!../../dummycontent/testdata_ingredient.json');
-
-/* Image Style */
-const background = {
-    backgroundImage: 'url(' + backgroundURL + ')',
-    flex: 1,
-    resizeMode: 'cover'
-};
+const data = require('json-loader!../../spoof/testdata_ingredient.json');
 
 /* Page with a grid of ingredients */
 export default class IngredientsPage extends React.Component {
@@ -30,7 +23,7 @@ export default class IngredientsPage extends React.Component {
 
     render() {
         return (
-            <body style = {background}>
+            <body style={backgroundStyle}>
 
             <h1>Tipsy Mix</h1>
 

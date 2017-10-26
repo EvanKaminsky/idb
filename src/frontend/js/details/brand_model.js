@@ -1,4 +1,4 @@
-var data = require('json-loader!../../dummycontent/testdata_brand.json');
+var data = require('json-loader!../../spoof/testdata_brand.json');
 
 export default class brand_model extends React.Component {
     constructor(props){
