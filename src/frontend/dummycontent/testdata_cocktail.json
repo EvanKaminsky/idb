@@ -48,5 +48,29 @@
     "brands": ["Kahlua", "Tia Maria", "Bailey's"],
     "countries": "",
     "tags": ""
+  },
+  {
+    "id": "",
+    "stdname": "blue-lagoon",
+    "name": "Blue Lagoon",
+    "image": "http://www.1001cocktails.com/images/blue-lagoon-50.jpg",
+    "color": "blue",
+    "description": "",
+    "abv": "",
+    "video": "",
+    "garnish": "",
+    "glass": "Highball",
+    "base_spirit": "Vodka",
+    "preparation": "",
+    "instructions": "",
+    "ingredients": {
+      "vodka": "1 oz",
+      "blue curacao liqueur": "1 oz",
+      "lemonade": "1 oz",
+      "cherry": "1"
+    },
+    "brands": ["Kahlua", "Tia Maria", "Bailey's"],
+    "countries": "",
+    "tags": ""
   }
 ]
