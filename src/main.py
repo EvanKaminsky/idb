@@ -17,8 +17,10 @@ it as a list of strings.
 
 """
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
+
+from backend import api as API
 
 ################################
 # Flask Setup #
@@ -33,17 +35,42 @@ app = Flask(__name__, template_folder="frontend/templates",  static_folder="fron
 
 base_api = "/api/"
 
-@app.route(base_api + "cocktails")
-def cocktails():
-    # Spoof Data
-    # data = balazs_interace.py.db.get("cocktails")
-    # return json.dumps(data)
+@app.route(base_api + "search")
+def search():
+    print("search")
+    category =      request.args.get('category', default=None, type=str)
+    query =         request.args.get('query', default=None, type=str)
+    filterRules =   request.args.get('filterRules', default=None, type=str)
+    count =         request.args.get('count', default=None, type=int)
+    page =          request.args.get('page', default=None, type=int)
+    pagesize =      request.args.get('pagesize', default=None, type=int)
+    return json.dumps(API.search(category, query, filterRules, count, page, pagesize))
 
-    return [json.dumps({
+@app.route(base_api + "cocktails/<slug>")
+def cocktail_detail(slug):
+    print("cocktail " + slug)
+    return json.dumps(API.cocktailDetail(slug))
+
+@app.route(base_api + "ingredients/<slug>")
+def ingredient_detail(slug):
+    print("ingredient " + slug)
+    return json.dumps(API.ingredientDetail(slug))
+
+@app.route(base_api + "brands/<slug>")
+def brand_detail(slug):
+    print("brand " + slug)
+    return json.dumps(API.brandDetail(slug))
+
+@app.route(base_api + "countries/<slug>")
+def country_detail(slug):
+    print("country " + slug)
+    return json.dumps(API.countryDetail(slug))
+
+spoof_cocktails = [{
         "name": "purple drank",
         "brand": "lil yachty drank",
         "year": 2015
-    }), {
+    }, {
         "name": "jaegerbomb",
         "brand": "jaeger",
         "year": 2012
