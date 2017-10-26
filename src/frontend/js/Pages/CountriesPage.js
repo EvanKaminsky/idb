@@ -5,6 +5,8 @@ import Page from "./Page.js";
 import "../../static/css/about.css"
 let backgroundURL = "/static/public/index.jpg";
 
+var data = require('json-loader!../../dummycontent/testdata_country.json');
+
 const background = {
     backgroundImage: 'url(' + backgroundURL + ')',
     flex: 1,
@@ -14,6 +16,26 @@ const background = {
 const url = "https://tipsymix-ttp.appspot.com/api/cocktails/api/search"
 
 export default class CountriesPage extends React.Component {
+
+    constructor() {
+        console.log(data);
+        super();
+        this.state = {
+            countries: data,
+        }
+    }
+
+    componentDidMount() {
+        fetch(url).then(response => {
+            return response.json()
+        }).then(data => {
+            this.setState({countries: data.result});
+            console.log("state", this.state.countries);
+        }).catch((error) => {
+            console.error(error);
+        })
+    }
+
     render() {
         return (
             <body style = {background}>
@@ -27,23 +49,17 @@ export default class CountriesPage extends React.Component {
 
                 <section class = "container">
                   <div class = "row">
-                    <div class = "col-md-3 cocktail-box">
-                      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/840px-Flag_of_Mexico.svg.png" />
-                      <h5>Mexico</h5>
-                      <a href="countries/mexico.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
 
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/900px-Flag_of_Russia.svg.png" />
-                      <h5>Russia</h5>
-                      <a href="countries/russia.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
-
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1200px-Flag_of_Ireland.svg.png"/>
-                      <h5>Ireland</h5>
-                      <a href="countries/ireland.html" class="btn btn-info btn-log" role ="button">More</a>
-                    </div>
+                    {this.state.countries.map(function(country, i) {
+                            return(
+                                <div class = "col-md-3 col-md-offset-1 cocktail-box">
+                                  <img class= "img-responsive" src={"" + country.image} />
+                                  <h5>{country.name}</h5>
+                                  <p>{country.description}</p>
+                                  <a href={"" + country.stdname} class="btn btn-info btn-log" role ="button">More</a>
+                                </div>
+                            );
+                        })}
 
                   </div>
                 </section>
