@@ -20,7 +20,7 @@ it as a list of strings.
 from flask import Flask, render_template, request
 import json
 
-from backend import api as API
+#from backend import api as API
 
 ################################
 # Flask Setup #
@@ -84,7 +84,7 @@ spoof_cocktails = [{
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
-def react():
+def react(path):
     return render_template("index.html")
 
 
