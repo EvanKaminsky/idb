@@ -5,6 +5,8 @@ import Page from "./Page.js";
 import "../../static/css/about.css"
 let backgroundURL = "/static/public/index.jpg";
 
+var data = require('json-loader!../../dummycontent/testdata_cocktail.json');
+
 const background = {
     backgroundImage: 'url(' + backgroundURL + ')',
     flex: 1,
@@ -13,12 +15,18 @@ const background = {
 
 const url = "https://tipsymix-ttp.appspot.com/api/cocktails/api/search"
 
+function reqListener(e) {
+        data = JSON.parse(this.responseText);
+    }
+
+
 export default class CocktailsPage extends React.Component {
 
     constructor() {
+        console.log(data);
         super();
         this.state = {
-            cocktails: [],
+            cocktails: data,
         }
     }
 
@@ -34,39 +42,30 @@ export default class CocktailsPage extends React.Component {
     }
 
     render() {
+        console.log(this.state);
+        console.log("number 1", this.state.cocktails[0].name);
         return (
             <body style = {background}>
                 <h1>Tipsy Mix</h1>
 
                 <div id = "searchForm">
                   <input type="text" class="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                  <input type="submit" class="searchButton" placeholder="Search" />
+                  <input type="submit" class="searchButton" placeholder="Search" onSubmit={this.handleSubmit}/>
                 </div>
 
                 <section class = "container">
-                  <div class = "row">
-                    <div class = "col-md-3 cocktail-box">
-                      <img class= "img-responsive" src="http://www.1001cocktails.com/images/like-hand-grenade-5504.jpg" />
-                      <h5>Like Hand Grenade</h5>
-                      <p>gin, grain alcohol, melon liquer, rum, vodka</p>
-                      <a href="cocktails/likeHandGrenade.html" class="btn btn-info btn-log" role ="button">More</a>
+                    <div class = "row">
+                        {this.state.cocktails.map(function(cocktail, i) {
+                            return(
+                                <div class = "col-md-3 col-md-offset-1 cocktail-box">
+                                  <img class= "img-responsive" src={"" + cocktail.image} />
+                                  <h5>{cocktail.name}</h5>
+                                  <p>{cocktail.description}</p>
+                                  <a href={"" + cocktail.stdname} class="btn btn-info btn-log" role ="button">More</a>
+                                </div>
+                            );
+                        })}
                     </div>
-
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="http://www.1001cocktails.com/images/flaming-lamborghini-5541.jpg" />
-                      <h5>Flaming Lamborghini</h5>
-                      <p>coffe liqueuer (tia maria, kahlua), sambuca, blue curacao liqueur, irish cream (bailey's)</p>
-                      <a href="cocktails/flamingLamborghini.html" class="btn btn-info" role ="button">More</a>
-                    </div>
-
-                    <div class = "col-md-3 col-md-offset-1 cocktail-box">
-                      <img class="img-responsive" src="http://www.1001cocktails.com/images/blue-lagoon-50.jpg"/>
-                      <h5>Blue Lagoon</h5>
-                      <p>vodka, blue curacao liquer, lemonade, cherry</p>
-                      <a href="cocktails/blueLagoon.html" class="btn btn-info" role ="button">More</a>
-                    </div>
-
-                  </div>
                 </section>
               </body>
         )
