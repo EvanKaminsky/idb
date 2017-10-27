@@ -41,16 +41,16 @@ cursor = db.cursor()
 # 	+ SELECT select_q FROM from_q WHERE where_q
 def sql_select(select_q, from_q, where_q):
     qString = "SELECT "+str(select_q)+" FROM "+str(from_q)
-    if(where_q is not None):
+    if (where_q is not None):
         qString += " WHERE "+str(where_q)
-	result = cursor.execute(qString)
-	desc = result.description
-	col_names = [col[0] for col in desc]
-	return [dict(itertools.izip(col_names, x)) for x in result.fetchAll()]
+    result = cursor.execute(qString)
+    desc = result.description
+    col_names = [col[0] for col in desc]
+    return [dict(itertools.izip(col_names, x)) for x in result.fetchAll()]
 
 # Fetch all instances of a class
 def sql_fetchAll(category):
-	return sql_select("*", category.upper(), None)
+    return sql_select("*", category.upper(), None)
 
 # Utility method to return the name of the many-to-many linking tables
 def getLinkTableName(table1, table2):
