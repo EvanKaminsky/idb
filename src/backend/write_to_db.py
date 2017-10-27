@@ -41,12 +41,12 @@ with open('cocktails.txt') as co:
 
 with open('countries.txt') as cu:
     while True:
-        s = list(islice(cu, 5))
+        s = list(islice(cu, 6))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
-        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
         
 
 with open('ingredients.txt') as ig:
