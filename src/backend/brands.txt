@@ -1,17 +1,17 @@
 1
-havana club
+havana_club
 Havana Club
 http://static5.businessinsider.com/image/555b6fd069beddcf3f8b4567-1200/no-25-havana-club.jpg
 Brand value: $554 million
 NULL
 2
-gujing gong jiu
+gujing_gong_jiu
 Gujing Gong Jiu
 http://static4.businessinsider.com/image/57210c4852bcd029008bf5f6-1200/no-24-gujing-gong-jiu.jpg
 Brand value: $575 million 
 NULL
 3
-old parr
+old_parr
 Old Parr
 http://static3.businessinsider.com/image/55f8690cecad044a164b29db-1200/no-23-old-parr.jpg
 Brand value: $576 million 
@@ -29,7 +29,7 @@ http://static4.businessinsider.com/image/572121bf91058422008bf55d-1200/no-21-gra
 Brand value: $596 million
 NULL
 6
-jim beam
+jim_beam
 Jim Beam
 http://static3.businessinsider.com/image/52a0fca069beddf038593aa2-1200/no-20-jim-beam.jpg
 Brand value: $636 million
@@ -59,7 +59,7 @@ http://static1.businessinsider.com/image/5721231191058422008bf56f-1200/no-16-mcd
 Brand value: $805 million
 NULL
 11
-luzhou laojiao
+luzhou_laojiao
 Luzhou Laojiao
 http://static1.businessinsider.com/image/572125e191058425008bf623-1200/no-15-luzhou-laojiao.jpg
 Brand value: $942 million
@@ -71,31 +71,31 @@ http://static3.businessinsider.com/image/5721237c9105842b008bf629-1200/no-14-ric
 Brand value: $952 million
 NULL
 13
-grey goose
+grey_goose
 Grey Goose
 http://static4.businessinsider.com/image/54625df269bedd043a779913-1200/no-13-grey-goose.jpg
 Brand value: $1.23 billion
 NULL
 14
-chivas regal
+chivas_regal
 Chivas Regal
 http://static3.businessinsider.com/image/543e6dcd6da811a366f8c03d-1200/no-12-chivas-regal.jpg
 Brand value: $1.26 billion
 NULL
 15
-ruang khao
+ruang_khao
 Ruang Khao
 http://static3.businessinsider.com/image/55eef5b8bd86ef1a008b8a6f-1200/no-11-ruang-khao.jpg
 Brand value: $1.29 billion
 NULL
 16
-h3 class="slide-title">no. 10 absolut
+h3_class="slide-title">no._10_absolut
 h3 class="slide-title">No. 10 Absolut
 http://static3.businessinsider.com/image/56be3a2b2e52651c008b6fd7-1200/no-10-absolut.jpg
 Brand value: $1.43 billion
 NULL
 17
-crown royal
+crown_royal
 Crown Royal
 http://static6.businessinsider.com/image/56537522c28144c0018b4ca2-1200/no-9-crown-royal.jpg
 Brand value: $1.49 billion
@@ -137,7 +137,7 @@ http://static6.businessinsider.com/image/4fe8d32e69beddf85b000001-1200/no-3-henn
 Brand value: $2.87 billion
 NULL
 24
-johnnie walker
+johnnie_walker
 Johnnie Walker
 http://static3.businessinsider.com/image/558a9f3d6bb3f7c45ca2e6c2-1200/no-2-johnnie-walker.jpg
 Brand value: $4.63 billion
@@ -148,31 +148,13 @@ Moutai
 http://static4.businessinsider.com/image/572126d09105841c008bf6af-1200/no-1-moutai.jpg
 Brand value: $5.77 billion
 NULL
-26
-smirnoff 
+31
+smirnoff_
 Smirnoff 
 NULL
 24.3 million cases sold globally
 NULL
-27
-pirassununga 51
-Pirassununga 51
-NULL
-19.50 million cases sold globally
-NULL
-28
-bacardi
-Bacardi
-NULL
-19.28 million cases sold globally
-NULL
-29
-johnnie walker
-Johnnie Walker
-NULL
-15.90 million cases sold globally
-NULL
-30
+32
 absolut
 Absolut
 NULL

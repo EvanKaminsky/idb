@@ -11,7 +11,7 @@ NULL
 Soju has a taste comparable to vodka yet slightly sweeter.
 NULL
 3
- cachaca
+_cachaca
  Cachaca
 NULL
 Cachaca, or Brazilian rum, has over four centuries’ worth of nicknames coined by its various consumers.
@@ -83,7 +83,7 @@ NULL
 Nsafufuo is palm wine made from the sap of palm trees.
 NULL
 15
-mama juana
+mama_juana
 Mama Juana
 NULL
 Although it’s commonly known in many places as sake, sake actually refers to any alcoholic beverage in Japan.
@@ -107,7 +107,7 @@ NULL
 Brennivín is Iceland’s version of gin.
 NULL
 19
-jinmen gaoliang
+jinmen_gaoliang
 Jinmen gaoliang
 NULL
 Waragi is comparable to gin, with a subtle flavor that’s easily overpowered when used in mixed drinks.
@@ -185,7 +185,7 @@ NULL
 Ouzo is exclusively Greek.
 NULL
 32
-sang som rum
+sang_som_rum
 Sang som rum
 NULL
 Not to be confused with arak found in Jordan, arak from Bali is made from distilled coconut palm sap, or from a mixture of coconut milk and black sticky rice.
@@ -203,7 +203,7 @@ NULL
 Sugarcane-distilled rum from Thailand, sang som rum “makes you fall on your head,” according to Matador staff writer Katie Scott Aiton.
 NULL
 35
-kilimanjaro lager
+kilimanjaro_lager
 Kilimanjaro Lager
 NULL
 Gin is distilled from juniper berries and enjoyed worldwide due to its versatility as well as the popularity of the martini.
@@ -221,7 +221,7 @@ NULL
 Described as having a smell “like black licorice-flavored Listerine,” fernet is a “bitter aromatic spirit”<sup><a href="#foot20">[20]</a></sup> typically served as a digestif, but sometimes with coffee or Coke.
 NULL
 38
-singapore sling
+singapore_sling
 Singapore sling
 NULL
 With a picture of Mount Kilimanjaro plastered on each label, Kilimanjaro Lager is a local favorite with its golden color and crisp, mild flavor.
@@ -233,13 +233,13 @@ NULL
 This clear, strong drink made from kodo millet or rice has a taste similar to Japanese sake.
 NULL
 40
-koskenkorva viina
+koskenkorva_viina
 Koskenkorva Viina
 NULL
 Rum is produced in pot stills, and its color varies drastically from dark to light.
 NULL
 41
-port wine
+port_wine
 Port wine
 NULL
 Originally called the gin sling, the Singapore sling was created at the Raffles Hotel in Singapore.
@@ -299,19 +299,19 @@ NULL
  class="wp-caption-text">Photo: <a href="http://www.
 NULL
 51
-riga black balsam
+riga_black_balsam
 Riga Black Balsam
 NULL
 Pastis is an anise-flavored liqueur and aperitif.
 NULL
 52
-rhum barbancourt
+rhum_barbancourt
 Rhum Barbancourt
 NULL
 This Ukrainian vodka is usually distilled from wheat.
 NULL
 53
-vana tallinn
+vana_tallinn
 Vana Tallinn
 NULL
 Palm wine, commonly referred to as “kallu” or “toddy,” is called tuba in the Philippines.
@@ -323,7 +323,7 @@ NULL
 Referred to as “water of life,”<sup><a href="#foot23">[23]</a></sup> Akevitt is made from potatoes, along with various spices and herbs.
 NULL
 55
-seco herrerano
+seco_herrerano
 Seco Herrerano
 NULL
 Riga Black Balsam is Latvia’s specific type of balsam, an herbal liqueur.
@@ -359,55 +359,55 @@ http://cdn.barmano.com/recipe-images/cosmopolitan-cocktail-56-small.jpg
 NULL
 NULL
 61
-screaming orgasm
+screaming_orgasm
 Screaming Orgasm
 http://cdn.barmano.com/recipe-images/screaming-orgasm-cocktail-143-small.jpg
 NULL
 NULL
 62
-sex on the beach
+sex_on_the_beach
 Sex On The Beach
 http://cdn.barmano.com/recipe-images/sex-on-the-beach-cocktail-68-small.jpg
 NULL
 NULL
 63
-baby guinness shot
+baby_guinness_shot
 Baby Guinness shot
 http://cdn.barmano.com/recipe-images/baby-guinness-cocktail-176-small.jpg
 NULL
 NULL
 64
-swimming pool
+swimming_pool
 Swimming Pool
 http://cdn.barmano.com/recipe-images/swimming-pool-cocktail-158-small.jpg
 NULL
 NULL
 65
-shit on grass
+shit_on_grass
 Shit On Grass
 http://cdn.barmano.com/recipe-images/shit-on-grass-cocktail-141-small.jpg
 NULL
 NULL
 66
-almond joy martini
+almond_joy_martini
 Almond Joy Martini
 http://cdn.barmano.com/recipe-images/almond-joy-martini-cocktail-114-small.jpg
 NULL
 NULL
 67
-caribou lou
+caribou_lou
 Caribou Lou
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 NULL
 NULL
 68
-blue lady
+blue_lady
 Blue Lady
 http://cdn.barmano.com/recipe-images/blue-lady-cocktail-145-small.jpg
 NULL
 NULL
 69
-black russian
+black_russian
 Black Russian
 http://cdn.barmano.com/recipe-images/black-russian-cocktail-3-small.jpg
 NULL
@@ -419,55 +419,55 @@ http://cdn.barmano.com/recipe-images/margarita-cocktail-17-small.jpg
 NULL
 NULL
 71
-irish flag
+irish_flag
 Irish Flag
 http://cdn.barmano.com/recipe-images/irish-flag-cocktail-240-small.jpg
 NULL
 NULL
 72
-apple martini
+apple_martini
 Apple Martini
 http://cdn.barmano.com/recipe-images/apple-martini-cocktail-69-small.jpg
 NULL
 NULL
 73
-bubble gum shot
+bubble_gum_shot
 Bubble Gum Shot
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 NULL
 NULL
 74
-tequila sunrise
+tequila_sunrise
 Tequila Sunrise
 http://cdn.barmano.com/recipe-images/tequila-sunrise-cocktail-54-small.jpg
 NULL
 NULL
 75
-french connection
-French Connection
-http://cdn.barmano.com/recipe-images/french-connection-cocktail-4-small.jpg
-NULL
-NULL
-76
-blue hawaiian
+blue_hawaiian
 Blue Hawaiian
 http://cdn.barmano.com/recipe-images/blue-hawaiian-cocktail-279-small.jpg
 NULL
 NULL
-77
+76
 grasshopper
 Grasshopper
 http://cdn.barmano.com/recipe-images/grasshopper-cocktail-34-small.jpg
 NULL
 NULL
-78
-long island iced tea
+77
+long_island_iced_tea
 Long Island Iced Tea
 http://cdn.barmano.com/recipe-images/long-island-iced-tea-cocktail-61-small.jpg
 NULL
 NULL
+78
+french_connection
+French Connection
+http://cdn.barmano.com/recipe-images/french-connection-cocktail-4-small.jpg
+NULL
+NULL
 79
-german chocolate cake shooter
+german_chocolate_cake_shooter
 German Chocolate Cake shooter
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 NULL
@@ -479,19 +479,19 @@ http://cdn.barmano.com/recipe-images/god-father-cocktail-31-small.jpg
 NULL
 NULL
 81
-white russian
+white_russian
 White Russian
 http://cdn.barmano.com/recipe-images/white-russian-cocktail-2-small.jpg
 NULL
 NULL
 82
-b-52 shot
+b-52_shot
 B-52 shot
 http://cdn.barmano.com/recipe-images/b-52-cocktail-5-small.jpg
 NULL
 NULL
 83
-atomic cat
+atomic_cat
 Atomic Cat
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 NULL

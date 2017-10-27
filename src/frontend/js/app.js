@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-import HomePage         from './Pages/HomePage.js';
-import CocktailsPage    from './Pages/CocktailsPage.js';
-import IngredientsPage  from './Pages/IngredientsPage.js';
-import BrandsPage       from './Pages/BrandsPage.js';
-import AboutPage        from './Pages/AboutPage.js';
-import CountriesPage        from './Pages/CountriesPage.js';
+import HomePage         from './pages/HomePage.js';
+import CocktailsPage    from './pages/CocktailsPage.js';
+import IngredientsPage  from './pages/IngredientsPage.js';
+import BrandsPage       from './pages/BrandsPage.js';
+import CountriesPage    from './pages/CountriesPage.js';
+import AboutPage        from './pages/AboutPage.js';
 
-import TipsyNavbar from "./TipsyNavbar.js";
+import TipsyNavbar from "./components/TipsyNavbar.js";
 
 ReactDOM.render((
     <BrowserRouter>

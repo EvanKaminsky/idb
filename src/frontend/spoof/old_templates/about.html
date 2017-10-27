@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="{{url_for('static', filename='css/about.css')}}" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <div id = "navbar" class = "container">
+    <div class = "row">
+      <div class = "col-md-2"><a href="index.html">Home</a></div>
+      <div class = "col-md-2"><a href="cocktails.html">Cocktails</a></div>
+      <div class = "col-md-2"><a href="ingredients.html">Ingredients</a></div>
+      <div class = "col-md-2"><a href="brands.html">Brands</a></div>
+      <div class = "col-md-2"><a href="countries.html">Countries</a></div>
+      <div class = "col-md-2"><a href="about.html">About</a></div>
+    </div>
+  </div>
+  <body>
+    <br>
+    <h1>About Us</h1>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <div id = "about" class = "row">
+      <div class = "col-md-12">
+        <h3>About</h3>
+        TipsyMix is a platform that allows user to search for cocktails based off of a variety of attributes. Whether you're a professional bartender or a college student, this site is for you.
+        <br>
+        Total Commits: 48
+        <br>
+        Total Issues: 23
+        <br>
+        Total Unit Tests: 0
+        <br>
+        Links: <a href="https://github.com/EvanKaminsky/idb">GitHub Repo</a> | <a href = "https://trello.com/b/0Ks1mfas/primary">Trello</a> | <a href = "http://docs.evankaminsky.apiary.io/">Apiary API</a> | <a href = "https://utexas.box.com/s/5ipui9nvcda5ft29ekc1euk91f2499rs">Technical Report</a>
+        <br>
+        Data Sources: <a href="http://www.1001cocktails.com/recipes/most-popular-mixed-drinks.html">1001 Cocktails</a> | <a href="http://www.barnonedrinks.com/drinks/top_ingredients/">BarnOne Drinks</a> | <a href="https://en.wikipedia.org/wiki/List_of_national_liquorshttps://www.thewhiskyexchange.com/brands/spirits">Wikipedia</a> | <a href="https://www.thewhiskyexchange.com/brands/spirits">The Whisky Exchange</a>
+        <br>
+        Data was scraped manually for the time being.
+        <br>
+        <h3>Tools Used</h3>
+        <b>Apiary</b> was used to document and host our API with data scraped from the aforementioned data sources.
+        <br>
+        <b>Trello</b> was used to track issues.
+        <br>
+        <b>GitHub</b> was used to host our code.
+        <br>
+        <b>SublimeText</b> and <b>Atom</b> were used to write all of the HTML and CSS.
+      </div>
+    </div>
+    <div id = "names" class = "container">
+      <div class = "row">
+        <div class = "col-md-1"></div>
+        <div class = "col-md-2">
+          <h3>Rohit</h3>
+          <img class="img-responsive" src="{{url_for('static', filename='assets/faces/rohit.jpg')}}">
+          <p>Hi, my name is Rohit and I'm a junior CS major at UT. I'm interested in AI and machine learning as possible topics to study in the future.</p>
+          <p>For this project, I got multiple instances of each model and labeled all their attributes. I also contributed to the technical report.</p>
+          <p>Commits: 0</p>
+          <p>Unit Tests: 0</p>
+          <p>Issues: 5</p>
+        </div>
+        <div class = "col-md-2">
+          <h3>Mica</h3>
+          <img class="img-responsive" src="{{url_for('static', filename='assets/faces/mica.jpg')}}">
+          <p>I'm Mica, a senior computer science major with a UTeach minor. I'm interested in computer science as a tool in education, so much so it is the topic of my undergraduate thesis, and after working in industry I want to teach high school computer science.</p>
+          <p>I worked on the front-end design of the static website using Bootstrap, CSS, and HTML and contributed to the creation of user stories.</p>
+          <p>Commits: 13</p>
+          <p>Unit Tests: 0</p>
+          <p>Issues: 7</p>g
+        </div>
+        <div class = "col-md-2">
+          <h3>Abhi</h3>
+          <img class="img-responsive" src="{{url_for('static', filename='assets/faces/abhi.jpg')}}">
+          <p>Hello, I'm Abhi Ilindra. I'm a CS major interested in computational linguistics as well as natural language processing.</p>
+          <p>In this project I worked primarily on front-end design, using HTML5, CSS, and Bootstrap. I also helped document the site in the technical report and create user stories.</p>
+          <p>Commits: 16</p>
+          <p>Unit Tests: 0</p>
+          <p>Issues: 7</p>
+        </div>
+        <div class = "col-md-2">
+          <h3>Evan</h3>
+          <img class="img-responsive" src="{{url_for('static', filename='assets/faces/evan.jpg')}}">
+          <p>My name is Evan Kaminsky and I’m a junior at UT Austin. I’m currently taking AI and software engineering, and plan on doing research in systems.</p>
+          <p>For this project, I’ll be working on our React frontend and managing Google Cloud Platform.</p>
+          <p>Commits: 14</p>
+          <p>Unit Tests: 0</p>
+          <p>Issues: 7</p>
+        </div>
+        <div class = "col-md-2">
+          <h3>Balazs</h3>
+          <img class="img-responsive" src="{{url_for('static', filename='assets/faces/balazs.jpg')}}">
+          <p>Hi, my name is Balazs and I'm a junior at UT majoring in CS(Turing) and Pure Math. I'm interested in computation/complexity theory as well as graphics for possible future research, but I plan to work in software development for some time after college.</p>
+          <p>For this project, I created our API writeup, helped design our models, and contributed to the technical report.</p>
+          <p>Commits: 4</p>
+          <p>Unit Tests: 0</p>
+          <p>Issues: 7</p>
+        </div>
+        <div class = "col-md-1"></div>
+      </div>
+    <div>
+  </body>
+</html>

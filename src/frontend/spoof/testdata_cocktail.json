@@ -1,0 +1,85 @@
+[
+    {
+      "id": "",
+      "stdname": "like-hand-grenade",
+      "name": "Like Hand Grenade",
+      "image": "http://www.1001cocktails.com/images/like-hand-grenade-5504.jpg",
+      "color": "green",
+      "description": "An amalgam of many different drinks. Sounds like an unholy mess, but is great.",
+      "abv": "",
+      "video": "",
+      "garnish": "",
+      "glass": "Collins",
+      "base_spirit": "Gin",
+      "preparation": "",
+      "instructions": "",
+      "ingredients": {
+        "gin": "1 1/2 oz",
+        "grain alcohol": "1 1/2 oz",
+        "melon liqueur": "1 1/2 oz",
+        "rum": "1 1/2 oz",
+        "vodka": "1 1/2 oz"
+      },
+      "brands": [
+        "Blackwoods"
+      ],
+      "countries": "",
+      "tags": ""
+    },
+    {
+      "id": "",
+      "stdname": "flaming-lamborghini",
+      "name": "Flaming Lamborghini",
+      "image": "http://www.1001cocktails.com/images/flaming-lamborghini-5541.jpg",
+      "color": "blue",
+      "description": "A drink that's on fire. Need I say more?",
+      "abv": "",
+      "video": "",
+      "garnish": "",
+      "glass": "Cocktail",
+      "base_spirit": "Sambuca",
+      "preparation": "",
+      "instructions": "",
+      "ingredients": {
+        "coffee liqueur": "1 oz",
+        "sambuca": "1 oz",
+        "blue curacao liqueur": "1 oz",
+        "Irish cream": "1 oz"
+      },
+      "brands": [
+        "Kahlua",
+        "Tia Maria",
+        "Bailey's"
+      ],
+      "countries": "",
+      "tags": ""
+    },
+    {
+      "id": "",
+      "stdname": "blue-lagoon",
+      "name": "Blue Lagoon",
+      "image": "http://www.1001cocktails.com/images/blue-lagoon-50.jpg",
+      "color": "blue",
+      "description": "A pretty blue drink with a tangy, citrus-y flavor.",
+      "abv": "",
+      "video": "",
+      "garnish": "",
+      "glass": "Highball",
+      "base_spirit": "Vodka",
+      "preparation": "",
+      "instructions": "",
+      "ingredients": {
+        "vodka": "1 oz",
+        "blue curacao liqueur": "1 oz",
+        "lemonade": "1 oz",
+        "cherry": "1"
+      },
+      "brands": [
+        "Kahlua",
+        "Tia Maria",
+        "Bailey's"
+      ],
+      "countries": "",
+      "tags": ""
+    }
+  ]

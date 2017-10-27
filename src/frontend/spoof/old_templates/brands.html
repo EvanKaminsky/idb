@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tipsy Mix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="{{url_for('static', filename='css/index.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/cocktail.css')}}" rel="stylesheet">
+  </head>
+
+  <div id = "navbar" class = "container">
+    <div class = "row">
+      <div class = "col-md-2"><a href="index.html">Home</a></div>
+      <div class = "col-md-2"><a href="cocktails.html">Cocktails</a></div>
+      <div class = "col-md-2"><a href="ingredients.html">Ingredients</a></div>
+      <div class = "col-md-2"><a href="brands.html">Brands</a></div>
+      <div class = "col-md-2"><a href="countries.html">Countries</a></div>
+      <div class = "col-md-2"><a href="about.html">About</a></div>
+    </div>
+  </div>
+
+  <body>
+    <h1>Tipsy Mix</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div id = "searchForm">
+      <input type="text" class="search" placeholder="Search by ingredients, cocktail, country, or brand"><br>
+      <input type="submit" class="searchButton" placeholder="Search">
+    </div>
+
+
+    <section class = "container">
+      <div class = "row">
+      	<div class = "col-md-3 cocktail-box">
+      	  <img class= "img-responsive" src="http://thecocktailgeek.com/wp-content/uploads/2014/07/Blackwoods-Logo.png" />
+      	  <h5>Blackwoods</h5>
+      	  <p>Vodka, Gin</p>
+      	<a href="brands/blackwoods.html" class="btn btn-info btn-log" role ="button">More</a>
+        </div>
+
+        <div class = "col-md-3 col-md-offset-1 cocktail-box">
+      	  <img class="img-responsive" src="https://wine-searcher1.freetls.fastly.net/images/labels/66/10/olmeca-gold-tequila-mexico-10426610.jpg" />
+      	  <h5>Olmeca</h5>
+      	  <p>Tequila</p>
+      	  <a href="brands/olmeca.html" class="btn btn-info btn-log" role ="button">More</a>
+        </div>
+
+      	<div class = "col-md-3 col-md-offset-1 cocktail-box">
+      	  <img class="img-responsive" src="https://cdn.shopify.com/s/files/1/1780/9427/products/martell-cognac-xo-2_530x.png?v=1505577633"/>
+      	  <h5>Martell</h5>
+      	  <p>Cognac</p>
+      	  <a href="brands/martell.html" class="btn btn-info btn-log" role ="button">More</a>
+        </div>
+
+      </div>
+    </section>
+  </body>
+
+</html>
