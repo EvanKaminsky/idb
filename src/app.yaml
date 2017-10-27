@@ -10,5 +10,15 @@ handlers:
   script: main.app
 # [END handlers]
 
+libraries:
+- name: MySQLdb
+  version: "latest"
+
+env_variables:
+    CLOUDSQL_CONNECTION_NAME: tipsymix-ttp:us-central1:tipsy-db
+    CLOUDSQL_USER: root
+    CLOUDSQL_PASSWORD: tipsymix
+
 beta_settings:
   cloud_sql_instances: "tipsymix-ttp:us-central1:tipsy-db"
+
