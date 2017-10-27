@@ -21,7 +21,7 @@ it as a list of strings.
 from flask import Flask, render_template, request
 import json
 
-#from backend import api as API
+from backend import api
 
 ################################
 # Flask Setup #
@@ -45,27 +45,38 @@ def search():
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
-    return json.dumps(API.search(category, query, filterRules, count, page, pagesize))
+
+    response = json.dumps(api.search(category, query, filterRules, count, page, pagesize))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route(base_api + "cocktails/<slug>")
 def cocktail_detail(slug):
     print("cocktail " + slug)
-    return json.dumps(API.cocktailDetail(slug))
+    response = json.dumps(api.cocktailDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route(base_api + "ingredients/<slug>")
 def ingredient_detail(slug):
     print("ingredient " + slug)
-    return json.dumps(API.ingredientDetail(slug))
+    response = json.dumps(api.ingredientDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route(base_api + "brands/<slug>")
 def brand_detail(slug):
     print("brand " + slug)
-    return json.dumps(API.brandDetail(slug))
+    response = json.dumps(api.brandDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route(base_api + "countries/<slug>")
 def country_detail(slug):
     print("country " + slug)
-    return json.dumps(API.countryDetail(slug))
+    response = json.dumps(api.countryDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 ################################

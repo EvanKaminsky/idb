@@ -6,11 +6,8 @@ threadsafe: true
 handlers:
 - url: /frontend
   static_dir: /frontend
-- url: /.*
+- url: /.*git
   script: main.app
-  http_headers:
-      Access-Control-Allow-Origin: "*"
-
 # [END handlers]
 
 libraries:

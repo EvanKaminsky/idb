@@ -1,7 +1,6 @@
-
-from flask_sqlalchemy import SQLAlchemy
-from flask_sqlalchemy import create_engine
 import itertools
+import os
+import MySQLdb
 
 # Low-level python wrapper around our database
 
