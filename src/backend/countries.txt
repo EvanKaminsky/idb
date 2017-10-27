@@ -294,22 +294,22 @@ Colombia
 NULL
 NULL
 65
-london,_uk
+london_uk
 London, UK
 NULL
 NULL
 66
-hamilton,_bermuda
+hamilton_bermuda
 Hamilton, Bermuda
 NULL
 NULL
 67
-london,_uk
+london_uk
 London, UK
 NULL
 NULL
 68
-paris,_france)
-Paris, France)
+paris_france
+Paris, France
 NULL
 NULL

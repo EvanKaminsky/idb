@@ -23,7 +23,7 @@ http://static5.businessinsider.com/image/5721212d910584e73c8bf3e1-1200/no-22-cro
 Brand value: $595 million
 NULL
 5
-grant's
+grant_s
 Grant's
 http://static4.businessinsider.com/image/572121bf91058422008bf55d-1200/no-21-grants.jpg
 Brand value: $596 million
@@ -47,13 +47,13 @@ http://static2.businessinsider.com/image/554aa226ecad04da6c531ed4-1200/no-18-jam
 Brand value: $706 million
 NULL
 9
-ballantine's
+ballantine_s
 Ballantine's
 http://static2.businessinsider.com/image/5721229591058436008bf6ef-1200/no-17-ballantines.jpg
 Brand value: $713 million
 NULL
 10
-mcdowell's
+mcdowell_s
 Mcdowell's
 http://static1.businessinsider.com/image/5721231191058422008bf56f-1200/no-16-mcdowells.jpg
 Brand value: $805 million
@@ -89,7 +89,7 @@ http://static3.businessinsider.com/image/55eef5b8bd86ef1a008b8a6f-1200/no-11-rua
 Brand value: $1.29 billion
 NULL
 16
-h3_class="slide-title">no._10_absolut
+10_absolut
 h3 class="slide-title">No. 10 Absolut
 http://static3.businessinsider.com/image/56be3a2b2e52651c008b6fd7-1200/no-10-absolut.jpg
 Brand value: $1.43 billion
@@ -125,7 +125,7 @@ http://static5.businessinsider.com/image/558aa38f69bedde20357802d-1200/no-5-smir
 Brand value: $2.02 billion
 NULL
 22
-jack_daniel’s
+jack_daniel_s
 Jack Daniel’s
 http://static4.businessinsider.com/image/54625df26da811c71c1952e4-1200/no-4-jack-daniels.jpg
 Brand value: $2.50 billion
