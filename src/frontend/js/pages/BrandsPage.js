@@ -3,6 +3,7 @@ import React from 'react';
 /* Local Imports */
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
+import API from "../api.js"
 
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_brand.json');
@@ -14,11 +15,20 @@ export default class BrandsPage extends React.Component {
         super();
         this.state = {
             brands: data,
+            api: new API()
         }
     }
 
     componentDidMount() {
+        this.reload()
+    }
 
+    reload() {
+        this.state.api.getBrands(brands => {
+            if (brands !== null) {
+                this.setState({brands: brands});
+            }
+        })
     }
 
     render() {
@@ -29,7 +39,7 @@ export default class BrandsPage extends React.Component {
 
             <div id = "searchForm">
                 <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                <input type="submit" className="searchButton" placeholder="Search" />
+                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
             </div>
 
             <section className = "container">

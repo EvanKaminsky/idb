@@ -1,4 +1,4 @@
-const base_api = "https://boiling-fortress-21285.herokuapp.com/api/";
+const base_api = "https://tipsymix-ttp.appspot.com/api/";
 
 /* Networking layer for the React frontend */
 function API() {
@@ -25,6 +25,7 @@ function API() {
             })
             .catch((error) => {
                 console.error(error);
+                callback(null);
             })
     };
 
@@ -44,59 +45,52 @@ function API() {
     };
 
     this.getCocktails = function(callback) {
-
-
+        this.get("search?category=cocktail", cocktails =>
+            callback(cocktails)
+        )
     };
 
     this.getIngredients = function(callback) {
-
-
+        this.get("search?category=ingredient", ingredients =>
+            callback(ingredients)
+        )
     };
 
-    this.getCoutnries = function(callback) {
-
-
+    this.getCountries = function(callback) {
+        this.get("search?category=country", countries =>
+            callback(countries)
+        )
     };
 
     this.getBrands = function(callback) {
-
-
+        this.get("search?category=brand", brands =>
+            callback(brands)
+        )
     };
 
     this.getCocktailDetail = function(slug, callback) {
-
-
+        this.get("cocktails/" + slug, cocktail =>
+            callback(cocktail)
+        )
     };
 
     this.getIngredientDetail = function(slug, callback) {
-
-
+        this.get("ingredients/" + slug, ingredient =>
+            callback(ingredient)
+        )
     };
 
     this.getCountryDetail = function(slug, callback) {
-
-
+        this.get("countries/" + slug, country =>
+            callback(country)
+        )
     };
 
     this.getBrandDetail = function(slug, callback) {
-
-
-    };
-
-
-
-
-    this.login = function(callback) {
-        this.get("login", json =>
-            callback(json.result)
+        this.get("brands/" + slug, brand  =>
+            callback(brand)
         )
     };
-
-    this.register = function(username, callback) {
-        this.post("adduser", {"name": username}, json =>
-            callback(json)
-        )
-    }
 
 }
 
