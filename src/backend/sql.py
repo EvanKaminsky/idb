@@ -1,6 +1,7 @@
 import itertools
 import os
 import MySQLdb
+import MySQLdb.cursors
 
 # Low-level python wrapper around our database
 
@@ -35,7 +36,7 @@ def connect_to_cloudsql():
     return db
 
 db = connect_to_cloudsql()
-cursor = db.cursor()
+cursor = db.cursor(MySQLdb.cursors.DictCursor)
 
 # SELECT query
 # 	+ SELECT select_q FROM from_q WHERE where_q
@@ -44,9 +45,9 @@ def sql_select(select_q, from_q, where_q):
     if where_q is not None:
         qString += " WHERE " + str(where_q)
     result = cursor.execute(qString)
-    desc = result.description
-    col_names = [col[0] for col in desc]
-    return [dict(itertools.izip(col_names, x)) for x in result.fetchAll()]
+    #desc = result.description
+    #col_names = [col[0] for col in desc]
+    return [dict(x) for x in result.fetchAll()]
 
 # Fetch all instances of a class
 def sql_fetchAll(category):
