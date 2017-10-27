@@ -5,11 +5,13 @@ import itertools
 
 # Low-level python wrapper around our database
 
-engine = create_engine('mysql+mysqldb://root:tipsymix@/tipsy_backend?unix_socket=/cloudsql/tipsymix-ttp:tipsy-db')
+#engine = create_engine('mysql+mysqldb://root:tipsymix@/tipsy_backend?unix_socket=/cloudsql/tipsymix-ttp:tipsy-db')
 
-# for local testing use:
-#engine = create_engine('mysql+mysqldb://root:tipsymix@localhost:3306/tipsy_backend')
-db = engine.connect()
+cnx = mysql.connector.connect(user='root', password='tipsymix',
+                              host='127.0.0.1',
+                              database='tipsy_backend')
+c = cnx.cursor()
+#db = engine.connect()
 
 # SELECT query
 # 	+ SELECT select_q FROM from_q WHERE where_q

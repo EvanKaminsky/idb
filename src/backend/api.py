@@ -238,13 +238,13 @@ def get_average_color(x, y, n, image):
 
 # Looks up the id number associated with a given standardized name
 def idLookup(slug, type):
-    # perform lookup
-    return 1
+    a = sql_select("id", type, "stdname="+slug)
+    return int(a[0].get("id"))
 
 # Looks up the standardized name associated with a given id number
 def stdLookup(slug, type):
-    # perform lookup
-    return "test"
+    a = sql_select("stdname", type, "id="+slug)
+    return a[0].get("stdname")
 
 
 # Attempts to find the ABV of a cocktail from the description

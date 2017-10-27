@@ -352,7 +352,7 @@ Colombia
 NULL
 NULL
 South America
-63
+60
 london, uk
 London, UK
 NULL
