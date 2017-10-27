@@ -8,9 +8,6 @@ handlers:
   static_dir: /frontend
 - url: /.*
   script: main.app
-  http_headers:
-      Access-Control-Allow-Origin: "*"
-
 # [END handlers]
 
 libraries:

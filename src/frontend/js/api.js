@@ -45,25 +45,25 @@ function API() {
     };
 
     this.getCocktails = function(callback) {
-        this.get("search?category=cocktail", cocktails =>
+        this.get("search?category=cocktails", cocktails =>
             callback(cocktails)
         )
     };
 
     this.getIngredients = function(callback) {
-        this.get("search?category=ingredient", ingredients =>
+        this.get("search?category=ingredients", ingredients =>
             callback(ingredients)
         )
     };
 
     this.getCountries = function(callback) {
-        this.get("search?category=country", countries =>
+        this.get("search?category=countries", countries =>
             callback(countries)
         )
     };
 
     this.getBrands = function(callback) {
-        this.get("search?category=brand", brands =>
+        this.get("search?category=brands", brands =>
             callback(brands)
         )
     };

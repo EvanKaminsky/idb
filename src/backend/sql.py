@@ -1,7 +1,7 @@
-
-from flask_sqlalchemy import SQLAlchemy
-from flask_sqlalchemy import create_engine
 import itertools
+import os
+import MySQLdb
+import MySQLdb.cursors
 
 # Low-level python wrapper around our database
 
@@ -22,7 +22,8 @@ def connect_to_cloudsql():
         db = MySQLdb.connect(
             unix_socket=cloudsql_unix_socket,
             user=CLOUDSQL_USER,
-            passwd=CLOUDSQL_PASSWORD)
+            passwd=CLOUDSQL_PASSWORD,
+            db='tipsy_backend')
 
     # If the unix socket is unavailable, then try to connect using TCP. This
     # will work if you're running a local MySQL server or using the Cloud SQL
@@ -32,27 +33,28 @@ def connect_to_cloudsql():
     #
     else:
         db = MySQLdb.connect(
-            host='127.0.0.1', user=CLOUDSQL_USER, passwd=CLOUDSQL_PASSWORD)
-
+            host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
     return db
 
 db = connect_to_cloudsql()
-cursor = db.cursor()
 
 # SELECT query
 # 	+ SELECT select_q FROM from_q WHERE where_q
 def sql_select(select_q, from_q, where_q):
-    qString = "SELECT "+str(select_q)+" FROM "+str(from_q)
-    if(where_q is not None):
-        qString += " WHERE "+str(where_q)
-	result = cursor.execute(qString)
-	desc = result.description
-	col_names = [col[0] for col in desc]
-	return [dict(itertools.izip(col_names, x)) for x in result.fetchAll()]
+    qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
+    if where_q is not None:
+        qString += " WHERE " + str(where_q)
+
+    cursor = db.cursor(MySQLdb.cursors.DictCursor)
+    cursor.execute(qString)
+    #desc = result.description
+    #col_names = [col[0] for col in desc]
+    result = [dict(x) for x in cursor.fetchall()]
+    return result
 
 # Fetch all instances of a class
 def sql_fetchAll(category):
-	return sql_select("*", category.upper(), None)
+    return sql_select("*", category.upper(), None)
 
 # Utility method to return the name of the many-to-many linking tables
 def getLinkTableName(table1, table2):

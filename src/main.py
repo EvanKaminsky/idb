@@ -18,10 +18,9 @@ it as a list of strings.
 
 """
 
-from flask import Flask, render_template, request
-import json
+from flask import Flask, render_template, request, jsonify
 
-#from backend import api as API
+from backend import api
 
 ################################
 # Flask Setup #
@@ -36,36 +35,48 @@ app = Flask(__name__, template_folder="frontend/templates",  static_folder="fron
 
 base_api = "/api/"
 
-@app.route(base_api + "search")
+@app.route(base_api + "search", methods=['GET'])
 def search():
-    print("search")
+    print("---------- SEARCH ----------")
+
     category =      request.args.get('category', default=None, type=str)
     query =         request.args.get('query', default=None, type=str)
     filterRules =   request.args.get('filterRules', default=None, type=str)
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
-    return json.dumps(API.search(category, query, filterRules, count, page, pagesize))
 
-@app.route(base_api + "cocktails/<slug>")
+    response = jsonify(api.search(category, query, filterRules, count, page, pagesize))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route(base_api + "cocktails/<slug>", methods=['GET'])
 def cocktail_detail(slug):
     print("cocktail " + slug)
-    return json.dumps(API.cocktailDetail(slug))
+    response = jsonify(api.cocktailDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
-@app.route(base_api + "ingredients/<slug>")
+@app.route(base_api + "ingredients/<slug>", methods=['GET'])
 def ingredient_detail(slug):
     print("ingredient " + slug)
-    return json.dumps(API.ingredientDetail(slug))
+    response = jsonify(api.ingredientDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
-@app.route(base_api + "brands/<slug>")
+@app.route(base_api + "brands/<slug>", methods=['GET'])
 def brand_detail(slug):
     print("brand " + slug)
-    return json.dumps(API.brandDetail(slug))
+    response = jsonify(api.brandDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
-@app.route(base_api + "countries/<slug>")
+@app.route(base_api + "countries/<slug>", methods=['GET'])
 def country_detail(slug):
     print("country " + slug)
-    return json.dumps(API.countryDetail(slug))
+    response = jsonify(api.countryDetail(slug))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 ################################
