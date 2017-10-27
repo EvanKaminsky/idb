@@ -8,7 +8,10 @@ from sqlalchemy.orm import sessionmaker
 from itertools import islice
 
 # Fill this out
-engine_internal = create_engine('mysql+mysqldb://root:tipsymix@/tipsy_backend?unix_socket=/cloudsql/tipsymix-ttp:tipsy-db')
+engine_internal = create_engine("mysql+mysqlconnector://%s:%s@%s/%s"
+     % ("youruser", "yourpassword", "yourhostname.com:3306",
+     "yourdatabasename"),
+     pool_size=3, pool_recycle=3600)
 
 Internal = sessionmaker(bind=engine_internal)
 
@@ -48,6 +51,7 @@ with open('ingredients.txt') as ig:
         s = list(islice(br, 6))
         s[0] = int(s[0])
         s.insert(4, color_const)
+        s[6] = int(s[6])
         c.execute('INSERT INTO INGREDIENTS values (?, ?, ?, ?, ?, ?, ?)', s)
         if not s:
             break

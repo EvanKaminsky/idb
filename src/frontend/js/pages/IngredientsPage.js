@@ -37,7 +37,7 @@ export default class IngredientsPage extends React.Component {
                     { this.state.ingredients.map(function(ingredient, i) {
                         return (
                             <div className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className ="img-responsive" src={"" + ingredient.image} />]
+                                <img className ="img-responsive" src={"" + ingredient.image} />
                                 <h5>{ingredient.name}</h5>
                                 <p>{ingredient.description}</p>
                                 <a href={"" + ingredient.stdname} className="btn btn-info btn-log" role ="button">More</a>

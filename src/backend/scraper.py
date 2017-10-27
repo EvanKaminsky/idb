@@ -48,7 +48,7 @@ for i in range(len(drinks)):
     '''
 
     cocktail_name = j[ind + 2 : ind2 - 1]
-    country_name = j[ind2 + 1 : ind3]
+    country_name = str(j[ind2 + 1 : ind3])
 
     if country_name == 'Turkey':
         cocktail_name = 'Raki'
@@ -57,7 +57,7 @@ for i in range(len(drinks)):
     cocktails_id += 1
     cocktails_file.write(cocktails_dict[cocktail_name])
     cocktails_file.write('\n')
-    cocktails_file.write(cocktail_name.lower())
+    cocktails_file.write(cocktail_name.lower().replace(" ", "_"))
     cocktails_file.write('\n')
     cocktails_file.write(cocktail_name)
     cocktails_file.write('\n')
@@ -79,7 +79,7 @@ for i in range(len(drinks)):
     countries_id += 1
     countries_file.write(countries_dict[country_name])
     countries_file.write('\n')
-    countries_file.write(country_name.lower())
+    countries_file.write(country_name.lower().replace(" ", "_"))
     countries_file.write('\n')
     countries_file.write(country_name)
     countries_file.write('\n')
@@ -142,7 +142,7 @@ for x in range(len(strings) - 1):
         cocktails_id += 1
         cocktails_file.write(cocktails_dict[cocktail_name])
         cocktails_file.write('\n')
-        cocktails_file.write(cocktail_name.lower())
+        cocktails_file.write(cocktail_name.lower().replace(" ", "_"))
         cocktails_file.write('\n')
         cocktails_file.write(cocktail_name)
         cocktails_file.write('\n')
@@ -162,21 +162,23 @@ for x in range(len(strings) - 1):
             '''
             print(ingreds[j][ind3 + 7 : ind4])
             '''
-            ingred_name = ingreds[j][ind3 + 7 : ind4]
-            ingredients_dict[ingred_name] = str(ingredients_id)
-            ingredients_id += 1
-            ingredients_file.write(ingredients_dict[ingred_name])
-            ingredients_file.write('\n')
-            ingredients_file.write(ingred_name.lower())
-            ingredients_file.write('\n')
-            ingredients_file.write(ingred_name)
-            ingredients_file.write('\n')
-            ingredients_file.write('NULL')
-            ingredients_file.write('\n')
-            ingredients_file.write('NULL')
-            ingredients_file.write('\n')
-            ingredients_file.write('NULL')
-            ingredients_file.write('\n')
+            ingred_name = str(ingreds[j][ind3 + 7 : ind4])
+
+            if ingred_name not in ingredients_dict:
+                ingredients_dict[ingred_name] = str(ingredients_id)
+                ingredients_id += 1
+                ingredients_file.write(ingredients_dict[ingred_name])
+                ingredients_file.write('\n')
+                ingredients_file.write(ingred_name.lower().replace(" ", "_"))
+                ingredients_file.write('\n')
+                ingredients_file.write(ingred_name)
+                ingredients_file.write('\n')
+                ingredients_file.write('NULL')
+                ingredients_file.write('\n')
+                ingredients_file.write('NULL')
+                ingredients_file.write('\n')
+                ingredients_file.write('0')
+                ingredients_file.write('\n')
 
             cocktail_ingredient_file.write(cocktails_dict[cocktail_name])
             cocktail_ingredient_file.write(' ')
@@ -244,7 +246,7 @@ for i in range(len(brands)):
     brands_id += 1
     brands_file.write(brands_dict[brand_name])
     brands_file.write('\n')
-    brands_file.write(brand_name.lower())
+    brands_file.write(brand_name.lower().replace(" ", "_"))
     brands_file.write('\n')
     brands_file.write(brand_name)
     brands_file.write('\n')
@@ -262,7 +264,7 @@ for i in range(len(brands)):
         ingredients_id += 1
         ingredients_file.write(ingredients_dict[ingred_name])
         ingredients_file.write('\n')
-        ingredients_file.write(ingred_name.lower())
+        ingredients_file.write(ingred_name.lower().replace(" ", "_"))
         ingredients_file.write('\n')
         ingredients_file.write(ingred_name)
         ingredients_file.write('\n')
@@ -270,7 +272,7 @@ for i in range(len(brands)):
         ingredients_file.write('\n')
         ingredients_file.write('NULL')
         ingredients_file.write('\n')
-        ingredients_file.write('NULL')
+        ingredients_file.write('0')
         ingredients_file.write('\n')
 
     ingredient_brand_file.write(ingredients_dict[ingred_name])
@@ -320,34 +322,48 @@ for i in range(len(cols)):
 
 for i in range(len(brands_5)):
     brand_name = brands_5[i]
+    country_name = str(countries_5[i])
 
-    brands_file.write(brands_dict[brand_name])
-    brands_file.write('\n')
-    brands_file.write(brand_name.lower())
-    brands_file.write('\n')
-    brands_file.write(brand_name)
-    brands_file.write('\n')
-    brands_file.write('NULL')
-    brands_file.write('\n')
-    brands_file.write(desc_5[i])
-    brands_file.write('\n')
-    brands_file.write('NULL')
-    brands_file.write('\n')
+    if country_name != 'Brazil' and brand_name != 'Bacardi' and brand_name != 'Johnnie Walker':
+        brands_dict[brand_name] = str(brands_id)
+        brands_id += 1
+        brands_file.write(brands_dict[brand_name])
+        brands_file.write('\n')
+        brands_file.write(brand_name.lower().replace(" ", "_"))
+        brands_file.write('\n')
+        brands_file.write(brand_name)
+        brands_file.write('\n')
+        brands_file.write('NULL')
+        brands_file.write('\n')
+        brands_file.write(desc_5[i])
+        brands_file.write('\n')
+        brands_file.write('NULL')
+        brands_file.write('\n')
 
-    country_name = countries_5[i]
+    if country_name != 'Brazil':
+        countries_dict[country_name] = str(countries_id)
+        countries_id += 1
+        countries_file.write(countries_dict[country_name])
+        countries_file.write('\n')
+        countries_file.write(country_name.lower().replace(" ", "_"))
+        countries_file.write('\n')
+        countries_file.write(country_name)
+        countries_file.write('\n')
+        countries_file.write('NULL')
+        countries_file.write('\n')
+        countries_file.write('NULL')
+        countries_file.write('\n')
 
-    countries_file.write(countries_dict[country_name])
-    countries_file.write('\n')
-    countries_file.write(country_name.lower())
-    countries_file.write('\n')
-    countries_file.write(country_name)
-    countries_file.write('\n')
-    countries_file.write('NULL')
-    countries_file.write('\n')
-    countries_file.write('NULL')
-    countries_file.write('\n')
+    key = 1
 
-    brand_country_file.write(brands_dict[brand_name])
+    if brand_name == 'Bacardi':
+        key = 20
+    elif brand_name == 'Johnnie Walker':
+        key = 24
+    else:
+        key = brands_dict[brand_name]
+
+    brand_country_file.write(str(key))
     brand_country_file.write(' ')
     brand_country_file.write(countries_dict[country_name])
     brand_country_file.write('\n')
