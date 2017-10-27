@@ -6,7 +6,7 @@ threadsafe: true
 handlers:
 - url: /frontend
   static_dir: /frontend
-- url: /.*git
+- url: /.*
   script: main.app
 # [END handlers]
 
