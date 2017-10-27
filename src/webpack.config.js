@@ -21,7 +21,7 @@ module.exports = {
             test: /\.(jpe?g|png|gif|svg)$/i,
             loaders: [
                 'image-webpack-loader',
-                'file-loader?name=/public/[name].[ext]'
+                'file-loader?name=/webpacked_media/[name].[ext]'
             ]
         }]
     }
