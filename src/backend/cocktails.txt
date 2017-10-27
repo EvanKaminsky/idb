@@ -95,8 +95,8 @@ NULL
 Mama Juana is a mixture of rum, red wine, honey, tree bark, and herbs soaked in a bottle.
 NULL
 17
-brennivín
-Brennivín
+brennivin
+Brennivin
 NULL
 The word Schnapps itself comes from the German word for “swallow.
 NULL
@@ -104,7 +104,7 @@ NULL
 waragi
 Waragi
 NULL
-Brennivín is Iceland’s version of gin.
+Brennivin is Iceland’s version of gin.
 NULL
 19
 jinmen_gaoliang

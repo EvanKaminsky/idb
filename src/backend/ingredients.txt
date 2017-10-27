@@ -17,7 +17,7 @@ NULL
 NULL
 NULL
 4
-vodka,_lemon
+vodka_lemon
 Vodka, lemon
 NULL
 NULL
@@ -35,19 +35,19 @@ NULL
 NULL
 NULL
 7
-bailey's_irish_cream
+baileys_irish_cream
 Bailey's Irish Cream
 NULL
 NULL
 NULL
 8
-kahlúa
-Kahlúa
+kahlua
+Kahlua
 NULL
 NULL
 NULL
 9
-liqueur,_peach
+liqueur_peach
 Liqueur, peach
 NULL
 NULL
@@ -65,7 +65,7 @@ NULL
 NULL
 NULL
 12
-liqueur,_coffee
+liqueur_coffee
 Liqueur, coffee
 NULL
 NULL
@@ -83,8 +83,8 @@ NULL
 NULL
 NULL
 15
-curaçao,_blue
-Curaçao, blue
+curacao,_blue
+Curacao, blue
 NULL
 NULL
 NULL
@@ -119,7 +119,7 @@ NULL
 NULL
 NULL
 21
-rum,_overproof/151_proof
+rum_
 Rum, overproof/151 proof
 NULL
 NULL
@@ -137,7 +137,7 @@ NULL
 NULL
 NULL
 24
-rum,_white/light
+rum_white_light
 Rum, white/light
 NULL
 NULL
@@ -167,20 +167,20 @@ NULL
 NULL
 NULL
 29
-crème_de_menthe
-Crème de Menthe
+creme_de_menthe
+Creme de Menthe
 NULL
 NULL
 NULL
 30
-liqueur,_apple
+liqueur_apple
 Liqueur, apple
 NULL
 NULL
 NULL
 31
-crème_de_bananes
-Crème de Bananes
+creme_de_bananes
+Creme de Bananes
 NULL
 NULL
 NULL
@@ -191,8 +191,8 @@ NULL
 NULL
 NULL
 33
-crème_de_coconut
-Crème de Coconut
+creme_de_coconut
+Creme de Coconut
 NULL
 NULL
 NULL
@@ -203,13 +203,13 @@ NULL
 NULL
 NULL
 35
-crème_de_cacao,_white
-Crème de Cacao, white
+creme_de_cacao_white
+Creme de Cacao, white
 NULL
 NULL
 NULL
 36
-syrup,_gomme
+syrup_gomme
 Syrup, Gomme
 NULL
 NULL
@@ -227,13 +227,13 @@ NULL
 NULL
 NULL
 39
-liqueur,_butterscotch
+liqueur_butterscotch
 Liqueur, butterscotch
 NULL
 NULL
 NULL
 40
-whiskey,_scotch
+whiskey_scotch
 Whiskey, Scotch
 NULL
 NULL
@@ -281,7 +281,7 @@ NULL
 NULL
 NULL
 49
-rum,_brandy,_whisky
+rum_brandy_whisky
 Rum, Brandy, Whisky
 NULL
 NULL
