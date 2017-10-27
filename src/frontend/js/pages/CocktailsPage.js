@@ -6,6 +6,14 @@ import "../../static/css/about.css"
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_cocktail.json');
 
+let backgroundURL = "/static/public/index.jpg";
+
+const background = {
+    backgroundImage: 'url(' + backgroundURL + ')',
+    flex: 1,
+    resizeMode: 'cover', // or 'stretch'
+};
+
 /* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
 
@@ -27,7 +35,7 @@ export default class CocktailsPage extends React.Component {
 
     render() {
         return (
-            <body style = {backgroundStyle}>
+            <body style = {background}>
 
             <h1>Tipsy Mix</h1>
 

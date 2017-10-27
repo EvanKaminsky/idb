@@ -7,6 +7,14 @@ import "../constants.js"
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_ingredient.json');
 
+let backgroundURL = "/static/public/index.jpg";
+
+const background = {
+    backgroundImage: 'url(' + backgroundURL + ')',
+    flex: 1,
+    resizeMode: 'cover', // or 'stretch'
+};
+
 /* Page with a grid of ingredients */
 export default class IngredientsPage extends React.Component {
 
@@ -23,7 +31,7 @@ export default class IngredientsPage extends React.Component {
 
     render() {
         return (
-            <body style={backgroundStyle}>
+            <body style={background}>
 
             <h1>Tipsy Mix</h1>
 
@@ -37,7 +45,7 @@ export default class IngredientsPage extends React.Component {
                     { this.state.ingredients.map(function(ingredient, i) {
                         return (
                             <div className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className ="img-responsive" src={"" + ingredient.image} />]
+                                <img className ="img-responsive" src={"" + ingredient.image} />
                                 <h5>{ingredient.name}</h5>
                                 <p>{ingredient.description}</p>
                                 <a href={"" + ingredient.stdname} className="btn btn-info btn-log" role ="button">More</a>

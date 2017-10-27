@@ -1,14 +1,19 @@
 import React from 'react';
 
-/* Local Imports */
 import "../../static/css/index.css"
-import "../constants.js"
+let backgroundURL = "/static/public/index.jpg";
+
+const background = {
+    backgroundImage: 'url(' + backgroundURL + ')',
+    flex: 1,
+    resizeMode: 'cover', // or 'stretch'
+};
 
 /* Page that displays the splash screen and carousel */
 export default class HomePage extends React.Component {
     render() {
         return (
-            <body style={backgroundStyle}>
+            <body style={background}>
 
             <br/>
             <h1>Tipsy Mix</h1>

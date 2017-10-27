@@ -4,6 +4,14 @@ import React from 'react';
 import "../../static/css/about.css"
 import "../constants.js"
 
+let backgroundURL = "/static/public/index.jpg";
+
+const background = {
+    backgroundImage: 'url(' + backgroundURL + ')',
+    flex: 1,
+    resizeMode: 'cover', // or 'stretch'
+};
+
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_brand.json');
 
@@ -23,7 +31,7 @@ export default class BrandsPage extends React.Component {
 
     render() {
         return (
-            <body style={backgroundStyle}>
+            <body style={background}>
 
             <h1>Tipsy Mix</h1>
 
