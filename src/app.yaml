@@ -12,3 +12,14 @@ handlers:
 
 beta_settings:
   cloud_sql_instances: "tipsymix-ttp:us-central1:tipsy-db"
+
+skip_files:
+- logs/
+- env/
+- .git
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- node_modules/
