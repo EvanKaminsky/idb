@@ -67,17 +67,6 @@ def country_detail(slug):
     print("country " + slug)
     return json.dumps(API.countryDetail(slug))
 
-spoof_cocktails = [{
-        "name": "purple drank",
-        "brand": "lil yachty drank",
-        "year": 2015
-    }, {
-        "name": "jaegerbomb",
-        "brand": "jaeger",
-        "year": 2012
-    }
-]
-
 
 ################################
 # React Catch-All #

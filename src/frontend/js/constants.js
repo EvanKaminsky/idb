@@ -1,9 +1,10 @@
-
 const backgroundStyle = {
-    backgroundImage: 'url(/static/public/index.jpg)',
+    backgroundImage: 'url(/static/backgrounds/index.jpg)',
     flex: 1,
     resizeMode: 'cover'
 };
+
+
 
 
 

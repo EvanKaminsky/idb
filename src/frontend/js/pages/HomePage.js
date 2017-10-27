@@ -2,7 +2,7 @@ import React from 'react';
 
 /* Local Imports */
 import "../../static/css/index.css"
-import "../constants.js"
+import backgroundStyle from "../constants.js"
 
 /* Page that displays the splash screen and carousel */
 export default class HomePage extends React.Component {

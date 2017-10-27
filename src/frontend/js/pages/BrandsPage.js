@@ -2,7 +2,7 @@ import React from 'react';
 
 /* Local Imports */
 import "../../static/css/about.css"
-import "../constants.js"
+import backgroundStyle from "../constants.js"
 
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_brand.json');
