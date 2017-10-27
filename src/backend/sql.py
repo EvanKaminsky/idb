@@ -1,6 +1,6 @@
 import itertools
 import os
-import mysql.connector
+import MySQLdb
 
 # Low-level python wrapper around our database
 
@@ -18,7 +18,7 @@ def connect_to_cloudsql():
         cloudsql_unix_socket = os.path.join(
             '/cloudsql', CLOUDSQL_CONNECTION_NAME)
 
-        db = mysql.connector.connect(
+        db = MySQLdb.connect(
             unix_socket=cloudsql_unix_socket,
             user=CLOUDSQL_USER,
             passwd=CLOUDSQL_PASSWORD)
@@ -30,7 +30,7 @@ def connect_to_cloudsql():
     #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
     #
     else:
-        db = mysql.connector.connect(
+        db = MySQLdb.connect(
             host='127.0.0.1', user=CLOUDSQL_USER, passwd=CLOUDSQL_PASSWORD)
     return db
 
@@ -40,9 +40,9 @@ cursor = db.cursor()
 # SELECT query
 # 	+ SELECT select_q FROM from_q WHERE where_q
 def sql_select(select_q, from_q, where_q):
-    qString = "SELECT "+str(select_q)+" FROM "+str(from_q)
-    if (where_q is not None):
-        qString += " WHERE "+str(where_q)
+    qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
+    if where_q is not None:
+        qString += " WHERE " + str(where_q)
     result = cursor.execute(qString)
     desc = result.description
     col_names = [col[0] for col in desc]

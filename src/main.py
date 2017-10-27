@@ -47,35 +47,30 @@ def search():
     pagesize =      request.args.get('pagesize', default=None, type=int)
 
     response = json.dumps(api.search(category, query, filterRules, count, page, pagesize))
-    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route(base_api + "cocktails/<slug>")
 def cocktail_detail(slug):
     print("cocktail " + slug)
     response = json.dumps(api.cocktailDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route(base_api + "ingredients/<slug>")
 def ingredient_detail(slug):
     print("ingredient " + slug)
     response = json.dumps(api.ingredientDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route(base_api + "brands/<slug>")
 def brand_detail(slug):
     print("brand " + slug)
     response = json.dumps(api.brandDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route(base_api + "countries/<slug>")
 def country_detail(slug):
     print("country " + slug)
     response = json.dumps(api.countryDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 
@@ -88,6 +83,13 @@ def country_detail(slug):
 def react(path):
     return render_template("index.html")
 
+@app.after_request
+def after_request(response):
+    print("CORS")
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    return response
 
 ################################
 # Running Flask Locally #
