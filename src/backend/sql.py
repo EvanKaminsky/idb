@@ -1,6 +1,6 @@
 import itertools
 import os
-import MySQLdb
+import mysql.connector
 
 # Low-level python wrapper around our database
 
@@ -18,7 +18,7 @@ def connect_to_cloudsql():
         cloudsql_unix_socket = os.path.join(
             '/cloudsql', CLOUDSQL_CONNECTION_NAME)
 
-        db = MySQLdb.connect(
+        db = mysql.connector.connect(
             unix_socket=cloudsql_unix_socket,
             user=CLOUDSQL_USER,
             passwd=CLOUDSQL_PASSWORD)
@@ -30,7 +30,7 @@ def connect_to_cloudsql():
     #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
     #
     else:
-        db = MySQLdb.connect(
+        db = mysql.connector.connect(
             host='127.0.0.1', user=CLOUDSQL_USER, passwd=CLOUDSQL_PASSWORD)
     return db
 
