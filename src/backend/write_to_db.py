@@ -11,15 +11,6 @@ import unicodedata
 import string
 printable = set(string.printable)
 
-# Fill this out
-#engine_internal = create_engine('mysql+mysqldb://root:tipsymix@/tipsy_backend?unix_socket=/cloudsql/tipsymix-ttp:tipsy-db')
-engine_internal = create_engine("mysql+mysqlconnector://%s:%s@%s/%s"
-     % ("youruser", "yourpassword", "yourhostname.com:3306",
-     "yourdatabasename"),
-     pool_size=3, pool_recycle=3600)
-
-#Internal = sessionmaker(bind=engine_internal)
-
 #c = Internal()
 cnx = mysql.connector.connect(user='root', password='tipsymix',
                               host='127.0.0.1',
@@ -50,25 +41,17 @@ with open('cocktails.txt') as co:
 
 with open('countries.txt') as cu:
     while True:
-        s = list(islice(cu, 6))
+        s = list(islice(cu, 5))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
-        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
         
 
 with open('ingredients.txt') as ig:
     while True:
-<<<<<<< HEAD
         s = list(islice(ig, 6))
-=======
-        s = list(islice(br, 6))
-        s[0] = int(s[0])
-        s.insert(4, color_const)
-        s[6] = int(s[6])
-        c.execute('INSERT INTO INGREDIENTS values (?, ?, ?, ?, ?, ?, ?)', s)
->>>>>>> 04ec4ac913c267fd23849f353ae52024968e1d66
         if not s:
             break
         s[0] = int(s[0])
