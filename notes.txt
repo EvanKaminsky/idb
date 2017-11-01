@@ -10,10 +10,19 @@ deactivate
 # Installing requirements using a Homebrewed Python
 python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 
-# Start the local dev server on Port 8080
+# Be sure you have the necessary GCP things installed:
+# Follow instructtions here for Google Cloud SDK installation and initialization: 
+https://cloud.google.com/sdk/docs/
+
+# Get the App Engine extension for Python
+gcloud components install app-engine-python
+
+# Start the local dev server on Port 8080; use this to test
 dev_appserver.py app.yaml
 
-# Deploy app
+# Be sure you're a contributer for the project so that you're able to deploy
+
+# Deploy app; this will take awhile and you'll have to sync the project the first time
 gcloud app deploy
 
 # View deployment
@@ -23,3 +32,4 @@ gcloud app browse
 
 # React & Flask Setup Guide
 https://github.com/bonniee/react-flask
+
