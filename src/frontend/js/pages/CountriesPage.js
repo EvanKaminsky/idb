@@ -1,12 +1,10 @@
 import React from 'react';
 
 /* Local Imports */
+import API from "../api.js"
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_country.json');
+import TipsySearchbar from "../components/TipsySearchbar";
 
 /* Page that displays a grid of countries */
 export default class CountriesPage extends React.Component {
@@ -14,7 +12,7 @@ export default class CountriesPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            countries: data,
+            countries: [],
             api: new API()
         }
     }
@@ -33,20 +31,17 @@ export default class CountriesPage extends React.Component {
 
     render() {
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
             <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand"/><br />
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+            <TipsySearchbar/>
 
             <section className = "container">
                 <div className = "row">
                     {this.state.countries.map(function(country, i) {
                         return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className= "img-responsive" src={"" + country.image} />
                                 <h5>{country.name}</h5>
                                 <p>{country.description}</p>
@@ -56,7 +51,7 @@ export default class CountriesPage extends React.Component {
                     })}
                 </div>
             </section>
-            </body>
+            </div>
         )
     }
 }

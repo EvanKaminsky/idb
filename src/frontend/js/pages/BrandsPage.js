@@ -1,12 +1,10 @@
 import React from 'react';
 
 /* Local Imports */
+import API from "../api.js"
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_brand.json');
+import TipsySearchbar from "../components/TipsySearchbar";
 
 /* Page that displays a grid of brands */
 export default class BrandsPage extends React.Component {
@@ -14,7 +12,7 @@ export default class BrandsPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            brands: data,
+            brands: [],
             api: new API()
         }
     }
@@ -33,20 +31,17 @@ export default class BrandsPage extends React.Component {
 
     render() {
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
             <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+                <TipsySearchbar/>
 
             <section className = "container">
                 <div className = "row">
                     {this.state.brands.map(function(brand, i) {
                         return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className= "img-responsive" src={"" + brand.image} />
                                 <h5>{brand.name}</h5>
                                 <p>{brand.description}</p>
@@ -56,7 +51,8 @@ export default class BrandsPage extends React.Component {
                     })}
                 </div>
             </section>
-            </body>
+
+            </div>
         )
     }
 }

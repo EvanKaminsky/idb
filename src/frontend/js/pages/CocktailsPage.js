@@ -1,12 +1,10 @@
 import React from 'react';
 
 /* Local Imports */
+import API from "../api.js"
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_cocktail.json');
+import TipsySearchbar from "../components/TipsySearchbar";
 
 /* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
@@ -14,7 +12,7 @@ export default class CocktailsPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            cocktails: data,
+            cocktails: [],
             api: new API()
         }
     }
@@ -24,29 +22,27 @@ export default class CocktailsPage extends React.Component {
     }
 
     reload() {
-        this.state.api.getCocktails(cocktails => {
+        this.state.api.getCocktails().then(cocktails => {
             if (cocktails !== null) {
                 this.setState({cocktails: cocktails});
             }
-        })
-    }
+        });
+    };
 
     render() {
         return (
-            <body style = {backgroundStyle}>
+            <div style = {backgroundStyle}>
 
             <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+                <TipsySearchbar/>
+
 
             <section className = "container">
                 <div className = "row">
                     {this.state.cocktails.map(function(cocktail, i) {
                         return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className = "img-responsive" src={"" + cocktail.image} />
                                 <h5>{cocktail.name}</h5>
                                 <p>{cocktail.description}</p>
@@ -56,7 +52,7 @@ export default class CocktailsPage extends React.Component {
                     })}
                 </div>
             </section>
-            </body>
+            </div>
         )
     }
 }
