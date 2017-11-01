@@ -10,6 +10,8 @@ deactivate
 # Installing requirements using a Homebrewed Python
 python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 
+# TO DEPLOY:
+
 # Be sure you have the necessary GCP things installed:
 # Follow instructtions here for Google Cloud SDK installation and initialization: 
 https://cloud.google.com/sdk/docs/
@@ -21,6 +23,7 @@ gcloud components install app-engine-python
 dev_appserver.py app.yaml
 
 # Be sure you're a contributer for the project so that you're able to deploy
+# If you have problems, see the link at the top of this document for a full walk through
 
 # Deploy app; this will take awhile and you'll have to sync the project the first time
 gcloud app deploy
