@@ -70,5 +70,8 @@ mysql -u root -p --host 127.0.0.1
 # Extras #
 ##############################################
 
-/* Test Data */
+/* Loading Spoof JSON */
 const data = require('json-loader!../../spoof/testdata_cocktail.json');
+
+/* Hide Chrome Extension Messages in console */
+(?!.*BLOCKED_BY_CLIENT)

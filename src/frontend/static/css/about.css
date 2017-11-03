@@ -48,3 +48,11 @@ a:hover {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 }
+
+.modal-container {
+  position: relative;
+}
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
