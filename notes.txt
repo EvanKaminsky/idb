@@ -1,26 +1,46 @@
+##############################################
+# Setup #
+##############################################
+
 # GCP Flash + App Engine Reference
 https://cloud.google.com/appengine/docs/standard/python/getting-started/python-standard-env
 
-# Launch virtual environment
-source env/bin/activate
+# React & Flask Setup Guide
+https://github.com/bonniee/react-flask
 
-# Exit virtual environment
-deactivate
 
-# Installing requirements using a Homebrewed Python
+##############################################
+# Virtual Environment Management #
+##############################################
+
+# Install pyenv-virtualenv (use your own package manager, this uses homebrew)
+brew install pyenv-virtualenv
+
+# List your python versions
+pyenv versions
+
+# Create an environment with any python2 compatible one listed above
+pyenv virtualenv [python_version] [env_name]
+
+# List your virtual envs
+pyenv virtualenvs
+
+# Enter your virtual environment
+pyenv activate [env_name]
+
+# Install the python dependencies (from requirements.txt to the virtual env)
+pip install -r requirements.txt
+
+# -or- Installing requirements using a Homebrewed Python
 python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 
-# TO DEPLOY:
+# Exit your virtual environment
+pyenv deactivate
 
-# Be sure you have the necessary GCP things installed:
-# Follow instructtions here for Google Cloud SDK installation and initialization: 
-https://cloud.google.com/sdk/docs/
 
-# Get the App Engine extension for Python
-gcloud components install app-engine-python
-
-# Start the local dev server on Port 8080; use this to test
-dev_appserver.py app.yaml
+##############################################
+# GCloud #
+##############################################
 
 # Be sure you're a contributer for the project so that you're able to deploy
 # If you have problems, see the link at the top of this document for a full walk through
@@ -31,8 +51,30 @@ gcloud app deploy
 # View deployment
 gcloud app browse
 
-#######################
+# Start the local dev server on Port 8080
+dev_appserver.py app.yaml
 
-# React & Flask Setup Guide
-https://github.com/bonniee/react-flask
+# Add python requirements to GCP library
+pip install -t lib -r requirements.txt
 
+
+##############################################
+# Interacting with the DB #
+##############################################
+
+# Proxy into the SQL server on GCP
+./cloud_sql_proxy -instances="tipsymix-ttp:us-central1:tipsy-db"=tcp:3306
+
+# Interact with the DB remotely
+mysql -u root -p --host 127.0.0.1
+
+
+##############################################
+# Extras #
+##############################################
+
+/* Loading Spoof JSON */
+const data = require('json-loader!../../spoof/testdata_cocktail.json');
+
+/* Hide Chrome Extension Messages in console */
+(?!.*BLOCKED_BY_CLIENT)

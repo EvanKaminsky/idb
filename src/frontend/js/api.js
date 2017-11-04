@@ -1,9 +1,12 @@
 const base_api = "https://tipsymix-ttp.appspot.com/api/";
+//const base_api = "http://127.0.0.1:5000/api/";
 
 /* Networking layer for the React frontend */
 function API() {
 
-    this.restfulRequest = function(method, endpoint, body, callback) {
+    /* -------------------------------------------------------------- */
+
+    this.restfulRequest = function(method, endpoint, body) {
         var payload = {
             method: method,
             headers: {
@@ -19,76 +22,75 @@ function API() {
             });
         }
 
-        fetch(base_api + endpoint, payload)
-            .then(json => {
-                callback(json);
-            })
+        console.log(base_api);
+
+        return fetch(base_api + endpoint, payload)
+            .then(response => response.json())
             .catch((error) => {
                 console.error(error);
-                callback(null);
+                return null;
             })
     };
 
-
-    this.post = function(endpoint, body, callback) {
-        this.restfulRequest("POST", endpoint, body, callback)
+    this.post = function(endpoint, body) {
+        return this.restfulRequest("POST", endpoint, body)
     };
 
-    this.get = function(endpoint, callback) {
-        this.restfulRequest("GET", endpoint, null, callback)
+    this.get = function(endpoint) {
+        return this.restfulRequest("GET", endpoint, null)
     };
 
-    /* ----------------------------- */
+    /* -------------------------------------------------------------- */
 
     this.search = function(callback) {
 
     };
 
-    this.getCocktails = function(callback) {
-        this.get("search?category=cocktails", cocktails =>
-            callback(cocktails)
+    this.getCocktails = function() {
+        return this.get("search?category=cocktails").then(cocktails =>
+            (cocktails === null) ? null : cocktails.results
         )
     };
 
     this.getIngredients = function(callback) {
-        this.get("search?category=ingredients", ingredients =>
-            callback(ingredients)
+        return this.get("search?category=ingredients").then(ingredients =>
+            (ingredients === null) ? null : ingredients.results
         )
     };
 
     this.getCountries = function(callback) {
-        this.get("search?category=countries", countries =>
-            callback(countries)
+        return this.get("search?category=countries").then(countries =>
+            (countries === null) ? null : countries.results
         )
     };
 
     this.getBrands = function(callback) {
-        this.get("search?category=brands", brands =>
-            callback(brands)
+        return this.get("search?category=brands").then(brands =>
+            (brands === null) ? null : brands.results
         )
     };
 
     this.getCocktailDetail = function(slug, callback) {
-        this.get("cocktails/" + slug, cocktail =>
-            callback(cocktail)
+        return this.get("cocktails/" + slug).then(cocktail =>
+            (cocktail === null) ? null : cocktail
         )
     };
 
     this.getIngredientDetail = function(slug, callback) {
-        this.get("ingredients/" + slug, ingredient =>
-            callback(ingredient)
+        return this.get("ingredients/" + slug).then(ingredient =>
+            (ingredient === null) ? null : ingredient
         )
     };
 
     this.getCountryDetail = function(slug, callback) {
-        this.get("countries/" + slug, country =>
-            callback(country)
+        return this.get("countries/" + slug).then(country =>
+            (country === null) ? null : country
         )
     };
 
     this.getBrandDetail = function(slug, callback) {
-        this.get("brands/" + slug, brand  =>
-            callback(brand)
+        return this.get("brands/" + slug).then(brand =>
+            (brand === null) ? null : brand
         )
     };
 

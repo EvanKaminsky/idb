@@ -1,12 +1,11 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 /* Local Imports */
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_brand.json');
+import TipsySearchbar from "../components/TipsySearchbar";
+import Spinner from "../components/Spinner";
 
 /* Page that displays a grid of brands */
 export default class BrandsPage extends React.Component {
@@ -14,49 +13,65 @@ export default class BrandsPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            brands: data,
-            api: new API()
-        }
-    }
+            brands: [],
+            isLoading: false
+        };
 
-    componentDidMount() {
-        this.reload()
+        this.openBrandDetail = this.openBrandDetail.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     reload() {
-        this.state.api.getBrands(brands => {
+        if (this.state.isLoading) {
+            return;
+        }
+
+        this.state.isLoading = true;
+        window.constants.api.getBrands().then(brands => {
             if (brands !== null) {
                 this.setState({brands: brands});
             }
+            this.state.isLoading = false;
         })
     }
 
+    openBrandDetail(brand, event) {
+        event.preventDefault();
+        this.props.history.push({pathname:'/brand-detail/' + brand.id, state: {"brand": brand, "fromBrands": true}});
+    };
+
     render() {
+
+        // Activity indicator when cocktails have not loaded
+        var spinner = null;
+        if (this.state.brands.length < 1) {
+            this.reload();
+            spinner = <Spinner/>
+        }
+
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
-            <h1>Tipsy Mix</h1>
+                <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+                <TipsySearchbar/>
 
-            <section className = "container">
-                <div className = "row">
-                    {this.state.brands.map(function(brand, i) {
-                        return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                <section className = "container">
+                    <div className = "row">
+                        {spinner}
+
+                        {this.state.brands.map(function(brand, i) { return (
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className= "img-responsive" src={"" + brand.image} />
                                 <h5>{brand.name}</h5>
                                 <p>{brand.description}</p>
-                                <a href={"" + brand.stdname} className="btn btn-info btn-log" role ="button">More</a>
+
+                                <Button bsStyle="info" onClick={(e)=>this.openBrandDetail(brand, e)}>More</Button>
                             </div>
-                        );
-                    })}
-                </div>
-            </section>
-            </body>
+                        );}, this)}
+                    </div>
+                </section>
+            </div>
         )
     }
 }

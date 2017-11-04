@@ -8,7 +8,7 @@ import backgroundStyle from "../constants.js"
 export default class AboutPage extends React.Component {
     render() {
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
             <div id="about" className="row">
                 <div className="col-md-12">
@@ -90,7 +90,7 @@ export default class AboutPage extends React.Component {
                     <div className="col-md-1"/>
                 </div>
             </div>
-            </body>
+            </div>
         )
     }
 }

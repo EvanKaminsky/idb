@@ -1,13 +1,11 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 /* Local Imports */
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_ingredient.json');
+import TipsySearchbar from "../components/TipsySearchbar";
+import Spinner from "../components/Spinner";
 
 /* Page with a grid of ingredients */
 export default class IngredientsPage extends React.Component {
@@ -15,51 +13,65 @@ export default class IngredientsPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            ingredients: data,
-            api: new API()
-        }
-    }
+            ingredients: [],
+            isLoading: false
+        };
 
-    componentDidMount() {
-        this.reload()
+        this.openIngredientDetail = this.openIngredientDetail.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     reload() {
-        this.state.api.getIngredients(ingredients => {
+        if (this.state.isLoading) {
+            return;
+        }
+
+        this.state.isLoading = true;
+        window.constants.api.getIngredients().then(ingredients => {
             if (ingredients !== null) {
                 this.setState({ingredients: ingredients});
             }
+            this.state.isLoading = false;
         })
     }
 
+    openIngredientDetail(ingredient, event) {
+        event.preventDefault();
+        this.props.history.push({pathname:'/ingredient-detail/' + ingredient.id, state: {"ingredient": ingredient, "fromIngredients": true}});
+    };
+
     render() {
+
+        // Activity indicator when cocktails have not loaded
+        var spinner = null;
+        if (this.state.ingredients.length < 1) {
+            this.reload();
+            spinner = <Spinner/>
+        }
+
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
-            <h1>Tipsy Mix</h1>
+                <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br />
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+                <TipsySearchbar/>
 
-            <section className = "container">
-                <div className = "row">
-                    { this.state.ingredients.map(function(ingredient, i) {
-                        return (
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                <section className = "container">
+                    <div className = "row">
+                        {spinner}
+
+                        {this.state.ingredients.map(function(ingredient, i) { return (
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className ="img-responsive" src={"" + ingredient.image} />
                                 <h5>{ingredient.name}</h5>
                                 <p>{ingredient.description}</p>
-                                <a href={"" + ingredient.stdname} className="btn btn-info btn-log" role ="button">More</a>
+
+                                <Button bsStyle="info" onClick={(e)=>this.openIngredientDetail(ingredient, e)}>More</Button>
                             </div>
-                        );
-                    })}
-                </div>
-            </section>
-            </body>
+                        );}, this)}
+                    </div>
+                </section>
+            </div>
         )
     }
 }
-
-
