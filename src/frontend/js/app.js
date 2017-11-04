@@ -17,6 +17,9 @@ import IngredientDetailPage from "./details/ingredient_model.js";
 import BrandDetailPage      from "./details/brand_model.js";
 import CountryDetailPage    from "./details/country_model.js";
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 class TipsyApp extends React.Component {
 
     componentWillMount() {

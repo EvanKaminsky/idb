@@ -12,13 +12,13 @@ export default class CocktailDetailPage extends React.Component {
         const prevState = this.props.location.state;
 
         this.state = {
-            cocktail: prevState ? prevState.cocktail : null,
+            cocktail: null,
             isLoading: false,
-            fromCocktails: prevState ? prevState.fromCocktails : null
+            fromURL: prevState ? prevState.fromURL : null
         };
 
         this.reload = this.reload.bind(this);
-        this.goBackToCocktails = this.goBackToCocktails.bind(this);
+        this.goBack = this.goBack.bind(this);
     }
 
     reload() {
@@ -41,9 +41,9 @@ export default class CocktailDetailPage extends React.Component {
         });
     };
 
-    goBackToCocktails(event) {
+    goBack(event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/cocktails'});
+        this.props.history.push({pathname: this.state.fromURL});
     };
 
     render() {
@@ -53,13 +53,13 @@ export default class CocktailDetailPage extends React.Component {
         }
 
         var backButton = null;
-        if (this.state.fromCocktails) {
-            backButton = <Button onClick={(e)=>this.goBackToCocktails(e)}>Back</Button>
+        if (this.state.fromURL) {
+            backButton = <Button onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
         return (
             <div className="col-md-6 cocktail-box">
-                <img className="img-responsive" src={this.state.cocktail.imageurl}/>
+                <img className="img-responsive" src={this.state.cocktail.image}/>
 
                 <h1>{this.state.cocktail.name}</h1>
 
@@ -70,7 +70,10 @@ export default class CocktailDetailPage extends React.Component {
                 <p>{this.state.cocktail.description}</p>
 
                 <h3>Brands</h3>
-                <p>{this.state.cocktail.brand}</p>
+                <p>{this.state.cocktail.brands}</p>
+
+                <h3>Countries</h3>
+                <p>{this.state.cocktail.countries}</p>
 
                 {backButton}
             </div>

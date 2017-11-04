@@ -12,13 +12,13 @@ export default class IngredientDetailPage extends React.Component {
         const prevState = this.props.location.state;
 
         this.state = {
-            ingredient: prevState ? prevState.ingredient : null,
+            ingredient: null,
             isLoading: false,
-            fromIngredients: prevState ? prevState.fromIngredients : null
+            fromURL: prevState ? prevState.fromURL : null
         };
 
         this.reload = this.reload.bind(this);
-        this.goBackToIngredients = this.goBackToIngredients.bind(this);
+        this.goBack = this.goBack.bind(this);
     }
 
     reload() {
@@ -41,9 +41,9 @@ export default class IngredientDetailPage extends React.Component {
         });
     };
 
-    goBackToIngredients(event) {
+    goBack(event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/ingredients'});
+        this.props.history.push({pathname: this.state.fromURL});
     };
 
     render() {
@@ -53,8 +53,8 @@ export default class IngredientDetailPage extends React.Component {
         }
 
         var backButton = null;
-        if (this.state.fromIngredients) {
-            backButton = <Button onClick={(e)=>this.goBackToIngredients(e)}>Back</Button>
+        if (this.state.fromURL) {
+            backButton = <Button onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
         return (
@@ -68,6 +68,9 @@ export default class IngredientDetailPage extends React.Component {
 
                 <h3>Countries</h3>
                 <p>{this.state.ingredient.countries}</p>
+
+                <h3>Cocktails</h3>
+                <p>{this.state.ingredient.cocktails}</p>
 
                 <h3>Brands</h3>
                 <p>{this.state.ingredient.brands}</p>

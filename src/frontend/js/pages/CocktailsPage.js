@@ -1,11 +1,10 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import Grid from 'material-ui/Grid';
 
-/* Local Imports */
-import "../../static/css/about.css"
-import backgroundStyle from "../constants.js"
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
+import CocktailCard from "../cards/CocktailCard.js";
+import TipsyGrid from "../components/TipsyGrid.js";
 
 /* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
@@ -37,12 +36,13 @@ export default class CocktailsPage extends React.Component {
 
     openCocktailDetail(cocktail, event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/cocktail-detail/' + cocktail.id, state: {"cocktail": cocktail, "fromCocktails": true}});
+        this.props.history.push({
+            pathname: '/cocktail-detail/' + cocktail.id,
+            state: {"fromURL": "/cocktails"}
+        });
     };
 
     render() {
-
-        // Activity indicator when cocktails have not loaded
         var spinner = null;
         if (this.state.cocktails.length < 1) {
             this.reload();
@@ -50,27 +50,17 @@ export default class CocktailsPage extends React.Component {
         }
 
         return (
-            <div style={backgroundStyle}>
-
+            <div>
                 <h1>Tipsy Mix</h1>
 
                 <TipsySearchbar/>
 
-                <section className = "container">
-                    <div className = "row">
-                        {spinner}
-
-                        {this.state.cocktails.map(function(cocktail, i) { return (
-                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className = "img-responsive" src={"" + cocktail.image} />
-                                <h5>{cocktail.name}</h5>
-                                <p>{cocktail.description}</p>
-
-                                <Button bsStyle="info" onClick={(e)=>this.openCocktailDetail(cocktail, e)}>More</Button>
-                            </div>
-                        );}, this)}
-                    </div>
-                </section>
+                <TipsyGrid elements={spinner !== null ? spinner :
+                    this.state.cocktails.map(function(cocktail, i) { return (
+                    <Grid key={i} item>
+                        <CocktailCard cocktail={cocktail} onClick={(e)=>this.openCocktailDetail(cocktail, e)}/>
+                    </Grid>
+                )}, this)}/>
             </div>
         )
     }

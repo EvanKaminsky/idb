@@ -12,13 +12,13 @@ export default class CountryDetailPage extends React.Component {
         const prevState = this.props.location.state;
 
         this.state = {
-            country: prevState ? prevState.country : null,
+            country: null,
             isLoading: false,
-            fromCountries: prevState ? prevState.fromCountries : null
+            fromURL: prevState ? prevState.fromURL : null
         };
 
         this.reload = this.reload.bind(this);
-        this.goBackToCountries = this.goBackToCountries.bind(this);
+        this.goBack = this.goBack.bind(this);
     }
 
     reload() {
@@ -35,15 +35,15 @@ export default class CountryDetailPage extends React.Component {
         this.state.isLoading = true;
         window.constants.api.getCountryDetail(slug).then(country => {
             if (country !== null) {
-                this.setState({cocktail: country});
+                this.setState({country: country});
             }
             this.state.isLoading = false;
         });
     };
 
-    goBackToCountries(event) {
+    goBack(event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/countries'});
+        this.props.history.push({pathname: this.state.fromURL});
     };
 
     render() {
@@ -53,19 +53,28 @@ export default class CountryDetailPage extends React.Component {
         }
 
         var backButton = null;
-        if (this.state.fromCountries) {
-            backButton = <Button onClick={(e)=>this.goBackToCountries(e)}>Back</Button>
+        if (this.state.fromURL) {
+            backButton = <Button onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
         return (
             <div className="col-md-6 cocktail-box">
-                <img className="img-responsive" src={this.state.country.imageurl}/>
+                <img className="img-responsive" src={this.state.country.image}/>
 
                 <h1>{this.state.country.name}</h1>
                 <h4>{this.state.country.continent}</h4>
 
                 <h3>Description</h3>
                 <p>{this.state.country.description}</p>
+
+                <h3>Brands</h3>
+                <p>{this.state.country.brands}</p>
+
+                <h3>Ingredients</h3>
+                <p>{this.state.country.ingredients}</p>
+
+                <h3>Cocktails</h3>
+                <p>{this.state.country.cocktails}</p>
 
                 {backButton}
             </div>

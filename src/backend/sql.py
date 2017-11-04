@@ -36,21 +36,26 @@ def connect_to_cloudsql():
             host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
     return db
 
+
 db = connect_to_cloudsql()
 
 # SELECT query
-# 	+ SELECT select_q FROM from_q WHERE where_q
-def sql_select(select_q, from_q, where_q):
+#   + SELECT select_q FROM from_q WHERE where_q
+
+
+def sql_select(select_q, from_q, where_q=None):
     qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
     if where_q is not None:
         qString += " WHERE " + str(where_q)
 
-    cursor = db.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute(qString)
-    #desc = result.description
-    #col_names = [col[0] for col in desc]
-    result = [dict(x) for x in cursor.fetchall()]
-    return result
+    try:
+        cursor = db.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute(qString)
+        result = [dict(x) for x in cursor.fetchall()]
+        return result
+    except Exception as e:
+        return None
+
 
 # Fetch all instances of a class
 def sql_fetchAll(category):

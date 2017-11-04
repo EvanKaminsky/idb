@@ -37,7 +37,10 @@ export default class IngredientsPage extends React.Component {
 
     openIngredientDetail(ingredient, event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/ingredient-detail/' + ingredient.id, state: {"ingredient": ingredient, "fromIngredients": true}});
+        this.props.history.push({
+            pathname:'/ingredient-detail/' + ingredient.id,
+            state: {"fromURL": "/ingredients"}
+        });
     };
 
     render() {

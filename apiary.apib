@@ -20,8 +20,172 @@ TipsyMix is a database linking cocktails, ingredients, brands, and countries tog
 + Response 200 (application/json)
 
         {
-            "category": "cocktail",
+            "category": "cocktails",
             "query": "raspberry",
+            "filter": "",
+            "totalCount": 90,
+            "totalPages": 30,
+            "count": 3
+            "page": 2
+            "results": [
+                {
+                    "id": 2349542,
+                    "stdname": "raspberry-margarita",
+                    "label": "Raspberry Margarita",
+                    "image": "internal/2349542.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-margarita",
+                    "color": 0xA81503
+                }, {
+                    "id": 2349299,
+                    "stdname": "raspberry-mojito",
+                    "label": "Raspberry Mojito",
+                    "image": "internal/2349299.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-mojito",
+                    "color": 0xDA3A13
+                }, {
+                    "id": 5693234,
+                    "stdname": "raspberry-collins",
+                    "label": "Raspberry Collins",
+                    "image": "internal/5693234.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-collins",
+                    "color": 0xBC1301
+                }
+            ]
+        }
+        
+## Get All Cocktails [/api/search?category=cocktails]
+This is a proxy to our search query which will return all instances of the Cocktail model
+
+### Query [GET]
+
++ Response 200 (application/json)
+
+        {
+            "category": "cocktails",
+            "query": "",
+            "filter": "",
+            "totalCount": 90,
+            "totalPages": 30,
+            "count": 3
+            "page": 2
+            "results": [
+                {
+                    "id": 2349542,
+                    "stdname": "raspberry-margarita",
+                    "label": "Raspberry Margarita",
+                    "image": "internal/2349542.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-margarita",
+                    "color": 0xA81503
+                }, {
+                    "id": 2349299,
+                    "stdname": "raspberry-mojito",
+                    "label": "Raspberry Mojito",
+                    "image": "internal/2349299.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-mojito",
+                    "color": 0xDA3A13
+                }, {
+                    "id": 5693234,
+                    "stdname": "raspberry-collins",
+                    "label": "Raspberry Collins",
+                    "image": "internal/5693234.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-collins",
+                    "color": 0xBC1301
+                }
+            ]
+        }
+
+## Get All Ingredients [/api/search?category=ingredients]
+This is a proxy to our search query which will return all instances of the Ingredient model
+
+### Query [GET]
+
++ Response 200 (application/json)
+
+        {
+            "category": "ingredients",
+            "query": "",
+            "filter": "",
+            "totalCount": 90,
+            "totalPages": 30,
+            "count": 3
+            "page": 2
+            "results": [
+                {
+                    "id": 2349542,
+                    "stdname": "raspberry-margarita",
+                    "label": "Raspberry Margarita",
+                    "image": "internal/2349542.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-margarita",
+                    "color": 0xA81503
+                }, {
+                    "id": 2349299,
+                    "stdname": "raspberry-mojito",
+                    "label": "Raspberry Mojito",
+                    "image": "internal/2349299.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-mojito",
+                    "color": 0xDA3A13
+                }, {
+                    "id": 5693234,
+                    "stdname": "raspberry-collins",
+                    "label": "Raspberry Collins",
+                    "image": "internal/5693234.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-collins",
+                    "color": 0xBC1301
+                }
+            ]
+        }
+
+## Get All Brands [/api/search?category=brands]
+This is a proxy to our search query which will return all instances of the Brand model
+
+### Query [GET]
+
++ Response 200 (application/json)
+
+        {
+            "category": "brands",
+            "query": "",
+            "filter": "",
+            "totalCount": 90,
+            "totalPages": 30,
+            "count": 3
+            "page": 2
+            "results": [
+                {
+                    "id": 2349542,
+                    "stdname": "raspberry-margarita",
+                    "label": "Raspberry Margarita",
+                    "image": "internal/2349542.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-margarita",
+                    "color": 0xA81503
+                }, {
+                    "id": 2349299,
+                    "stdname": "raspberry-mojito",
+                    "label": "Raspberry Mojito",
+                    "image": "internal/2349299.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-mojito",
+                    "color": 0xDA3A13
+                }, {
+                    "id": 5693234,
+                    "stdname": "raspberry-collins",
+                    "label": "Raspberry Collins",
+                    "image": "internal/5693234.jpeg",
+                    "url": "tipsymix.com/api/cocktails/raspberry-collins",
+                    "color": 0xBC1301
+                }
+            ]
+        }
+
+## Get All Countries [/api/search?category=countries]
+This is a proxy to our search query which will return all instances of the Country model
+
+### Query [GET]
+
++ Response 200 (application/json)
+
+        {
+            "category": "countries",
+            "query": "",
             "filter": "",
             "totalCount": 90,
             "totalPages": 30,
