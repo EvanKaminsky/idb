@@ -34,12 +34,18 @@ def autopep8(filepath):
     args.append(filepath)
     output = system(*args)
 
+def jsBeauty(filepath):
+    opts = jsB.default_options()
+    opts.replace = True
+    jsB.beautify_file(filepath, opts)
+
 
 def main():
     try:
         import autopep8 as ap8
+        import jsbeautifier as jsB
     except ImportError:
-        print("'autopep8' is required. Please install with `pip install autopep8`.", file=sys.stderr)
+        print("'autopep8' and 'js-beautify' is required. Please install with `pip install autopep8` and `pip install jsbeautifier`.", file=sys.stderr)
         exit(1)
 
     modified = re.compile('^[AM]+\s+(?P<name>.*\.py)', re.MULTILINE)
@@ -50,6 +56,15 @@ def main():
     for name in files:
         filepath = os.path.join(basedir, name)
         autopep8(filepath)
+        system("git", "add", filepath)
+
+    modified = re.compile('^[AM]+\s+(?P<name>.*\.js$)', re.MULTILINE)
+    files = system('git', 'status', '--porcelain').decode("utf-8")
+    files = modified.findall(files)
+
+    for name in files:
+        filepath = os.path.join(basedir, name)
+        jsBeauty(filepath)
         system("git", "add", filepath)
 
 
