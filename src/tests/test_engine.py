@@ -4,6 +4,7 @@
 from backend import engine
 import unittest
 
+
 class EngineTest(unittest.TestCase):
     def test_default(self):
         default = engine.inferCategory()
@@ -27,6 +28,7 @@ class EngineTest(unittest.TestCase):
     # test that query finds relevant results
     # test pagination
     # test sorting
+
 
 if __name__ == '__main__':
     unittest.main()

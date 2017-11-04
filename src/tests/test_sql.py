@@ -4,6 +4,7 @@
 from backend import sql
 import unittest
 
+
 class SqlTest(unittest.TestCase):
     def test_fetchAll(self):
         cocktails = sql.sql_fetchAll("cocktails")
@@ -27,7 +28,7 @@ class SqlTest(unittest.TestCase):
         self.assertTrue(sql.sql_select("*", "COUNTRIES") == countries)
 
     def test_returnType(self):
-        cocktailNames =  sql.sql_select("name", "COCKTAILS")
+        cocktailNames = sql.sql_select("name", "COCKTAILS")
         self.assertTrue(type(cocktailNames) is list or type(cocktailNames) is tuple)
         firstCocktail = cocktailNames[0]
         self.assertTrue(type(firstCocktail) is dict)
@@ -46,6 +47,7 @@ class SqlTest(unittest.TestCase):
         # cocktail a -> ingredient b
         #    ==>
         # ingredient b -> cocktail a
+
 
 if __name__ == '__main__':
     unittest.main()
