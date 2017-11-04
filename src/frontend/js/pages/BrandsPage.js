@@ -37,7 +37,10 @@ export default class BrandsPage extends React.Component {
 
     openBrandDetail(brand, event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/brand-detail/' + brand.id, state: {"brand": brand, "fromBrands": true}});
+        this.props.history.push({
+            pathname:'/brand-detail/' + brand.id,
+            state: {"fromURL": "/brands"}
+        });
     };
 
     render() {

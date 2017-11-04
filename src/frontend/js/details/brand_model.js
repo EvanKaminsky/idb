@@ -12,13 +12,13 @@ export default class BrandDetailPage extends React.Component {
         const prevState = this.props.location.state;
 
         this.state = {
-            brand: prevState ? prevState.brand : null,
+            brand: null,
             isLoading: false,
-            fromBrands: prevState ? prevState.fromBrands : null
+            fromURL: prevState ? prevState.fromURL : null
         };
 
         this.reload = this.reload.bind(this);
-        this.goBackToBrands = this.goBackToBrands.bind(this);
+        this.goBack = this.goBack.bind(this);
     }
 
     reload() {
@@ -41,9 +41,9 @@ export default class BrandDetailPage extends React.Component {
         });
     };
 
-    goBackToBrands(event) {
+    goBack(event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/brands'});
+        this.props.history.push({pathname: this.state.fromURL});
     };
 
     render() {
@@ -53,8 +53,8 @@ export default class BrandDetailPage extends React.Component {
         }
 
         var backButton = null;
-        if (this.state.fromBrands) {
-            backButton = <Button onClick={(e)=>this.goBackToBrands(e)}>Back</Button>
+        if (this.state.fromURL) {
+            backButton = <Button onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
         return (
@@ -63,14 +63,17 @@ export default class BrandDetailPage extends React.Component {
 
                 <h2>{this.state.brand.name}</h2>
 
-                <h3>Details</h3>
-                <p>{this.state.brand.details}</p>
+                <h3>Description</h3>
+                <p>{this.state.brand.description}</p>
 
                 <h3>Countries</h3>
                 <p>{this.state.brand.countries}</p>
 
-                <h3>Brands</h3>
+                <h3>Ingredients</h3>
                 <p>{this.state.brand.ingredients}</p>
+
+                <h3>Cocktails</h3>
+                <p>{this.state.brand.cocktails}</p>
 
                 {backButton}
             </div>

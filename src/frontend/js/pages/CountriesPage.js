@@ -37,7 +37,10 @@ export default class CountriesPage extends React.Component {
 
     openCountryDetail(country, event) {
         event.preventDefault();
-        this.props.history.push({pathname:'/country-detail/' + country.id, state: {"country": country, "fromCountries": true}});
+        this.props.history.push({
+            pathname:'/country-detail/' + country.id,
+            state: {"fromURL": "/countries"}
+        });
     };
 
     render() {

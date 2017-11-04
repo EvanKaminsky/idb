@@ -38,7 +38,7 @@ export default class CocktailsPage extends React.Component {
         event.preventDefault();
         this.props.history.push({
             pathname: '/cocktail-detail/' + cocktail.id,
-            state: {"cocktail": cocktail, "fromCocktails": true}
+            state: {"fromURL": "/cocktails"}
         });
     };
 
