@@ -1,0 +1,32 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import Grid from 'material-ui/Grid';
+
+const styles = theme => ({
+    root: {
+        flexGrow: 1,
+    },
+});
+
+class TipsyGrid extends React.Component {
+    render() {
+        const { classes } = this.props;
+
+        return (
+            <Grid container className={classes.root}>
+                <Grid item xs={12}>
+                    <Grid container justify="center" spacing={16}>
+                        {this.props.elements}
+                    </Grid>
+                </Grid>
+            </Grid>
+        );
+    }
+}
+
+TipsyGrid.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(TipsyGrid);
