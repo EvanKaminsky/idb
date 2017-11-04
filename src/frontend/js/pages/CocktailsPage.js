@@ -60,7 +60,7 @@ export default class CocktailsPage extends React.Component {
                     <Grid key={i} item>
                         <CocktailCard cocktail={cocktail} onClick={(e)=>this.openCocktailDetail(cocktail, e)}/>
                     </Grid>
-                )})}/>
+                )}, this)}/>
             </div>
         )
     }
