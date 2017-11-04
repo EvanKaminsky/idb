@@ -65,6 +65,10 @@ pip install -t lib -r requirements.txt
 # Interact with the DB remotely
 mysql -u root -p --host 127.0.0.1
 
+# Kill the DB and reload all data
+# Requires proxy to be running
+python src/backend/write_to_db.py
+
 ##############################################
 # Unit Tests #
 ##############################################
