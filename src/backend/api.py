@@ -48,6 +48,7 @@ TABLE_INGREDIENT_COUNTRY = "INGREDIENT_COUNTRY"
 #   + page (?int) - What page of the results to return
 #   + pagesize (?int) - Number of results per page
 def search(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
+    category = fixCategory(category)
     return engine.runSearch(category.capitalize(), query, filterRules, count, page, pageSize)
 
 # /api/cocktails/{slug}
@@ -240,6 +241,28 @@ def countryDetail(slug):
 #######################
 ###  Helper Methods ###
 #######################
+
+# Changes category to the correct form expected by our search engine
+
+
+def fixCategory(category):
+    if category is None:
+        return None
+    category = category.capitalize()
+    if (category.endswith('S'))
+        return category
+
+    if (category == "COCKTAIL"):
+        return "COCKTAILS"
+    if (category == "INGREDIENT"):
+        return "INGREDIENTS"
+    if (category == "COUNTRY"):
+        return "COUNTRIES"
+    if (category == "BRAND"):
+        return "BRANDS"
+
+    return None
+
 
 # Infers a color for a card based on an image url
 
