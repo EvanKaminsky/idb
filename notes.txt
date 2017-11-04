@@ -88,3 +88,9 @@ const data = require('json-loader!../../spoof/testdata_cocktail.json');
 
 /* Hide Chrome Extension Messages in console */
 (?!.*BLOCKED_BY_CLIENT)
+
+/* Activate GitHooks */
+pip install autopep8
+pip install jsbeautifier
+./git-hook/install_hook_local.sh
+
