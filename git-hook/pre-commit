@@ -40,11 +40,13 @@ def autopep8(filepath):
     args.extend(overrides)
     args.append(filepath)
     output = system(*args)
+    print("ran ap8 an "+str(filepath))
 
 def jsBeauty(filepath):
     opts = jsB.default_options()
     opts.replace = True
     jsB.beautify_file(filepath, opts)
+    print("ran jsB on "+str(filepath))
 
 
 def main():
