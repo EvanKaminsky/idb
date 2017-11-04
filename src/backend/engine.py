@@ -2,6 +2,8 @@ from sql import sql_fetchAll
 from decimal import Decimal
 
 # Query parser and intelligent search engine implementation
+
+
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
     page = page if page else 1
@@ -17,7 +19,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
 
     if count:
         results = results[0:count]
-    trimmedResults = results[(page - 1) * pageSize : (page - 1) * pageSize + pageSize]
+    trimmedResults = results[(page - 1) * pageSize: (page - 1) * pageSize + pageSize]
 
     # Need to remove decimals (JSON doesn't like them)
     cleaned_results = []
@@ -42,6 +44,8 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     }
 
 # Decides the most likely intended search category based on given search parameters
+
+
 def inferCategory(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     if category is not None:
         return category

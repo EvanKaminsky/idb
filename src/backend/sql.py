@@ -36,10 +36,13 @@ def connect_to_cloudsql():
             host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
     return db
 
+
 db = connect_to_cloudsql()
 
 # SELECT query
 #   + SELECT select_q FROM from_q WHERE where_q
+
+
 def sql_select(select_q, from_q, where_q=None):
     qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
     if where_q is not None:
