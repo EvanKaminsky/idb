@@ -6,7 +6,7 @@ function API() {
 
     /* -------------------------------------------------------------- */
 
-    this.restfulRequest = function(method, endpoint, body ) {
+    this.restfulRequest = function(method, endpoint, body) {
         var payload = {
             method: method,
             headers: {
