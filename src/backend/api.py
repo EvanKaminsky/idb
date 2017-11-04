@@ -47,7 +47,7 @@ TABLE_INGREDIENT_COUNTRY  = "INGREDIENT_COUNTRY"
 #   + count (?int) - How many results to create
 #   + page (?int) - What page of the results to return
 #   + pagesize (?int) - Number of results per page
-def search(category, query, filterRules, count, page, pageSize):
+def search(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     return engine.runSearch(category.capitalize(), query, filterRules, count, page, pageSize)
 
 # /api/cocktails/{slug}

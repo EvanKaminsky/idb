@@ -2,7 +2,7 @@ from sql import sql_fetchAll
 from decimal import Decimal
 
 # Query parser and intelligent search engine implementation
-def runSearch(category, query, filterRules, count, page, pageSize):
+def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
     page = page if page else 1
     pageSize = pageSize if pageSize else 10
@@ -42,9 +42,9 @@ def runSearch(category, query, filterRules, count, page, pageSize):
     }
 
 # Decides the most likely intended search category based on given search parameters
-def inferCategory(category, query, filterRules, count, page, pageSize):
+def inferCategory(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     if category is not None:
         return category
     else:
         # implement this
-        return "COCKTAIL"
+        return "COCKTAILS"
