@@ -65,6 +65,19 @@ pip install -t lib -r requirements.txt
 # Interact with the DB remotely
 mysql -u root -p --host 127.0.0.1
 
+##############################################
+# Unit Tests #
+##############################################
+
+# Launch the SQL server proxy
+./cloud_sql_proxy -instances="tipsymix-ttp:us-central1:tipsy-db"=tcp:3306
+
+# Launch all unit tests
+# (must be run from the src directory)
+python -m unittest discover
+
+# Launch a specific test
+python -m unittest tests.test_engine.py
 
 ##############################################
 # Extras #
@@ -75,3 +88,9 @@ const data = require('json-loader!../../spoof/testdata_cocktail.json');
 
 /* Hide Chrome Extension Messages in console */
 (?!.*BLOCKED_BY_CLIENT)
+
+/* Activate GitHooks */
+pip install autopep8
+pip install jsbeautifier
+./git-hook/install_hook_local.sh
+

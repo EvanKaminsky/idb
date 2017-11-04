@@ -17,7 +17,7 @@ function API() {
 
         if (body !== null && body !== undefined) {
             payload.push({
-                key:   "body",
+                key: "body",
                 value: JSON.stringify(body)
             });
         }
@@ -97,4 +97,3 @@ function API() {
 }
 
 export default API
-
