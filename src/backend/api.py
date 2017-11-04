@@ -84,7 +84,7 @@ def cocktailDetail(slug):
     ingredients = [ingredientLinkdataQuery(ID) for ID in ingredientsInCocktailQuery(cocktailID)]
     countries = [countryLinkdataQuery(ID) for ID in countriesInCocktailQuery(cocktailID)]
 
-    #tags = [tagQuery(ID) for ID in tagsInCocktailQuery(cocktailID)]
+    tags = [tagQuery(ID) for ID in tagsInCocktailQuery(cocktailID)]
 
     return {
         "id": cocktailID,
@@ -103,7 +103,7 @@ def cocktailDetail(slug):
         "ingredients": ingredients,
         "brands": brands,
         "countries": countries,
-        "tags": 1 #tags
+        "tags": tags
     }
 
 # /api/ingredients/{slug}
@@ -131,7 +131,7 @@ def ingredientDetail(slug):
     cocktails = [cocktailLinkdataQuery(ID) for ID in cocktailsInIngredientQuery(ingredientID)]
     countries = [countryLinkdataQuery(ID) for ID in countriesInIngredientQuery(ingredientID)]
 
-    #tags = [tagQuery(ID) for ID in tagsInIngredientQuery(ingredientID)]
+    tags = [tagQuery(ID) for ID in tagsInIngredientQuery(ingredientID)]
 
     return {
         "id": ingredientID,
@@ -144,7 +144,7 @@ def ingredientDetail(slug):
         "cocktails": cocktails,
         "brands": brands,
         "countries": countries,
-        "tags": 1 #tags
+        "tags": tags
     }
 
 # /api/brands/{slug}
@@ -172,7 +172,7 @@ def brandDetail(slug):
     cocktails = [cocktailLinkdataQuery(ID) for ID in cocktailsInBrandQuery(brandID)]
     countries = [countryLinkdataQuery(ID) for ID in countriesInBrandQuery(brandID)]
 
-    #tags = [tagQuery(ID) for ID in tagsInBrandQuery(brandID)]
+    tags = [tagQuery(ID) for ID in tagsInBrandQuery(brandID)]
 
     return {
         "id": brandID,
@@ -185,7 +185,7 @@ def brandDetail(slug):
         "cocktails": cocktails,
         "ingredients": ingredients,
         "countries": countries,
-        "tags": 1 #tags
+        "tags": tags
     }
 
 # /api/countries/{slug}
@@ -213,7 +213,7 @@ def countryDetail(slug):
     cocktails = [cocktailLinkdataQuery(ID) for ID in cocktailsInCountryQuery(countryID)]
     brands = [brandLinkdataQuery(ID) for ID in brandsInCountryQuery(countryID)]
 
-    #tags = [tagQuery(ID) for ID in tagsInCountryQuery(countryID)]
+    tags = [tagQuery(ID) for ID in tagsInCountryQuery(countryID)]
 
     return {
         "id": countryID,
@@ -226,7 +226,7 @@ def countryDetail(slug):
         "cocktails": cocktails,
         "brands": brands,
         "ingredients": ingredients,
-        "tags": 1 #tags
+        "tags": tags
     }
 
 #######################
@@ -303,33 +303,19 @@ def scrapeInstructions(description):
 
 # returns the label, id, and url of a desired cocktail
 def cocktailLinkdataQuery(ID):
-    labels = sql_select("name AS label", TABLE_COCKTAILS, ID)
-    fields = {"url": "tipsymix.com/api/cocktails/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID}
-    [x.update(fields) for x in labels]
-    return labels
+    return sql_select("name AS label", TABLE_COCKTAILS, ID)[0].update({"url": "tipsymix.com/api/cocktails/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID})
 
 # returns the label, id, and url of a desired brand
 def brandLinkdataQuery(ID):
-    #return sql_select("name AS label", TABLE_BRANDS, ID).update({"url": "tipsymix.com/api/brands/"+str(stdLookup(ID, TABLE_BRANDS)), "id":ID})
-    results = sql_select("name AS label", TABLE_BRANDS, ID)
-    fields = {"url": "tipsymix.com/api/brands/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID}
-    [x.update(fields) for x in results]
-    return results
+    return sql_select("name AS label", TABLE_BRANDS, ID)[0].update({"url": "tipsymix.com/api/brands/"+str(stdLookup(ID, TABLE_BRANDS)), "id":ID})
 
 # returns the label, id, and url of a desired ingredient
 def ingredientLinkdataQuery(ID):
-    #return sql_select("name AS label", TABLE_INGREDIENTS, ID).update({"url": "tipsymix.com/api/ingredients/"+str(stdLookup(ID, TABLE_BRANDS)), "id":ID})
-    results = sql_select("name AS label", TABLE_INGREDIENTS, ID)
-    fields = {"url": "tipsymix.com/api/ingredients/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID}
-    [x.update(fields) for x in results]
-    return results
+    return sql_select("name AS label", TABLE_INGREDIENTS, ID)[0].update({"url": "tipsymix.com/api/ingredients/"+str(stdLookup(ID, TABLE_BRANDS)), "id":ID})
 
 # returns the label, id, and url of a desired country
 def countryLinkdataQuery(ID):
-    results = sql_select("name AS label", TABLE_COUNTRIES, ID)
-    fields = {"url": "tipsymix.com/api/countries/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID}
-    [x.update(fields) for x in results]
-    return results
+    return sql_select("name AS label", TABLE_COUNTRIES, ID)[0].update({"url": "tipsymix.com/api/countries/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID})
 
 ################### In Cocktail ###################
 
@@ -404,6 +390,10 @@ def tagsInIngredientQuery(ID):
 # returns the list of tags associated with a given country
 def tagsInCountryQuery(ID):
     return [match.get("tagID") for match in sql_select("tagID", TABLE_TAGS_COUNTRY, "countryID = "+str(ID))]
+
+# returns the label of a tag, given its ID
+def tagQuery(ID):
+    return sql_select("label", TABLE_TAGS, "id = "+str(ID))[0].get("label")
 
 ################ Instance Queries #################
 
