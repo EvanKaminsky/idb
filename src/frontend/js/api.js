@@ -1,5 +1,5 @@
-const base_api = "https://tipsymix-ttp.appspot.com/api/";
-//const base_api = "http://127.0.0.1:5000/api/";
+//const base_api = "https://tipsymix-ttp.appspot.com/api/";
+const base_api = "http://127.0.0.1:5000/api/";
 
 /* Networking layer for the React frontend */
 function API() {
@@ -52,43 +52,43 @@ function API() {
         )
     };
 
-    this.getIngredients = function(callback) {
+    this.getIngredients = function() {
         return this.get("search?category=ingredients").then(ingredients =>
             (ingredients === null) ? null : ingredients.results
         )
     };
 
-    this.getCountries = function(callback) {
+    this.getCountries = function() {
         return this.get("search?category=countries").then(countries =>
             (countries === null) ? null : countries.results
         )
     };
 
-    this.getBrands = function(callback) {
+    this.getBrands = function() {
         return this.get("search?category=brands").then(brands =>
             (brands === null) ? null : brands.results
         )
     };
 
-    this.getCocktailDetail = function(slug, callback) {
+    this.getCocktailDetail = function(slug) {
         return this.get("cocktails/" + slug).then(cocktail =>
             (cocktail === null) ? null : cocktail
         )
     };
 
-    this.getIngredientDetail = function(slug, callback) {
+    this.getIngredientDetail = function(slug) {
         return this.get("ingredients/" + slug).then(ingredient =>
             (ingredient === null) ? null : ingredient
         )
     };
 
-    this.getCountryDetail = function(slug, callback) {
+    this.getCountryDetail = function(slug) {
         return this.get("countries/" + slug).then(country =>
             (country === null) ? null : country
         )
     };
 
-    this.getBrandDetail = function(slug, callback) {
+    this.getBrandDetail = function(slug) {
         return this.get("brands/" + slug).then(brand =>
             (brand === null) ? null : brand
         )

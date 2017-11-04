@@ -7,6 +7,10 @@ const styles = theme => ({
     root: {
         flexGrow: 1,
     },
+    container: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
 });
 
 class TipsyGrid extends React.Component {
@@ -14,6 +18,7 @@ class TipsyGrid extends React.Component {
         const { classes } = this.props;
 
         return (
+            <form className={classes.container} noValidate autoComplete="off">
             <Grid container className={classes.root}>
                 <Grid item xs={12}>
                     <Grid container justify="center" spacing={16}>
@@ -21,6 +26,7 @@ class TipsyGrid extends React.Component {
                     </Grid>
                 </Grid>
             </Grid>
+            </form>
         );
     }
 }
