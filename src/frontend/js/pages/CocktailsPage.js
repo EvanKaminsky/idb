@@ -1,64 +1,68 @@
 import React from 'react';
+import Grid from 'material-ui/Grid';
 
-/* Local Imports */
-import "../../static/css/about.css"
-import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_cocktail.json');
+import TipsySearchbar from "../components/TipsySearchbar";
+import Spinner from "../components/Spinner";
+import CocktailCard from "../cards/CocktailCard.js";
+import TipsyGrid from "../components/TipsyGrid.js";
 
 /* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            cocktails: data,
-            api: new API()
-        }
-    }
+            cocktails: [],
+            isLoading: false
+        };
 
-    componentDidMount() {
-        this.reload()
+        this.openCocktailDetail = this.openCocktailDetail.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     reload() {
-        this.state.api.getCocktails(cocktails => {
+        if (this.state.isLoading) {
+            return;
+        }
+
+        this.state.isLoading = true;
+        window.constants.api.getCocktails().then(cocktails => {
             if (cocktails !== null) {
                 this.setState({cocktails: cocktails});
             }
-        })
-    }
+            this.state.isLoading = false;
+        });
+    };
+
+    openCocktailDetail(cocktail, event) {
+        event.preventDefault();
+        this.props.history.push({
+            pathname: '/cocktail-detail/' + cocktail.id,
+            state: {"fromURL": "/cocktails"}
+        });
+    };
 
     render() {
+        var spinner = null;
+        if (this.state.cocktails.length < 1) {
+            this.reload();
+            spinner = <Spinner/>
+        }
+
         return (
-            <body style = {backgroundStyle}>
+            <div>
+                <h1>Tipsy Mix</h1>
 
-            <h1>Tipsy Mix</h1>
+                <TipsySearchbar/>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand" /><br/>
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
+                <TipsyGrid elements={spinner !== null ? spinner :
+                    this.state.cocktails.map(function(cocktail, i) { return (
+                    <Grid key={i} item>
+                        <CocktailCard cocktail={cocktail} onClick={(e)=>this.openCocktailDetail(cocktail, e)}/>
+                    </Grid>
+                )}, this)}/>
             </div>
-
-            <section className = "container">
-                <div className = "row">
-                    {this.state.cocktails.map(function(cocktail, i) {
-                        return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className = "img-responsive" src={"" + cocktail.image} />
-                                <h5>{cocktail.name}</h5>
-                                <p>{cocktail.description}</p>
-                                <a href={"" + cocktail.stdname} className="btn btn-info btn-log" role ="button">More</a>
-                            </div>
-                        );
-                    })}
-                </div>
-            </section>
-            </body>
         )
     }
+
 }
-
-

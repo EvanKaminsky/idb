@@ -1,5 +1,4 @@
 """
-
 -----------------------------------
 TipsyMix's Flask Backend Interface
 -----------------------------------
@@ -19,14 +18,18 @@ it as a list of strings.
 """
 
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS, cross_origin
 
 from backend import api
+
 
 ################################
 # Flask Setup #
 ################################
 
 app = Flask(__name__, template_folder="frontend/templates",  static_folder="frontend/static")
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 ################################
@@ -36,47 +39,41 @@ app = Flask(__name__, template_folder="frontend/templates",  static_folder="fron
 base_api = "/api/"
 
 @app.route(base_api + "search", methods=['GET'])
+@cross_origin()
 def search():
-    print("---------- SEARCH ----------")
-
     category =      request.args.get('category', default=None, type=str)
     query =         request.args.get('query', default=None, type=str)
-    filterRules =   request.args.get('filterRules', default=None, type=str)
+    filter_rules =  request.args.get('filterRules', default=None, type=str)
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
 
-    response = jsonify(api.search(category, query, filterRules, count, page, pagesize))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    response = api.search(category, query, filter_rules, count, page, pagesize)
+    return jsonify(response)
 
 @app.route(base_api + "cocktails/<slug>", methods=['GET'])
+@cross_origin()
 def cocktail_detail(slug):
     print("cocktail " + slug)
-    response = jsonify(api.cocktailDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return jsonify(api.cocktailDetail(slug))
 
 @app.route(base_api + "ingredients/<slug>", methods=['GET'])
+@cross_origin()
 def ingredient_detail(slug):
     print("ingredient " + slug)
-    response = jsonify(api.ingredientDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return jsonify(api.ingredientDetail(slug))
 
 @app.route(base_api + "brands/<slug>", methods=['GET'])
+@cross_origin()
 def brand_detail(slug):
     print("brand " + slug)
-    response = jsonify(api.brandDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return jsonify(api.brandDetail(slug))
 
 @app.route(base_api + "countries/<slug>", methods=['GET'])
+@cross_origin()
 def country_detail(slug):
     print("country " + slug)
-    response = jsonify(api.countryDetail(slug))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
+    return jsonify(api.countryDetail(slug))
 
 
 ################################

@@ -8,33 +8,42 @@ import backgroundStyle from "../constants.js"
 export default class AboutPage extends React.Component {
     render() {
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
             <div id="about" className="row">
                 <div className="col-md-12">
+
                     <h3>About</h3>
-                    TipsyMix is a platform that allows user to search for cocktails based off of a variety of attributes. Whether you're a professional bartender or a college student, this site is for you.
-                    <br />
-                    Total Commits: 99
-                    <br />
-                    Total Issues: 23
-                    <br />
-                    Total Unit Tests: 0
-                    <br />
-                    Links: <a href="https://github.com/EvanKaminsky/idb">GitHub Repo</a> | <a href = "https://trello.com/b/0Ks1mfas/primary">Trello</a> | <a href = "http://docs.evankaminsky.apiary.io/">Apiary API</a> | <a href = "https://utexas.box.com/s/5ipui9nvcda5ft29ekc1euk91f2499rs">Technical Report</a>
-                    <br />
-                    Data Sources: <a href="http://www.1001cocktails.com/recipes/most-popular-mixed-drinks.html">1001 Cocktails</a> | <a href="http://www.barnonedrinks.com/drinks/top_ingredients/">BarnOne Drinks</a> | <a href="https://en.wikipedia.org/wiki/List_of_national_liquorshttps://www.thewhiskyexchange.com/brands/spirits">Wikipedia</a> | <a href="https://www.thewhiskyexchange.com/brands/spirits">The Whisky Exchange</a>
-                    <br />
-                    Data was scraped manually for the time being.
-                    <br />
+                    TipsyMix is a web application that allows user to search for cocktails based off of a variety of attributes.
+                    Whether you're a professional bartender or a college student, this site is for you.
+                    <br/>
+
+                    Total Commits: 99 <br/>
+                    Total Issues: 23 <br/>
+                    Total Unit Tests: 0 <br/>
+
+                    Links:
+                        <a href = "https://github.com/EvanKaminsky/idb">GitHub</a> |
+                        <a href = "https://trello.com/b/0Ks1mfas/primary">Trello</a> |
+                        <a href = "http://docs.evankaminsky.apiary.io/">Apiary API</a> |
+                        <a href = "https://utexas.box.com/s/mczsxwvbu0r0pq2k541asou4maczaxz0">Technical Report</a><br/> |
+                        <a href = "https://utexas.box.com/s/gktvgjswvitlivx5hub9vjv48lzmpshp">UML</a><br/> |
+                        <a href = "https://utexas.box.com/s/5vtuyat2nzw7cpu1rzyf3evy2g59xlli">PlanIt Poker</a><br/>
+
+                    Data Sources:
+                        <a href="http://www.1001cocktails.com/recipes/most-popular-mixed-drinks.html">1001 Cocktails</a> |
+                        <a href="http://www.barnonedrinks.com/drinks/top_ingredients/">BarnOne Drinks</a> |
+                        <a href="https://en.wikipedia.org/wiki/List_of_national_liquorshttps://www.thewhiskyexchange.com/brands/spirits">Wikipedia</a> |
+                        <a href="https://www.thewhiskyexchange.com/brands/spirits">The Whisky Exchange</a>
+
+                    <br/>Data was acquired by a python web scraper, which wrote its results to the SQL datastore.<br />
+
                     <h3>Tools Used</h3>
-                    <b>Apiary</b> was used to document and host our API with data scraped from the aforementioned data sources.
-                    <br />
-                    <b>Trello</b> was used to track issues.
-                    <br />
-                    <b>GitHub</b> was used to host our code.
-                    <br />
-                    <b>SublimeText</b> and <b>Atom</b> were used to write all of the HTML and CSS.
+                    <b>Apiary</b> to document the Restful API.<br/>
+                    <b>Trello</b> to track issues and for general project management.<br/>
+                    <b>GitHub</b> to host our full codebase.<br/>
+                    <b>WebStorm, PyCharm, and SublimeText</b> as primary development environments.
+
                 </div>
             </div>
 
@@ -50,6 +59,7 @@ export default class AboutPage extends React.Component {
                         <p>Unit Tests: 0</p>
                         <p>Issues: 5</p>
                     </div>
+
                     <div className = "col-md-2">
                         <h3>Mica</h3>
                         <img className="img-responsive" src="../../static/faces/mica.jpg" />
@@ -59,6 +69,7 @@ export default class AboutPage extends React.Component {
                         <p>Unit Tests: 0</p>
                         <p>Issues: 7</p>g
                     </div>
+
                     <div className = "col-md-2">
                         <h3>Abhi</h3>
                         <img className="img-responsive" src="../../static/faces/abhi.jpg" />
@@ -68,6 +79,7 @@ export default class AboutPage extends React.Component {
                         <p>Unit Tests: 0</p>
                         <p>Issues: 7</p>
                     </div>
+
                     <div className = "col-md-2">
                         <h3>Evan</h3>
                         <img className="img-responsive" src="../../static/faces/evan.jpg" />
@@ -77,6 +89,7 @@ export default class AboutPage extends React.Component {
                         <p>Unit Tests: 0</p>
                         <p>Issues: 7</p>
                     </div>
+
                     <div className="col-md-2">
                         <h3>Balazs</h3>
                         <img className="img-responsive" src="../../static/faces/balazs.jpg" />
@@ -90,7 +103,7 @@ export default class AboutPage extends React.Component {
                     <div className="col-md-1"/>
                 </div>
             </div>
-            </body>
+            </div>
         )
     }
 }

@@ -1,12 +1,11 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 /* Local Imports */
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
-import API from "../api.js"
-
-/* Test Data */
-const data = require('json-loader!../../spoof/testdata_country.json');
+import TipsySearchbar from "../components/TipsySearchbar";
+import Spinner from "../components/Spinner";
 
 /* Page that displays a grid of countries */
 export default class CountriesPage extends React.Component {
@@ -14,49 +13,68 @@ export default class CountriesPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            countries: data,
-            api: new API()
-        }
-    }
+            countries: [],
+            isLoading: false
+        };
 
-    componentDidMount() {
-        this.reload()
+        this.openCountryDetail = this.openCountryDetail.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     reload() {
-        this.state.api.getCountries(countries => {
+        if (this.state.isLoading) {
+            return;
+        }
+
+        this.state.isLoading = true;
+        window.constants.api.getCountries().then(countries => {
             if (countries !== null) {
                 this.setState({countries: countries});
             }
+            this.state.isLoading = false;
         })
     }
 
+    openCountryDetail(country, event) {
+        event.preventDefault();
+        this.props.history.push({
+            pathname:'/country-detail/' + country.id,
+            state: {"fromURL": "/countries"}
+        });
+    };
+
     render() {
+
+        // Activity indicator when cocktails have not loaded
+        var spinner = null;
+        if (this.state.countries.length < 1) {
+            this.reload();
+            spinner = <Spinner/>
+        }
+
         return (
-            <body style={backgroundStyle}>
+            <div style={backgroundStyle}>
 
-            <h1>Tipsy Mix</h1>
+                <h1>Tipsy Mix</h1>
 
-            <div id = "searchForm">
-                <input type="text" className="search" placeholder="Search by ingredients, cocktail, country, or brand"/><br />
-                <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
-            </div>
+                <TipsySearchbar/>
 
-            <section className = "container">
-                <div className = "row">
-                    {this.state.countries.map(function(country, i) {
-                        return(
-                            <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                <section className = "container">
+                    <div className = "row">
+                        {spinner}
+
+                        {this.state.countries.map(function(country, i) { return (
+                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
                                 <img className= "img-responsive" src={"" + country.image} />
                                 <h5>{country.name}</h5>
                                 <p>{country.description}</p>
-                                <a href={"" + country.stdname} className="btn btn-info btn-log" role ="button">More</a>
+
+                                <Button bsStyle="info" onClick={(e)=>this.openCountryDetail(country, e)}>More</Button>
                             </div>
-                        );
-                    })}
-                </div>
-            </section>
-            </body>
+                        );}, this)}
+                    </div>
+                </section>
+            </div>
         )
     }
 }
