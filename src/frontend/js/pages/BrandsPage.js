@@ -11,18 +11,7 @@ import API from "../api.js"
 /* Test Data */
 const data = require('json-loader!../../spoof/testdata_brand.json');
 
-const Button = () => <a href={"" + data[0].stdname} className="btn btn-info btn-log" role ="button">More</a>
-
-const Data = () => <div class = "col-md-6 cocktail-box">
-                      <img class="img-responsive" src={"" + data[0].image} />
-                      <h2>{data[0].name}</h2>
-                      <h3>Details</h3>
-                      <p>{data[0].details}</p>
-                      <h3>Countries</h3>
-                      <p>{data[0].countries}</p>
-                      <h3>Ingredients</h3>
-                      <p>{data[0].ingredients}</p>
-                    </div>
+const Home = () => <h1>Hola</h1>
 
 const Address = () => <h1>We are located at 555 Jackson St.</h1>
 
@@ -60,15 +49,8 @@ export default class BrandsPage extends React.Component {
                 <input type="submit" className="searchButton" placeholder="Search" onSubmit={this.reload.bind(this)}/>
             </div>
 
-            <Router>
-                <Switch>
-                    <Route path = '/' component={Data} />
-                </Switch>
-            </Router>
-
             <section className = "container">
                 <div className = "row">
-
                         {this.state.brands.map(function(brand, i) {
                             return(
                                 <div className = "col-md-3 col-md-offset-1 cocktail-box">
@@ -78,9 +60,10 @@ export default class BrandsPage extends React.Component {
 
                                     <Router>
                                         <div>
-                                          <Route path='/' component={Button} />
+                                          <Route path='/brands/jagermeister' component={Home} />
                                         </div>
                                     </Router>
+                                    <a href={"" + brand.stdname} className="btn btn-info btn-log" role ="button">More</a>
                                 </div>
                             );
                         })}

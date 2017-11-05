@@ -1,3 +1,5 @@
+import React from 'react';
+
 class cocktail_model extends React.Component {
   render() {
     return (
@@ -11,7 +13,7 @@ class cocktail_model extends React.Component {
       <h3>Recipe</h3>
       <p>{this.cocktails.recipe}</p>
       <h3>Brands</h3>
-      <p>{this.cocktails.brands}</a></p>
+      <p>{this.cocktails.brands}</p>
     </div>
     );
   }
