@@ -86,6 +86,7 @@ export default class BrandsPage extends React.Component {
                         })}
                 </div>
             </section>
+            </div>
             </body>
         )
     }
