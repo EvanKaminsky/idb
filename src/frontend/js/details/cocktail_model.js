@@ -81,4 +81,3 @@ export default class CocktailDetailPage extends React.Component {
     }
 
 };
-

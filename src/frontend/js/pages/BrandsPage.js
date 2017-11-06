@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link, browserHistory, IndexRoute } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import {Button} from 'react-bootstrap';
 
 /* Local Imports */
@@ -6,6 +9,10 @@ import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
+
+const Home = () => <h1>Hola</h1>
+
+const Address = () => <h1>We are located at 555 Jackson St.</h1>
 
 /* Page that displays a grid of brands */
 export default class BrandsPage extends React.Component {
@@ -59,22 +66,27 @@ export default class BrandsPage extends React.Component {
 
                 <TipsySearchbar/>
 
-                <section className = "container">
-                    <div className = "row">
-                        {spinner}
+            <section className = "container">
+                <div className = "row">
+                        {this.state.brands.map(function(brand, i) {
+                            return(
+                                <div className = "col-md-3 col-md-offset-1 cocktail-box">
+                                    <img className= "img-responsive" src={"" + brand.image} />
+                                    <h5>{brand.name}</h5>
+                                    <p>{brand.description}</p>
 
-                        {this.state.brands.map(function(brand, i) { return (
-                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className= "img-responsive" src={"" + brand.image} />
-                                <h5>{brand.name}</h5>
-                                <p>{brand.description}</p>
-
-                                <Button bsStyle="info" onClick={(e)=>this.openBrandDetail(brand, e)}>More</Button>
-                            </div>
-                        );}, this)}
-                    </div>
-                </section>
-            </div>
+                                    <Router>
+                                        <div>
+                                          <Route path='/brands/jagermeister' component={Home} />
+                                        </div>
+                                    </Router>
+                                    <a href={"" + brand.stdname} className="btn btn-info btn-log" role ="button">More</a>
+                                </div>
+                            );
+                        })}
+                </div>
+            </section>
+            </body>
         )
     }
 }
