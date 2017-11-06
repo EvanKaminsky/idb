@@ -352,25 +352,33 @@ def scrapeInstructions(description):
 
 # returns the label, id, and url of a desired cocktail
 def cocktailLinkdataQuery(ID):
-    return sql_select("name AS label", TABLE_COCKTAILS, "id=" + str(ID))[0].update({"url": "tipsymix.com/api/cocktails/" + str(stdLookup(ID, TABLE_COCKTAILS)), "id": ID})
+    results = sql_select("name AS label", TABLE_COCKTAILS, "id=" + str(ID))[0]
+    results.update({"url": "tipsymix.com/api/cocktails/" + str(stdLookup(ID, TABLE_COCKTAILS)), "id": ID})
+    return results
 
 # returns the label, id, and url of a desired brand
 
 
 def brandLinkdataQuery(ID):
-    return sql_select("name AS label", TABLE_BRANDS, "id=" + str(ID))[0].update({"url": "tipsymix.com/api/brands/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID})
+    results = sql_select("name AS label", TABLE_BRANDS, "id=" + str(ID))[0]
+    results.update({"url": "tipsymix.com/api/brands/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID})
+    return results
 
 # returns the label, id, and url of a desired ingredient
 
 
 def ingredientLinkdataQuery(ID):
-    return sql_select("name AS label", TABLE_INGREDIENTS, "id=" + str(ID))[0].update({"url": "tipsymix.com/api/ingredients/" + str(stdLookup(ID, TABLE_INGREDIENTS)), "id": ID})
+    results = sql_select("name AS label", TABLE_INGREDIENTS, "id=" + str(ID))[0]
+    results.update({"url": "tipsymix.com/api/ingredients/" + str(stdLookup(ID, TABLE_INGREDIENTS)), "id": ID})
+    return results
 
 # returns the label, id, and url of a desired country
 
 
 def countryLinkdataQuery(ID):
-    return sql_select("name AS label", TABLE_COUNTRIES, "id=" + str(ID))[0].update({"url": "tipsymix.com/api/countries/" + str(stdLookup(ID, TABLE_COUNTRIES)), "id": ID})
+    results = sql_select("name AS label", TABLE_COUNTRIES, "id=" + str(ID))[0]
+    results.update({"url": "tipsymix.com/api/countries/" + str(stdLookup(ID, TABLE_COUNTRIES)), "id": ID})
+    return results
 
 ################### In Cocktail ###################
 
