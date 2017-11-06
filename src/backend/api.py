@@ -47,9 +47,25 @@ TABLE_INGREDIENT_COUNTRY = "INGREDIENT_COUNTRY"
 #   + count (?int) - How many results to create
 #   + page (?int) - What page of the results to return
 #   + pagesize (?int) - Number of results per page
+
 def search(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = fixCategory(category)
     return engine.runSearch(category, query, filterRules, count, page, pageSize)
+
+# /api/describe
+
+
+def describe():
+    cocktail_describe = sql_describe(TABLE_COCKTAILS)
+    ingredient_describe = sql_describe(TABLE_INGREDIENTS)
+    country_describe = sql_describe(TABLE_COUNTRIES)
+    brand_describe = sql_describe(TABLE_BRANDS)
+    return {
+        "cocktail_fields": cocktail_describe,
+        "ingredient_fields": ingredient_describe,
+        "country_fields": country_describe,
+        "brand_fields": brand_describe
+    }
 
 # /api/cocktails/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name

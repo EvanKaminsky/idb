@@ -60,3 +60,15 @@ def sql_select(select_q, from_q, where_q=None):
 # Fetch all instances of a class
 def sql_fetchAll(category):
     return sql_select("*", category.upper(), None)
+
+
+# Describe a table
+def sql_describe(category):
+    qString = "DESCRIBE " + str(category)
+    try:
+        cursor = db.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute(qString)
+        result = [dict(x) for x in cursor.fetchall()]
+        return result
+    except Exception as e:
+        return None
