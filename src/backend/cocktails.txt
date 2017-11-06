@@ -36,6 +36,7 @@ Its “smooth and almost non-alcoholic flavor” deceives many first-time drinkers, 
 NULL
 7
 caesar
+Caesar
 https://www.baconismagic.ca/wp-content/uploads/2016/05/caesar-drink-a.jpg
 Spaghetti alle vongole, or spaghetti with tomato sauce and clams, served as Walter Chell’s inspiration for the Caesar, taking this classic from Venice, Italy all across Canada.
 NULL
@@ -193,7 +194,8 @@ NULL
 gin
 Gin
 https://wine-searcher1.freetls.fastly.net/images/labels/74/60/gibson-s-london-dry-gin-england-10517460.jpg
-Gin is distilled from juniper berries and enjoyed worldwide due to its versatility as well as the popularity of the martini.NULL
+Gin is distilled from juniper berries and enjoyed worldwide due to its versatility as well as the popularity of the martini.
+NULL
 34
 fernet
 Fernet
