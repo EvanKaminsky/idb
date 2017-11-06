@@ -1,372 +1,360 @@
 1
 bolivia
 Bolivia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Bolivia.png
+Capital: Sucre
 South America
 2
-korea
-Korea
-NULL
-NULL
+south_korea
+South Korea
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Korea-South.png
+Capital: Seoul
 Asia
 3
 brazil
 Brazil
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png
+Capital: Brasilia
 South America
 4
 scotland
 Scotland
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png
+Capital: London
 Europe
 5
 usa
 USA
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png
+Capital: Washington, D.C.
 North America
 6
 peru
 Peru
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Peru.png
+Capital: Lima
 South America
 7
 canada
 Canada
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Canada.png
+Capital: Ottawa
 North America
 8
 china
 China
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-China.png
+Capital: Beijing
 Asia
 9
 mexico
 Mexico
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png
+Capital: Mexico City
 North America
 10
 cuba
 Cuba
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Cuba.png
+Capital: Havana
 North America
 11
 ireland
 Ireland
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Ireland.png
+Capital: Dublin
 Europe
 12
 czech_republic
 Czech Republic
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png
+Capital: Prague
 Europe
 13
 ghana
 Ghana
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Ghana.png
+Capital: Accra
 Africa
 14
 japan
 Japan
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png
+Capital: Tokyo
 Asia
 15
 dominican_republic
 Dominican Republic
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Dominican-Republic.png
+Capital: Santo Domingo
 North America
 16
 austria
 Austria
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Austria.png
+Capital: Vienna
 Europe
 17
 iceland
 Iceland
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Iceland.png
+Capital: Reykjavik
 Europe
 18
 uganda
 Uganda
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Uganda.png
+Capital: Kampala
 Africa
 19
 taiwan
 Taiwan
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Taiwan.png
+Capital: Taipei
 Asia
 20
 serbia
 Serbia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Serbia.png
+Capital: Belgrade
 Europe
 21
 turkey
 Turkey
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Turkey.png
+Capital: Ankara
 Europe
 22
 spain
 Spain
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png
+Capital: Madrid
 Europe
 23
 mongolia
 Mongolia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Mongolia.png
+Capital: Ulaanbaatar
 Asia
 24
 puerto_rico
 Puerto Rico
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png
+Capital: Washington, D.C.
 North America
 25
 zimbabwe
 Zimbabwe
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Zimbabwe.png
+Capital: Harare
 Africa
 26
 niger
 Niger
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Niger.png
+Capital: Niamey
 Africa
 27
 jordan
 Jordan
-NULL
-NULL
-Africa
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Jordan.png
+Capital: Amman
+Asia
 28
 italy
 Italy
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Italy.png
+Capital: Rome
 Europe
 29
 greece
 Greece
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Greece.png
+Capital: Athens
 Europe
 30
 bali
 Bali
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Indonesia.png
+Capital: Denpasar
 Africa
 31
 cambodia
 Cambodia
 NULL
-NULL
+Capital: Phnom Penh
 Africa
 32
 thailand
 Thailand
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Thailand.png
+Capital: Bangkok
 Asia
 33
 england
 England
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png
+Capital: London
 Europe
 34
 argentina
 Argentina
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Argentina.png
+Capital: Buenos Aires
 South America
 35
 tanzania
 Tanzania
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Tanzania.png
+Capital: Dodoma
 Africa
 36
 nepal
 Nepal
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Nepal.png
+Capital: Kathmandu
 Asia
 37
 jamaica
 Jamaica
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Jamaica.png
+Capital: Kingston
 North America
 38
 singapore
 Singapore
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Singapore.png
+Capital: Singapore
 Asia
 39
 russia
 Russia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Russia.png
+Capital: Moscow
 Europe
 40
 finland
 Finland
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Finland.png
+Capital: Helsinki
 Europe
 41
 portugal
 Portugal
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Portugal.png
+Capital: Lisbon
 Europe
 42
-equador
-Equador
-NULL
-NULL
+ecuador
+Ecuador
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Ecuador.png
+Capital: Quito
 South America
 43
 ethiopia
 Ethiopia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Ethiopia.png
+Capital: Addis Abada
 Africa
 44
 belgium
 Belgium
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Belgium.png
+Capital: Brussels
 Europe
 45
 costa_rica
 Costa Rica
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Costa-Rica.png
+Capital: San Jose
 South America
 46
 hungary
 Hungary
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Hungary.png
+Capital: Budapest
 Europe
 47
 france
 France
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-France.png
+Capital: Paris
 Europe
 48
 ukraine
 Ukraine
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Ukraine.png
+Capital: Kiev
 Europe
 49
-phillipines
-Phillipines
-NULL
-NULL
+philippines
+Philippines
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Philippines.png
+Capital: Manila
 Asia
 50
 norway
 Norway
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Norway.png
+Capital: Oslo
 Europe
 51
 latvia
 Latvia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Latvia.png
+Capital: Riga
 Europe
 52
 haiti
 Haiti
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Haiti.png
+Capital: Port-au-Prince
 North America
 53
 estonia
 Estonia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Estonia.png
+Capital: Tallinn
 Europe
 54
 denmark
 Denmark
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png
+Capital: Copenhagen
 Europe
 55
 panama
 Panama
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Panama.png
+Capital: Panama City
 North America
 56
 romania
 Romania
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Romania.png
+Capital: Bucharest
 Europe
 57
 macedonia
 Macedonia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Macedonia.png
+Capital: Skopje
 Europe
 58
 croatia
 Croatia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Croatia.png
+Capital: Zagreb
 Europe
 59
 colombia
 Colombia
-NULL
-NULL
+https://www.countries-ofthe-world.com/flags-normal/flag-of-Colombia.png
+Capital: Bogota
 South America
-65
-london_uk
-London, UK
-NULL
-NULL
-Europe
-66
-hamilton_bermuda
-Hamilton, Bermuda
-NULL
-NULL
+60
+bermuda
+Bermuda
+https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg
+Capital: Hamilton
 North America
-67
-paris_france
-Paris, France
-NULL
-NULL
-Europe

@@ -89,8 +89,8 @@ http://static3.businessinsider.com/image/55eef5b8bd86ef1a008b8a6f-1200/no-11-rua
 Brand value: $1.29 billion
 NULL
 16
-10_absolut
-h3 class="slide-title">No. 10 Absolut
+absolut
+Absolut
 http://static3.businessinsider.com/image/56be3a2b2e52651c008b6fd7-1200/no-10-absolut.jpg
 Brand value: $1.43 billion
 NULL
@@ -147,16 +147,4 @@ moutai
 Moutai
 http://static4.businessinsider.com/image/572126d09105841c008bf6af-1200/no-1-moutai.jpg
 Brand value: $5.77 billion
-NULL
-31
-smirnoff_
-Smirnoff 
-NULL
-24.3 million cases sold globally
-NULL
-32
-absolut
-Absolut
-NULL
-10.9 million cases sold globally
 NULL
