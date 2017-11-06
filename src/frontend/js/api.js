@@ -22,8 +22,6 @@ function API() {
             });
         }
 
-        console.log(base_api);
-
         return fetch(base_api + endpoint, payload)
             .then(response => response.json())
             .catch((error) => {

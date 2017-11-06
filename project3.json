@@ -1,8 +1,8 @@
 {
   "Project #2": {
-    "Git SHA": "602f8f87e244aae289bb159d6f3f75d28f496088",
+    "Git SHA": "4257baf0d6f3510aa3b967f355b490626dd6e77c",
     "Travis CI URL": "https://travis-ci.org/EvanKaminsky/idb",
-    "Website URL": "https://tipsymix.com/",
+    "Website URL": "https://tipsymix-ttp.appspot.com/",
     "Owner  Name": "Evan Kaminsky",
     "Owner  EID": "esk479",
     "Owner  GitHub ID": "EvanKaminsky",
@@ -22,13 +22,13 @@
     "Member EID": "rb38429",
     "Member GitHub ID": "RohitBhatta",
     "Member Estimated Completion Time (hours : int)": 15,
-    "Member Actual    Completion Time (hours : int)": 25,
+    "Member Actual    Completion Time (hours : int)": 20,
     "Member Name": "Mica Kohl",
     "Member EID": "amk2959",
     "Member GitHub ID": "micaKohl",
     "Member Estimated Completion Time (hours : int)": 12,
     "Member Actual    Completion Time (hours : int)": 17,
     "Comments":
-    	"Apiary: http://docs.evankaminsky.apiary.io/ | Trello: https://trello.com/b/0Ks1mfas/tipsymix"
+    	"We are currently having an issue pointing our production URL - tipsymix.com - to our App Engine instance at https://tipsymix-ttp.appspot.com/. We have been going back and forth with some Googlers in both Google Groups and Google Issue Tracker to try to solve this | Apiary: http://docs.evankaminsky.apiary.io/ | Trello: https://trello.com/b/0Ks1mfas/tipsymix"
   }
 }
