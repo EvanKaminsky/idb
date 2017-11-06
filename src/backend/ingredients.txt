@@ -1,294 +1,288 @@
 1
 cranberry_juice
 Cranberry Juice
-NULL
-NULL
-NULL
+https://www.simplyorangejuice.com/images/product-images/prod-cranberry-large.png
+Type: Juice and Concentrate
+0.0
 2
 lime_juice
 Lime Juice
-NULL
-NULL
-NULL
+https://specsonline.com/wp-content/uploads/001480058204.jpg
+Type: Juice and Concentrate
+0.0
 3
 cointreau
 Cointreau
-NULL
-NULL
-NULL
+http://cdn.barmano.com/brand-images/cointreau-112-small.jpg
+Cointreau is a brand of triple sec liqueur, and produced in Saint-Barthélemy-d'Anjou, a suburb of Angers, France. 
+0.4
 4
 vodka_lemon
-Vodka, lemon
-NULL
-NULL
-NULL
+Lemon Vodka
+https://www.austinhomebrew.com/assets/images/still-spirts-top-shelf-flavoring-essence-citrus-vodka-web.jpg
+Lemon flavoring added to Vodka (natural or artificial).
+0.4
 5
 vodka
 Vodka
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/6/65/Absolut_vodka.jpg
+Vodka is easily one of the world's most consumed distilled beverages.
+0.4
 6
 amaretto
 Amaretto
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/8/8b/Amaretto_Bottles_4.JPG
+Amaretto is a sweet liqueur made from a basic infusion of the stones of drupe fruits, such as peaches, as well as a related almond biscotto.
+0.28
 7
 baileys_irish_cream
 Bailey's Irish Cream
-NULL
-NULL
-NULL
+http://cdn.barmano.com/brand-images/baileys-irish-cream-35-small.jpg
+Baileys Irish Cream, is an Irish whiskey and cream based liqueur, made by R. A. Bailey & Co. of Dublin, Ireland. 
+0.17
 8
 kahlua
 Kahlua
-NULL
-NULL
-NULL
+http://cdn.barmano.com/brand-images/kahlua-5-small.jpg
+Kahlúa is a well known Mexican coffee flavored liqueur.
+0.27
 9
 liqueur_peach
-Liqueur, peach
-NULL
-NULL
-NULL
+Peach Liqueur
+https://cdnimg.webstaurantstore.com/images/products/extra_large/29359/938963.jpg
+Type: Liqueurs and Cordials
+0.18
 10
 orange_juice
 Orange Juice
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/6/67/Orange_juice_1_edit1.jpg
+Type: Juice and Concentrate
+0.0
 11
 irish_cream
 Irish Cream
-NULL
-NULL
-NULL
+https://smittenkitchendotcom.files.wordpress.com/2016/12/homemade-irish-cream.jpg?w=1024
+Irish Cream is a cream liqueur based on Irish whiskey, coffee and cream and other ingredients.
+0.17
 12
 liqueur_coffee
-Liqueur, coffee
-NULL
-NULL
-NULL
+Coffee Liqueur
+http://library.bevnetwork.com/bottles/410/319622.jpg
+Type: Liqueurs and Cordials
+0.27
 13
 cream
 Cream
-NULL
-NULL
-NULL
+https://assets.epicurious.com/photos/57631b4eff66dde1456dfed4/6:4/w_620%2Ch_413/sweetened-whipped-cream.jpg
+Type: Milk, Ice, Water, and Egg Product
+0.0
 14
 cream_of_coconut
 Cream of coconut
-NULL
-NULL
-NULL
+https://jetimages.azureedge.net/md5/74b77007a08579a4ffe88d4d1dc76a6e.500
+Type: Juice and Concentrate
+0.0
 15
 curacao,_blue
 Curacao, blue
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/0/09/Senior-Liqueur-Blue-Curacao.jpg
+Blue Curaçao is a liqueur flavored with the dried peels of Larahas, a type of bitter orange grown on the island of Curacao.
+0.3
 16
 pineapple_juice
 Pineapple Juice
-NULL
-NULL
-NULL
+https://i2.wp.com/lovingfruits.com/wp-content/uploads/2016/09/drinking-pineapple-juice-on-empty-stomach.jpg
+Type: Juice and Concentrate
+0.0
 17
 midori_melon_liqueur
 Midori Melon Liqueur
-NULL
-NULL
-NULL
+https://ui3.assets-asda.com/g/v5/020/665/4901777020665_280_IDShot_3.jpeg
+Country of Origin: Japan
+0.23
 18
 godiva
 Godiva
-NULL
-NULL
-NULL
+https://www.owliquors.com/image/cache/data/liquor/liqueur-cordial/godiva/godiva-chocolate-liqueur-bottle-500x500.jpg
+An extremely rich, creamy-tasting white chocolate liqueur with the world-famous Godiva name.
+0.17
 19
 frangelico
 Frangelico
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/en/4/49/Frangelico.jpg
+Frangelico is a hazelnut and herb-flavored liqueur which is produced in Canale, Italy.
+0.24
 20
 malibu_original
 Malibu Original
-NULL
-NULL
-NULL
+http://cdn.barmano.com/brand-images/malibu-309-small.jpg
+Malibu Original is a Caribbean rum with natural coconut flavor.
+0.21
 21
 rum_
 Rum, overproof/151 proof
-NULL
-NULL
-NULL
+http://library.bevnetwork.com/bottles/310/9497.jpg
+Type: Rums
+0.76
 22
 gin
 Gin
-NULL
-NULL
-NULL
+https://reservebar.global.ssl.fastly.net/media/catalog/product/cache/1/image/1000x1278/9df78eab33525d08d6e5fb8d27136e95/b/o/botangin.jpg
+Gin is a spirit flavored with juniper berries.
+0.4
 23
 lemon_juice
 Lemon Juice
-NULL
-NULL
-NULL
+http://i.telegraph.co.uk/multimedia/archive/02964/lemon_2964364b.jpg
+Type: Juice and Concentrate
+0.0
 24
 rum_white_light
-Rum, white/light
-NULL
-NULL
-NULL
+White/Light Rum
+http://groceries.iceland.co.uk/medias/sys_master/root/h5c/h01/8830464163870.jpg
+Type: Rums
+0.4
 25
 sugar_syrup
 Sugar Syrup
-NULL
-NULL
-NULL
+https://groceries.morrisons.com/productImages/265/265410011_0_170x170.jpg?identifier=9d7267ccd395ddc7d26ee26c484ce887
+Type: Sweetened Product
+0.0
 26
 soda_water
 Soda Water
-NULL
-NULL
-NULL
+https://jetimages.azureedge.net/md5/2e459c0a8e72f47f278b5760cbf154fb.500
+Carbonated water, also known as sparkling water, fizzy water, soda water, club soda, or seltzer water, is plain water into which carbon dioxide gas has been dissolved. 
+0.0
 27
 tequila
 Tequila
-NULL
-NULL
-NULL
+http://cdn2.bigcommerce.com/server4900/7a906/images/stencil/1000x1000/products/846/8951/1800_Reposado_Tequila__33890.1440522712.1280.1280__76311.1440522917.jpg?c=2
+Tequila is a Mexican liquor distilled from the fermented juices obtained from the hearts of blue agave plants grown in the Tequila Region.
+0.4
 28
 brandy
 Brandy
-NULL
-NULL
-NULL
+https://www.brandyandginger.co.za/wp-content/uploads/2011/12/VR_10_Snifter.jpg
+Brandy short for brandywine, from Dutch brandewijn ('burnt wine') is a general term for distilled wine, usually 40–60% ethyl alcohol by volume.
+0.4
 29
 creme_de_menthe
 Creme de Menthe
-NULL
-NULL
-NULL
+https://groceries.morrisons.com/productImages/119/119568011_0_640x640.jpg?identifier=b730b5d6d18c5eb9e73ae0eba81814c9
+Creme de menthe is a sweet, mint-flavored liqueur, which derives it's taste from corsican mint.
+0.2
 30
 liqueur_apple
-Liqueur, apple
-NULL
-NULL
-NULL
+Apple Liqueur
+https://wine-searcher1.freetls.fastly.net/images/labels/19/44/bols-sour-apple-liqueur-netherlands-10401944.jpg
+Apple liqueur (or sometimes called schnapps) is typically made from apples, or apple flavoring (natural or artificial).
+0.2
 31
 creme_de_bananes
 Creme de Bananes
-NULL
-NULL
-NULL
+https://cdnimg.webstaurantstore.com/images/products/extra_large/78336/938597.jpg
+A yellow, transparent, sweet, banana flavored liqueur.
+0.2
 32
 grenadine
 Grenadine
-NULL
-NULL
-NULL
+https://cdnimg.webstaurantstore.com/images/products/extra_large/93925/792977.jpg
+Grenadine is traditionally a non-alcoholic red syrup.
+0.0
 33
 creme_de_coconut
 Creme de Coconut
-NULL
-NULL
-NULL
+https://cdnimg.webstaurantstore.com/images/products/extra_large/41760/836985.jpg
+Creme de Coconut is a sweet, coconut flavored liqueur.
+0.0
 34
 ice_for_bartending
 Ice for bartending
-NULL
-NULL
-NULL
+http://www.occryospa.com/wp-content/uploads/2016/05/three-ice-cubes.jpg
+Among the various ice makers, Kold Draft is one of the top manufacturer of ice machines in the United States
+0.0
 35
 creme_de_cacao_white
-Creme de Cacao, white
-NULL
-NULL
-NULL
+White Creme de Cacao
+http://library.bevnetwork.com/bottles/400/333361.jpg
+Creme de Cacao is a sweet alcoholic liqueur flavored primarily by the cocoa bean and the vanilla bean.
+0.2
 36
 syrup_gomme
-Syrup, Gomme
-NULL
-NULL
-NULL
+Gomme Syrup
+https://jetimages.azureedge.net/md5/db748ab4fedc7ebbf91958e3c0b8027a.500
+Gomme syrup is an ingredient commonly used in mixed drinks.
+0.0
 37
 cola
 Cola
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/1/10/Glass_cola.jpg
+A popular soft drink.
+0.0
 38
 cognac
 Cognac
-NULL
-NULL
-NULL
+https://reservebar.global.ssl.fastly.net/media/catalog/product/cache/1/image/1000x1278/9df78eab33525d08d6e5fb8d27136e95/c/o/courxo_1.jpg
+Cognac, named after the town of Cognac in France, is a brandy produced in the region surrounding the town.
+0.4
 39
 liqueur_butterscotch
-Liqueur, butterscotch
-NULL
-NULL
-NULL
+Butterscotch Liqueur
+http://www.budgetbottle.com/labels/B10932.jpg
+Butterscotch liqueur is sometimes called butterscotch schnapps.
+0.2
 40
 whiskey_scotch
-Whiskey, Scotch
-NULL
-NULL
-NULL
+Scotch Whiskey
+https://cdn.aldi-digital.co.uk/Scotch-Whisky-A.jpg?o=PNVkTDT4ivYwmPZiJlv6TAFxdi4j&V=yNNz
+Scotch whisky is malt whisky or grain whisky made in Scotland.
+0.4
 41
 grand_marnier_cordon_rouge
 Grand Marnier Cordon Rouge
-NULL
-NULL
-NULL
+https://cdn3.masterofmalt.com/liqueurs/p-2813/grand-marnier-cordon-rouge-liqueur.jpg?ss=2.0
+The original liqueur created in 1880 by Louis-Alexandre Marnier Lapostolle.
+0.4
 42
 tonic_water
 Tonic Water
-NULL
-NULL
-NULL
+https://jetimages.azureedge.net/md5/0a190e94d37b3d36111faa3f3cedf488.500
+Tonic water (or Indian tonic water) is a carbonated soft drink in which quinine is dissolved.
+0.4
 43
 rum
 Rum
-NULL
-NULL
-NULL
+https://static.vinepair.com/wp-content/uploads/2017/01/captain-morgan-pin.jpg
+Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses or honeys, or directly from sugarcane juice.
+0.4
 44
 baijiu 
 Baijiu 
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/6/60/Jiugui.jpg
+Baijiu is a Chinese alcoholic beverage made from grain.
+0.52
 45
 whisky
 Whisky
-NULL
-NULL
-NULL
+https://img.thewhiskyexchange.com/900/blend_why18.jpg
+A type of distilled alcoholic beverage made from fermented grain mash.
+0.4
 47
 whiskey
 Whiskey
-NULL
-NULL
-NULL
+http://nordictravelmag.com/wp-content/uploads/2017/05/All-You-Need-To-Know-About-Whiskey.jpg
+A type of distilled alcoholic beverage made from fermented grain mash.
+0.4
 48
 bitters
 Bitters
-NULL
-NULL
-NULL
+https://upload.wikimedia.org/wikipedia/commons/d/da/Angostura_aromatic_bitters_dD.jpg
+A bitters is traditionally an alcoholic preparation flavored with botanical matter such that the end result is characterized by a bitter, sour, or bittersweet flavor.
+0.45
 49
-rum_brandy_whisky
-Rum, Brandy, Whisky
-NULL
-NULL
-NULL
-51
 anis
 Anis
-NULL
-NULL
-NULL
+https://www.osborne-shop.com/522-large_default/anis-del-mono-dulce.jpg
+Anis is an anise-flavored liqueur that is consumed in most Mediterranean countries.
+0.29
