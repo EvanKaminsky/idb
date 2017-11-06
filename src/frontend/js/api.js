@@ -1,5 +1,5 @@
-//const base_api = "https://tipsymix-ttp.appspot.com/api/";
-const base_api = "http://127.0.0.1:5000/api/";
+const base_api = "https://tipsymix-ttp.appspot.com/api/";
+//const base_api = "http://127.0.0.1:5000/api/";
 
 /* Networking layer for the React frontend */
 function API() {
@@ -40,32 +40,36 @@ function API() {
 
     /* -------------------------------------------------------------- */
 
-    this.search = function(callback) {
-
-    };
-
-    this.getCocktails = function() {
-        return this.get("search?category=cocktails").then(cocktails =>
-            (cocktails === null) ? null : cocktails.results
+    this.search = function(category, page, pagesize) {
+        var query = "search?";
+        if (category) {
+            query += "category=" + category;
+        }
+        if (page) {
+            query += "&page=" + page;
+        }
+        if (pagesize) {
+            query += "&pagesize=" + pagesize;
+        }
+        return this.get(query).then(json =>
+            (json === null) ? null : json.results
         )
     };
 
-    this.getIngredients = function() {
-        return this.get("search?category=ingredients").then(ingredients =>
-            (ingredients === null) ? null : ingredients.results
-        )
+    this.getCocktails = function(page, pagesize) {
+        return this.search("cocktails", page, pagesize);
     };
 
-    this.getCountries = function() {
-        return this.get("search?category=countries").then(countries =>
-            (countries === null) ? null : countries.results
-        )
+    this.getIngredients = function(page, pagesize) {
+        return this.search("ingredients", page, pagesize);
     };
 
-    this.getBrands = function() {
-        return this.get("search?category=brands").then(brands =>
-            (brands === null) ? null : brands.results
-        )
+    this.getCountries = function(page, pagesize) {
+        return this.search("countries", page, pagesize);
+    };
+
+    this.getBrands = function(page, pagesize) {
+        return this.search("brands", page, pagesize);
     };
 
     this.getCocktailDetail = function(slug) {
