@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* Local Imports */
-import "../../static/css/cocktail.css"
+import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
 
 /* Page that displays team information */

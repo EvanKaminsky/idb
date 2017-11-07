@@ -1,5 +1,5 @@
-//const base_api = "https://tipsymix-ttp.appspot.com/api/";
-const base_api = "http://127.0.0.1:5000/api/";
+const base_api = "https://tipsymix-ttp.appspot.com/api/";
+//const base_api = "http://127.0.0.1:5000/api/";
 
 /* Networking layer for the React frontend */
 function API() {
