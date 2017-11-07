@@ -1,11 +1,10 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import Grid from 'material-ui/Grid';
 
-/* Local Imports */
-import "../../static/css/about.css"
-import backgroundStyle from "../constants.js"
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
+import TipsyGrid from "../components/TipsyGrid.js";
+import IngredientCard from "../cards/IngredientCard";
 
 /* Page with a grid of ingredients */
 export default class IngredientsPage extends React.Component {
@@ -14,6 +13,7 @@ export default class IngredientsPage extends React.Component {
         super();
         this.state = {
             ingredients: [],
+            descriptions: [],
             isLoading: false
         };
 
@@ -32,7 +32,13 @@ export default class IngredientsPage extends React.Component {
                 this.setState({ingredients: ingredients});
             }
             this.state.isLoading = false;
-        })
+        });
+
+         window.constants.api.getDescriptions().then(descriptions => {
+            if (descriptions !== null) {
+                this.setState({descriptions: descriptions});
+            }
+        });
     }
 
     openIngredientDetail(ingredient, event) {
@@ -44,8 +50,6 @@ export default class IngredientsPage extends React.Component {
     };
 
     render() {
-
-        // Activity indicator when cocktails have not loaded
         var spinner = null;
         if (this.state.ingredients.length < 1) {
             this.reload();
@@ -53,8 +57,7 @@ export default class IngredientsPage extends React.Component {
         }
 
         return (
-            <div style={backgroundStyle}>
-
+            <div>
                 <h1>Tipsy Mix</h1>
 
                 <TipsySearchbar/>
@@ -63,15 +66,12 @@ export default class IngredientsPage extends React.Component {
                     <div className = "row">
                         {spinner}
 
-                        {this.state.ingredients.map(function(ingredient, i) { return (
-                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className ="img-responsive" src={"" + ingredient.image} />
-                                <h5>{ingredient.name}</h5>
-                                <p>{ingredient.description}</p>
-
-                                <Button bsStyle="info" onClick={(e)=>this.openIngredientDetail(ingredient, e)}>More</Button>
-                            </div>
-                        );}, this)}
+                        <TipsyGrid elements={spinner !== null ? spinner :
+                            this.state.ingredients.map(function(ingredient, i) { return (
+                                <Grid key={i} item>
+                                    <IngredientCard ingredient={ingredient} onClick={(e)=>this.openIngredientDetail(ingredient, e)}/>
+                                </Grid>
+                            )}, this)}/>
                     </div>
                 </section>
             </div>

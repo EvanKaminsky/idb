@@ -3,8 +3,8 @@ import Grid from 'material-ui/Grid';
 
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
-import CocktailCard from "../cards/CocktailCard.js";
 import TipsyGrid from "../components/TipsyGrid.js";
+import CocktailCard from "../cards/CocktailCard.js";
 
 /* Page that displays a grid of cocktails */
 export default class CocktailsPage extends React.Component {
@@ -38,7 +38,7 @@ export default class CocktailsPage extends React.Component {
             if (descriptions !== null) {
                 this.setState({descriptions: descriptions});
             }
-        })
+        });
     };
 
     openCocktailDetail(cocktail, event) {

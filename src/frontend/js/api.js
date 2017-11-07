@@ -1,5 +1,5 @@
-const base_api = "https://tipsymix-ttp.appspot.com/api/";
-//const base_api = "http://127.0.0.1:5000/api/";
+//const base_api = "https://tipsymix-ttp.appspot.com/api/";
+const base_api = "http://127.0.0.1:5000/api/";
 
 /* Networking layer for the React frontend */
 function API() {
@@ -23,7 +23,9 @@ function API() {
         }
 
         return fetch(base_api + endpoint, payload)
-            .then(response => response.json())
+            .then(response => {
+                return response.json();
+            })
             .catch((error) => {
                 console.error(error);
                 return null;
@@ -51,9 +53,9 @@ function API() {
         if (pagesize) {
             query += "&pagesize=" + pagesize;
         }
-        return this.get(query).then(json =>
-            (json === null) ? null : json.results
-        )
+        return this.get(query).then(json => {
+            return (json === null) ? null : json.results
+        })
     };
 
     this.getCocktails = function(page, pagesize) {
