@@ -1,11 +1,10 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import Grid from 'material-ui/Grid';
 
-/* Local Imports */
-import "../../static/css/about.css"
-import backgroundStyle from "../constants.js"
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
+import TipsyGrid from "../components/TipsyGrid.js";
+import CountryCard from "../cards/CountryCard.js";
 
 /* Page that displays a grid of countries */
 export default class CountriesPage extends React.Component {
@@ -14,6 +13,7 @@ export default class CountriesPage extends React.Component {
         super();
         this.state = {
             countries: [],
+            descriptions: [],
             isLoading: false
         };
 
@@ -32,7 +32,13 @@ export default class CountriesPage extends React.Component {
                 this.setState({countries: countries});
             }
             this.state.isLoading = false;
-        })
+        });
+
+        window.constants.api.getDescriptions().then(descriptions => {
+            if (descriptions !== null) {
+                this.setState({descriptions: descriptions});
+            }
+        });
     }
 
     openCountryDetail(country, event) {
@@ -44,8 +50,6 @@ export default class CountriesPage extends React.Component {
     };
 
     render() {
-
-        // Activity indicator when cocktails have not loaded
         var spinner = null;
         if (this.state.countries.length < 1) {
             this.reload();
@@ -53,8 +57,7 @@ export default class CountriesPage extends React.Component {
         }
 
         return (
-            <div style={backgroundStyle}>
-
+            <div>
                 <h1>Tipsy Mix</h1>
 
                 <TipsySearchbar/>
@@ -63,15 +66,12 @@ export default class CountriesPage extends React.Component {
                     <div className = "row">
                         {spinner}
 
-                        {this.state.countries.map(function(country, i) { return (
-                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className= "img-responsive" src={"" + country.image} />
-                                <h5>{country.name}</h5>
-                                <p>{country.description}</p>
-
-                                <Button bsStyle="info" onClick={(e)=>this.openCountryDetail(country, e)}>More</Button>
-                            </div>
-                        );}, this)}
+                        <TipsyGrid elements={spinner !== null ? spinner :
+                            this.state.countries.map(function(country, i) { return (
+                            <Grid key={i} item>
+                                <CountryCard country={country} onClick={(e)=>this.openCountryDetail(country, e)}/>
+                            </Grid>
+                        )}, this)}/>
                     </div>
                 </section>
             </div>

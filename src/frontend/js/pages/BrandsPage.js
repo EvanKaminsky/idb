@@ -1,11 +1,12 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import Grid from 'material-ui/Grid';
 
-/* Local Imports */
-import "../../static/css/about.css"
-import backgroundStyle from "../constants.js"
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
+import TipsyGrid from "../components/TipsyGrid.js";
+import BrandCard from "../cards/BrandCard.js";
+
+import backgroundStyle from "../constants.js"
 
 /* Page that displays a grid of brands */
 export default class BrandsPage extends React.Component {
@@ -14,6 +15,7 @@ export default class BrandsPage extends React.Component {
         super();
         this.state = {
             brands: [],
+            descriptions: [],
             isLoading: false
         };
 
@@ -32,7 +34,13 @@ export default class BrandsPage extends React.Component {
                 this.setState({brands: brands});
             }
             this.state.isLoading = false;
-        })
+        });
+
+        window.constants.api.getDescriptions().then(descriptions => {
+            if (descriptions !== null) {
+                this.setState({descriptions: descriptions});
+            }
+        });
     }
 
     openBrandDetail(brand, event) {
@@ -44,8 +52,6 @@ export default class BrandsPage extends React.Component {
     };
 
     render() {
-
-        // Activity indicator when cocktails have not loaded
         var spinner = null;
         if (this.state.brands.length < 1) {
             this.reload();
@@ -54,7 +60,6 @@ export default class BrandsPage extends React.Component {
 
         return (
             <div style={backgroundStyle}>
-
                 <h1>Tipsy Mix</h1>
 
                 <TipsySearchbar/>
@@ -63,15 +68,12 @@ export default class BrandsPage extends React.Component {
                     <div className = "row">
                         {spinner}
 
-                        {this.state.brands.map(function(brand, i) { return (
-                            <div key={i} className = "col-md-3 col-md-offset-1 cocktail-box">
-                                <img className= "img-responsive" src={"" + brand.image} />
-                                <h5>{brand.name}</h5>
-                                <p>{brand.description}</p>
-
-                                <Button bsStyle="info" onClick={(e)=>this.openBrandDetail(brand, e)}>More</Button>
-                            </div>
-                        );}, this)}
+                        <TipsyGrid elements={spinner !== null ? spinner :
+                            this.state.brands.map(function(brand, i) { return (
+                            <Grid key={i} item>
+                                <BrandCard brand={brand} onClick={(e)=>this.openBrandDetail(brand, e)}/>
+                            </Grid>
+                        )}, this)}/>
                     </div>
                 </section>
             </div>

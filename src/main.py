@@ -54,26 +54,28 @@ def search():
 @app.route(base_api + "cocktails/<slug>", methods=['GET'])
 @cross_origin()
 def cocktail_detail(slug):
-    print("cocktail " + slug)
     return jsonify(api.cocktailDetail(slug))
 
 @app.route(base_api + "ingredients/<slug>", methods=['GET'])
 @cross_origin()
 def ingredient_detail(slug):
-    print("ingredient " + slug)
     return jsonify(api.ingredientDetail(slug))
 
 @app.route(base_api + "brands/<slug>", methods=['GET'])
 @cross_origin()
 def brand_detail(slug):
-    print("brand " + slug)
     return jsonify(api.brandDetail(slug))
 
 @app.route(base_api + "countries/<slug>", methods=['GET'])
 @cross_origin()
 def country_detail(slug):
-    print("country " + slug)
     return jsonify(api.countryDetail(slug))
+
+@app.route(base_api + "describe/", methods=['GET'])
+@cross_origin()
+def descriptions():
+    return jsonify(api.describe())
+
 
 
 ################################

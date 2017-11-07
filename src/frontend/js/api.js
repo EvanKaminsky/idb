@@ -23,7 +23,9 @@ function API() {
         }
 
         return fetch(base_api + endpoint, payload)
-            .then(response => response.json())
+            .then(response => {
+                return response.json();
+            })
             .catch((error) => {
                 console.error(error);
                 return null;
@@ -51,9 +53,9 @@ function API() {
         if (pagesize) {
             query += "&pagesize=" + pagesize;
         }
-        return this.get(query).then(json =>
-            (json === null) ? null : json.results
-        )
+        return this.get(query).then(json => {
+            return (json === null) ? null : json.results
+        })
     };
 
     this.getCocktails = function(page, pagesize) {
@@ -73,28 +75,24 @@ function API() {
     };
 
     this.getCocktailDetail = function(slug) {
-        return this.get("cocktails/" + slug).then(cocktail =>
-            (cocktail === null) ? null : cocktail
-        )
+        return this.get("cocktails/" + slug);
     };
 
     this.getIngredientDetail = function(slug) {
-        return this.get("ingredients/" + slug).then(ingredient =>
-            (ingredient === null) ? null : ingredient
-        )
+        return this.get("ingredients/" + slug);
     };
 
     this.getCountryDetail = function(slug) {
-        return this.get("countries/" + slug).then(country =>
-            (country === null) ? null : country
-        )
+        return this.get("countries/" + slug);
     };
 
     this.getBrandDetail = function(slug) {
-        return this.get("brands/" + slug).then(brand =>
-            (brand === null) ? null : brand
-        )
+        return this.get("brands/" + slug);
     };
+
+    this.getDescriptions = function() {
+        return this.get("describe/");
+    }
 
 }
 

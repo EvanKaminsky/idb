@@ -1,58 +1,56 @@
 body {
-  background-image: url(../backgrounds/index.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url(../backgrounds/index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  font-size: 56px;
+    color: white;
+    text-align: center;
+    font-size: 56px;
 }
 
 a {
-  color: white;
+    color: white;
 }
 
 a:hover {
-  color: white;
+    color: white;
 }
 
 .col-md-2 {
-  color: white;
+    color: white;
 }
 
 #names > .row > .col-md-2:hover > img {
-  box-shadow: 0 0 17px #FFFFFF;
-  transition: 0.5s;
+    box-shadow: 0 0 17px #FFFFFF;
+    transition: 0.5s;
 }
 
 #names > .row > .col-md-2 > img {
-  transition: 0.5s;
+    transition: 0.5s;
 }
 
 #about {
-  color: white;
-  align-self: center;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #about > a {
-  color: blue;
+    color: blue;
 }
 
 #names {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-container {
-  position: relative;
+    position: relative;
 }
 
 .modal-container .modal, .modal-container .modal-backdrop {
-  position: absolute;
+    position: absolute;
 }
