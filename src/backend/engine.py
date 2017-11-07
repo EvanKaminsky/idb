@@ -1,8 +1,8 @@
 from sql import sql_fetchAll
 from decimal import Decimal
 
-# Query parser and intelligent search engine implementation
 
+# Query parser and intelligent search engine implementation
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
@@ -17,7 +17,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     query = query if query else ""
     results = [x for x in allEntries if (query in x.get("name"))]
 
-    results = results.applyFilterRules(results, filterRules)
+    results = applyFilterRules(results, filterRules)
 
     if count:
         results = results[0:count]
@@ -45,8 +45,8 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
         "results": cleaned_results
     }
 
-# Applies a set of filtering and sorting rules to the result set
 
+# Applies a set of filtering and sorting rules to the result set
 
 def applyFilterRules(results, filterRules):
     if filterRules is None:
@@ -68,8 +68,8 @@ def applyFilterRules(results, filterRules):
     results = applySort(results, sortString)
     return results
 
-# Sorts results by a given sorting rule
 
+# Sorts results by a given sorting rule
 
 def applySort(results, sortString):
     sortField = sortString[sortString.find("[") + 1:sortString.find("]")]
@@ -79,8 +79,8 @@ def applySort(results, sortString):
     results = sorted(results, key=lambda item: item.get(sortField), reverse=(sortMode == "d"))
     return results
 
-# Filters results by a given set of filtering rules
 
+# Filters results by a given set of filtering rules
 
 def applyFilter(results, filterString):
     rules = filterString.split("-")
@@ -107,6 +107,7 @@ def applyFilter(results, filterString):
 
 
 # Decides the most likely intended search category based on given search parameters
+
 def inferCategory(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     if category is not None:
         return category

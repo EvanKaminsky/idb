@@ -9,7 +9,7 @@ from sql import sql_select, sql_describe
 # The return format is JSON objects (python dictionaries/lists) as defined in apiary
 # Author: Balazs
 
-################c###
+###################
 ###  Constants  ###
 ###################
 
@@ -56,10 +56,10 @@ def search(category=None, query=None, filterRules=None, count=None, page=None, p
 
 
 def describe():
-    cocktail_describe   = sql_describe(TABLE_COCKTAILS)
+    cocktail_describe = sql_describe(TABLE_COCKTAILS)
     ingredient_describe = sql_describe(TABLE_INGREDIENTS)
-    country_describe    = sql_describe(TABLE_COUNTRIES)
-    brand_describe      = sql_describe(TABLE_BRANDS)
+    country_describe = sql_describe(TABLE_COUNTRIES)
+    brand_describe = sql_describe(TABLE_BRANDS)
     return {
         "cocktail_fields": cocktail_describe,
         "ingredient_fields": ingredient_describe,
@@ -67,9 +67,9 @@ def describe():
         "brand_fields": brand_describe
     }
 
+
 # /api/cocktails/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name
-
 
 def cocktailDetail(slug):
     cocktailID = 0
@@ -122,9 +122,9 @@ def cocktailDetail(slug):
         "tags": tags
     }
 
+
 # /api/ingredients/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name
-
 
 def ingredientDetail(slug):
     ingredientID = 0
@@ -165,9 +165,9 @@ def ingredientDetail(slug):
         "tags": tags
     }
 
+
 # /api/brands/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name
-
 
 def brandDetail(slug):
     brandID = 0
@@ -208,9 +208,9 @@ def brandDetail(slug):
         "tags": tags
     }
 
+
 # /api/countries/{slug}
 #   + slug (string) - identifier for detail page, either an ID number or standardized name
-
 
 def countryDetail(slug):
     countryID = 0
@@ -251,12 +251,12 @@ def countryDetail(slug):
         "tags": tags
     }
 
+
 #######################
 ###  Helper Methods ###
 #######################
 
 # Changes category to the correct form expected by our search engine
-
 
 def fixCategory(category):
     if category is None:
@@ -279,7 +279,6 @@ def fixCategory(category):
 
 # Infers a color for a card based on an image url
 
-
 def inferColor(imageurl):
     #with urllib.request.urlopen(imageurl) as url:
     #    fileio = io.BytesIO(url.read())
@@ -291,9 +290,9 @@ def inferColor(imageurl):
     return DEFAULT_CARD_COLOR
     #return ((r & 0xFF) << 16) + ((g & 0xFF) << 8) + (b & 0xFF) ;
 
+
 # Returns a 3-tuple of the average R, G, and B values in the given PIL image
 #   bounded by a square of width n with top-left corner at (x,y)
-
 
 def get_average_color(x, y, n, image):
     r, g, b = 0, 0, 0
@@ -307,15 +306,15 @@ def get_average_color(x, y, n, image):
     #        count += 1
     return ((r // count), (g // count), (b // count))
 
-# Looks up the id number associated with a given standardized name
 
+# Looks up the id number associated with a given standardized name
 
 def idLookup(slug, type):
     a = sql_select("id", type, "stdname=" + str(slug))
     return int(a[0].get("id"))
 
-# Looks up the standardized name associated with a given id number
 
+# Looks up the standardized name associated with a given id number
 
 def stdLookup(slug, type):
     a = sql_select("stdname", type, "id=" + str(slug))
@@ -323,35 +322,36 @@ def stdLookup(slug, type):
 
 
 # Attempts to find the ABV of a cocktail from the description
+
 def scrapeABV(description):
     return 0.0
 
-# Attempts to find the garnish of a cocktail from the description
 
+# Attempts to find the garnish of a cocktail from the description
 
 def scrapeGarnish(description):
     return ""
 
-# Attempts to find the glass used for a cocktail from the description
 
+# Attempts to find the glass used for a cocktail from the description
 
 def scrapeGlass(description):
     return ""
 
-# Attempts to find the base spirit of a cocktail from the description
 
+# Attempts to find the base spirit of a cocktail from the description
 
 def scrapeSpirit(description):
     return ""
 
-# Attempts to find the preparation style for a cocktail from the description
 
+# Attempts to find the preparation style for a cocktail from the description
 
 def scrapePreparation(description):
     return ""
 
-# Attempts to find the mixing instructions of a cocktail from the description
 
+# Attempts to find the mixing instructions of a cocktail from the description
 
 def scrapeInstructions(description):
     return ""
@@ -364,169 +364,170 @@ def scrapeInstructions(description):
 ################### Link Data ###################
 
 # returns the label, id, and url of a desired cocktail
+
 def cocktailLinkdataQuery(ID):
     results = sql_select("name AS label", TABLE_COCKTAILS, "id=" + str(ID))[0]
     results.update({"url": "tipsymix.com/api/cocktails/" + str(stdLookup(ID, TABLE_COCKTAILS)), "id": ID})
     return results
 
-# returns the label, id, and url of a desired brand
 
+# returns the label, id, and url of a desired brand
 
 def brandLinkdataQuery(ID):
     results = sql_select("name AS label", TABLE_BRANDS, "id=" + str(ID))[0]
     results.update({"url": "tipsymix.com/api/brands/" + str(stdLookup(ID, TABLE_BRANDS)), "id": ID})
     return results
 
-# returns the label, id, and url of a desired ingredient
 
+# returns the label, id, and url of a desired ingredient
 
 def ingredientLinkdataQuery(ID):
     results = sql_select("name AS label", TABLE_INGREDIENTS, "id=" + str(ID))[0]
     results.update({"url": "tipsymix.com/api/ingredients/" + str(stdLookup(ID, TABLE_INGREDIENTS)), "id": ID})
     return results
 
-# returns the label, id, and url of a desired country
 
+# returns the label, id, and url of a desired country
 
 def countryLinkdataQuery(ID):
     results = sql_select("name AS label", TABLE_COUNTRIES, "id=" + str(ID))[0]
     results.update({"url": "tipsymix.com/api/countries/" + str(stdLookup(ID, TABLE_COUNTRIES)), "id": ID})
     return results
 
+
 ################### In Cocktail ###################
 
 # returns a list of brandIDs of brands linked to by a given cocktail
 
-
 def brandsInCocktailQuery(ID):
     return [match.get("brandID") for match in sql_select("brandID", TABLE_COCKTAIL_BRAND, "cocktailID = " + str(ID))]
 
-# returns a list of ingredientIDs of ingredients linked to by a given cocktail
 
+# returns a list of ingredientIDs of ingredients linked to by a given cocktail
 
 def ingredientsInCocktailQuery(ID):
     return [match.get("ingredientID") for match in sql_select("ingredientID", TABLE_COCKTAIL_INGREDIENT, "cocktailID = " + str(ID))]
 
-# returns a list of countryIDs of countries linked to by a given cocktail
 
+# returns a list of countryIDs of countries linked to by a given cocktail
 
 def countriesInCocktailQuery(ID):
     return [match.get("countryID") for match in sql_select("countryID", TABLE_COCKTAIL_COUNTRY, "cocktailID = " + str(ID))]
 
 ################### In Ingredient ###################
 
-# returns a list of brandIDs of brands linked to by a given ingredient
 
+# returns a list of brandIDs of brands linked to by a given ingredient
 
 def brandsInIngredientQuery(ID):
     return [match.get("brandID") for match in sql_select("brandID", TABLE_INGREDIENT_BRAND, "ingredientID = " + str(ID))]
 
-# returns a list of ingredientIDs of cocktails linked to by a given ingredient
 
+# returns a list of ingredientIDs of cocktails linked to by a given ingredient
 
 def cocktailsInIngredientQuery(ID):
     return [match.get("cocktailID") for match in sql_select("cocktailID", TABLE_COCKTAIL_INGREDIENT, "ingredientID = " + str(ID))]
 
-# returns a list of countryIDs of countries linked to by a given ingredient
 
+# returns a list of countryIDs of countries linked to by a given ingredient
 
 def countriesInIngredientQuery(ID):
     return [match.get("countryID") for match in sql_select("countryID", TABLE_INGREDIENT_COUNTRY, "ingredientID = " + str(ID))]
+
 
 ################### In Brand ###################
 
 # returns a list of ingredientIDs of ingredients linked to by a given brand
 
-
 def ingredientsInBrandQuery(ID):
     return [match.get("ingredientID") for match in sql_select("ingredientID", TABLE_INGREDIENT_BRAND, "brandID = " + str(ID))]
 
-# returns a list of cocktailIDs of cocktails linked to by a given brand
 
+# returns a list of cocktailIDs of cocktails linked to by a given brand
 
 def cocktailsInBrandQuery(ID):
     return [match.get("cocktailID") for match in sql_select("cocktailID", TABLE_COCKTAIL_BRAND, "brandID = " + str(ID))]
 
-# returns a list of countryIDs of countries linked to by a given brand
 
+# returns a list of countryIDs of countries linked to by a given brand
 
 def countriesInBrandQuery(ID):
     return [match.get("countryID") for match in sql_select("countryID", TABLE_BRAND_COUNTRY, "brandID = " + str(ID))]
+
 
 ################### In Country ###################
 
 # returns a list of ingredientIDs of ingredients linked to by a given country
 
-
 def ingredientsInCountryQuery(ID):
     return [match.get("ingredientID") for match in sql_select("ingredientID", TABLE_INGREDIENT_COUNTRY, "countryID = " + str(ID))]
 
-# returns a list of cocktailIDs of cocktails linked to by a given country
 
+# returns a list of cocktailIDs of cocktails linked to by a given country
 
 def cocktailsInCountryQuery(ID):
     return [match.get("cocktailID") for match in sql_select("cocktailID", TABLE_COCKTAIL_COUNTRY, "countryID = " + str(ID))]
 
-# returns a list of brandIDs of brands linked to by a given country
 
+# returns a list of brandIDs of brands linked to by a given country
 
 def brandsInCountryQuery(ID):
     return [match.get("brandID") for match in sql_select("brandID", TABLE_BRAND_COUNTRY, "countryID = " + str(ID))]
+
 
 ###################### Tags ######################
 
 # returns the list of tags associated with a given cocktail
 
-
 def tagsInCocktailQuery(ID):
     return [match.get("tagID") for match in sql_select("tagID", TABLE_TAGS_COCKTAIL, "cocktailID = " + str(ID))]
 
-# returns the list of tags associated with a given brand
 
+# returns the list of tags associated with a given brand
 
 def tagsInBrandQuery(ID):
     return [match.get("tagID") for match in sql_select("tagID", TABLE_TAGS_BRAND, "brandID = " + str(ID))]
 
-# returns the list of tags associated with a given ingredient
 
+# returns the list of tags associated with a given ingredient
 
 def tagsInIngredientQuery(ID):
     return [match.get("tagID") for match in sql_select("tagID", TABLE_TAGS_INGREDIENT, "ingredientID = " + str(ID))]
 
-# returns the list of tags associated with a given country
 
+# returns the list of tags associated with a given country
 
 def tagsInCountryQuery(ID):
     return [match.get("tagID") for match in sql_select("tagID", TABLE_TAGS_COUNTRY, "countryID = " + str(ID))]
 
-# returns the label of a tag, given its ID
 
+# returns the label of a tag, given its ID
 
 def tagQuery(ID):
     return sql_select("label", TABLE_TAGS, "id = " + str(ID))[0].get("label")
+
 
 ################ Instance Queries #################
 
 # returns the cocktail instance for the given ID
 
-
 def fetchCocktail(ID):
     return sql_select("*", TABLE_COCKTAILS, "id = " + str(ID))[0]
 
-# returns the ingredient instance for the given ID
 
+# returns the ingredient instance for the given ID
 
 def fetchIngredient(ID):
     return sql_select("*", TABLE_INGREDIENTS, "id = " + str(ID))[0]
 
-# returns the brand instance for the given ID
 
+# returns the brand instance for the given ID
 
 def fetchBrand(ID):
     return sql_select("*", TABLE_BRANDS, "id = " + str(ID))[0]
 
-# returns the country instance for the given ID
 
+# returns the country instance for the given ID
 
 def fetchCountry(ID):
     return sql_select("*", TABLE_COUNTRIES, "id = " + str(ID))[0]

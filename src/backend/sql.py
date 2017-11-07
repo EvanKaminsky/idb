@@ -39,9 +39,9 @@ def connect_to_cloudsql():
 
 db = connect_to_cloudsql()
 
+
 # SELECT query
 #   + SELECT select_q FROM from_q WHERE where_q
-
 
 def sql_select(select_q, from_q, where_q=None):
     qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
@@ -59,11 +59,13 @@ def sql_select(select_q, from_q, where_q=None):
 
 
 # Fetch all instances of a class
+
 def sql_fetchAll(category):
     return sql_select("*", category.upper(), None)
 
 
 # Describe a table
+
 def sql_describe(category):
     qString = "DESCRIBE " + str(category)
     try:
