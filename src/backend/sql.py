@@ -82,7 +82,6 @@ def sql_describe(category):
 def sql_describe_simple(category):
     describe = sql_describe(category)
     if describe is None:
-        print("yo wat da fuk") # delet dis
         return []
     desiredFields = ["Field", "Type"]
     results = [({y: x[y] for y in desiredFields}) for x in describe]
