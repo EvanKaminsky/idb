@@ -17,7 +17,7 @@ class DB:
     conn = None
 
     def connect(self):
-        self.conn = connect_to_cloudsql()
+        self.conn = self.connect_to_cloudsql()
 
     def query(self, sql):
         try:
@@ -29,7 +29,7 @@ class DB:
             cursor.execute(sql)
         return cursor
 
-    def connect_to_cloudsql():
+    def connect_to_cloudsql(self):
         # When deployed to App Engine, the `SERVER_SOFTWARE` environment variable
         # will be set to 'Google App Engine/version'.
         if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
