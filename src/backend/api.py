@@ -3,7 +3,7 @@
 import io
 
 import engine
-from sql import sql_select
+from sql import sql_select, sql_describe
 
 # Set of python implementations of api calls
 # The return format is JSON objects (python dictionaries/lists) as defined in apiary
@@ -56,10 +56,10 @@ def search(category=None, query=None, filterRules=None, count=None, page=None, p
 
 
 def describe():
-    cocktail_describe = sql_describe(TABLE_COCKTAILS)
+    cocktail_describe   = sql_describe(TABLE_COCKTAILS)
     ingredient_describe = sql_describe(TABLE_INGREDIENTS)
-    country_describe = sql_describe(TABLE_COUNTRIES)
-    brand_describe = sql_describe(TABLE_BRANDS)
+    country_describe    = sql_describe(TABLE_COUNTRIES)
+    brand_describe      = sql_describe(TABLE_BRANDS)
     return {
         "cocktail_fields": cocktail_describe,
         "ingredient_fields": ingredient_describe,
@@ -72,9 +72,6 @@ def describe():
 
 
 def cocktailDetail(slug):
-
-    print("slug " + slug)
-
     cocktailID = 0
     try:
         cocktailID = int(slug)

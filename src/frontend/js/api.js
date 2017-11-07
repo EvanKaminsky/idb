@@ -73,28 +73,24 @@ function API() {
     };
 
     this.getCocktailDetail = function(slug) {
-        return this.get("cocktails/" + slug).then(cocktail =>
-            (cocktail === null) ? null : cocktail
-        )
+        return this.get("cocktails/" + slug);
     };
 
     this.getIngredientDetail = function(slug) {
-        return this.get("ingredients/" + slug).then(ingredient =>
-            (ingredient === null) ? null : ingredient
-        )
+        return this.get("ingredients/" + slug);
     };
 
     this.getCountryDetail = function(slug) {
-        return this.get("countries/" + slug).then(country =>
-            (country === null) ? null : country
-        )
+        return this.get("countries/" + slug);
     };
 
     this.getBrandDetail = function(slug) {
-        return this.get("brands/" + slug).then(brand =>
-            (brand === null) ? null : brand
-        )
+        return this.get("brands/" + slug);
     };
+
+    this.getDescriptions = function() {
+        return this.get("describe/");
+    }
 
 }
 

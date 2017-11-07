@@ -93,12 +93,12 @@ def applyFilter(results, filterString):
                 results = (x for x in results if x.get(params[0]) == params[2])
             except Exception as e:
                 pass
-        else if params[1] == "e":
+        elif params[1] == "e":
             try:
                 print("equations not yet supported")
             except Exception as e:
                 pass
-        else if params[1] == "s":
+        elif params[1] == "s":
             try:
                 results = (x for x in results if x.get(params[0]).startswith(params[2]))
             except Exception as e:

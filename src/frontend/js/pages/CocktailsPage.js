@@ -13,6 +13,7 @@ export default class CocktailsPage extends React.Component {
         super(props);
         this.state = {
             cocktails: [],
+            descriptions: [],
             isLoading: false
         };
 
@@ -32,6 +33,12 @@ export default class CocktailsPage extends React.Component {
             }
             this.state.isLoading = false;
         });
+
+        window.constants.api.getDescriptions().then(descriptions => {
+            if (descriptions !== null) {
+                this.setState({descriptions: descriptions});
+            }
+        })
     };
 
     openCocktailDetail(cocktail, event) {
