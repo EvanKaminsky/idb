@@ -17,6 +17,25 @@ TipsyMix is a database linking cocktails, ingredients, brands, and countries tog
     
 ### Query [GET]
 
+Filter+sort format:
+
+filter: s-([field][a/d])f-([field][m/e/s][param])-(more filters)
+
+a = ascending
+
+d = descending
+
+field: name of model data field as it would appear in the returned json
+
+m = match
+
+e = equation
+
+s = starts with
+
+param: what to match/check if it starts with/equation to satisfy
+
+All brackets and parentheses are part of the parameter string
 + Response 200 (application/json)
 
         {
@@ -51,6 +70,57 @@ TipsyMix is a database linking cocktails, ingredients, brands, and countries tog
                     "color": 0xBC1301
                 }
             ]
+        }
+        
+## Describe Tables [/api/describe]
+This will describe all available fields for each model in our database, allowing you to define filter and sorting rules accordingly
+
+### Describe [GET]
+
++ Response 200 (application/json)
+        
+        {
+            “brand_fields”: [
+                {
+                    “Field”: “id”, 
+                    “Type”: “int(11)”
+                }, 
+                {
+                    “Field”: “stdname”, 
+                    “Type”: “varchar(255)”
+                }, 
+                {
+                    “Field”: “name”, 
+                    “Type”: “varchar(255)”
+                }, 
+                {
+                    “Field”: “imageurl”, 
+                    “Type”: “varchar(255)”
+                }, 
+                ...
+            ],
+            
+            “cocktail_fields”: [
+                {
+                    “Field”: “id”, 
+                    “Type”: “int(11)”
+                }, 
+                {
+                    “Field”: “stdname”, 
+                    “Type”: “varchar(255)”
+                }, 
+                {
+                    “Field”: “name”, 
+                    “Type”: “varchar(255)”
+                }, 
+                {
+                    “Field”: “imageurl”, 
+                    “Type”: “varchar(255)”
+                }, 
+                ...
+            ],
+            
+            ...
         }
         
 ## Get All Cocktails [/api/search?category=cocktails]
@@ -223,6 +293,7 @@ This is a proxy to our search query which will return all instances of the Count
     + slug - identifier for detail page, either an ID number or standardized name
 
 ### Cocktail Data [GET]
+Details specific information about an individual Cocktail instance
 
 + Response 200 (application/json)
 
@@ -299,6 +370,7 @@ This is a proxy to our search query which will return all instances of the Count
     + slug - identifier for detail page, either an ID number or standardized name
 
 ### Ingredient Data [GET]
+Details specific information about an individual Ingredient instance
 
 + Response 200 (application/json)
 
@@ -353,6 +425,7 @@ This is a proxy to our search query which will return all instances of the Count
     + slug - identifier for detail page, either an ID number or standardized name
 
 ### Brand Data [GET]
+Details specific information about an individual Brand instance
 
 + Response 200 (application/json)
 
@@ -400,6 +473,7 @@ This is a proxy to our search query which will return all instances of the Count
     + slug - identifier for detail page, either an ID number or standardized name
 
 ### Country Data [GET]
+Details specific information about an individual Country instance
 
 + Response 200 (application/json)
 
