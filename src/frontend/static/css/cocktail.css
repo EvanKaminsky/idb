@@ -23,7 +23,7 @@ p {
 }
 
 .cocktail-box{
-  background-color: #8C9E1F;
+  background-color: #FFF;
   padding-top: 20px;
   margin-bottom: 20px;
 }
@@ -32,7 +32,6 @@ p {
   color: red;
   font-weight: 400;
 }
-
 
 .btn-info {
   margin-bottom: 10px;
