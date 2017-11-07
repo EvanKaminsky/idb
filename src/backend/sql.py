@@ -10,34 +10,53 @@ CLOUDSQL_USER = os.environ.get('CLOUDSQL_USER')
 CLOUDSQL_PASSWORD = os.environ.get('CLOUDSQL_PASSWORD')
 
 
-def connect_to_cloudsql():
-    # When deployed to App Engine, the `SERVER_SOFTWARE` environment variable
-    # will be set to 'Google App Engine/version'.
-    if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
-        # Connect using the unix socket located at
-        # /cloudsql/cloudsql-connection-name.
-        cloudsql_unix_socket = os.path.join(
-            '/cloudsql', CLOUDSQL_CONNECTION_NAME)
+# MySqlDb wrapper to allow proper connections and reconnections to GCSQL
+#   in both production and local environments
 
-        db = MySQLdb.connect(
-            unix_socket=cloudsql_unix_socket,
-            user=CLOUDSQL_USER,
-            passwd=CLOUDSQL_PASSWORD,
-            db='tipsy_backend')
+class DB:
+    conn = None
 
-    # If the unix socket is unavailable, then try to connect using TCP. This
-    # will work if you're running a local MySQL server or using the Cloud SQL
-    # proxy, for example:
-    #
-    #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
-    #
-    else:
-        db = MySQLdb.connect(
-            host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
-    return db
+    def connect(self):
+        self.conn = connect_to_cloudsql()
+
+    def query(self, sql):
+        try:
+            cursor = self.conn.cursor(MySQLdb.cursors.DictCursor)
+            cursor.execute(sql)
+        except (AttributeError, MySQLdb.OperationalError):
+            self.connect()
+            cursor = self.conn.cursor(MySQLdb.cursors.DictCursor)
+            cursor.execute(sql)
+        return cursor
+
+    def connect_to_cloudsql():
+        # When deployed to App Engine, the `SERVER_SOFTWARE` environment variable
+        # will be set to 'Google App Engine/version'.
+        if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
+            # Connect using the unix socket located at
+            # /cloudsql/cloudsql-connection-name.
+            cloudsql_unix_socket = os.path.join(
+                '/cloudsql', CLOUDSQL_CONNECTION_NAME)
+
+            db = MySQLdb.connect(
+                unix_socket=cloudsql_unix_socket,
+                user=CLOUDSQL_USER,
+                passwd=CLOUDSQL_PASSWORD,
+                db='tipsy_backend')
+
+        # If the unix socket is unavailable, then try to connect using TCP. This
+        # will work if you're running a local MySQL server or using the Cloud SQL
+        # proxy, for example:
+        #
+        #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
+        #
+        else:
+            db = MySQLdb.connect(
+                host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
+        return db
 
 
-db = connect_to_cloudsql()
+db = DB()
 
 
 # SELECT query
@@ -49,11 +68,11 @@ def sql_select(select_q, from_q, where_q=None):
         qString += " WHERE " + str(where_q)
 
     try:
-        cursor = db.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute(qString)
+        cursor = db.query(qString)
         result = [dict(x) for x in cursor.fetchall()]
         return result
     except Exception as e:
+        print(e)
         return None
 
 
@@ -68,8 +87,7 @@ def sql_fetchAll(category):
 def sql_describe(category):
     qString = "DESCRIBE " + str(category)
     try:
-        cursor = db.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute(qString)
+        cursor = db.query(qString)
         result = [dict(x) for x in cursor.fetchall()]
         return result
     except Exception as e:
