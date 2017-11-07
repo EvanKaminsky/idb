@@ -54,7 +54,6 @@ def search(category=None, query=None, filterRules=None, count=None, page=None, p
 
 # /api/describe
 
-
 def describe():
     cocktail_describe = sql_describe(TABLE_COCKTAILS)
     ingredient_describe = sql_describe(TABLE_INGREDIENTS)
