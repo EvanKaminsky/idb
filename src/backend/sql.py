@@ -52,6 +52,7 @@ def sql_select(select_q, from_q, where_q=None):
         cursor = db.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute(qString)
         result = [dict(x) for x in cursor.fetchall()]
+        cursor.close()
         return result
     except Exception as e:
         return None
@@ -69,6 +70,7 @@ def sql_describe(category):
         cursor = db.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute(qString)
         result = [dict(x) for x in cursor.fetchall()]
+        cursor.close()
         return result
     except Exception as e:
         return None
