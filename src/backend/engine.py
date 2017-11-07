@@ -13,6 +13,8 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
         page = 1
 
     allEntries = sql_fetchAll(category)
+    if allEntries is None:
+        return [{"error": "an sql access error occurred"}]
 
     query = query if query else ""
     results = [x for x in allEntries if (query in x.get("name"))]
