@@ -76,3 +76,10 @@ def sql_describe(category):
         return result
     except Exception as e:
         return None
+
+# Describe a table, only return its column names and types
+
+def sql_describe_simple(category):
+    describe = sql_describe(category)
+    desiredFields = ["Field", "Type"]
+    results = [({y: x[y] for y in desiredFields}) for x in describe]

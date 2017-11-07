@@ -27,6 +27,7 @@ CREATE TABLE COCKTAILS (
 	imageurl varchar(255),
 	color int,
 	description varchar(10000),
+	summary varchar(5000),
 	videourl varchar(255),
 	PRIMARY KEY (id)
 );
@@ -38,6 +39,7 @@ CREATE TABLE INGREDIENTS (
 	imageurl varchar(255),
 	color int,
 	description varchar(10000),
+	summary varchar(5000),
 	abv decimal(4,2),
 	PRIMARY KEY (id)
 );
@@ -49,6 +51,8 @@ CREATE TABLE BRANDS (
 	imageurl varchar(255),
 	color int,
 	description varchar(10000),
+	summary varchar(5000),
+	value int,
 	websiteurl varchar(255),
 	PRIMARY KEY (id)
 );
@@ -60,6 +64,7 @@ CREATE TABLE COUNTRIES (
 	imageurl varchar(255),
 	color int,
 	description varchar(10000),
+	summary varchar(5000),
 	continent varchar(255),
 	PRIMARY KEY (id)
 );
