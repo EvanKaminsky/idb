@@ -1,15 +1,13 @@
 import React from 'react';
-
-import "../components/Spinner"
-import "../../static/css/cocktail.css"
-import Spinner from "../components/Spinner";
-
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import Paper from 'material-ui/Paper';
 import Divider from 'material-ui/Divider';
+
+import "../../static/css/index.css"
+import Spinner from "../components/Spinner.js";
 
 export default class CocktailDetailPage extends React.Component {
 
@@ -49,6 +47,7 @@ export default class CocktailDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
+        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
 
@@ -60,10 +59,9 @@ export default class CocktailDetailPage extends React.Component {
 
         var backButton = null;
         if (this.state.fromURL) {
+            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
-
-
 
         return (
             <div className="detail-box">
@@ -75,12 +73,9 @@ export default class CocktailDetailPage extends React.Component {
                     <Typography component="p">{this.state.cocktail.description}</Typography>
 
                     <Typography type="headline" component="h3">Ingredients</Typography>
-                    {this.state.cocktail.ingredients.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.cocktail.ingredients.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     <Typography type="headline" component="h3">Instructions</Typography>
                     <Typography component="p">{this.state.cocktail.instructions}</Typography>
@@ -89,13 +84,9 @@ export default class CocktailDetailPage extends React.Component {
                     <Typography component="p">{this.state.cocktail.brands}</Typography>
 
                     <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.cocktail.countries.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
-
+                    {this.state.cocktail.countries.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     {backButton}
             </div>

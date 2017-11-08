@@ -1,11 +1,9 @@
 import React from 'react';
-
-import "../components/Spinner"
-import "../../static/css/cocktail.css"
-import Spinner from "../components/Spinner";
-
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+
+import "../../static/css/index.css"
+import Spinner from "../components/Spinner.js";
 
 export default class BrandDetailPage extends React.Component {
 
@@ -45,6 +43,7 @@ export default class BrandDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
+        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
 
@@ -56,6 +55,7 @@ export default class BrandDetailPage extends React.Component {
 
         var backButton = null;
         if (this.state.fromURL) {
+            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
@@ -69,28 +69,19 @@ export default class BrandDetailPage extends React.Component {
                     <Typography component="p">{this.state.brand.description}</Typography>
 
                     <Typography type="headline" component="h3">Cocktails</Typography>
-                    {this.state.brand.cocktails.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.brand.cocktails.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     <Typography type="headline" component="h3">Ingredients</Typography>
-                    {this.state.brand.ingredients.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.brand.ingredients.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.brand.countries.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.brand.countries.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     {backButton}
             </div>

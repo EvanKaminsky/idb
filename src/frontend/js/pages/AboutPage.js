@@ -1,6 +1,5 @@
 import React from 'react';
 
-/* Local Imports */
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
 

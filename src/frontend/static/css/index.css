@@ -1,21 +1,11 @@
-a {
-  color: white;
+.detail-box{
+  background-color: #FFF;
+  margin: auto;
+  width: 500px;
+  padding: 10px;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 56px;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-li {
-  color:white;
+.container img-responsive {
+  display: block;
+  max-height: 200px;
 }

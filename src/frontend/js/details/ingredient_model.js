@@ -1,11 +1,9 @@
 import React from 'react';
-
-import "../components/Spinner"
-import "../../static/css/cocktail.css"
-import Spinner from "../components/Spinner";
-
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+
+import "../../static/css/index.css"
+import Spinner from "../components/Spinner.js";
 
 export default class IngredientDetailPage extends React.Component {
 
@@ -45,17 +43,19 @@ export default class IngredientDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
+        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
 
     render() {
         if (this.state.ingredient === null) {
             this.reload();
-            return <Spinner/>
+            return <Spinner/>;
         }
 
         var backButton = null;
         if (this.state.fromURL) {
+            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
@@ -71,23 +71,17 @@ export default class IngredientDetailPage extends React.Component {
                     <Typography component="p">{this.state.ingredient.description}</Typography>
 
                     <Typography type="headline" component="h3">Cocktails</Typography>
-                    {this.state.ingredient.cocktails.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.ingredient.cocktails.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     <Typography type="headline" component="h3">Brands</Typography>
                     <Typography component="p">{this.state.ingredient.brands}</Typography>
 
                     <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.ingredient.countries.map((element) => {
-                          return(
-                              <Typography component="p">{element.label}</Typography>
-                          );
-                        })
-                    }
+                    {this.state.ingredient.countries.map((element) => { return (
+                        <Typography component="p">{element.label}</Typography>
+                    );})}
 
                     {backButton}
             </div>
