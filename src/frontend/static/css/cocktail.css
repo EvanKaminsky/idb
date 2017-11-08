@@ -24,8 +24,16 @@ p {
 
 .cocktail-box{
   background-color: #FFF;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  margin: auto;
+  width: 500px;
+  padding: 10px;
+}
+
+.detail-box{
+  background-color: #FFF;
+  margin: auto;
+  width: 500px;
+  padding: 10px;
 }
 
 .cocktail-box a {
@@ -39,7 +47,7 @@ p {
   border-color: #FFF;
 }
 
-.container .img-responsive {
+.container img-responsive {
   display: block;
   max-height: 200px;
 }

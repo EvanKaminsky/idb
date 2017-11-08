@@ -60,40 +60,39 @@ export default class BrandDetailPage extends React.Component {
         }
 
         return (
-            <div className="col-md-6 cocktail-box">
-                <img className="img-responsive" src={this.state.brand.image}/>
+            <div className="detail-box">
+                    <img className="img-responsive" src={this.state.brand.image}/>
 
-                <Typography type="display2" align="center" component="h1">{this.state.brand.name}</Typography>
+                    <Typography type="display2" align="center" component="h1">{this.state.brand.name}</Typography>
 
-                <Typography type="headline" component="h3">Description</Typography>
-                <Typography component="p">{this.state.brand.description}</Typography>
+                    <Typography type="headline" component="h3">Description</Typography>
+                    <Typography component="p">{this.state.brand.description}</Typography>
 
-                <Typography type="headline" component="h3">Cocktails</Typography>
-                {this.state.brand.cocktails.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Cocktails</Typography>
+                    {this.state.brand.cocktails.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                <Typography type="headline" component="h3">Ingredients</Typography>
-                {this.state.brand.ingredients.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Ingredients</Typography>
+                    {this.state.brand.ingredients.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                <Typography type="headline" component="h3">Countries</Typography>
-                {this.state.brand.countries.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Countries</Typography>
+                    {this.state.brand.countries.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-
-                {backButton}
+                    {backButton}
             </div>
         );
     }

@@ -4,10 +4,12 @@ import "../components/Spinner"
 import "../../static/css/cocktail.css"
 import Spinner from "../components/Spinner";
 
+import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Paper from 'material-ui/Paper';
+import Divider from 'material-ui/Divider';
 
 export default class CocktailDetailPage extends React.Component {
 
@@ -61,41 +63,41 @@ export default class CocktailDetailPage extends React.Component {
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
-        {console.log("MEMEMEME")}
+
 
         return (
-            <div className="col-md-6 cocktail-box">
-                <img className="img-responsive" src={this.state.cocktail.image}/>
+            <div className="detail-box">
+                    <img className="img-responsive" src={this.state.cocktail.image}/>
 
-                <Typography type="display2" align="center" component="h1">{this.state.cocktail.name}</Typography>
+                    <Typography type="display2" align="center" component="h1">{this.state.cocktail.name}</Typography>
 
-                <Typography type="headline" component="h3">Description</Typography>
-                <Typography component="p">{this.state.cocktail.description}</Typography>
+                    <Typography type="headline" component="h3">Description</Typography>
+                    <Typography component="p">{this.state.cocktail.description}</Typography>
 
-                <Typography type="headline" component="h3">Ingredients</Typography>
-                {this.state.cocktail.ingredients.map((element) => {
-                      return(
-                          <ul>{element.label}</ul>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Ingredients</Typography>
+                    {this.state.cocktail.ingredients.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                <Typography type="headline" component="h3">Instructions</Typography>
-                <Typography component="p">{this.state.cocktail.instructions}</Typography>
+                    <Typography type="headline" component="h3">Instructions</Typography>
+                    <Typography component="p">{this.state.cocktail.instructions}</Typography>
 
-                <Typography type="headline" component="h3">Brands</Typography>
-                <Typography component="p">{this.state.cocktail.brands}</Typography>
+                    <Typography type="headline" component="h3">Brands</Typography>
+                    <Typography component="p">{this.state.cocktail.brands}</Typography>
 
-                <Typography type="headline" component="h3">Countries</Typography>
-                {this.state.cocktail.countries.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Countries</Typography>
+                    {this.state.cocktail.countries.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
 
-                {backButton}
+                    {backButton}
             </div>
         );
     }
