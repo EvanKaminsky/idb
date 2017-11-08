@@ -6,6 +6,8 @@ import Divider from 'material-ui/Divider';
 
 import "../../static/css/index.css"
 import Spinner from "../components/Spinner.js";
+import DetailMultiSection from "./DetailMultiSection.js";
+import DetailSingleSection from "./DetailSingleSection.js";
 
 export default class CountryDetailPage extends React.Component {
 
@@ -65,23 +67,11 @@ export default class CountryDetailPage extends React.Component {
                 <Typography type="display2" align="center" component="h1">{this.state.country.name}</Typography>
                 <Typography type="p" align="center" component="h4">{this.state.country.continent}</Typography>
 
-                <Typography type="headline" component="h3">Description</Typography>
-                <Typography component="p">{this.state.country.description}</Typography>
+                <DetailSingleSection title="Description" label={this.state.country.description}/>
 
-                <Typography type="headline" component="h3">Brands</Typography>
-                {this.state.country.brands.map((element) => { return (
-                    <Typography component="p">{element.label}</Typography>
-                );})}
-
-                <Typography type="headline" component="h3">Ingredients</Typography>
-                {this.state.country.ingredients.map((element) => { return (
-                    <Typography component="p">{element.label}</Typography>
-                );})}
-
-                <Typography type="headline" component="h3">Cocktails</Typography>
-                {this.state.country.cocktails.map((element) => { return (
-                    <Typography component="p">{element.label}</Typography>
-                );})}
+                <DetailMultiSection type="cocktail" elements={this.state.country.cocktails} history={this.props.history} location={this.props.location}/>
+                <DetailMultiSection type="brand" elements={this.state.country.brands} history={this.props.history} location={this.props.location}/>
+                <DetailMultiSection type="ingredient" elements={this.state.country.ingredients} history={this.props.history} location={this.props.location}/>
 
                 {backButton}
             </div>

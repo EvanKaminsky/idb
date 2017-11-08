@@ -8,6 +8,8 @@ import Divider from 'material-ui/Divider';
 
 import "../../static/css/index.css"
 import Spinner from "../components/Spinner.js";
+import DetailMultiSection from "./DetailMultiSection.js";
+import DetailSingleSection from "./DetailSingleSection.js";
 
 export default class CocktailDetailPage extends React.Component {
 
@@ -32,7 +34,6 @@ export default class CocktailDetailPage extends React.Component {
 
         const slug = this.props.match.params.slug;  // Passed by react router
         if (slug === null) {
-            console.log("No slug for cocktail detail");
             return;
         }
 
@@ -47,9 +48,9 @@ export default class CocktailDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
-        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
+
 
     render() {
         if (this.state.cocktail === null) {
@@ -59,7 +60,6 @@ export default class CocktailDetailPage extends React.Component {
 
         var backButton = null;
         if (this.state.fromURL) {
-            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
@@ -69,24 +69,11 @@ export default class CocktailDetailPage extends React.Component {
 
                     <Typography type="display2" align="center" component="h1">{this.state.cocktail.name}</Typography>
 
-                    <Typography type="headline" component="h3">Description</Typography>
-                    <Typography component="p">{this.state.cocktail.description}</Typography>
+                    <DetailSingleSection title="Description" label={this.state.cocktail.description}/>
 
-                    <Typography type="headline" component="h3">Ingredients</Typography>
-                    {this.state.cocktail.ingredients.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
-
-                    <Typography type="headline" component="h3">Instructions</Typography>
-                    <Typography component="p">{this.state.cocktail.instructions}</Typography>
-
-                    <Typography type="headline" component="h3">Brands</Typography>
-                    <Typography component="p">{this.state.cocktail.brands}</Typography>
-
-                    <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.cocktail.countries.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                    <DetailMultiSection type="ingredient" elements={this.state.cocktail.ingredients} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="country" elements={this.state.cocktail.countries} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="brand" elements={this.state.cocktail.brands} history={this.props.history} location={this.props.location}/>
 
                     {backButton}
             </div>

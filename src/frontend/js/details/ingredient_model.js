@@ -4,6 +4,8 @@ import Button from 'material-ui/Button';
 
 import "../../static/css/index.css"
 import Spinner from "../components/Spinner.js";
+import DetailMultiSection from "./DetailMultiSection.js";
+import DetailSingleSection from "./DetailSingleSection.js";
 
 export default class IngredientDetailPage extends React.Component {
 
@@ -62,21 +64,11 @@ export default class IngredientDetailPage extends React.Component {
 
                     <Typography type="display2" align="center" component="h1">{this.state.ingredient.name}</Typography>
 
-                    <Typography type="headline" component="h3">Description</Typography>
-                    <Typography component="p">{this.state.ingredient.description}</Typography>
+                    <DetailSingleSection title="Description" label={this.state.ingredient.description}/>
 
-                    <Typography type="headline" component="h3">Cocktails</Typography>
-                    {this.state.ingredient.cocktails.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
-
-                    <Typography type="headline" component="h3">Brands</Typography>
-                    <Typography component="p">{this.state.ingredient.brands}</Typography>
-
-                    <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.ingredient.countries.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                    <DetailMultiSection type="cocktail" elements={this.state.ingredient.cocktails} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="brand" elements={this.state.ingredient.brands} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="country" elements={this.state.ingredient.countries} history={this.props.history} location={this.props.location}/>
 
                     {backButton}
             </div>

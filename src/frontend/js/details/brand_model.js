@@ -1,9 +1,12 @@
 import React from 'react';
+import Link from 'react-router';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 
 import "../../static/css/index.css"
 import Spinner from "../components/Spinner.js";
+import DetailMultiSection from "./DetailMultiSection.js";
+import DetailSingleSection from "./DetailSingleSection.js";
 
 export default class BrandDetailPage extends React.Component {
 
@@ -62,23 +65,11 @@ export default class BrandDetailPage extends React.Component {
 
                     <Typography type="display2" align="center" component="h1">{this.state.brand.name}</Typography>
 
-                    <Typography type="headline" component="h3">Description</Typography>
-                    <Typography component="p">{this.state.brand.description}</Typography>
+                    <DetailSingleSection title="Description" label={this.state.brand.description}/>
 
-                    <Typography type="headline" component="h3">Cocktails</Typography>
-                    {this.state.brand.cocktails.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
-
-                    <Typography type="headline" component="h3">Ingredients</Typography>
-                    {this.state.brand.ingredients.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
-
-                    <Typography type="headline" component="h3">Countries</Typography>
-                    {this.state.brand.countries.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                    <DetailMultiSection type="cocktail" elements={this.state.brand.cocktails} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="ingredient" elements={this.state.brand.ingredients} history={this.props.history} location={this.props.location}/>
+                    <DetailMultiSection type="country" elements={this.state.brand.countries} history={this.props.history} location={this.props.location}/>
 
                     {backButton}
             </div>
