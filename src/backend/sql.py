@@ -55,14 +55,11 @@ class DB:
                 host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
         return db
 
-
-db = DB()
-
-
 # SELECT query
 #   + SELECT select_q FROM from_q WHERE where_q
 
 def sql_select(select_q, from_q, where_q=None):
+    db = DB()
     qString = "SELECT " + str(select_q) + " FROM " + str(from_q)
     if where_q is not None:
         qString += " WHERE " + str(where_q)
@@ -73,7 +70,7 @@ def sql_select(select_q, from_q, where_q=None):
         cursor.close()
         return result
     except Exception as e:
-        print(e)
+        # print(e)
         return None
 
 
@@ -86,6 +83,7 @@ def sql_fetchAll(category):
 # Describe a table
 
 def sql_describe(category):
+    db = DB()
     qString = "DESCRIBE " + str(category)
     try:
         cursor = db.query(qString)
@@ -93,7 +91,7 @@ def sql_describe(category):
         cursor.close()
         return result
     except Exception as e:
-        print(e)
+        # print(e)
         return None
 
 
