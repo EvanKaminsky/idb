@@ -7,7 +7,7 @@ import unittest
 
 class APITest(unittest.TestCase):
     def test_api(self):
-        pass
+        self.assertTrue(len(api.search(query="mint", category="cocktail")) > 0)
 
     def test_helper(self):
         pass

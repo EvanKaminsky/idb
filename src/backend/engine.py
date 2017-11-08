@@ -2,6 +2,7 @@ from sql import sql_fetchAll
 from decimal import Decimal
 from whoosh.fields import *
 from whoosh.index import *
+from whoosh.qparser import QueryParser
 
 ###########################
 ######  Index Setup  ######
