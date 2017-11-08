@@ -6,6 +6,8 @@ import Spinner from "../components/Spinner";
 
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+import Paper from 'material-ui/Paper';
+import Divider from 'material-ui/Divider';
 
 export default class CountryDetailPage extends React.Component {
 
@@ -60,40 +62,40 @@ export default class CountryDetailPage extends React.Component {
         }
 
         return (
-            <div className="col-md-6 cocktail-box">
-                <img className="img-responsive" src={this.state.country.image}/>
+            <div className="detail-box">
+                    <img className="img-responsive" src={this.state.country.image}/>
 
-                <Typography type="display2" align="center" component="h1">{this.state.country.name}</Typography>
-                <Typography type="p" align="center" component="h4">{this.state.country.continent}</Typography>
+                    <Typography type="display2" align="center" component="h1">{this.state.country.name}</Typography>
+                    <Typography type="p" align="center" component="h4">{this.state.country.continent}</Typography>
 
-                <Typography type="headline" component="h3">Description</Typography>
-                <Typography component="p">{this.state.country.description}</Typography>
+                    <Typography type="headline" component="h3">Description</Typography>
+                    <Typography component="p">{this.state.country.description}</Typography>
 
-                <Typography type="headline" component="h3">Brands</Typography>
-                {this.state.country.brands.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Brands</Typography>
+                    {this.state.country.brands.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                <Typography type="headline" component="h3">Ingredients</Typography>
-                {this.state.country.ingredients.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Ingredients</Typography>
+                    {this.state.country.ingredients.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                <Typography type="headline" component="h3">Cocktails</Typography>
-                {this.state.country.cocktails.map((element) => {
-                      return(
-                          <Typography component="p">{element.label}</Typography>
-                      );
-                    })
-                }
+                    <Typography type="headline" component="h3">Cocktails</Typography>
+                    {this.state.country.cocktails.map((element) => {
+                          return(
+                              <Typography component="p">{element.label}</Typography>
+                          );
+                        })
+                    }
 
-                {backButton}
+                    {backButton}
             </div>
         );
     }
