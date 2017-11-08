@@ -14,6 +14,7 @@ INGREDIENT_INDEX_PATH = os.path.join(os.path.dirname(__file__), "ingredient_inde
 BRAND_INDEX_PATH = os.path.join(os.path.dirname(__file__), "brand_index")
 COUNTRY_INDEX_PATH = os.path.join(os.path.dirname(__file__), "country_index")
 
+
 # Query parser and intelligent search engine implementation
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
@@ -29,20 +30,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     if allEntries is None:
         return [{"error": "an sql access error occurred"}]
 
-    ix = None
-    if query != "":
-        try:
-            if category == "COCKTAILS":
-                ix = open_dir(COCKTAIL_INDEX_PATH)
-            if category == "BRANDS":
-                ix = open_dir(BRAND_INDEX_PATH)
-            if category == "INGREDIENTS":
-                ix = open_dir(INGREDIENT_INDEX_PATH)
-            if category == "COUNTRIES":
-                ix = open_dir(COUNTRIES_INDEX_PATH)
-        except Exception as e:
-            print(e)
-            ix = None
+    ix = getIndex(category)
 
     results = []
     if query == "":
@@ -86,6 +74,22 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     }
 
 
+# Returns the correct index for the search category specified
+
+def getIndex(category):
+    try:
+        if category == "COCKTAILS":
+            return open_dir(COCKTAIL_INDEX_PATH)
+        if category == "BRANDS":
+            return open_dir(BRAND_INDEX_PATH)
+        if category == "INGREDIENTS":
+            return open_dir(INGREDIENT_INDEX_PATH)
+        if category == "COUNTRIES":
+            return open_dir(COUNTRY_INDEX_PATH)
+    except Exception as e:
+        print(e)
+        return None
+
 # Applies a set of filtering and sorting rules to the result set
 
 def applyFilterRules(results, filterRules):
@@ -126,23 +130,11 @@ def applyFilter(results, filterString):
     rules = filterString.split("-")
     for r in rules:
         params = r[2:-2].split("][")
-        if len(params) != 3:
+        if len(params) != 2:
             continue
-        if params[1] == "m":
-            try:
-                results = (x for x in results if x.get(params[0]) == params[2])
-            except Exception as e:
-                pass
-        elif params[1] == "e":
-            try:
-                print("equations not yet supported")
-            except Exception as e:
-                pass
-        elif params[1] == "s":
-            try:
-                results = (x for x in results if x.get(params[0]).startswith(params[2]))
-            except Exception as e:
-                pass
+
+        rex = re.compile(params[1])
+        results = (x for x in results if (rex.search(x.get(params[0])) is not None))
     return results
 
 
@@ -196,6 +188,8 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
                 parser = QueryParser("body", ix4.schema)
                 pquery = parser.parse(query)
                 r4 = searcher.search(pquery)
+
+        # Someone better at python could probably make this cleaner
 
         mc = [None, True, True, True, True]
         if len(r1) > len(r2):
