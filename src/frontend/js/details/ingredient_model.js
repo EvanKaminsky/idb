@@ -28,7 +28,6 @@ export default class IngredientDetailPage extends React.Component {
 
         const slug = this.props.match.params.slug;  // Passed by react router
         if (slug === null) {
-            console.log("No slug for ingredient detail");
             return;
         }
 
@@ -43,7 +42,6 @@ export default class IngredientDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
-        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
 
@@ -55,11 +53,8 @@ export default class IngredientDetailPage extends React.Component {
 
         var backButton = null;
         if (this.state.fromURL) {
-            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
-
-        {console.log("Recognize my changes plz")}
 
         return (
             <div className="detail-box">

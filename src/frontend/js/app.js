@@ -32,7 +32,6 @@ class TipsyApp extends React.Component {
     render() { return (
         <BrowserRouter>
             <div>
-
                 <TipsyNavbar/>
 
                 <Switch>
@@ -48,7 +47,6 @@ class TipsyApp extends React.Component {
                     <Route path='/brand-detail/:slug'       component={BrandDetailPage}/>
                     <Route path='/country-detail/:slug'     component={CountryDetailPage}/>
                 </Switch>
-
             </div>
         </BrowserRouter>
     )}

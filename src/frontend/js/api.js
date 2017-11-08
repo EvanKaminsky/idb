@@ -1,7 +1,7 @@
 const base_api = "https://tipsymix-ttp.appspot.com/api/";
 //const BASE_API = "http://127.0.0.1:5000/api/";
 
-const ENABLE_CACHING = false;
+const ENABLE_CACHING = true;
 
 /* Networking layer for the React frontend */
 function API() {

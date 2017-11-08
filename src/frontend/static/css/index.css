@@ -1,11 +1,15 @@
+body {
+    background-color: #000;
+}
+
 .detail-box{
-  background-color: #FFF;
-  margin: auto;
-  width: 500px;
-  padding: 10px;
+    background-color: #FFF;
+    margin: auto;
+    width: 500px;
+    padding: 10px;
 }
 
 .container img-responsive {
-  display: block;
-  max-height: 200px;
+    display: block;
+    max-height: 200px;
 }

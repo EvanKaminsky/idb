@@ -30,7 +30,6 @@ export default class CountryDetailPage extends React.Component {
 
         const slug = this.props.match.params.slug;  // Passed by react router
         if (slug === null) {
-            console.log("No slug for country detail");
             return;
         }
 
@@ -45,7 +44,6 @@ export default class CountryDetailPage extends React.Component {
 
     goBack(event) {
         event.preventDefault();
-        console.log("Going back to: " + this.state.fromURL);
         this.props.history.push({pathname: this.state.fromURL});
     };
 
@@ -57,36 +55,35 @@ export default class CountryDetailPage extends React.Component {
 
         var backButton = null;
         if (this.state.fromURL) {
-            console.log("Generating button back to: " + this.state.fromURL);
             backButton = <Button dense color="primary" onClick={(e)=>this.goBack(e)}>Back</Button>
         }
 
         return (
             <div className="detail-box">
-                    <img className="img-responsive" src={this.state.country.image}/>
+                <img className="img-responsive" src={this.state.country.image}/>
 
-                    <Typography type="display2" align="center" component="h1">{this.state.country.name}</Typography>
-                    <Typography type="p" align="center" component="h4">{this.state.country.continent}</Typography>
+                <Typography type="display2" align="center" component="h1">{this.state.country.name}</Typography>
+                <Typography type="p" align="center" component="h4">{this.state.country.continent}</Typography>
 
-                    <Typography type="headline" component="h3">Description</Typography>
-                    <Typography component="p">{this.state.country.description}</Typography>
+                <Typography type="headline" component="h3">Description</Typography>
+                <Typography component="p">{this.state.country.description}</Typography>
 
-                    <Typography type="headline" component="h3">Brands</Typography>
-                    {this.state.country.brands.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                <Typography type="headline" component="h3">Brands</Typography>
+                {this.state.country.brands.map((element) => { return (
+                    <Typography component="p">{element.label}</Typography>
+                );})}
 
-                    <Typography type="headline" component="h3">Ingredients</Typography>
-                    {this.state.country.ingredients.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                <Typography type="headline" component="h3">Ingredients</Typography>
+                {this.state.country.ingredients.map((element) => { return (
+                    <Typography component="p">{element.label}</Typography>
+                );})}
 
-                    <Typography type="headline" component="h3">Cocktails</Typography>
-                    {this.state.country.cocktails.map((element) => { return (
-                        <Typography component="p">{element.label}</Typography>
-                    );})}
+                <Typography type="headline" component="h3">Cocktails</Typography>
+                {this.state.country.cocktails.map((element) => { return (
+                    <Typography component="p">{element.label}</Typography>
+                );})}
 
-                    {backButton}
+                {backButton}
             </div>
         );
     }
