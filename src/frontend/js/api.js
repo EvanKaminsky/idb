@@ -86,7 +86,6 @@ function API() {
     };
 
     this.getIngredientDetail = function(slug) {
-        console.log("ok");
         return this.get("ingredients/" + slug);
     };
 
