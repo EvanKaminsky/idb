@@ -70,6 +70,7 @@ def sql_select(select_q, from_q, where_q=None):
     try:
         cursor = db.query(qString)
         result = [dict(x) for x in cursor.fetchall()]
+        cursor.close()
         return result
     except Exception as e:
         print(e)
@@ -89,6 +90,7 @@ def sql_describe(category):
     try:
         cursor = db.query(qString)
         result = [dict(x) for x in cursor.fetchall()]
+        cursor.close()
         return result
     except Exception as e:
         print(e)
