@@ -9,10 +9,19 @@ from itertools import islice
 import mysql.connector
 import unicodedata
 import string
+from sql import sql_fetchAll
+
+from whoosh.fields import *
+from whoosh.index import *
+
+from engine import schema
+from engine import COCKTAIL_INDEX_PATH
+from engine import INGREDIENT_INDEX_PATH
+from engine import BRAND_INDEX_PATH
+from engine import COUNTRY_INDEX_PATH
 
 printable = set(string.printable)
 
-#c = Internal()
 cnx = mysql.connector.connect(user='root', password='tipsymix',
                               host='127.0.0.1',
                               database='tipsy_backend')
@@ -107,5 +116,47 @@ print("links created")
 c.close()
 cnx.commit()
 cnx.close()
+
+##########################################
+######  Create Whoosh Lucene Index  ######
+##########################################
+
+if not os.path.exists(COCKTAIL_INDEX_PATH):
+    os.mkdir(COCKTAIL_INDEX_PATH)
+ixCocktail = create_in(COCKTAIL_INDEX_PATH, schema)
+if not os.path.exists(INGREDIENT_INDEX_PATH):
+    os.mkdir(INGREDIENT_INDEX_PATH)
+ixIng = create_in(INGREDIENT_INDEX_PATH, schema)
+if not os.path.exists(BRAND_INDEX_PATH):
+    os.mkdir(BRAND_INDEX_PATH)
+ixBr = create_in(BRAND_INDEX_PATH, schema)
+if not os.path.exists(COUNTRY_INDEX_PATH):
+    os.mkdir(COUNTRY_INDEX_PATH)
+ixCo = create_in(COUNTRY_INDEX_PATH, schema)
+
+cocktailData = sql_fetchAll("COCKTAILS")
+ingData = sql_fetchAll("INGREDIENTS")
+brData = sql_fetchAll("BRANDS")
+coData = sql_fetchAll("COUNTRIES")
+
+writer = ixCocktail.writer()
+for data in cocktailData:
+    writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+writer.commit()
+
+writer = ixIng.writer()
+for data in ingData:
+    writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+writer.commit()
+
+writer = ixBr.writer()
+for data in brData:
+    writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+writer.commit()
+
+writer = ixCo.writer()
+for data in coData:
+    writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+writer.commit()
 
 print("done")

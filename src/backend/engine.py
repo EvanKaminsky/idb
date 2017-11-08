@@ -1,11 +1,23 @@
 from sql import sql_fetchAll
 from decimal import Decimal
+from whoosh.fields import *
+from whoosh.index import *
 
+###########################
+######  Index Setup  ######
+###########################
+
+schema = Schema(title=TEXT(stored=True, field_boost=2.5), id=ID(stored=True), body=TEXT)
+COCKTAIL_INDEX_PATH = os.path.join(os.path.dirname(__file__), "cocktail_index")
+INGREDIENT_INDEX_PATH = os.path.join(os.path.dirname(__file__), "ingredient_index")
+BRAND_INDEX_PATH = os.path.join(os.path.dirname(__file__), "brand_index")
+COUNTRY_INDEX_PATH = os.path.join(os.path.dirname(__file__), "country_index")
 
 # Query parser and intelligent search engine implementation
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
+    query = query if query else ""
     page = page if page else 1
     pageSize = pageSize if pageSize else 10
     count = count if count else 1000
@@ -16,8 +28,30 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     if allEntries is None:
         return [{"error": "an sql access error occurred"}]
 
-    query = query if query else ""
-    results = [x for x in allEntries if (query in x.get("name"))]
+    ix = None
+    results = []
+    try:
+        if category == "COCKTAILS":
+            ix = open_dir(COCKTAIL_INDEX_PATH)
+        if category == "BRANDS":
+            ix = open_dir(BRAND_INDEX_PATH)
+        if category == "INGREDIENTS":
+            ix = open_dir(INGREDIENT_INDEX_PATH)
+        if category == "COUNTRIES":
+            ix = open_dir(COUNTRIES_INDEX_PATH)
+    except Exception as e:
+        print(e)
+        ix = None
+
+    if ix is None:
+        results = [x for x in allEntries if (query in x.get("name"))]
+    else:
+        with ix.searcher() as searcher:
+            parser = QueryParser("body", ix.schema)
+            pquery = parser.parse(query)
+            res = searcher.search(pquery)
+            resID = [int(x.get("id")) for x in res]
+            results = [x for x in allEntries if (int(x.get("id")) in resID)]
 
     results = applyFilterRules(results, filterRules)
 
