@@ -149,5 +149,87 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
     if category is not None:
         return category
     else:
-        # implement this
-        return "COCKTAILS"
+        results = []
+        try:
+            ix1 = open_dir(COCKTAIL_INDEX_PATH)
+            ix2 = open_dir(BRAND_INDEX_PATH)
+            ix3 = open_dir(INGREDIENT_INDEX_PATH)
+            ix4 = open_dir(COUNTRIES_INDEX_PATH)
+        except Exception as e:
+            print(e)
+            ix1 = None
+            ix2 = None
+            ix3 = None
+            ix4 = None
+
+        if ix1 is None:
+            r1 = []
+        else:
+            with ix1.searcher() as searcher:
+                parser = QueryParser("body", ix1.schema)
+                pquery = parser.parse(query)
+                r1 = searcher.search(pquery)
+
+        if ix2 is None:
+            r2 = []
+        else:
+            with ix2.searcher() as searcher:
+                parser = QueryParser("body", ix2.schema)
+                pquery = parser.parse(query)
+                r2 = searcher.search(pquery)
+
+        if ix3 is None:
+            r3 = []
+        else:
+            with ix3.searcher() as searcher:
+                parser = QueryParser("body", ix3.schema)
+                pquery = parser.parse(query)
+                r3 = searcher.search(pquery)
+
+        if ix4 is None:
+            r4 = []
+        else:
+            with ix4.searcher() as searcher:
+                parser = QueryParser("body", ix4.schema)
+                pquery = parser.parse(query)
+                r4 = searcher.search(pquery)
+
+        mc = [None, True, True, True, True]
+        if len(r1) > len(r2):
+            mc[2] = False
+        if len(r1) > len(r3):
+            mc[3] = False
+        if len(r1) > len(r4):
+            mc[4] = False
+
+        if len(r2) > len(r1):
+            mc[1] = False
+        if len(r2) > len(r3):
+            mc[3] = False
+        if len(r2) > len(r4):
+            mc[4] = False
+
+        if len(r3) > len(r1):
+            mc[1] = False
+        if len(r3) > len(r2):
+            mc[2] = False
+        if len(r3) > len(r4):
+            mc[4] = False
+
+        if len(r4) > len(r1):
+            mc[1] = False
+        if len(r4) > len(r2):
+            mc[2] = False
+        if len(r4) > len(r3):
+            mc[3] = False
+
+        if (mc[1]):
+            return "COCKTAILS"
+        if (mc[2]):
+            return "BRANDS"
+        if (mc[3]):
+            return "INGREDIENTS"
+        if (mc[4]):
+            return "COUNTRIES"
+
+    return "COCKTAILS"
