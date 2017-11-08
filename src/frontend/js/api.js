@@ -1,5 +1,7 @@
 const base_api = "https://tipsymix-ttp.appspot.com/api/";
-//const base_api = "http://127.0.0.1:5000/api/";
+//const BASE_API = "http://127.0.0.1:5000/api/";
+
+const ENABLE_CACHING = true;
 
 /* Networking layer for the React frontend */
 function API() {
@@ -22,7 +24,7 @@ function API() {
             });
         }
 
-        return fetch(base_api + endpoint, payload)
+        return fetch(BASE_API + endpoint, payload)
             .then(response => {
                 return response.json();
             })
@@ -37,7 +39,14 @@ function API() {
     };
 
     this.get = function(endpoint) {
-        return this.restfulRequest("GET", endpoint, null)
+        if (ENABLE_CACHING && endpoint in window.constants.store) {
+            return Promise.resolve(window.constants.store[endpoint]);
+        } else {
+            return this.restfulRequest("GET", endpoint, null).then(json => {
+                window.constants.store[endpoint] = json;
+                return json;
+            });
+        }
     };
 
     /* -------------------------------------------------------------- */

@@ -24,7 +24,8 @@ class TipsyApp extends React.Component {
 
     componentWillMount() {
         window.constants = {
-            api: new API()
+            api: new API(),
+            store: {}
         };
     }
 
