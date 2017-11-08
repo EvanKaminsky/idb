@@ -1,5 +1,5 @@
-const base_api = "https://tipsymix-ttp.appspot.com/api/";
-//const BASE_API = "http://127.0.0.1:5000/api/";
+//const base_api = "https://tipsymix-ttp.appspot.com/api/";
+const BASE_API = "http://127.0.0.1:5000/api/";
 
 const ENABLE_CACHING = true;
 
@@ -62,9 +62,7 @@ function API() {
         if (pagesize) {
             query += "&pagesize=" + pagesize;
         }
-        return this.get(query).then(json => {
-            return (json === null) ? null : json.results
-        })
+        return this.get(query).then(json => {return json});
     };
 
     this.getCocktails = function(page, pagesize) {
@@ -88,6 +86,7 @@ function API() {
     };
 
     this.getIngredientDetail = function(slug) {
+        console.log("ok");
         return this.get("ingredients/" + slug);
     };
 

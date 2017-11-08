@@ -5,6 +5,7 @@ import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
 import TipsyGrid from "../components/TipsyGrid.js";
 import BrandCard from "../cards/BrandCard.js";
+import Stepper from "../components/Stepper.js"
 
 import backgroundStyle from "../constants.js"
 
@@ -14,69 +15,80 @@ export default class BrandsPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            brands: [],
-            descriptions: [],
-            isLoading: false
+            elements: [],
+            isLoading: false,
+
+            current_page: 1,     // Pagination
+            total_pages: 0,
+            page_size: 10
         };
 
-        this.openBrandDetail = this.openBrandDetail.bind(this);
+        this.openDetail = this.openDetail.bind(this);
         this.reload = this.reload.bind(this);
+        this.nextPage = this.nextPage.bind(this);
+        this.previousPage = this.previousPage.bind(this);
     }
 
-    reload() {
+    reload(page) {
         if (this.state.isLoading) {
             return;
         }
 
         this.state.isLoading = true;
-        window.constants.api.getBrands().then(brands => {
-            if (brands !== null) {
-                this.setState({brands: brands});
+        window.constants.api.getDescriptions();
+        window.constants.api.getBrands(page, this.state.page_size).then(json => {
+            if (json !== null) {
+                this.setState({elements: json.results});
+                this.setState({total_pages: json.totalPages});
+                this.setState({current_page: json.page});
             }
             this.state.isLoading = false;
         });
-
-        window.constants.api.getDescriptions().then(descriptions => {
-            if (descriptions !== null) {
-                this.setState({descriptions: descriptions});
-            }
-        });
     }
 
-    openBrandDetail(brand, event) {
+    openDetail(element, event) {
         event.preventDefault();
         this.props.history.push({
-            pathname:'/brand-detail/' + brand.id,
+            pathname:'/brand-detail/' + element.id,
             state: {"fromURL": "/brands"}
         });
     };
 
     render() {
         var spinner = null;
-        if (this.state.brands.length < 1) {
-            this.reload();
-            spinner = <Spinner/>
+        var stepper = null;
+        if (this.state.elements.length < 1) {
+            this.reload(this.state.current_page);
+            spinner = <Spinner/>;
+        } else {
+            stepper = <Stepper pages={this.state.total_pages} currentPage={this.state.current_page}
+                               next={this.nextPage} back={this.previousPage}/>;
         }
+
+        const renderElements = this.state.elements.map((element, i) => { return (
+          <Grid key={i} item>
+              <BrandCard brand={element} onClick={(e)=>this.openDetail(element, e)}/>
+          </Grid>
+        )});
 
         return (
             <div style={backgroundStyle}>
                 <h1>Tipsy Mix</h1>
-
                 <TipsySearchbar/>
-
-                <section className = "container">
-                    <div className = "row">
-                        {spinner}
-
-                        <TipsyGrid elements={spinner !== null ? spinner :
-                            this.state.brands.map(function(brand, i) { return (
-                            <Grid key={i} item>
-                                <BrandCard brand={brand} onClick={(e)=>this.openBrandDetail(brand, e)}/>
-                            </Grid>
-                        )}, this)}/>
-                    </div>
-                </section>
+                <TipsyGrid elements={spinner !== null ? spinner : renderElements}/>
+                {stepper}
             </div>
         )
     }
+
+     /* Pagination */
+
+    nextPage() {
+        this.reload(this.state.current_page + 1);
+    }
+
+    previousPage() {
+        this.reload(this.state.current_page - 1);
+    }
+
 }
