@@ -19,7 +19,7 @@ TipsyMix is a database linking cocktails, ingredients, brands, and countries tog
 
 Filter+sort format:
 
-filter: s-([field][a/d])f-([field][m/e/s][param])-(more filters)
+filter: s-([field][a/d])f-([field][rex])-(more filters)
 
 a = ascending
 
@@ -27,13 +27,7 @@ d = descending
 
 field: name of model data field as it would appear in the returned json
 
-m = match
-
-e = equation
-
-s = starts with
-
-param: what to match/check if it starts with/equation to satisfy
+rex: regex to apply to field
 
 All brackets and parentheses are part of the parameter string
 + Response 200 (application/json)
