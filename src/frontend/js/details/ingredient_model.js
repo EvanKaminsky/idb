@@ -62,9 +62,10 @@ export default class IngredientDetailPage extends React.Component {
             <div className="detail-box">
                     <img className="img-responsive" src={this.state.ingredient.image}/>
 
-                    <Typography type="display2" align="center" component="h1">{this.state.ingredient.name}</Typography>
+                    <Typography type="display3">{this.state.ingredient.name}</Typography>
 
                     <DetailSingleSection title="Description" label={this.state.ingredient.description}/>
+                    <DetailSingleSection title="Alcohol by Volume (ABV)" label={this.state.ingredient.abv}/>
 
                     <DetailMultiSection type="cocktail" elements={this.state.ingredient.cocktails} history={this.props.history} location={this.props.location}/>
                     <DetailMultiSection type="brand" elements={this.state.ingredient.brands} history={this.props.history} location={this.props.location}/>

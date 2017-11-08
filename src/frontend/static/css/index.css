@@ -9,9 +9,18 @@ body {
     padding: 10px;
 }
 
-.container img-responsive {
+.detail-box h1{
+    color: black;
+}
+
+.detail-box p{
+    margin: 10px;
+}
+
+.img-responsive {
     display: block;
-    max-heigsht: 200px;
+    max-height: 400px;
+    margin: auto;
 }
 
 .podbar {

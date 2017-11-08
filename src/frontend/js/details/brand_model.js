@@ -63,9 +63,10 @@ export default class BrandDetailPage extends React.Component {
             <div className="detail-box">
                     <img className="img-responsive" src={this.state.brand.image}/>
 
-                    <Typography type="display2" align="center" component="h1">{this.state.brand.name}</Typography>
+                    <Typography type="display3">{this.state.brand.name}</Typography>
 
                     <DetailSingleSection title="Description" label={this.state.brand.description}/>
+                    <DetailSingleSection title="Website" label={this.state.brand.website}/>
 
                     <DetailMultiSection type="cocktail" elements={this.state.brand.cocktails} history={this.props.history} location={this.props.location}/>
                     <DetailMultiSection type="ingredient" elements={this.state.brand.ingredients} history={this.props.history} location={this.props.location}/>

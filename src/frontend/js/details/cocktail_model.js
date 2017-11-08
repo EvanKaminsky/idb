@@ -65,11 +65,17 @@ export default class CocktailDetailPage extends React.Component {
 
         return (
             <div className="detail-box">
-                    <img className="img-responsive" src={this.state.cocktail.image}/>
+                    <img className="img-responsive" align="center" src={this.state.cocktail.image}/>
 
-                    <Typography type="display2" align="center" component="h1">{this.state.cocktail.name}</Typography>
+                    <Typography type="display3">{this.state.cocktail.name}</Typography>
 
                     <DetailSingleSection title="Description" label={this.state.cocktail.description}/>
+                    <DetailSingleSection title="Base Spirit" label={this.state.cocktail.base_spirit}/>
+                    <DetailSingleSection title="Garnish" label={this.state.cocktail.garnish}/>
+                    <DetailSingleSection title="Glass" label={this.state.cocktail.glass}/>
+                    <DetailSingleSection title="Instructions" label={this.state.cocktail.instructions}/>
+                    <DetailSingleSection title="Preparation" label={this.state.cocktail.preparation}/>
+                    <DetailSingleSection title="Video" label={this.state.cocktail.video}/>
 
                     <DetailMultiSection type="ingredient" elements={this.state.cocktail.ingredients} history={this.props.history} location={this.props.location}/>
                     <DetailMultiSection type="country" elements={this.state.cocktail.countries} history={this.props.history} location={this.props.location}/>

@@ -35,7 +35,7 @@ export default class DetailMultiSection extends React.Component {
 
         return (
             <div>
-                <Typography type="headline" component="h3">{strings[0]}</Typography>
+                <Typography type="display1" align="left">{strings[0]}</Typography>
 
                 {this.props.elements.map((element, i) => { return (
                     <Button key={i} onClick={ (event) => {
