@@ -52,7 +52,7 @@ CREATE TABLE BRANDS (
 	color int,
 	description varchar(10000),
 	summary varchar(5000),
-	value int,
+	value varchar(255),
 	websiteurl varchar(255),
 	PRIMARY KEY (id)
 );
@@ -65,6 +65,7 @@ CREATE TABLE COUNTRIES (
 	color int,
 	description varchar(10000),
 	summary varchar(5000),
+	capital varchar(255),
 	continent varchar(255),
 	PRIMARY KEY (id)
 );

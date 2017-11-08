@@ -34,47 +34,47 @@ color_const = 255
 
 with open('brands.txt') as br:
     while True:
-        s = list(islice(br, 6))
+        s = list(islice(br, 8))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
-        c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
     print("brands inserted")
 
 
 with open('cocktails.txt') as co:
     while True:
-        s = list(islice(co, 6))
+        s = list(islice(co, 7))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
-        c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
     print("cocktails inserted")
 
 
 with open('countries.txt') as cu:
     while True:
-        s = list(islice(cu, 6))
+        s = list(islice(cu, 8))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
-        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
     print("countries inserted")
 
 
 with open('ingredients.txt') as ig:
     while True:
-        s = list(islice(ig, 6))
+        s = list(islice(ig, 7))
         if not s:
             break
         s[0] = int(s[0])
         s.insert(4, color_const)
         if s[6].strip() == 'NULL':
             s[6] = 0
-        c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+        c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
     print("ingredients inserted")
 
 

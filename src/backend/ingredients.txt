@@ -2,18 +2,21 @@
 cranberry_juice
 Cranberry Juice
 https://www.simplyorangejuice.com/images/product-images/prod-cranberry-large.png
+A cup of standard 100% cranberry juice, amounting to 248 grams or 8 ounces, is a rich source of antioxidants, vitamin C and salicylic acid. It also supplies calcium, magnesium, manganese, phosphorus, and potassium minerals. Cranberry juice is classified as an acidic drink with a typical pH between 2.3 and 2.5.
 Type: Juice and Concentrate
 0.0
 2
 lime_juice
 Lime Juice
 https://specsonline.com/wp-content/uploads/001480058204.jpg
+Limes have higher contents of sugars and acids than do lemons. Lime juice may be squeezed from fresh limes, or purchased in bottles in both unsweetened and sweetened varieties. Lime juice is used to make limeade, and as an ingredient (typically as sour mix) in many cocktails.
 Type: Juice and Concentrate
 0.0
 3
 cointreau
 Cointreau
 http://cdn.barmano.com/brand-images/cointreau-112-small.jpg
+Cointreau is a brand of triple sec (an orange-flavoured liqueur) produced in Saint-Barthélemy-d'Anjou, France. It is drunk as an apéritif and digestif, and is a component of several well-known cocktails. It was originally called "Curacao Blanco Triple Sec".
 Cointreau is a brand of triple sec liqueur, and produced in Saint-Barthélemy-d'Anjou, a suburb of Angers, France. 
 0.4
 4
@@ -21,185 +24,216 @@ vodka_lemon
 Lemon Vodka
 https://www.austinhomebrew.com/assets/images/still-spirts-top-shelf-flavoring-essence-citrus-vodka-web.jpg
 Lemon flavoring added to Vodka (natural or artificial).
+Lemon flavoring added to Vodka (natural or artificial).
 0.4
 5
 vodka
 Vodka
 https://upload.wikimedia.org/wikipedia/commons/6/65/Absolut_vodka.jpg
+Vodka is a distilled beverage composed primarily of water and ethanol, sometimes with traces of impurities and flavorings. Traditionally, vodka is made by the distillation of cereal grains or potatoes that have been fermented, though some modern brands use other substances, such as fruits or sugar.
 Vodka is easily one of the world's most consumed distilled beverages.
 0.4
 6
 amaretto
 Amaretto
 https://upload.wikimedia.org/wikipedia/commons/8/8b/Amaretto_Bottles_4.JPG
+Amaretto (Italian for "a little bitter") is a sweet, almond-flavoured, Italian liqueur associated with Saronno, Italy. Various commercial brands are made from a base of apricot pits, almonds, or both. When served as a beverage, amaretto can be drunk by itself, used as an ingredient to create several popular mixed drinks, or added to coffee. Amaretto is also commonly used in culinary applications.
 Amaretto is a sweet liqueur made from a basic infusion of the stones of drupe fruits, such as peaches, as well as a related almond biscotto.
 0.28
 7
 baileys_irish_cream
 Bailey's Irish Cream
 http://cdn.barmano.com/brand-images/baileys-irish-cream-35-small.jpg
+Baileys Irish Cream is an Irish whiskey- and cream-based liqueur, made by Gilbeys of Ireland. The trademark is currently owned by Diageo. It has a declared alcohol content of 17% by volume.
 Baileys Irish Cream, is an Irish whiskey and cream based liqueur, made by R. A. Bailey & Co. of Dublin, Ireland. 
 0.17
 8
 kahlua
 Kahlua
 http://cdn.barmano.com/brand-images/kahlua-5-small.jpg
+Kahlúa is a coffee-flavored liqueur from Mexico. The drink contains rum, sugar, vanilla bean, and arabica coffee.
 Kahlúa is a well known Mexican coffee flavored liqueur.
 0.27
 9
 liqueur_peach
 Peach Liqueur
 https://cdnimg.webstaurantstore.com/images/products/extra_large/29359/938963.jpg
+Schnapps or schnaps is a type of alcoholic beverage that may take several forms, including distilled fruit brandies, herbal liqueurs, infusions, and "flavored liqueurs" made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits.
 Type: Liqueurs and Cordials
 0.18
 10
 orange_juice
 Orange Juice
 https://upload.wikimedia.org/wikipedia/commons/6/67/Orange_juice_1_edit1.jpg
+Orange juice is the liquid extract of the fruit of the orange tree, produced by squeezing oranges. It comes in several different varieties, including blood orange, navel oranges, valencia orange, clementine, and tangerine. As well as variations in oranges used, some varieties include differing amounts of juice vesicles, known as "pulp" in American English, and "juicy bits" in British English. These vesicles contain the juice of the orange and can be left in or removed during the manufacturing process. How juicy these vesicles are depend upon many factors, such as species, variety, and season. In American English, the beverage name may be abbreviated as "OJ".
 Type: Juice and Concentrate
 0.0
 11
 irish_cream
 Irish Cream
 https://smittenkitchendotcom.files.wordpress.com/2016/12/homemade-irish-cream.jpg?w=1024
+Irish cream is a cream liqueur based on Irish whiskey, cream, and other ingredients such as coffee, which can be served on its own, as an alcoholic substitute for milk/cream and sugar in a hot coffee (sometimes with whipped cream added on top), or used in mixed drinks or as part of a shot or a whole shot. Irish cream's largest markets are the United Kingdom, Canada, and the United States.
 Irish Cream is a cream liqueur based on Irish whiskey, coffee and cream and other ingredients.
 0.17
 12
 liqueur_coffee
 Coffee Liqueur
 http://library.bevnetwork.com/bottles/410/319622.jpg
+A liqueur coffee is a coffee drink with a shot of liqueur. It may be served in a special liqueur coffee glass, often with cream and sugar. Liqueur coffee are all variants on what is widely known as Irish coffee, hot coffee with whiskey and a layer of cream (not whipped) floated on top. Liqueur coffee is particularly popular in Galicia, Spain, where it is considered a traditional drink. Widely known throughout Spain as carajillo, it is made from a blend of coffee, sugar, and strong alcohol such as aguardiente, orujo, or rum.
 Type: Liqueurs and Cordials
 0.27
 13
 cream
 Cream
 https://assets.epicurious.com/photos/57631b4eff66dde1456dfed4/6:4/w_620%2Ch_413/sweetened-whipped-cream.jpg
+Cream is a dairy product composed of the higher-butterfat layer skimmed from the top of milk before homogenization. In un-homogenized milk, the fat, which is less dense, will eventually rise to the top. In the industrial production of cream, this process is accelerated by using centrifuges called "separators". In many countries, cream is sold in several grades depending on the total butterfat content. Cream can be dried to a powder for shipment to distant markets. Cream has high levels of saturated fat.
 Type: Milk, Ice, Water, and Egg Product
 0.0
 14
 cream_of_coconut
 Cream of coconut
 https://jetimages.azureedge.net/md5/74b77007a08579a4ffe88d4d1dc76a6e.500
+Coconut cream is very similar to coconut milk but contains less water. The difference is mainly consistency. It has a thicker, more paste-like consistency, while coconut milk is generally a liquid. Coconut cream is used as an ingredient in cooking, having a mild non-sweet taste. Coconut cream can be made by simmering 1 part shredded coconut with 1 part water or milk until frothy, then straining the mixture through a cheesecloth, squeezing out as much liquid as possible; this is coconut milk. The coconut milk is refrigerated and allowed to set. Coconut cream is the thick non-liquid part that separates and rises to the top of the coconut milk.
 Type: Juice and Concentrate
 0.0
 15
 curacao,_blue
-Curacao, blue
+Blue Curacao
 https://upload.wikimedia.org/wikipedia/commons/0/09/Senior-Liqueur-Blue-Curacao.jpg
-Blue Curaçao is a liqueur flavored with the dried peels of Larahas, a type of bitter orange grown on the island of Curacao.
+Blue Curacao is a liqueur flavored with the dried peels of Larahas, a type of bitter orange grown on the island of Curacao.
+Blue Curacao is a liqueur flavored with the dried peels of Larahas, a type of bitter orange grown on the island of Curacao.
 0.3
 16
 pineapple_juice
 Pineapple Juice
 https://i2.wp.com/lovingfruits.com/wp-content/uploads/2016/09/drinking-pineapple-juice-on-empty-stomach.jpg
+Pineapples can be consumed fresh, cooked, juiced, or preserved. They are found in a wide array of cuisines. In addition to consumption, the pineapple leaves are used to produce the textile fiber piña in the Philippines, commonly used as the material for the men's barong Tagalog and women's baro't saya formal wear in the country. The fiber is also used as a component for wallpaper and other furnishings.
 Type: Juice and Concentrate
 0.0
 17
 midori_melon_liqueur
 Midori Melon Liqueur
 https://ui3.assets-asda.com/g/v5/020/665/4901777020665_280_IDShot_3.jpeg
+Midori is a sweet, bright green-coloured, muskmelon-flavored liqueur made by Suntory. It is manufactured in Japan, the United States, Mexico, and France. It was made exclusively in Japan until 1987. Midori is typically 20–21% alcohol by volume. Its name is the Japanese word for "green". The Midori formulated in France is sweeter than the original Japanese version.
 Country of Origin: Japan
 0.23
 18
 godiva
 Godiva
 https://www.owliquors.com/image/cache/data/liquor/liqueur-cordial/godiva/godiva-chocolate-liqueur-bottle-500x500.jpg
+Godiva Chocolatier is a manufacturer of premium fine chocolates and related products. Godiva, founded in Belgium in 1926, was purchased by the Turkish Yildiz Holding, owner of the Ulker Group, on November 20, 2007. Godiva owns and operates more than 600 retail boutiques and shops in the United States, Canada, Europe, and Asia and is available via over 10,000 specialty retailers.
 An extremely rich, creamy-tasting white chocolate liqueur with the world-famous Godiva name.
 0.17
 19
 frangelico
 Frangelico
 https://upload.wikimedia.org/wikipedia/en/4/49/Frangelico.jpg
+Frangelico is a brand of noisette (hazelnut) and herb-flavored liqueur (coloured with caramel coloring) which is produced in Canale, Italy. It is 20% alcohol by volume, 40 proof. Formerly, it was 24% alcohol by volume, 48 proof. It is known for its unusual packaging; its bottle was designed to look like a friar, complete with a knotted white cord around the waist. It is most commonly sold in two sizes: 750ml and 375ml
 Frangelico is a hazelnut and herb-flavored liqueur which is produced in Canale, Italy.
 0.24
 20
 malibu_original
 Malibu Original
 http://cdn.barmano.com/brand-images/malibu-309-small.jpg
+Malibu is a brand of rum, flavored with liqueur, possessing an alcohol content by volume of 21.0% (42 proof). The brand is owned by Pernod Ricard.
 Malibu Original is a Caribbean rum with natural coconut flavor.
 0.21
 21
 rum_
-Rum, overproof/151 proof
+Overproof/151 proof Rum
 http://library.bevnetwork.com/bottles/310/9497.jpg
+Naming standards also vary. Argentina defines rums as white, gold, light, and extra light. Grenada and Barbados uses the terms white, overproof, and matured, while the United States defines rum, rum liqueur, and flavored rum.
 Type: Rums
 0.76
 22
 gin
 Gin
 https://reservebar.global.ssl.fastly.net/media/catalog/product/cache/1/image/1000x1278/9df78eab33525d08d6e5fb8d27136e95/b/o/botangin.jpg
+Gin is a spirit which derives its predominant flavour from juniper berries (Juniperus communis). From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry. Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary. Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient.
 Gin is a spirit flavored with juniper berries.
 0.4
 23
 lemon_juice
 Lemon Juice
 http://i.telegraph.co.uk/multimedia/archive/02964/lemon_2964364b.jpg
+The tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world, primarily for its juice, which has both culinary and cleaning uses. The pulp and rind (zest) are also used in cooking and baking. The juice of the lemon is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste. The distinctive sour taste of lemon juice makes it a key ingredient in drinks and foods such as lemonade and lemon meringue pie.
 Type: Juice and Concentrate
 0.0
 24
 rum_white_light
 White/Light Rum
 http://groceries.iceland.co.uk/medias/sys_master/root/h5c/h01/8830464163870.jpg
+Naming standards also vary. Argentina defines rums as white, gold, light, and extra light. Grenada and Barbados uses the terms white, overproof, and matured, while the United States defines rum, rum liqueur, and flavored rum.
 Type: Rums
 0.4
 25
 sugar_syrup
 Sugar Syrup
 https://groceries.morrisons.com/productImages/265/265410011_0_170x170.jpg?identifier=9d7267ccd395ddc7d26ee26c484ce887
+In cooking, a syrup or sirup is a condiment that is a thick, viscous liquid consisting primarily of a solution of sugar in water, containing a large amount of dissolved sugars but showing little tendency to deposit crystals. Its consistency is similar to that of molasses. The viscosity arises from the multiple hydrogen bonds between the dissolved sugar, which has many hydroxyl (OH) groups, and the water.
 Type: Sweetened Product
 0.0
 26
 soda_water
 Soda Water
 https://jetimages.azureedge.net/md5/2e459c0a8e72f47f278b5760cbf154fb.500
+Carbonated water (also known as club soda, soda water, sparkling water, seltzer water, bubbly water, or fizzy water) is water into which carbon dioxide gas under pressure has been dissolved. Some of these have additives, such as sodium chloride, sodium bicarbonate or similar, but seltzer water is almost always composed of water and carbon dioxide with no other additives. This process, known as carbonation, is a process that causes the water to become effervescent. Most carbonated water is sold in ready to drink bottles as carbonated beverages such as soft drinks. However, it can also be prepared at home with soda makers.
 Carbonated water, also known as sparkling water, fizzy water, soda water, club soda, or seltzer water, is plain water into which carbon dioxide gas has been dissolved. 
 0.0
 27
 tequila
 Tequila
 http://cdn2.bigcommerce.com/server4900/7a906/images/stencil/1000x1000/products/846/8951/1800_Reposado_Tequila__33890.1440522712.1280.1280__76311.1440522917.jpg?c=2
+Tequila is a regionally specific distilled beverage and type of alcoholic drink made from the blue agave plant, primarily in the area surrounding the city of Tequila, 65 km (40 mi) northwest of Guadalajara, and in the highlands (Los Altos) of the central western Mexican state of Jalisco. Aside from differences in region of origin, tequila is a type of mezcal (and the regions of production of the two drinks are overlapping).
 Tequila is a Mexican liquor distilled from the fermented juices obtained from the hearts of blue agave plants grown in the Tequila Region.
 0.4
 28
 brandy
 Brandy
 https://www.brandyandginger.co.za/wp-content/uploads/2011/12/VR_10_Snifter.jpg
+Brandy is a spirit produced by distilling wine. Brandy generally contains 35–60% alcohol by volume (70–120 US proof) and is typically taken as an after-dinner drink. Some brandies are aged in wooden casks, some are coloured with caramel colouring to imitate the effect of aging, and some brandies are produced using a combination of both aging and colouring.
 Brandy short for brandywine, from Dutch brandewijn ('burnt wine') is a general term for distilled wine, usually 40–60% ethyl alcohol by volume.
 0.4
 29
 creme_de_menthe
 Creme de Menthe
 https://groceries.morrisons.com/productImages/119/119568011_0_640x640.jpg?identifier=b730b5d6d18c5eb9e73ae0eba81814c9
+Crème de menthe is a sweet, mint-flavored alcoholic beverage. Its flavor primarily derives from Corsican mint or dried peppermint. It is available commercially in a colorless version (called "white") and a green version (colored by the mint leaves, or by added coloring if made from extract instead of leaves). Both varieties have similar flavor and are interchangeable in recipes, except where color is important.
 Creme de menthe is a sweet, mint-flavored liqueur, which derives it's taste from corsican mint.
 0.2
 30
 liqueur_apple
 Apple Liqueur
 https://wine-searcher1.freetls.fastly.net/images/labels/19/44/bols-sour-apple-liqueur-netherlands-10401944.jpg
+Schnapps or schnaps is a type of alcoholic beverage that may take several forms, including distilled fruit brandies, herbal liqueurs, infusions, and "flavored liqueurs" made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits.
 Apple liqueur (or sometimes called schnapps) is typically made from apples, or apple flavoring (natural or artificial).
 0.2
 31
 creme_de_bananes
 Creme de Bananes
 https://cdnimg.webstaurantstore.com/images/products/extra_large/78336/938597.jpg
+Crème de banana is a sweet, banana-flavored liqueur, usually bottled at 17%-25% ABV. It is mostly used in alcoholic drinks but also in cooking; it is an ingredient of various cocktails and desserts.
 A yellow, transparent, sweet, banana flavored liqueur.
 0.2
 32
 grenadine
 Grenadine
 https://cdnimg.webstaurantstore.com/images/products/extra_large/93925/792977.jpg
+Grenadine is a commonly used, non-alcoholic bar syrup, characterized by a flavour that is both tart and sweet, and by a deep red colour. It is popular as an ingredient in cocktails, both for its flavour and to give a reddish/pink tint to mixed drinks.
 Grenadine is traditionally a non-alcoholic red syrup.
 0.0
 33
 creme_de_coconut
 Creme de Coconut
 https://cdnimg.webstaurantstore.com/images/products/extra_large/41760/836985.jpg
+Coconut cream is very similar to coconut milk but contains less water. The difference is mainly consistency. It has a thicker, more paste-like consistency, while coconut milk is generally a liquid. Coconut cream is used as an ingredient in cooking, having a mild non-sweet taste. Coconut cream can be made by simmering 1 part shredded coconut with 1 part water or milk until frothy, then straining the mixture through a cheesecloth, squeezing out as much liquid as possible; this is coconut milk. The coconut milk is refrigerated and allowed to set. Coconut cream is the thick non-liquid part that separates and rises to the top of the coconut milk.
 Creme de Coconut is a sweet, coconut flavored liqueur.
 0.0
 34
 ice_for_bartending
 Ice for bartending
 http://www.occryospa.com/wp-content/uploads/2016/05/three-ice-cubes.jpg
+Ice is water frozen into a solid state. Depending on the presence of impurities such as particles of soil or bubbles of air, it can appear transparent or a more or less opaque bluish-white color.
 Among the various ice makers, Kold Draft is one of the top manufacturer of ice machines in the United States
 0.0
 35
@@ -207,59 +241,69 @@ creme_de_cacao_white
 White Creme de Cacao
 http://library.bevnetwork.com/bottles/400/333361.jpg
 Creme de Cacao is a sweet alcoholic liqueur flavored primarily by the cocoa bean and the vanilla bean.
+Creme de Cacao is a sweet alcoholic liqueur flavored primarily by the cocoa bean and the vanilla bean.
 0.2
 36
 syrup_gomme
 Gomme Syrup
 https://jetimages.azureedge.net/md5/db748ab4fedc7ebbf91958e3c0b8027a.500
+Heat 1/4 cup of the water to a near-boil, about 3 minutes. Put the gum powder in a glass or small jar, then slowly stir in the hot water. Stir together until all the powder is integrated. (Some small white clumps may remain.) Let this mixture sit for 2 to 3 hours. When it looks more like a gel, stir again to smooth out the mixture. (It's OK if there is a small layer of white foam.) Heat the remaining water with the sugar until it forms a syrup, about 7 to 10 minutes. Turn off the heat, and then slowly stir in the gum mixture. Simmer on low heat for about 5 minutes while stirring briskly. Do not bring to a boil. You'll end up with a very thick syrup that may have a fine layer of white foam on top. Let this cool. Once the syrup is cooled, stir again and skim off small clumps or thick foam, if any. Transfer to a glass jar or bottle and store in the refrigerator for up to 5 months.
 Gomme syrup is an ingredient commonly used in mixed drinks.
 0.0
 37
 cola
 Cola
 https://upload.wikimedia.org/wikipedia/commons/1/10/Glass_cola.jpg
+Cola is a sweetened, carbonated soft drink, made from ingredients that contain caffeine from the kola nut and non-cocaine derivatives from coca leaves, flavored with vanilla and other ingredients. Most colas now use other flavoring (and caffeinating) ingredients with a similar taste.
 A popular soft drink.
 0.0
 38
 cognac
 Cognac
 https://reservebar.global.ssl.fastly.net/media/catalog/product/cache/1/image/1000x1278/9df78eab33525d08d6e5fb8d27136e95/c/o/courxo_1.jpg
+Cognac is a variety of brandy named after the town of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime.
 Cognac, named after the town of Cognac in France, is a brandy produced in the region surrounding the town.
 0.4
 39
 liqueur_butterscotch
 Butterscotch Liqueur
 http://www.budgetbottle.com/labels/B10932.jpg
+Butterscotch Schnapps is a butterscotch flavored liqueur produced using a blend of sugar (brown) and butter. One of the most popular brands of Butterscotch Schnapps is "Buttershots" which is made from Jamaican Rum, various spirits, and vanilla.
 Butterscotch liqueur is sometimes called butterscotch schnapps.
 0.2
 40
 whiskey_scotch
 Scotch Whiskey
 https://cdn.aldi-digital.co.uk/Scotch-Whisky-A.jpg?o=PNVkTDT4ivYwmPZiJlv6TAFxdi4j&V=yNNz
+Scotch whisky is malt whisky or grain whisky made in Scotland. Scotch whisky must be made in a manner specified by law.
 Scotch whisky is malt whisky or grain whisky made in Scotland.
 0.4
 41
 grand_marnier_cordon_rouge
 Grand Marnier Cordon Rouge
 https://cdn3.masterofmalt.com/liqueurs/p-2813/grand-marnier-cordon-rouge-liqueur.jpg?ss=2.0
+Grand Marnier Cordon Rouge is an orange-flavored liqueur created in 1880 by Alexandre Marnier-Lapostolle. It is made from a blend of Cognac brandy, distilled essence of bitter orange, and sugar. Grand Marnier Cordon Rouge is 40% alcohol.
 The original liqueur created in 1880 by Louis-Alexandre Marnier Lapostolle.
 0.4
 42
 tonic_water
 Tonic Water
 https://jetimages.azureedge.net/md5/0a190e94d37b3d36111faa3f3cedf488.500
+Tonic water (or Indian tonic water) is a carbonated soft drink in which quinine is dissolved. Originally used as a prophylactic against malaria, tonic water usually now has a significantly lower quinine content and is consumed for its distinctive bitter flavor. It is often used in mixed drinks, particularly in gin and tonic.
 Tonic water (or Indian tonic water) is a carbonated soft drink in which quinine is dissolved.
 0.4
 43
 rum
 Rum
 https://static.vinepair.com/wp-content/uploads/2017/01/captain-morgan-pin.jpg
+Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses or honeys, or directly from sugarcane juice, by a process of fermentation and distillation. The distillate, a clear liquid, is then usually aged in oak barrels.
 Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses or honeys, or directly from sugarcane juice.
 0.4
 44
 baijiu 
 Baijiu 
 https://upload.wikimedia.org/wikipedia/commons/6/60/Jiugui.jpg
+Baijiu, also known as shaojiu, is a Chinese alcoholic beverage made from grain. Báijiu literally means "white alcohol" or liquor, and is a strong distilled spirit, generally 52% alcohol by volume.
 Baijiu is a Chinese alcoholic beverage made from grain.
 0.52
 45
@@ -272,6 +316,7 @@ A type of distilled alcoholic beverage made from fermented grain mash.
 whiskey
 Whiskey
 http://nordictravelmag.com/wp-content/uploads/2017/05/All-You-Need-To-Know-About-Whiskey.jpg
+Whisky or whiskey is a type of distilled alcoholic beverage made from fermented grain mash. Various grains are used for different varieties, including barley, corn, rye, and wheat.
 A type of distilled alcoholic beverage made from fermented grain mash.
 0.4
 48
@@ -279,10 +324,12 @@ bitters
 Bitters
 https://upload.wikimedia.org/wikipedia/commons/d/da/Angostura_aromatic_bitters_dD.jpg
 A bitters is traditionally an alcoholic preparation flavored with botanical matter such that the end result is characterized by a bitter, sour, or bittersweet flavor.
+A bitters is traditionally an alcoholic preparation flavored with botanical matter such that the end result is characterized by a bitter, sour, or bittersweet flavor.
 0.45
 49
 anis
 Anis
 https://www.osborne-shop.com/522-large_default/anis-del-mono-dulce.jpg
+Anise, also called aniseed, is a flowering plant in the family Apiaceae native to the eastern Mediterranean region and Southwest Asia. Its flavor has similarities with some other spices, such as star anise, fennel, and liquorice.
 Anis is an anise-flavored liqueur that is consumed in most Mediterranean countries.
 0.29

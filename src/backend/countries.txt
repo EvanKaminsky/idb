@@ -1,360 +1,480 @@
 1
 bolivia
 Bolivia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Bolivia.png
-Capital: Sucre
+https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Bolivia_%28state%29.svg
+Bolivia is a country in central South America, with a varied terrain spanning Andes Mountains, the Atacama Desert and Amazon Basin rainforest. At more than 3,500m, its administrative capital, La Paz, sits on the Andes’ Altiplano plateau with snow-capped Mt. Illimani in the background. Nearby is glass-smooth Lake Titicaca, the continent’s largest lake, straddling the border with Peru.
+Bolivia is a country in central South America.
+Sucre
 South America
 2
 south_korea
 South Korea
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Korea-South.png
-Capital: Seoul
+https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg
+South Korea, an East Asian nation on the southern half of the Korean Peninsula, shares one of the world’s most heavily militarized borders with North Korea. It’s equally known for its green, hilly countryside dotted with cherry trees and centuries-old Buddhist temples, plus its coastal fishing villages, sub-tropical islands and high-tech cities such as Seoul, the capital.
+South Korea is an East Asian nation.
+Seoul
 Asia
 3
 brazil
 Brazil
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png
-Capital: Brasilia
+https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg
+Brazil, a vast South American country, stretches from the Amazon Basin in the north to vineyards and massive Iguaçu Falls in the south. Rio de Janeiro, symbolized by its 38m Christ the Redeemer statue atop Mount Corcovado, is famed for its busy Copacabana and Ipanema beaches as well as its enormous, raucous Carnaval festival, featuring parade floats, flamboyant costumes, and samba music and dance.
+Brazil is a vast South American country.
+Brasilia
 South America
 4
 scotland
 Scotland
-https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png
-Capital: London
+https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg
+Scotland, the U.K.’s northernmost country, is a land of mountain wildernesses such as the Cairngorms and Northwest Highlands, interspersed with glacial glens (valleys) and lochs (lakes). Its major cities are Edinburgh, the capital, with its iconic hilltop castle, and Glasgow, famed for its vibrant cultural scene. Scotland is also famous for golf, the game first played at the Old Course at St Andrews in the 1400s.
+Scotland is the U.K.’s northernmost country.
+Edinburgh
 Europe
 5
 usa
 USA
-https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png
-Capital: Washington, D.C.
+https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg
+The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles' Hollywood is famed for filmmaking.
+The U.S. is a country of 50 states covering a vast swath of North America.
+Washington, D.C.
 North America
 6
 peru
 Peru
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Peru.png
-Capital: Lima
+https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg
+Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites. On Peru’s arid Pacific coast is Lima, the capital, with a preserved colonial center and important collections of pre-Columbian art.
+Peru is a country in South America.
+Lima
 South America
 7
 canada
 Canada
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Canada.png
-Capital: Ottawa
+https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg
+Canada is a North American country stretching from the U.S. in the south to the Arctic Circle in the north. Major cities include massive Toronto, west coast film centre Vancouver, French-speaking Montréal and Québec City, and capital city Ottawa. Canada's vast swaths of wilderness include lake-filled Banff National Park in the Rocky Mountains. It's also home to Niagara Falls, a famous group of massive waterfalls.
+Canada is a North American country.
+Ottawa
 North America
 8
 china
 China
-https://www.countries-ofthe-world.com/flags-normal/flag-of-China.png
-Capital: Beijing
+https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
+China is a populous nation in East Asia whose vast landscape encompasses grassland, desert, mountains, lakes, rivers and more than 14,000km of coastline. Capital Beijing mixes modern architecture with historic sites such as the Forbidden City palace complex and Tiananmen Square. Shanghai is a skyscraper-studded global financial center. The iconic Great Wall of China runs east-west across the country's north.
+China is a populous nation in East Asia.
+Beijing
 Asia
 9
 mexico
 Mexico
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png
-Capital: Mexico City
+https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg
+Mexico is a country between the U.S. and Central America that's known for its Pacific and Gulf of Mexico beaches and its diverse landscape of mountains, deserts and jungles. Ancient ruins such as Teotihuacán and the Mayan city of Chichén Itzá are scattered throughout the country, as are Spanish colonial-era towns. In capital Mexico City, upscale shops, renowned museums and gourmet restaurants cater to modern life.
+Mexico is a country between the U.S. and Central America.
+Mexico City
 North America
 10
 cuba
 Cuba
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Cuba.png
-Capital: Havana
+https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg
+Cuba is a Caribbean island nation under communist rule. It has sugar-white beaches and is dotted with tobacco fields, which play a part in the production of the country's legendary cigars. The capital, Havana, is lined with pastel houses, 1950s-era cars and Spanish-colonial architecture in the 16th-century core, Old Havana. Salsa music plays in the dance clubs and cabaret shows are performed at the famed Tropicana.
+Cuba is a Caribbean island nation under communist rule. 
+Havana
 North America
 11
 ireland
 Ireland
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Ireland.png
-Capital: Dublin
+https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
+The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the "Emerald Isle” for its lush landscape, the country is dotted with castles like medieval Cahir Castle.
+The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales.
+Dublin
 Europe
 12
 czech_republic
 Czech Republic
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png
-Capital: Prague
+https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg
+The Czech Republic, in Central Europe, is a country that's known for its ornate castles, native beers and long history. Prague, the capital, is home to grand 9th-century Prague Castle, a preserved medieval old town and statue-lined Charles Bridge. Cesky Krumlov, a small town in the South Bohemia region, is notable for its wealth of Gothic, Renaissance and Baroque buildings, many of which house restaurants and shops.
+The Czech Republic is a country in Central Europe.
+Prague
 Europe
 13
 ghana
 Ghana
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Ghana.png
-Capital: Accra
+https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg
+Ghana, a nation on West Africa’s Gulf of Guinea, is known for diverse wildlife, old forts and secluded beaches, such as at Busua. Coastal towns Elmina and Cape Coast contain posubans (native shrines), colonial buildings and castles-turned-museums that serve as testimonials to the slave trade. North of Cape Coast, vast Kakum National Park has a treetop-canopy walkway over the rainforest.
+Ghana is a nation on West Africa’s Gulf of Guinea.
+Accra
 Africa
 14
 japan
 Japan
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png
-Capital: Tokyo
+https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg
+Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawa's subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.
+Japan is an island nation in the Pacific Ocean.
+Tokyo
 Asia
 15
 dominican_republic
 Dominican Republic
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Dominican-Republic.png
-Capital: Santo Domingo
+https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg
+The Dominican Republic is a Caribbean nation that shares the island of Hispaniola with Haiti to the west. It's known for its beaches, resorts and golfing. Its terrain comprises rainforest, savannah and highlands, including Pico Duarte, the Caribbean’s tallest mountain. Capital city Santo Domingo has Spanish landmarks like the Gothic Catedral Primada de America dating back 5 centuries in its Zona Colonial district.
+The Dominican Republic is a Caribbean nation.
+Santo Domingo
 North America
 16
 austria
 Austria
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Austria.png
-Capital: Vienna
+https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg
+Austria is a German-speaking country in Central Europe, characterized by mountain villages, baroque architecture, Imperial history and rugged Alpine terrain. Vienna, its Danube River capital, is home to the Schönbrunn and Hofburg palaces. It has counted Mozart, Strauss and Freud among its residents. The country’s other notable regions include the northern Bohemian Forest, Traunsee Lake and eastern hillside vineyards.
+Austria is a German-speaking country in Central Europe
+Vienna
 Europe
 17
 iceland
 Iceland
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Iceland.png
-Capital: Reykjavik
+https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg
+Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.
+Iceland is a Nordic island nation.
+Reykjavik
 Europe
 18
 uganda
 Uganda
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Uganda.png
-Capital: Kampala
+https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg
+Uganda is a landlocked country in East Africa whose diverse landscape encompasses the snow-capped Rwenzori Mountains and immense Lake Victoria. Its abundant wildlife includes chimpanzees as well as rare birds. Remote Bwindi Impenetrable National Park is a renowned mountain gorilla sanctuary. Murchison Falls National Park in the northwest is known for its 43m-tall waterfall and wildlife such as hippos.
+Uganda is a landlocked country in East Africa.
+Kampala
 Africa
 19
 taiwan
 Taiwan
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Taiwan.png
-Capital: Taipei
+https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg
+Taiwan is a small island nation 180km east of China with modern cities, traditional Chinese temples, hot springs resorts and dramatic mountainous terrain. Taipei, the country’s capital in the north, is known for its busy night markets, Chinese Imperial art at the National Palace Museum and Taipei 101, a 509m-tall, bamboo-shaped skyscraper with an observation deck.
+Taiwan is a small island nation 180km east of China.
+Taipei
 Asia
 20
 serbia
 Serbia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Serbia.png
-Capital: Belgrade
+https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg
+Serbia is a country on southeast Europe's Balkan peninsula with northern plateaus and mountains with ski resorts to the south. Capital city Belgrade is home to Communist-era architecture and Kalemegdan Park, site of Belgrade Fortress, held successively by the Roman, Byzantine and Ottoman empires. Stari Grad, the old city, is home to 19th-century mansions, plus opera and ballet at Narodno Pozorište (national theater).
+Serbia is a country on southeast Europe's Balkan peninsula.
+Belgrade
 Europe
 21
 turkey
 Turkey
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Turkey.png
-Capital: Ankara
+https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg
+Turkey is a nation straddling eastern Europe and western Asia with cultural connections to ancient Greek, Persian, Roman, Byzantine and Ottoman empires. Cosmopolitan Istanbul, on the Bosphorus Strait, is home to the iconic Hagia Sophia, with its soaring dome and Christian mosaics, the massive 17th-century Blue Mosque and the circa-1460 Topkapi Palace, former home of sultans. Ankara is Turkey’s modern capital.
+Turkey is a nation straddling eastern Europe and western Asia.
+Ankara
 Europe
 22
 spain
 Spain
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png
-Capital: Madrid
+https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg
+Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.
+Spain is a country on Europe’s Iberian Peninsula.
+Madrid
 Europe
 23
 mongolia
 Mongolia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Mongolia.png
-Capital: Ulaanbaatar
+https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg
+Mongolia, a nation bordered by China and Russia, is known for vast, rugged expanses and nomadic culture. Its capital, Ulaanbaatar, centers around Chinggis Khaan (Genghis Khan) Square, named for the notorious founder of the 13th- and 14th-century Mongol Empire. Also in Ulaanbaatar are the National Museum of Mongolia, displaying historic and ethnographic artifacts, and the restored 1830 Gandantegchinlen Monastery.
+Mongolia is a nation bordered by China and Russia.
+Ulaanbaatar
 Asia
 24
 puerto_rico
 Puerto Rico
-https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png
-Capital: Washington, D.C.
+https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg
+Puerto Rico is a Caribbean island and unincorporated U.S. territory with a landscape of mountains, waterfalls and the El Yunque tropical rainforest. In San Juan, the capital and largest city, the Isla Verde area is known for its hotel strip, beach bars and casinos. Its Old San Juan neighborhood features colorful Spanish colonial buildings and El Morro and La Fortaleza, massive, centuries-old fortresses.
+Puerto Rico is a Caribbean island and unincorporated U.S. territory.
+San Juan
 North America
 25
 zimbabwe
 Zimbabwe
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Zimbabwe.png
-Capital: Harare
+https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg
+Zimbabwe is a landlocked country in southern Africa known for its dramatic landscape and diverse wildlife, much of it within parks, reserves and safari areas. On the Zambezi River, Victoria Falls make a thundering 108m drop into narrow Batoka Gorge, where there’s white-water rafting and bungee-jumping. Downstream are Matusadona and Mana Pools national parks, home to hippos, rhinos and birdlife.
+Zimbabwe is a landlocked country in southern Africa.
+Harare
 Africa
 26
 niger
 Niger
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Niger.png
-Capital: Niamey
+https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg
+Niger or the Niger; French: officially the Republic of the Niger, is a landlocked country in Western Africa named after the Niger River.
+Niger is a landlocked country in Western Africa.
+Niamey
 Africa
 27
 jordan
 Jordan
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Jordan.png
-Capital: Amman
+https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg
+Jordan, an Arab nation on the east bank of the Jordan River, is defined by ancient monuments, nature reserves and seaside resorts. It’s home to the famed archaeological site of Petra, the Nabatean capital dating to around 300 B.C. Set in a narrow valley with tombs, temples and monuments carved into the surrounding pink sandstone cliffs, Petra earns its nickname, the "Rose City."
+Jordan is an Arab nation on the east bank of the Jordan River.
+Amman
 Asia
 28
 italy
 Italy
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Italy.png
-Capital: Rome
+https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg
+Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.
+Italy is a European country with a long Mediterranean coastline.
+Rome
 Europe
 29
 greece
 Greece
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Greece.png
-Capital: Athens
+https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.
+Greece is a country in southeastern Europe.
+Athens
 Europe
 30
 bali
 Bali
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Indonesia.png
-Capital: Denpasar
-Africa
+https://upload.wikimedia.org/wikipedia/commons/1/10/Coat_of_arms_of_Bali.svg
+Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also known for its yoga and meditation retreats.
+Bali is an Indonesian island.
+Denpasar
+Asia
 31
 cambodia
 Cambodia
-NULL
-Capital: Phnom Penh
+https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg
+Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.
+Cambodia is a Southeast Asian nation.
+Phnom Penh
 Africa
 32
 thailand
 Thailand
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Thailand.png
-Capital: Bangkok
+https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg
+Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.
+Thailand is a Southeast Asian country.
+Bangkok
 Asia
 33
 england
 England
-https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png
-Capital: London
+https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg
+England, birthplace of Shakespeare and The Beatles, is a country in the British Isles bordering Scotland and Wales. The capital, London, on the River Thames, is home of Parliament, Big Ben and the 11th-century Tower of London. It's also a multicultural, modern hub for the arts and business. Other large cities are Manchester, Birmingham, Liverpool, Bristol and the university centres of Oxford and Cambridge.
+England is a country in the British Isles bordering Scotland and Wales.
+London
 Europe
 34
 argentina
 Argentina
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Argentina.png
-Capital: Buenos Aires
+https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg
+Argentina is a massive South American nation with terrain encompassing Andes mountains, glacial lakes and Pampas grassland, the traditional grazing ground of its famed beef cattle. The country is famous for tango dance and music. Its big, cosmopolitan capital, Buenos Aires, is centered on the Plaza de Mayo, lined with stately 19th-century buildings including Casa Rosada, the iconic, balconied presidential palace.
+Argentina is a massive South American nation.
+Buenos Aires
 South America
 35
 tanzania
 Tanzania
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Tanzania.png
-Capital: Dodoma
+Tanzania is an East African country known for its vast wilderness areas. They include the plains of Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the tropical islands of Zanzibar, with Arabic influences, and Mafia, with a marine park home to whale sharks and coral reefs.
+Tanzania is an East African country known for its vast wilderness areas. They include the plains of Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the tropical islands of Zanzibar, with Arabic influences, and Mafia, with a marine park home to whale sharks and coral reefs.
+Tanzania is an East African country.
+Dodoma
 Africa
 36
 nepal
 Nepal
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Nepal.png
-Capital: Kathmandu
+https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg
+Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked central Himalayan country in South Asia.
+Nepal is a landlocked central Himalayan country in South Asia.
+Kathmandu
 Asia
 37
 jamaica
 Jamaica
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Jamaica.png
-Capital: Kingston
+https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
+Jamaica, a Caribbean island nation, has a lush topography of mountains, rainforests and reef-lined beaches. Many of its all-inclusive resorts are clustered in Montego Bay, with its British-colonial architecture, and Negril, known for its diving and snorkeling sites. Jamaica is famed as the birthplace of reggae music, and its capital Kingston is home to the Bob Marley Museum, dedicated to the famous singer.
+Jamaica is a Caribbean island nation.
+Kingston
 North America
 38
 singapore
 Singapore
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Singapore.png
-Capital: Singapore
+https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg
+Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population. Its colonial core centers on the Padang, a cricket field since the 1830s and now flanked by grand buildings such as City Hall, with its 18 Corinthian columns. In Singapore's circa-1820 Chinatown stands the red-and-gold Buddha Tooth Relic Temple, said to house one of Buddha's teeth.
+Singapore is an island city-state off southern Malaysia.
+Singapore
 Asia
 39
 russia
 Russia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Russia.png
-Capital: Moscow
+https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg
+Russia, the world’s largest nation, borders European and Asian countries as well as the Pacific and Arctic oceans. Its landscape ranges from tundra and forests to subtropical beaches. It’s famous for Moscow's Bolshoi and St. Petersburg's Mariinsky ballet companies. St. Petersburg, founded by Russian leader Peter the Great, has the baroque Winter Palace, now housing part of the State Hermitage Museum’s art collection.
+Russia is the world’s largest nation.
+Moscow
 Europe
 40
 finland
 Finland
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Finland.png
-Capital: Helsinki
+https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
+Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts.
+Finland is a Northern European nation.
+Helsinki
 Europe
 41
 portugal
 Portugal
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Portugal.png
-Capital: Lisbon
+https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
+Portugal is a southern European country on the Iberian Peninsula, bordering Spain. Its location on the Atlantic Ocean has influenced many aspects of its culture: salt cod and grilled sardines are national dishes, the Algarve's beaches are a major destination and much of the nation’s architecture dates to the 1500s–1800s, when Portugal had a powerful maritime empire.
+Portugal is a southern European country.
+Lisbon
 Europe
 42
 ecuador
 Ecuador
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Ecuador.png
-Capital: Quito
+https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg
+Ecuador is a country straddling the equator on South America’s west coast. Its diverse landscape encompasses Amazon jungle, Andean highlands and the wildlife-rich Galápagos Islands. In the Andean foothills at an elevation of 2,850m, Quito, the capital, is known for its largely intact Spanish colonial center, with decorated 16th- and 17th-century palaces and religious sites, like the ornate Compañía de Jesús Church.
+Ecuador is a country straddling the equator on South America’s west coast.
+Quito
 South America
 43
 ethiopia
 Ethiopia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Ethiopia.png
-Capital: Addis Abada
+https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg
+Ethiopia, in the Horn of Africa, is a rugged, landlocked country split by the Great Rift Valley. With archaeological finds dating back more than 3 million years, it’s a place of ancient culture. Among its important sites are Lalibela with its rock-cut Christian churches from the 12th–13th centuries. Aksum is the ruins of an ancient city with obelisks, tombs, castles and Our Lady Mary of Zion church.
+Ethiopia is in the Horn of Africa.
+Addis Abada
 Africa
 44
 belgium
 Belgium
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Belgium.png
-Capital: Brussels
+https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
+Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east. The bilingual capital, Brussels, has ornate guildhalls at Grand-Place and elegant art-nouveau buildings.
+Belgium is a country in Western Europe.
+Brussels
 Europe
 45
 costa_rica
 Costa Rica
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Costa-Rica.png
-Capital: San Jose
+https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg
+Costa Rica is a rugged, rainforested Central American country with coastlines on the Caribbean and Pacific. Though its capital, San Jose, is home to cultural institutions like the Pre-Columbian Gold Museum, Costa Rica is known for its beaches, volcanoes, and biodiversity. Roughly a quarter of its area is made up of protected jungle, teeming with wildlife including spider monkeys and quetzal birds.
+Costa Rica is a rugged, rainforested Central American country.
+San Jose
 South America
 46
 hungary
 Hungary
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Hungary.png
-Capital: Budapest
+https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg
+Hungary is a landlocked country in Central Europe. Its capital, Budapest, is bisected by the Danube River. Its cityscape is studded with architectural landmarks from Buda’s medieval Castle Hill and grand neoclassical buildings along Pest’s Andrássy Avenue to the 19th-century Chain Bridge. Turkish and Roman influence on Hungarian culture includes the popularity of mineral spas, including at thermal Lake Hévíz.
+Hungary is a landlocked country in Central Europe.
+Budapest
 Europe
 47
 france
 France
-https://www.countries-ofthe-world.com/flags-normal/flag-of-France.png
-Capital: Paris
+https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.
+France is in Western Europe.
+Paris
 Europe
 48
 ukraine
 Ukraine
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Ukraine.png
-Capital: Kiev
+https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg
+Ukraine is a large country in Eastern Europe known for its Orthodox churches, Black Sea coastline and forested mountains. Its capital, Kiev, features the gold-domed St. Sophia's Cathedral, with 11th-century mosaics and frescoes. Overlooking the Dnieper River is the Kiev Pechersk Lavra monastery complex, a Christian pilgrimage site housing Scythian tomb relics and catacombs containing mummified Orthodox monks.
+Ukraine is a large country in Eastern Europe.
+Kiev
 Europe
 49
 philippines
 Philippines
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Philippines.png
-Capital: Manila
+https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg
+The Philippines is a Southeast Asian country in the Western Pacific, comprising more than 7,000 islands. Its capital, Manila, is famous for its waterfront promenade and centuries-old Chinatown, Binondo. Intramuros, a walled city in colonial times, is the heart of Old Manila. It’s home to the baroque 17th-century San Agustin Church as well as Fort Santiago, a storied citadel and military prison.
+The Philippines is a Southeast Asian country.
+Manila
 Asia
 50
 norway
 Norway
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Norway.png
-Capital: Oslo
+https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship Museum. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing, notably at Lillehammer’s Olympic resort.
+Norway is a Scandinavian country.
+Oslo
 Europe
 51
 latvia
 Latvia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Latvia.png
-Capital: Riga
+https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg
+Latvia is a country on the Baltic Sea between Lithuania and Estonia. Its landscape is marked by wide beaches as well as dense, sprawling forests. Latvia’s capital is Riga, home to notable wooden and art nouveau architecture, a vast Central Market and a medieval Old Town with St. Peter's Church. Riga's museums include the Latvian Ethnographic Open-Air Museum, showcasing local crafts, food and music.
+Latvia is a country on the Baltic Sea between Lithuania and Estonia.
+Riga
 Europe
 52
 haiti
 Haiti
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Haiti.png
-Capital: Port-au-Prince
+https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg
+Haiti is a Caribbean country that shares the island of Hispaniola with the Dominican Republic to its east. Though it’s still recovering from a 2010 earthquake, many of Haiti's landmarks dating to the early 19th century remain intact. These include Citadelle la Ferrière, a mountaintop fortress, and the nearby ruins of Sans-Souci Palace, the baroque former royal home of King Henry I.
+Haiti is a Caribbean country.
+Port-au-Prince
 North America
 53
 estonia
 Estonia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Estonia.png
-Capital: Tallinn
+https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg
+Estonia, a country in Northern Europe, borders the Baltic Sea and Gulf of Finland. Including more than 1,500 islands, its diverse terrain spans rocky beaches, old-growth forest and many lakes. Formerly part of the Soviet Union, it's dotted with castles, churches and hilltop fortresses. The capital, Tallinn, is known for its preserved Old Town, museums and the 314m-high Tallinn TV Tower, which has an observation deck.
+Estonia is a country in Northern Europe.
+Tallinn
 Europe
 54
 denmark
 Denmark
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png
-Capital: Copenhagen
+https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
+Denmark is a Scandinavian country comprising the Jutland Peninsula and numerous islands. It's linked to nearby Sweden via the Öresund bridge. Copenhagen, its capital, is home to royal palaces and colorful Nyhavn harbor, plus the Tivoli amusement park and the iconic “Little Mermaid” statue. Odense is writer Hans Christian Andersen’s hometown, with a medieval core of cobbled streets and half-timbered houses.
+Denmark is a Scandinavian country.
+Copenhagen
 Europe
 55
 panama
 Panama
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Panama.png
-Capital: Panama City
+https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg
+Panama is a country on the isthmus linking Central and South America. The Panama Canal, a famous feat of human engineering, cuts through its center, linking the Atlantic and Pacific oceans to create an essential shipping route. In the capital, Panama City, modern skyscrapers, casinos and nightclubs contrast with colonial buildings in the Casco Viejo district and the rainforest of Natural Metropolitan Park.
+Panama is a country on the isthmus linking Central and South America.
+Panama City
 North America
 56
 romania
 Romania
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Romania.png
-Capital: Bucharest
+https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg
+Romania is a southeastern European country known for the forested region of Transylvania, ringed by the Carpathian Mountains. Its preserved medieval towns include Sighisoara, and there are many fortified churches and castles, notably clifftop Bran Castle, long associated with the Dracula legend. Bucharest, the country’s capital, is the site of the gigantic, Communist-era Palatul Parlamentului government building.
+Romania is a southeastern European country.
+Bucharest
 Europe
 57
 macedonia
 Macedonia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Macedonia.png
-Capital: Skopje
+https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Macedonia.svg
+Macedonia is a landlocked Balkan nation of mountains, lakes and ancient towns with Ottoman and European architecture. The capital, Skopje, is known for its sprawling Old Bazaar quarter and historic buildings turned museums, including the National Gallery of Macedonia, housed in a 15th-century Turkish bath complex. The southern city Ohrid, on a lake of the same name, has a medieval townscape and hilltop castle.
+Macedonia is a landlocked Balkan nation of mountains, lakes and ancient towns.
+Skopje
 Europe
 58
 croatia
 Croatia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Croatia.png
-Capital: Zagreb
+https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
+Croatia is an Eastern European country with a long coastline on the Adriatic Sea. Encompassing more than a thousand islands, it's also crossed by the Dinaric Alps. Its inland capital, Zagreb, is distinguished by its medieval Gornji Grad (Upper Town) and diverse museums. The major coastal city Dubrovnik has massive 16th-century walls encircling an Old Town with Gothic and Renaissance buildings.
+Croatia is an Eastern European country.
+Zagreb
 Europe
 59
 colombia
 Colombia
-https://www.countries-ofthe-world.com/flags-normal/flag-of-Colombia.png
-Capital: Bogota
+https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg
+Colombia is a country at the northern tip of South America. It's landscape is marked by rainforests, Andes mountains and numerous coffee plantations. In the high-altitude capital, Bogotá, the Zona Rosa district is known for its restaurants and shops. Cartagena, on the Caribbean coast, has a walled colonial Old Town, a 16th-century castle and nearby coral reefs.
+Colombia is a country at the northern tip of South America.
+Bogota
 South America
 60
 bermuda
 Bermuda
 https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg
-Capital: Hamilton
+Bermuda is a British island territory in the North Atlantic Ocean known for its pink-sand beaches such as Elbow Beach and Horseshoe Bay. Its massive Royal Naval Dockyard complex combines modern attractions like the interactive Dolphin Quest with maritime history at the National Museum of Bermuda. The island has a distinctive blend of British and American culture, which can be found in the capital, Hamilton.
+Bermuda is a British island territory in the North Atlantic Ocean.
+Hamilton
 North America

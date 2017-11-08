@@ -2,149 +2,199 @@
 havana_club
 Havana Club
 http://static5.businessinsider.com/image/555b6fd069beddcf3f8b4567-1200/no-25-havana-club.jpg
-Brand value: $554 million
-NULL
+Havana Club is a brand of rum created in Cuba in 1934, and now one of the best-selling rum brands in the world. Originally produced in Cardenas, Cuba by family-owned Jose Arechabala S.A., the brand was nationalized after the Cuban Revolution of 1959. Since 1994 it has been produced in Cuba and sold globally (except the United States) by Havana Club International, a 50:50 joint venture between Pernod Ricard and the Cuban government.
+Havana Club is a brand of rum created in Cuba in 1934, and now one of the best-selling rum brands in the world.
+$554 million
+https://havana-club.com/en-ww/home
 2
 gujing_gong_jiu
 Gujing Gong Jiu
 http://static4.businessinsider.com/image/57210c4852bcd029008bf5f6-1200/no-24-gujing-gong-jiu.jpg
-Brand value: $575 million 
-NULL
+Gujing Gongjiu or Gujing Tribute Liquor is produced in Bozhou, Anhui Province. It was originated in 196 A.D.. For some time, it was a tribute drink for the imperial families of China’s dynasties. It received very good comments due to its unique style, ‘limpid as crystal, fragrant and refreshing, with prolonged pleasant aftertaste’.
+Gujing Gongjiu or Gujing Tribute Liquor is produced in Bozhou, Anhui Province.
+$575 million 
+http://www.totalwine.com/spirits/brand/gujing-gong-jiu
 3
 old_parr
 Old Parr
 http://static3.businessinsider.com/image/55f8690cecad044a164b29db-1200/no-23-old-parr.jpg
-Brand value: $576 million 
-NULL
+Grand Old Parr (often simply just Old Parr) is a blended Scotch whisky named after the reputed oldest man in England. Launched in 1909, it is found in export markets such as Japan, Mexico, South America and in The United States of America and is no longer distributed in the United Kingdom. It is owned, distilled and distributed by Diageo, the British drinks company.
+Grand Old Parr (often simply just Old Parr) is a blended Scotch whisky named after the reputed oldest man in England.
+$576 million 
+https://scotchwhisky.com/whiskypedia/2470/old-parr/
 4
 cîroc
 Cîroc
 http://static5.businessinsider.com/image/5721212d910584e73c8bf3e1-1200/no-22-croc.jpg
-Brand value: $595 million
-NULL
+CÎROC is a brand of eau-de-vie vodka, manufactured in the Charente-Maritime of France grapes, produced and distributed by the British-based multinational alcoholic beverage maker Diageo.
+CÎROC is a brand of eau-de-vie vodka.
+$595 million
+https://www.ciroc.com/
 5
 grant_s
 Grant's
 http://static4.businessinsider.com/image/572121bf91058422008bf55d-1200/no-21-grants.jpg
-Brand value: $596 million
-NULL
+Grant's is a blended Scotch whisky bottled by William Grant & Sons in Scotland.
+Grant's is a blended Scotch whisky bottled by William Grant & Sons in Scotland.
+$596 million
+https://grantswhisky.com/en/
 6
 jim_beam
 Jim Beam
 http://static3.businessinsider.com/image/52a0fca069beddf038593aa2-1200/no-20-jim-beam.jpg
-Brand value: $636 million
-NULL
+Jim Beam is a brand of bourbon whiskey produced in Clermont, Kentucky, by Beam Suntory, a subsidiary of Suntory Holdings of Osaka, Japan. It is one of the best selling brands of bourbon in the world.
+Jim Beam is a brand of bourbon whiskey.
+$636 million
+http://www.jimbeam.com/en-us
 7
 jagermeister
 Jagermeister
 http://static1.businessinsider.com/image/4f68b252ecad04773000001c-1200/no-19-jagermeister.jpg
-Brand value: $658 million
-NULL
+Jägermeister is a digestif made with 56 herbs and spices at a strength of 35% alcohol by volume. It is the flagship product of Mast-Jägermeister SE, headquartered in Wolfenbüttel, south of Braunschweig, Lower Saxony, Germany.
+Jägermeister is a digestif made with 56 herbs and spices at a strength of 35% alcohol by volume.
+$658 million
+https://www.jagermeister.com/en-US/
 8
 jameson
 Jameson
 http://static2.businessinsider.com/image/554aa226ecad04da6c531ed4-1200/no-18-jameson.jpg
-Brand value: $706 million
-NULL
+Jameson is a blended Irish whiskey produced by the Irish Distillers subsidiary of Pernod Ricard. The John Jameson and Son Irish Whiskey company was formally established in 1810.
+Jameson is a blended Irish whiskey.
+$706 million
+https://www.jamesonwhiskey.com/us/
 9
 ballantine_s
 Ballantine's
 http://static2.businessinsider.com/image/5721229591058436008bf6ef-1200/no-17-ballantines.jpg
-Brand value: $713 million
-NULL
+Ballantine's is a range of Blended Scotch whiskies produced by Pernod Ricard in Dumbarton, Scotland. The Ballantine's flavour is dependent on fingerprint malts from Miltonduff and Glenburgie, blended with fifty single malts and four single grains.
+Ballantine's is a range of Blended Scotch whiskies produced by Pernod Ricard in Dumbarton, Scotland.
+$713 million
+https://www.ballantines.com/en-en
 10
 mcdowell_s
 Mcdowell's
 http://static1.businessinsider.com/image/5721231191058422008bf56f-1200/no-16-mcdowells.jpg
-Brand value: $805 million
-NULL
+McDowell's No.1 previous Asare-Takyi distilleries is an Indian brand of spirits manufactured by United Spirits Limited, a subsidiary of the Diageo.
+McDowell's No.1 previous Asare-Takyi distilleries is an Indian brand of spirits manufactured by United Spirits Limited, a subsidiary of the Diageo.
+$805 million
+http://www.diageoindia.com/
 11
 luzhou_laojiao
 Luzhou Laojiao
 http://static1.businessinsider.com/image/572125e191058425008bf623-1200/no-15-luzhou-laojiao.jpg
-Brand value: $942 million
-NULL
+Luzhou Laojiao is a famous liquor in China. It is a strongly alcoholic but clear liquid with a sharp aroma of fermented peaches.
+Luzhou Laojiao is a famous liquor in China.
+$942 million
+http://www.cnsimports.com/product/luzhou-laojiao/
 12
 ricard
 Ricard
 http://static3.businessinsider.com/image/5721237c9105842b008bf629-1200/no-14-ricard.jpg
-Brand value: $952 million
-NULL
+Pernod Ricard is a French company that produces distilled beverages. The company's eponymous products, Pernod Anise and Ricard Pastis, are both anise-flavoured liqueurs and are often referred to simply as Pernod or Ricard. The company also produces several other types of pastis. It is the world’s second-largest wine and spirits seller.
+Pernod Ricard is a French company that produces distilled beverages.
+$952 million
+https://www.pernod-ricard.com/en
 13
 grey_goose
 Grey Goose
 http://static4.businessinsider.com/image/54625df269bedd043a779913-1200/no-13-grey-goose.jpg
-Brand value: $1.23 billion
-NULL
+Grey Goose is a brand of vodka produced in France. It was created by Sidney Frank, who sold it in 2004 to Bacardi. 
+Grey Goose is a brand of vodka produced in France.
+$1.23 billion
+https://www.greygoose.com/gl/en/lda.html
 14
 chivas_regal
 Chivas Regal
 http://static3.businessinsider.com/image/543e6dcd6da811a366f8c03d-1200/no-12-chivas-regal.jpg
-Brand value: $1.26 billion
-NULL
+Chivas Regal is a blended Scotch whisky produced by Chivas Brothers, which is part of Pernod Ricard. Chivas Regal traces its roots back to 1801.
+Chivas Regal is a blended Scotch whisky.
+$1.26 billion
+https://www.chivas.com/en-us
 15
 ruang_khao
 Ruang Khao
 http://static3.businessinsider.com/image/55eef5b8bd86ef1a008b8a6f-1200/no-11-ruang-khao.jpg
-Brand value: $1.29 billion
-NULL
+Thai Beverage, better known as ThaiBev, is Thailand's largest and one of Southeast Asia's largest beverage companies, with distilleries in Thailand, Scotland and China. Listed on the Singapore Stock Exchange, Thai Beverage Plc has a market capitalization in excess of US $4 billion.
+Largest selling white spirit of Thai Bev.
+$1.29 billion
+http://www.thaibev.com/
 16
 absolut
 Absolut
 http://static3.businessinsider.com/image/56be3a2b2e52651c008b6fd7-1200/no-10-absolut.jpg
-Brand value: $1.43 billion
-NULL
+Absolut Vodka is a brand of vodka, produced near Åhus, in southern Sweden. Absolut is owned by French group Pernod Ricard; it bought Absolut for €5.63 billion in 2008 from the Swedish state.
+Absolut Vodka is a brand of vodka.
+$1.43 billion
+https://www.absolut.com/us/
 17
 crown_royal
 Crown Royal
 http://static6.businessinsider.com/image/56537522c28144c0018b4ca2-1200/no-9-crown-royal.jpg
-Brand value: $1.49 billion
-NULL
+Crown Royal is a blended Canadian whisky owned by Diageo, which purchased it when the Seagram portfolio was dissolved in 2000. It is the top-selling Canadian whisky in the United States.
+Crown Royal is a blended Canadian whisky owned by Diageo.
+$1.49 billion
+https://www.crownroyal.com/
 18
 wuliangye
 Wuliangye
 http://static2.businessinsider.com/image/5721282652bcd028008bf662-1200/no8-wuliangye.jpg
-Brand value: $1.63 billion
-NULL
+Wuliangye Yibin Company Limited is a Chinese alcoholic beverage company. It specializes in manufacturing baijiu, and is best known for Wuliangye, made from five organic grains: Proso millet, corn, glutinous rice, long grain rice and wheat.
+Wuliangye Yibin Company Limited is a Chinese alcoholic beverage company.
+$1.63 billion
+http://baijiuamerica.com/brand/wu-liang-ye/
 19
 yanghe
 Yanghe
 http://static4.businessinsider.com/image/57212798910584145c8bf376-1200/no-7-yanghe.jpg
-Brand value: $1.85 billion
-NULL
+Yanghe distillery was founded in 1949. After putting forward the innovative series: Yanghe Spirit Classic, the brand quickly became the leader of mellow Baijiu, with significant competitive strength in the domestic market. The recipe behind the mellow and sweet taste is actually much older than the distillery itself. With a storage cellar for base liquor having more than one-hundred-year history, “Water from the Spring of Beauty” is now producible.
+Yanghe distillery was founded in 1949.
+$1.85 billion
+http://www.yangheglobal.com/
 20
 bacardi
 Bacardi
 http://static4.businessinsider.com/image/5491ae6d69bedd262c94f599-1200/no-6-bacardi.jpg
-Brand value: $1.89 billion
-NULL
+Bacardi Limited is the largest privately held, family-owned spirits company in the world. Originally known for its eponymous Bacardi white rum, it now has a portfolio of more than 200 brands and labels.
+Bacardi Limited is the largest privately held, family-owned spirits company in the world.
+$1.89 billion
+https://www3.bacardi.com/
 21
 smirnoff
 Smirnoff
 http://static5.businessinsider.com/image/558aa38f69bedde20357802d-1200/no-5-smirnoff.jpg
-Brand value: $2.02 billion
-NULL
+Smirnoff is a brand of vodka owned and produced by the British company Diageo. The Smirnoff brand began with a vodka distillery founded in Moscow by Pyotr Arsenievich Smirnov.
+Smirnoff is a brand of vodka.
+$2.02 billion
+http://www.smirnoff.com/en-us/
 22
 jack_daniel_s
 Jack Daniel’s
 http://static4.businessinsider.com/image/54625df26da811c71c1952e4-1200/no-4-jack-daniels.jpg
-Brand value: $2.50 billion
-NULL
+Jack Daniel's is a brand of Tennessee whiskey and the top selling American whiskey in the world. It is produced in Lynchburg, Tennessee, by the Jack Daniel Distillery, which has been owned by the Brown-Forman Corporation since 1956.
+Jack Daniel's is a brand of Tennessee whiskey.
+$2.50 billion
+https://www.jackdaniels.com/en-us
 23
 hennessy
 Hennessy
 http://static6.businessinsider.com/image/4fe8d32e69beddf85b000001-1200/no-3-hennessy.jpg
-Brand value: $2.87 billion
-NULL
+Jas Hennessy & Co., or more simply Hennessy, is a cognac house with headquarters in Cognac, France. Jas Hennessy & Co. sells about 50 million bottles a year worldwide, or more than 40 percent of the world’s cognac, making it the world's largest cognac producer. It is owned by Moët Hennessy, which is in turn owned by LVMH (66%) and Diageo (34%).
+Jas Hennessy & Co., or more simply Hennessy, is a cognac house with headquarters in Cognac, France.
+$2.87 billion
+https://www.hennessy.com/en-int
 24
 johnnie_walker
 Johnnie Walker
 http://static3.businessinsider.com/image/558a9f3d6bb3f7c45ca2e6c2-1200/no-2-johnnie-walker.jpg
-Brand value: $4.63 billion
-NULL
+Johnnie Walker is a brand of Scotch whisky now owned by Diageo that originates from the Scottish town of Kilmarnock, a large burgh in East Ayrshire, which is where the brand's creator, John Walker began making and distilling the whisky in his grocery, wine and spirits shop located in the town centre. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016 (156.6 million litres).
+Johnnie Walker is a brand of Scotch whisky.
+$4.63 billion
+https://www.johnniewalker.com/en-us/
 25
 moutai
 Moutai
 http://static4.businessinsider.com/image/572126d09105841c008bf6af-1200/no-1-moutai.jpg
-Brand value: $5.77 billion
-NULL
+Maotai or Moutai is a brand of baijiu, a distilled Chinese liquor, made in the town of Maotai in China's Guizhou province.
+Maotai or Moutai is a brand of baijiu.
+$5.77 billion
+http://baijiuamerica.com/brand/kweichow-moutai/
