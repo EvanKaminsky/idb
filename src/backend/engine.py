@@ -30,21 +30,24 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
         return [{"error": "an sql access error occurred"}]
 
     ix = None
-    results = []
-    try:
-        if category == "COCKTAILS":
-            ix = open_dir(COCKTAIL_INDEX_PATH)
-        if category == "BRANDS":
-            ix = open_dir(BRAND_INDEX_PATH)
-        if category == "INGREDIENTS":
-            ix = open_dir(INGREDIENT_INDEX_PATH)
-        if category == "COUNTRIES":
-            ix = open_dir(COUNTRIES_INDEX_PATH)
-    except Exception as e:
-        print(e)
-        ix = None
+    if query != "":
+        try:
+            if category == "COCKTAILS":
+                ix = open_dir(COCKTAIL_INDEX_PATH)
+            if category == "BRANDS":
+                ix = open_dir(BRAND_INDEX_PATH)
+            if category == "INGREDIENTS":
+                ix = open_dir(INGREDIENT_INDEX_PATH)
+            if category == "COUNTRIES":
+                ix = open_dir(COUNTRIES_INDEX_PATH)
+        except Exception as e:
+            print(e)
+            ix = None
 
-    if ix is None:
+    results = []
+    if query == "":
+        results = allEntries
+    elif ix is None:
         results = [x for x in allEntries if (query in x.get("name"))]
     else:
         with ix.searcher() as searcher:

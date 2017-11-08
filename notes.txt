@@ -13,29 +13,11 @@ https://github.com/bonniee/react-flask
 # Virtual Environment Management #
 ##############################################
 
-# Install pyenv-virtualenv (use your own package manager, this uses homebrew)
-brew install pyenv-virtualenv
-
-# List your python versions
-pyenv versions
-
-# Create an environment with any python2 compatible one listed above
-pyenv virtualenv [python_version] [env_name]
-
-# List your virtual envs
-pyenv virtualenvs
-
-# Enter your virtual environment
-pyenv activate [env_name]
-
 # Install the python dependencies (from requirements.txt to the virtual env)
 pip install -r requirements.txt
 
 # -or- Installing requirements using a Homebrewed Python
 python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
-
-# Exit your virtual environment
-pyenv deactivate
 
 
 ##############################################

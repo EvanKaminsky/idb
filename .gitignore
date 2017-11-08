@@ -4,6 +4,7 @@
 .idea/
 __pycache__/
 env/
+venv/
 lib/
 node_modules/
 bundle.js
