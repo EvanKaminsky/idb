@@ -10,14 +10,17 @@ https://github.com/bonniee/react-flask
 
 
 ##############################################
-# Virtual Environment Management #
+# Python Dependency Management #
 ##############################################
 
-# Install the python dependencies (from requirements.txt to the virtual env)
+# Version 1: Basic install the python dependencies
 pip install -r requirements.txt
 
-# -or- Installing requirements using a Homebrewed Python
-python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
+# Version 2: Specify which python + force package upgrade
+python2 -m pip install -r requirements.txt --upgrade
+
+# Version 3: Installing requirements with a Homebrewed Python
+python2 -m pip install --install-option="--prefix=" -r requirements.txt
 
 
 ##############################################
@@ -27,7 +30,7 @@ python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 # Be sure you're a contributer for the project so that you're able to deploy
 # If you have problems, see the link at the top of this document for a full walk through
 
-# Deploy app; this will take awhile and you'll have to sync the project the first time
+# Deploy app (this will take awhile and you'll have to sync the project the first time)
 gcloud app deploy
 
 # View deployment
@@ -38,6 +41,9 @@ dev_appserver.py app.yaml
 
 # Add python requirements to GCP library
 pip install -t lib -r requirements.txt
+
+# Add python requirements to GCP library with Homebrewed Python
+python2 -m pip install -t lib --install-option="--prefix=" -r requirements.txt
 
 
 ##############################################
@@ -54,6 +60,7 @@ mysql -u root -p --host 127.0.0.1
 # Requires proxy to be running
 python src/backend/write_to_db.py
 
+
 ##############################################
 # Unit Tests #
 ##############################################
@@ -67,6 +74,7 @@ python -m unittest discover
 
 # Launch a specific test
 python -m unittest tests.test_engine.py
+
 
 ##############################################
 # Extras #
