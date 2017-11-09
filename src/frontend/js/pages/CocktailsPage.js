@@ -84,7 +84,7 @@ export default class CocktailsPage extends React.Component {
         return (
             <div>
                 <h1>Tipsy Mix</h1>
-                <TipsySearchbar category={"cocktails"} spin={this.spin} relayout={this.relayout}/>
+                <TipsySearchbar category={"cocktails"} placeholder="Search for cocktails" spin={this.spin} relayout={this.relayout}/>
                 <TipsyGrid elements={display}/>
                 {stepper}
             </div>
