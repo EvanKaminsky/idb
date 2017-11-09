@@ -1,7 +1,13 @@
 import React from 'react';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 import "../../static/css/about.css"
 import backgroundStyle from "../constants.js"
+
+const h2 = {
+    color: 'white'
+};
 
 /* Page that displays team information */
 export default class AboutPage extends React.Component {
@@ -10,38 +16,43 @@ export default class AboutPage extends React.Component {
             <div style={backgroundStyle}>
 
             <div id="about" className="row">
-                <div className="col-md-12">
+                <div className="col-md-2"/>
+                <div className="col-md-6">
 
-                    <h3>About</h3>
-                    TipsyMix is a web application that allows user to search for cocktails based off of a variety of attributes.
-                    Whether you're a professional bartender or a college student, this site is for you.
-                    <br/>
+                    <Typography color='inherit' type='display3'>About</Typography>
+                    <Typography color='inherit' type='headline' gutterBottom>TipsyMix is a web application that allows user to search for cocktails based off of a variety of attributes.
+                    Whether you're a professional bartender or a college student, this site is for you! </Typography>
 
+                    <Typography color='inherit' type='display1'>Stats:</Typography>
+                    <Typography color='inherit' type='headline'>
                     Total Commits: 99 <br/>
                     Total Issues: 23 <br/>
-                    Total Unit Tests: 0 <br/>
+                    Total Unit Tests: 0 <br/><br/></Typography>
 
-                    Links:
-                        <a href = "https://github.com/EvanKaminsky/idb">GitHub</a> |
-                        <a href = "https://trello.com/b/0Ks1mfas/primary">Trello</a> |
-                        <a href = "http://docs.evankaminsky.apiary.io/">Apiary API</a> |
-                        <a href = "https://utexas.box.com/s/mczsxwvbu0r0pq2k541asou4maczaxz0">Technical Report</a><br/> |
-                        <a href = "https://utexas.box.com/s/gktvgjswvitlivx5hub9vjv48lzmpshp">UML</a><br/> |
-                        <a href = "https://utexas.box.com/s/5vtuyat2nzw7cpu1rzyf3evy2g59xlli">PlanIt Poker</a><br/>
+                    <Typography color='inherit' type='display1'>Links:</Typography>
+                    <div align="center" className="row">
+                        <Button color='primary' href="https://github.com/EvanKaminsky/idb"> GitHub </Button>
+                        <Button color='primary' href="https://trello.com/b/0Ks1mfas/primary"> Trello</Button>
+                        <Button color='primary' href="http://docs.evankaminsky.apiary.io/"> Apiary API </Button>
+                        <Button color='primary' href="https://utexas.box.com/s/mczsxwvbu0r0pq2k541asou4maczaxz0">Technical Report</Button>
+                        <Button color='primary' href="https://utexas.box.com/s/gktvgjswvitlivx5hub9vjv48lzmpshp">UML</Button>
+                        <Button color='primary' href="https://utexas.box.com/s/5vtuyat2nzw7cpu1rzyf3evy2g59xlli">PlanIt Poker</Button>
+                        <br/><br/></div>
 
-                    Data Sources:
-                        <a href="http://www.1001cocktails.com/recipes/most-popular-mixed-drinks.html">1001 Cocktails</a> |
-                        <a href="http://www.barnonedrinks.com/drinks/top_ingredients/">BarnOne Drinks</a> |
-                        <a href="https://en.wikipedia.org/wiki/List_of_national_liquorshttps://www.thewhiskyexchange.com/brands/spirits">Wikipedia</a> |
-                        <a href="https://www.thewhiskyexchange.com/brands/spirits">The Whisky Exchange</a>
+                    <Typography color='inherit' type='display1'>Data Sources:</Typography>
+                    <Typography color='inherit' type='headline'>Data was acquired by a python web scraper, which wrote its results to the SQL datastore.</Typography>
+                    <div align="center">
+                        <Button color='primary' href="http://www.1001cocktails.com/recipes/most-popular-mixed-drinks.html">1001 Cocktails </Button>
+                        <Button color='primary' href="http://www.barnonedrinks.com/drinks/top_ingredients/">BarnOne Drinks</Button>
+                        <Button color='primary' href="https://en.wikipedia.org/wiki/List_of_national_liquors">Wikipedia</Button>
+                        <Button color='primary' href="https://www.thewhiskyexchange.com/brands/spirits">The Whisky Exchange</Button><br/><br/></div>
 
-                    <br/>Data was acquired by a python web scraper, which wrote its results to the SQL datastore.<br />
-
-                    <h3>Tools Used</h3>
+                    <Typography color='inherit' type='display1'>Tools Used:</Typography>
+                    <Typography color='inherit' type='headline'>
                     <b>Apiary</b> to document the Restful API.<br/>
                     <b>Trello</b> to track issues and for general project management.<br/>
                     <b>GitHub</b> to host our full codebase.<br/>
-                    <b>WebStorm, PyCharm, and SublimeText</b> as primary development environments.
+                    <b>WebStorm, PyCharm, and SublimeText</b> as primary development environments.<br/><br/></Typography>
 
                 </div>
             </div>
@@ -66,7 +77,7 @@ export default class AboutPage extends React.Component {
                         <p>I worked on the front-end design of the static website using Bootstrap, CSS, and HTML and contributed to the creation of user stories.</p>
                         <p>Commits: 14</p>
                         <p>Unit Tests: 0</p>
-                        <p>Issues: 7</p>g
+                        <p>Issues: 7</p>
                     </div>
 
                     <div className = "col-md-2">
