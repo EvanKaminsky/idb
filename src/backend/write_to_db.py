@@ -139,6 +139,36 @@ def main():
             a = [int(s[0].strip()), int(s[1].strip())]
             c.execute('INSERT INTO BRAND_COUNTRY values (%s, %s)', a)
 
+    with open('tags.txt') as cc:
+        for line9 in cc:
+            s = line9.split(' ')
+            s[0] = int(s[0])
+            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+
+    with open('brand_tags.txt') as cc:
+        for line10 in cc:
+            s = line10.split(' ')
+            a = [int(s[0].strip()), int(s[1].strip())]
+            c.execute('INSERT INTO BRAND_TAGS values (%s, %s)', a)
+
+    with open('cocktail_tags.txt') as cc:
+        for line11 in cc:
+            s = line11.split(' ')
+            a = [int(s[0].strip()), int(s[1].strip())]
+            c.execute('INSERT INTO COCKTAIL_TAGS values (%s, %s)', a)
+
+    with open('country_tags.txt') as cc:
+        for line12 in cc:
+            s = line12.split(' ')
+            a = [int(s[0].strip()), int(s[1].strip())]
+            c.execute('INSERT INTO COUNTRY_TAGS values (%s, %s)', a)
+
+    with open('ingredient_tags.txt') as cc:
+        for line13 in cc:
+            s = line13.split(' ')
+            a = [int(s[0].strip()), int(s[1].strip())]
+            c.execute('INSERT INTO INGREDIENT_TAGS values (%s, %s)', a)
+
     print("links created")
 
     c.close()
