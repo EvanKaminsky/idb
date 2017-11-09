@@ -98,12 +98,12 @@ def applyFilterRules(results, filterRules):
 
     sortString = ""
     if filterRules.startswith("s"):
-        sortString = sortString[sortString.find("(") + 1:sortString.find(")")]
+        sortString = filterRules[filterRules.find("(") + 1:filterRules.find(")")]
         filterRules = filterRules[filterRules.find(")") + 1:]
 
     filterString = ""
     if filterRules.startswith("f"):
-        filterString = filterString[2:]
+        filterString = filterRules[2:]
 
     print("sort: " + sortString)
     print("filter: " + filterString)
@@ -193,6 +193,8 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
                 r4 = searcher.search(pquery)
 
         # Someone better at python could probably make this cleaner
+        # Find the variable containing the longest array, and return a string
+        #    corresponding to it
 
         mc = [None, True, True, True, True]
         if len(r1) > len(r2):
