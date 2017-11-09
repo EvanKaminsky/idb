@@ -143,8 +143,7 @@ def main():
         for line9 in cc:
             s = line9.split(' ')
             s[0] = int(s[0])
-            c.execute('INSERT INTO TAGS values (%s, %s)',
-                      tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
 
     with open('brand_tags.txt') as cc:
         for line10 in cc:
