@@ -226,7 +226,7 @@ def countryDetail(slug):
         countryID = idLookup(slug, TABLE_COUNTRIES)
     data = fetchCountry(countryID)
     if data is None:
-        return {"error": "brand not found"}
+        return {"error": "country not found"}
     stdname = data.get("stdname")
     if stdname is None:
         return {"error": "name not found"}
