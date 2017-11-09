@@ -118,10 +118,13 @@ def applyFilterRules(results, filterRules):
 def applySort(results, sortString):
     sortField = sortString[sortString.find("[") + 1:sortString.find("]")]
     sortString = sortString[sortString.find("]") + 2:]
-    sortMode = sortString[0]
-
-    results = sorted(results, key=lambda item: item.get(sortField), reverse=(sortMode == "d"))
-    return results
+    if (sortString is None or len(sortString) == 0):
+        #default to returning as-is in case the regex fails
+        return results
+    else:
+        sortMode = sortString[0]
+        results = sorted(results, key=lambda item: item.get(sortField), reverse=(sortMode == "d"))
+        return results
 
 
 # Filters results by a given set of filtering rules
