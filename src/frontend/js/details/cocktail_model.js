@@ -70,7 +70,6 @@ export default class CocktailDetailPage extends React.Component {
                     <Typography type="display3">{this.state.cocktail.name}</Typography>
 
                     <DetailSingleSection title="Description" label={this.state.cocktail.description}/>
-                    <DetailSingleSection title="Alcohol by Volume (ABV)" label={this.state.cocktail.abv}/>
                     <DetailSingleSection title="Base Spirit" label={this.state.cocktail.base_spirit}/>
                     <DetailSingleSection title="Garnish" label={this.state.cocktail.garnish}/>
                     <DetailSingleSection title="Glass" label={this.state.cocktail.glass}/>
