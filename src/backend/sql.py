@@ -103,3 +103,4 @@ def sql_describe_simple(category):
         return [{"error": "an sql access error occurred"}]
     desiredFields = ["Field", "Type"]
     results = [({y: x[y] for y in desiredFields}) for x in describe]
+    return results
