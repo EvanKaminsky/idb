@@ -24,7 +24,7 @@ function IngredientCard(props) {
 
                 <CardContent>
                     <Typography type="headline" component="h2">{props.ingredient.name}</Typography>
-                    <Typography component="p">{props.ingredient.description}</Typography>
+                    <Typography component="p">{props.ingredient.summary}</Typography>
                 </CardContent>
 
                 <CardActions>

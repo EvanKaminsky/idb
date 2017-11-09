@@ -65,9 +65,10 @@ export default class CountryDetailPage extends React.Component {
                 <img className="img-responsive" src={this.state.country.image}/>
 
                 <Typography type="display3">{this.state.country.name}</Typography>
-                <Typography type="headline" align="center" component="h3">{this.state.country.continent}</Typography>
 
                 <DetailSingleSection title="Description" label={this.state.country.description}/>
+                <DetailSingleSection title="Capital" label={this.state.country.capital}/>
+                <DetailSingleSection title="Continent" label={this.state.country.continent}/>
 
                 <DetailMultiSection type="cocktail" elements={this.state.country.cocktails} history={this.props.history} location={this.props.location}/>
                 <DetailMultiSection type="brand" elements={this.state.country.brands} history={this.props.history} location={this.props.location}/>

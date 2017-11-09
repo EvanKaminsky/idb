@@ -85,6 +85,7 @@ def cocktailDetail(slug):
     image = data.get("imageurl", "")
     color = int(data.get("color", inferColor(image)))
     description = data.get("description", "")
+    summary = data.get("summary", "")
     abv = float(scrapeABV(description))
     video = data.get("videourl", "")
     garnish = scrapeGarnish(description)
@@ -92,6 +93,7 @@ def cocktailDetail(slug):
     spirit = scrapeSpirit(description)
     preparation = scrapePreparation(description)
     instructions = scrapeInstructions(description)
+
 
     brands = [brandLinkdataQuery(ID) for ID in brandsInCocktailQuery(cocktailID)]
     ingredients = [ingredientLinkdataQuery(ID) for ID in ingredientsInCocktailQuery(cocktailID)]
@@ -116,7 +118,8 @@ def cocktailDetail(slug):
         "ingredients": ingredients,
         "brands": brands,
         "countries": countries,
-        "tags": tags
+        "tags": tags,
+        "summary": summary
     }
 
 
@@ -140,6 +143,7 @@ def ingredientDetail(slug):
     image = data.get("imageurl", "")
     color = int(data.get("color", inferColor(image)))
     description = data.get("description", "")
+    summary = data.get("summary", "")
     abv = float(data.get("abv", "0.0"))
 
     brands = [brandLinkdataQuery(ID) for ID in brandsInIngredientQuery(ingredientID)]
@@ -159,7 +163,8 @@ def ingredientDetail(slug):
         "cocktails": cocktails,
         "brands": brands,
         "countries": countries,
-        "tags": tags
+        "tags": tags,
+        "summary": summary
     }
 
 
@@ -183,7 +188,9 @@ def brandDetail(slug):
     image = data.get("imageurl", "")
     color = int(data.get("color", inferColor(image)))
     description = data.get("description", "")
+    summary = data.get("summary", "")
     website = data.get("websiteurl", "")
+    value = data.get("value", "")
 
     ingredients = [ingredientLinkdataQuery(ID) for ID in ingredientsInBrandQuery(brandID)]
     cocktails = [cocktailLinkdataQuery(ID) for ID in cocktailsInBrandQuery(brandID)]
@@ -202,7 +209,9 @@ def brandDetail(slug):
         "cocktails": cocktails,
         "ingredients": ingredients,
         "countries": countries,
-        "tags": tags
+        "tags": tags,
+        "summary": summary,
+        "value": value
     }
 
 
@@ -226,7 +235,9 @@ def countryDetail(slug):
     image = data.get("imageurl", "")
     color = int(data.get("color", inferColor(image)))
     description = data.get("description", "")
+    summary = data.get("summary", "")
     continent = data.get("continent", "")
+    capital = data.get("capital", "")
 
     ingredients = [ingredientLinkdataQuery(ID) for ID in ingredientsInCountryQuery(countryID)]
     cocktails = [cocktailLinkdataQuery(ID) for ID in cocktailsInCountryQuery(countryID)]
@@ -245,7 +256,9 @@ def countryDetail(slug):
         "cocktails": cocktails,
         "brands": brands,
         "ingredients": ingredients,
-        "tags": tags
+        "tags": tags,
+        "summary": summary,
+        "capital": capital
     }
 
 

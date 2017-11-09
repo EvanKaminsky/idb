@@ -66,6 +66,7 @@ export default class BrandDetailPage extends React.Component {
                     <Typography type="display3">{this.state.brand.name}</Typography>
 
                     <DetailSingleSection title="Description" label={this.state.brand.description}/>
+                    <DetailSingleSection title="Brand Value" label={this.state.brand.value}/>
                     <DetailSingleSection title="Website" label={this.state.brand.website}/>
 
                     <DetailMultiSection type="cocktail" elements={this.state.brand.cocktails} history={this.props.history} location={this.props.location}/>

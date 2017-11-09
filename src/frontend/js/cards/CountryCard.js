@@ -24,7 +24,7 @@ function CountryCard(props) {
 
                 <CardContent>
                     <Typography type="headline" component="h2">{props.country.name}</Typography>
-                    <Typography component="p">{props.country.description}</Typography>
+                    <Typography component="p">{props.country.summary}</Typography>
                 </CardContent>
 
                 <CardActions>
