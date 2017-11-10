@@ -24,7 +24,7 @@ function BrandCard(props) {
 
                 <CardContent>
                     <Typography type="headline" component="h2">{props.brand.name}</Typography>
-                    <Typography component="p">{props.brand.summary}</Typography>
+                    <Typography component="p">{props.brand.highlights ? props.brand.highlights : props.brand.summary}</Typography>
                 </CardContent>
 
                 <CardActions>

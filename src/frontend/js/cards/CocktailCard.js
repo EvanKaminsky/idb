@@ -24,7 +24,7 @@ function CocktailCard(props) {
 
                 <CardContent>
                     <Typography type="headline" component="h2">{props.cocktail.name}</Typography>
-                    <Typography component="p">{props.cocktail.summary}</Typography>
+                    <Typography component="p">{props.cocktail.highlights ? props.cocktail.highlights : props.cocktail.summary}</Typography>
                 </CardContent>
 
                 <CardActions>
