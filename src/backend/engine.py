@@ -266,4 +266,5 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
 class SpanFormatter(highlight.Formatter):
     def format_token(self, text, token, replace=False):
         tokentext = highlight.get_text(text, token, replace)
-        return "<" + str(HIGHLIGHT_TAG) + ">" + tokentext + "</" + str(HIGHLIGHT_TAG) + ">"
+        #return "<" + str(HIGHLIGHT_TAG) + ">" + tokentext + "</" + str(HIGHLIGHT_TAG) + ">"
+        return tokentext.upper()
