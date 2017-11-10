@@ -1,0 +1,510 @@
+{
+	"info": {
+		"name": "Tipsy Mix",
+		"_postman_id": "3c565d09-08c6-391f-6e7d-3500670d9f36",
+		"description": "Postman testing for the Tipsy Mix API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET cocktails category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=cocktails",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "cocktails",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET ingredients category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=ingredients",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "ingredients",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET brands category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=countries",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "countries",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET countries category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=countries",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "countries",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Descriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/describe/",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"describe",
+						""
+					]
+				},
+				"description": "Get descriptions of all fiels and types that are returned from API"
+			},
+			"response": []
+		},
+		{
+			"name": "GET cocktail details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/cocktails/1",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"cocktails",
+						"1"
+					]
+				},
+				"description": "Get a specific cocktail, with detailed response (cocktail number 1)"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ingredient details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/ingredients/1",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ingredients",
+						"1"
+					]
+				},
+				"description": "Get a specific ingredient, with detailed response (ingredient number 1)"
+			},
+			"response": []
+		},
+		{
+			"name": "GET country details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/countries/1",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"countries",
+						"1"
+					]
+				},
+				"description": "Get a specific country, with detailed response (country number 1)"
+			},
+			"response": []
+		},
+		{
+			"name": "GET brand details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/brands/1",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"brands",
+						"1"
+					]
+				},
+				"description": "Get a specific brand, with detailed response (brand number 1)"
+			},
+			"response": []
+		},
+		{
+			"name": "GET cocktails 11 - 20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=cocktails&page=2&pageSize=10",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "cocktails",
+							"equals": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get cocktails page 2, woth page size 10"
+			},
+			"response": []
+		},
+		{
+			"name": "GET countries 21-30",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=countries&page=3",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "countries",
+							"equals": true
+						},
+						{
+							"key": "page",
+							"value": "3",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get countries page 3"
+			},
+			"response": []
+		},
+		{
+			"name": "GET brands query: jameson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=brands&query=jameson",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "brands",
+							"equals": true
+						},
+						{
+							"key": "query",
+							"value": "jameson",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get brands that match query \"jameson\""
+			},
+			"response": []
+		},
+		{
+			"name": "GET countries query:america",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=country&query=america",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "country",
+							"equals": true
+						},
+						{
+							"key": "query",
+							"value": "america",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get countries that match query \"america\" (get all coutries that are in North or South America)"
+			},
+			"response": []
+		},
+		{
+			"name": "GET sort countries alphabetically and query:america ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=country&query=america&filterRules=s-([name][a])",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "country",
+							"equals": true
+						},
+						{
+							"key": "query",
+							"value": "america",
+							"equals": true
+						},
+						{
+							"key": "filterRules",
+							"value": "s-([name][a])",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get countries that match query \"america\" (get all coutries that are in North or South America), listed in alphabetical order by \"name\" field"
+			},
+			"response": []
+		},
+		{
+			"name": "GET sort countries alphabetically and query:america ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=country&query=america&filterRules=s-([name][d])",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "country",
+							"equals": true
+						},
+						{
+							"key": "query",
+							"value": "america",
+							"equals": true
+						},
+						{
+							"key": "filterRules",
+							"value": "s-([name][d])",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get countries that match query \"america\" (get all coutries that are in North or South America), listed in reverse-alphabetical order by \"name\" field"
+			},
+			"response": []
+		},
+		{
+			"name": "GET sort brands alphabetically filtered by starting with \"G\" or \"J\"",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://tipsymix-ttp.appspot.com/api/search?category=brands&filterRules=s-([name][a])f-([name][G|J])",
+					"protocol": "https",
+					"host": [
+						"tipsymix-ttp",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "brands",
+							"equals": true
+						},
+						{
+							"key": "filterRules",
+							"value": "s-([name][a])f-([name][G|J])",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get all brands that start with the letter G or J, listed alphabetically"
+			},
+			"response": []
+		}
+	]
+}
