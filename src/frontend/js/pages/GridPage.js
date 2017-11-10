@@ -4,18 +4,20 @@ import Grid from 'material-ui/Grid';
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
 import TipsyGrid from "../components/TipsyGrid.js";
-import CocktailCard from "../cards/CocktailCard.js";
 import Stepper from "../components/Stepper.js"
 import FilterSort from "../components/FilterSort.js";
 
-/* Page that displays a grid of cocktails */
-export default class CocktailsPage extends React.Component {
+export default class GridPage extends React.Component {
 
     constructor(props) {
         super(props);
         const prev_state = this.props.location.state;
 
         this.state = {
+            category: props.category,
+            associated_detail: props.associatedDetail,
+            descriptor_tag: props.descriptorTag,
+
             elements:     prev_state ? (prev_state.elements ? prev_state.elements : null) : null,
             current_page: prev_state ? (prev_state.current_page !== null ? prev_state.current_page : 1) : 1,
             total_pages:  prev_state ? (prev_state.total_pages  !== null ? prev_state.total_pages  : 0) : 0,
@@ -40,7 +42,7 @@ export default class CocktailsPage extends React.Component {
         }
         this.state.isLoading = true;
         window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
-        window.constants.api.search("cocktails", page, this.state.page_size, null, filterSortString).then(json => {
+        window.constants.api.search(this.state.category, page, this.state.page_size, null, filterSortString).then(json => {
             this.relayout(json);
         });
     };
@@ -58,17 +60,17 @@ export default class CocktailsPage extends React.Component {
     }
 
     setDescriptors(json) {
-        if (this.state.descriptors === null && json !== null && json.cocktail_fields !== null) {
-            this.setState({descriptors: json.cocktail_fields.map(field => field.Field)});
+        if (this.state.descriptors === null && json !== null && json[this.state.descriptor_tag] !== null) {
+            this.setState({descriptors: json[this.state.descriptor_tag].map(field => field.Field)});
         }
     }
 
     updateFilterSort(filterSortString, filterSortState) {
-        if (filterSortString !== null && this.state.filter_sort_string === null) {
+        if (filterSortString !== null && this.state.filter === null) {
             this.reload(null, filterSortString);
-        } else if (filterSortString !== null && this.state.filter_sort_string !== null && filterSortString !== this.state.filter_sort_string) {
+        } else if (filterSortString !== null && this.state.filter !== null && filterSortString !== this.state.filter) {
             this.reload(null, filterSortString);
-        } else if (filterSortString === null && this.state.filter_sort_string !== null) {
+        } else if (filterSortString === null && this.state.filter !== null) {
             this.reload(null, null);
         }
     }
@@ -80,8 +82,8 @@ export default class CocktailsPage extends React.Component {
     openDetail(element, event) {
         event.preventDefault();
         this.props.history.push({
-            pathname: '/cocktail-detail/' + element.id,
-            state: {fromURL: "/cocktails"}
+            pathname: this.state.associated_detail + element.id,
+            state: {fromURL: "/" + this.state.category}
         });
     };
 
@@ -98,6 +100,8 @@ export default class CocktailsPage extends React.Component {
         } else {
             display = this.state.elements.map((element, i) => { return (
                 <Grid key={i} item>
+                    {this.props.card}
+
                     <CocktailCard cocktail={element} onClick={(e)=>this.openDetail(element, e)}/>
                 </Grid>
             )});
@@ -112,7 +116,7 @@ export default class CocktailsPage extends React.Component {
         return (
             <div>
                 <h1>Tipsy Mix</h1>
-                <TipsySearchbar category={"cocktails"} placeholder="Search for cocktails" spin={this.spin} relayout={this.relayout}/>
+                <TipsySearchbar category={this.state.category} placeholder={"Search for " + this.state.category} spin={this.spin} relayout={this.relayout}/>
                 {filtersort}
                 <TipsyGrid elements={display}/>
                 {stepper}
