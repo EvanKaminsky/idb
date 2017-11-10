@@ -10,7 +10,7 @@ class APITest(unittest.TestCase):
         self.assertTrue(len(api.search(query="mint", category="cocktail")) > 0)
 
     def test_fixCategory(self):
-        self.assertEqual(api.fixCategory(None), None)
+        self.assertEquals(api.fixCategory(None), None)
         self.assertEquals(api.fixCategory("coUnTry"), "COUNTRIES")
         self.assertEquals(api.fixCategory("cockTAILs"), "COCKTAILS")
         self.assertEquals(api.fixCategory("IngredieNt"), "INGREDIENTS")

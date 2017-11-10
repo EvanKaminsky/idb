@@ -168,6 +168,8 @@ def applyFilter(results, filterString):
 def inferCategory(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     if category is not None:
         return category
+    elif query is None:
+        return "COCKTAILS"
     else:
         results = []
         try:
