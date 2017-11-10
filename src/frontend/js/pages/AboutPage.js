@@ -112,8 +112,10 @@ export default class AboutPage extends React.Component {
                         <Typography color='inherit' type='display1' gutterBottom><b>Evan</b></Typography>
                         <Typography color='inherit' type='headline'>
                             My name is Evan Kaminsky and I’m a junior at UT Austin. I’m currently taking AI and
-                            software engineering, and plan on doing research in systems.<br/><br/>
-                            For this project, I’ll be working on our React frontend and managing Google Cloud Platform.
+                            software engineering, and I'm working on systems and blockchain research.<br/><br/>
+                            For this project, I worked on all MVC components of our React frontend, focusing on
+                            navigation, our networking layer, and component integration. I was also in charge of our
+                            Flask backend API interface and deployment on GCP.
                             <br/><br/>
                             <b>Commits:</b> 56<br/>
                             <b>Unit Tests:</b> 0<br/>

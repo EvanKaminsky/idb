@@ -1,5 +1,5 @@
-const BASE_API = "https://tipsymix-ttp.appspot.com/api/";
-//const BASE_API = "http://127.0.0.1:5000/api/";
+//const BASE_API = "https://tipsymix-ttp.appspot.com/api/";
+const BASE_API = "http://127.0.0.1:5000/api/";
 
 const ENABLE_CACHING = true;
 
@@ -71,6 +71,8 @@ function API() {
         if (filterRules !== null && filterRules !== undefined) {
             url += "&filterRules=" + encodeURIComponent(filterRules);
         }
+
+        console.log(url);
 
         return this.get(encodeURI(url)).then(json => {return json});
     };

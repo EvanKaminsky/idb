@@ -67,7 +67,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
                     if int(r.get("id")) == int(x.get("id")):
                         r.update({"highlights": x.highlights("body", top=NUM_TERMS_MAX)})
 
-    results = applyFilterRules(results, filterRules)
+    results = list(applyFilterRules(results, filterRules))
 
     if count:
         results = results[0:count]

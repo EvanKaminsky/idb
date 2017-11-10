@@ -68,7 +68,7 @@ class FilterSort extends React.Component {
             )});
         }
 
-        const sort_option_elements = [<option key={1} value={"d"}>A-Z</option>, <option key={2} value={"a"}>Z-A</option>];
+        const sort_option_elements = [<option key={1} value={"a"}>A-Z</option>, <option key={2} value={"d"}>Z-A</option>];
 
         return (
             <Grid container className={classes.root}>
