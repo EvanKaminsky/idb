@@ -52,9 +52,9 @@ class FilterSort extends React.Component {
         }
 
         if (combined_string === "") {
-            this.props.updateFilterSort(null, this.state);
+            this.props.filterAction(null, this.state);
         } else {
-            this.props.updateFilterSort(combined_string, this.state);
+            this.props.filterAction(combined_string, this.state);
         }
     }
 

@@ -11,51 +11,87 @@ export default class GridPage extends React.Component {
 
     // Required Props: category, parentState, parentHistory, detailURL, descriptorFields, constructCard
 
+    // Setup //
+
     constructor(props) {
         super(props);
         const prev_state = this.props.parentState;
 
         this.state = {
-            elements: prev_state ? (prev_state.elements ? prev_state.elements : null) : null,
-            history: this.props.parentHistory,
+            elements:     prev_state ? (prev_state.elements ? prev_state.elements : null) : null,
+            history:      this.props.parentHistory,
+            descriptors:  null,
+            isLoading:    false,
 
-            current_page: prev_state ? (prev_state.current_page !== null ? prev_state.current_page : 1) : 1,
+            page:         prev_state ? (prev_state.page !== null ? prev_state.page : 1) : 1,
             total_pages:  prev_state ? (prev_state.total_pages  !== null ? prev_state.total_pages  : 0) : 0,
             page_size:    prev_state ? (prev_state.page_size    !== null ? prev_state.page_size    : 10) : 10,
 
-            descriptors:  null,
-            isLoading: false,
-            filter_sort_string: null,
-            filter_sort_state: null
+            query:  null,
+            filter: null,
         };
 
-        this.openDetail = this.openDetail.bind(this);
         this.reload = this.reload.bind(this);
+        this.filter = this.filter.bind(this);
+        this.search = this.search.bind(this);
+        this.nextPage = this.nextPage.bind(this);
+        this.previousPage = this.previousPage.bind(this);
         this.relayout = this.relayout.bind(this);
         this.setDescriptors = this.setDescriptors.bind(this);
-        this.updateFilterSort = this.updateFilterSort.bind(this);
-        this.spin = this.spin.bind(this);
+        this.openDetail = this.openDetail.bind(this);
     }
 
-    reload(page, filterSortString) {
+    componentDidMount() {
+        window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
+    }
+
+
+    // Networking  //
+
+    reload(page, query, filter) {
         if (this.state.isLoading) {
             return;
         }
         this.state.isLoading = true;
-        window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
-        window.constants.api.search(this.props.category, page, this.state.page_size, null, filterSortString).then(json => {
+        window.constants.api.search(this.props.category, page, this.state.page_size, query, filter).then(json => {
             this.relayout(json);
         });
     };
+
+    filter(filter, filterSortState) {
+        if (filter !== null && this.state.filter === null) {
+            this.reload(null, this.state.query, filter);
+        } else if (filter !== null && this.state.filter !== null && filter !== this.state.filter) {
+            this.reload(null, this.state.query, filter);
+        } else if (filter === null && this.state.filter !== null) {
+            this.reload(null, this.state.query, null);
+        }
+    }
+
+    search(query) {
+        this.setState({isLoading: true});   // Start spinning
+        this.reload(this.state.page, query, this.state.filter);
+    }
+
+    nextPage() {
+        this.reload(this.state.page + 1, this.state.query, this.state.filter)
+    }
+
+    previousPage() {
+        this.reload(this.state.page - 1, this.state.query, this.state.filter)
+    }
+
+    // State Setters //
 
     relayout(json) {
         this.state.isLoading = false;
         if (json !== null) {
             this.setState({
-                elements:           json.results,
-                total_pages:        json.totalPages,
-                current_page:       json.page,
-                filter_sort_string: json.filter
+                elements:      json.results,
+                total_pages:   json.totalPages,
+                page:  json.page,
+                filter: json.filter,
+                query:  json.query
             });
         }
     }
@@ -66,19 +102,8 @@ export default class GridPage extends React.Component {
         }
     }
 
-    updateFilterSort(filterSortString, filterSortState) {
-        if (filterSortString !== null && this.state.filter === null) {
-            this.reload(null, filterSortString);
-        } else if (filterSortString !== null && this.state.filter !== null && filterSortString !== this.state.filter) {
-            this.reload(null, filterSortString);
-        } else if (filterSortString === null && this.state.filter !== null) {
-            this.reload(null, null);
-        }
-    }
 
-    spin() {
-        this.setState({isLoading: true});
-    }
+    // Local //
 
     openDetail(element, event) {
         event.preventDefault();
@@ -91,13 +116,13 @@ export default class GridPage extends React.Component {
     render() {
         var display = null;
         var stepper = null;
-        var filtersort = null;
 
         if (this.state.isLoading) {
             display = <Spinner/>;
         } else if (this.state.elements === null) {
-            this.reload(this.state.current_page, this.state.filter_sort_string);
+            this.reload(this.state.page, this.state.query, this.state.filter);
             display = <Spinner/>;
+
         } else {
             display = this.state.elements.map((element, i) => { return (
                 <Grid key={i} item>
@@ -105,18 +130,16 @@ export default class GridPage extends React.Component {
                 </Grid>
             )});
 
-            stepper = <Stepper pages={this.state.total_pages} currentPage={this.state.current_page}
-                               next={(e)=>this.reload(this.state.current_page + 1, this.state.filter_sort_string)}
-                               back={(e)=>this.reload(this.state.current_page - 1, this.state.filter_sort_string)}/>;
-
-            filtersort = <FilterSort descriptors={this.state.descriptors} state={this.filter_sort_state} updateFilterSort={this.updateFilterSort}/>;
+            stepper = <Stepper pages={this.state.total_pages} currentPage={this.state.page} next={this.nextPage} back={this.previousPage}/>;
         }
+
+        const placeholder = "Search for " + this.props.category + "...";
 
         return (
             <div>
                 <h1>Tipsy Mix</h1>
-                <TipsySearchbar category={this.props.category} placeholder={"Search for " + this.props.category + "..."} spin={this.spin} relayout={this.relayout}/>
-                {filtersort}
+                <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
+                <FilterSort descriptors={this.state.descriptors} state={this.filter_state} filterAction={this.filter}/>;
                 <TipsyGrid elements={display}/>
                 {stepper}
             </div>
