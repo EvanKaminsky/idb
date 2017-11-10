@@ -9,19 +9,20 @@ import FilterSort from "../components/FilterSort.js";
 
 export default class GridPage extends React.Component {
 
+    // Required Props: category, parentState, parentHistory, detailURL, descriptorFields, constructCard
+
     constructor(props) {
         super(props);
-        const prev_state = this.props.location.state;
+        const prev_state = this.props.parentState;
 
         this.state = {
-            category: props.category,
-            associated_detail: props.associatedDetail,
-            descriptor_tag: props.descriptorTag,
+            elements: prev_state ? (prev_state.elements ? prev_state.elements : null) : null,
+            history: this.props.parentHistory,
 
-            elements:     prev_state ? (prev_state.elements ? prev_state.elements : null) : null,
             current_page: prev_state ? (prev_state.current_page !== null ? prev_state.current_page : 1) : 1,
             total_pages:  prev_state ? (prev_state.total_pages  !== null ? prev_state.total_pages  : 0) : 0,
             page_size:    prev_state ? (prev_state.page_size    !== null ? prev_state.page_size    : 10) : 10,
+
             descriptors:  null,
             isLoading: false,
             filter_sort_string: null,
@@ -42,7 +43,7 @@ export default class GridPage extends React.Component {
         }
         this.state.isLoading = true;
         window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
-        window.constants.api.search(this.state.category, page, this.state.page_size, null, filterSortString).then(json => {
+        window.constants.api.search(this.props.category, page, this.state.page_size, null, filterSortString).then(json => {
             this.relayout(json);
         });
     };
@@ -60,8 +61,8 @@ export default class GridPage extends React.Component {
     }
 
     setDescriptors(json) {
-        if (this.state.descriptors === null && json !== null && json[this.state.descriptor_tag] !== null) {
-            this.setState({descriptors: json[this.state.descriptor_tag].map(field => field.Field)});
+        if (this.state.descriptors === null && json !== null && json[this.props.descriptorFields] !== null) {
+            this.setState({descriptors: json[this.props.descriptorFields].map(field => field.Field)});
         }
     }
 
@@ -81,9 +82,9 @@ export default class GridPage extends React.Component {
 
     openDetail(element, event) {
         event.preventDefault();
-        this.props.history.push({
-            pathname: this.state.associated_detail + element.id,
-            state: {fromURL: "/" + this.state.category}
+        this.state.history.push({
+            pathname: this.props.detailURL + element.id,
+            state: {fromURL: "/" + this.props.category}
         });
     };
 
@@ -100,9 +101,7 @@ export default class GridPage extends React.Component {
         } else {
             display = this.state.elements.map((element, i) => { return (
                 <Grid key={i} item>
-                    {this.props.card}
-
-                    <CocktailCard cocktail={element} onClick={(e)=>this.openDetail(element, e)}/>
+                    {this.props.constructCard(element, (e)=>this.openDetail(element, e))}
                 </Grid>
             )});
 
@@ -116,7 +115,7 @@ export default class GridPage extends React.Component {
         return (
             <div>
                 <h1>Tipsy Mix</h1>
-                <TipsySearchbar category={this.state.category} placeholder={"Search for " + this.state.category} spin={this.spin} relayout={this.relayout}/>
+                <TipsySearchbar category={this.props.category} placeholder={"Search for " + this.props.category + "..."} spin={this.spin} relayout={this.relayout}/>
                 {filtersort}
                 <TipsyGrid elements={display}/>
                 {stepper}
