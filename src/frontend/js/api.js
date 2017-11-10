@@ -72,6 +72,8 @@ function API() {
             url += "&filterRules=" + encodeURIComponent(filterRules);
         }
 
+        console.log(url);
+
         return this.get(encodeURI(url)).then(json => {return json});
     };
 

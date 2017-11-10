@@ -29,11 +29,16 @@ base_api = "/api/"
 @cross_origin()
 def search():
     category =      request.args.get('category', default=None, type=str)
-    query =         request.args.get(unquote('query'), default=None, type=str)
-    filter_rules =  request.args.get(unquote('filterRules'), default=None, type=str)
+    query =         request.args.get('query', default=None, type=str)
+    filter_rules =  request.args.get('filterRules', default=None, type=str)
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
+
+    if query is not None:
+        query = unquote(query)
+    if filter_rules is not None:
+        filter_rules = unquote(filter_rules)
 
     response = api.search(category, query, filter_rules, count, page, pagesize)
     return jsonify(response)
