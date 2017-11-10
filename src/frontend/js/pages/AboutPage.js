@@ -24,8 +24,8 @@ export default class AboutPage extends React.Component {
                     <Typography color='inherit' type='display1'>Stats:</Typography>
                     <Typography color='inherit' type='headline'>
                     Total Commits: 99 <br/>
-                    Total Issues: 23 <br/>
-                    Total Unit Tests: 0 <br/><br/></Typography>
+                    Total Issues: 57 <br/>
+                    Total Unit Tests: 30 <br/><br/></Typography>
 
                     <Typography color='inherit' type='display1'>Links:</Typography>
                     <div align="center" className="row">
@@ -86,7 +86,7 @@ export default class AboutPage extends React.Component {
                             Bootstrap and Material-UI. I also wrote unit tests for the backend, made small api
                             updates, contributed to user stories, and updated the About page's content.<br/><br/>
                             <b>Commits:</b> 26<br/>
-                            <b>Unit Tests:</b> 6<br/>
+                            <b>Unit Tests:</b> 15<br/>
                             <b>Issues:</b> 7<br/>
                             <br/><br/>
                         </Typography>
@@ -118,7 +118,7 @@ export default class AboutPage extends React.Component {
                             Flask backend API interface and deployment on GCP.
                             <br/><br/>
                             <b>Commits:</b> 56<br/>
-                            <b>Unit Tests:</b> 0<br/>
+                            <b>Unit Tests:</b> 7<br/>
                             <b>Issues:</b> 7<br/>
                             <br/><br/>
                         </Typography>
@@ -137,7 +137,7 @@ export default class AboutPage extends React.Component {
                             implemented automatic code styling, scraped card colors from our image urls, and maintained
                             our API documentation.<br/><br/>
                             <b>Commits:</b> 61<br/>
-                            <b>Unit Tests:</b> 6<br/>
+                            <b>Unit Tests:</b> 8<br/>
                             <b>Issues:</b> 7<br/>
                             <br/><br/>
                         </Typography>
