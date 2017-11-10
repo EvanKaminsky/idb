@@ -51,39 +51,40 @@ function API() {
 
     /* -------------------------------------------------------------- */
 
-    this.search = function(category, page, pagesize, query) {
+    this.search = function(category, page, pagesize, query, filterRules) {
         var url = "search?";
         var modified = false;
-        if (category) {
+
+        if (category !== null && category !== undefined) {
             url += "category=" + category;
             modified = true;
         }
-         if (query) {
+         if (query !== null && query !== undefined) {
             url += (modified ? "&query=" : "query=") + encodeURIComponent(query);
         }
-        if (page) {
+        if (page !== null && page !== undefined) {
             url += "&page=" + page;
         }
-        if (pagesize) {
+        if (pagesize !== null && pagesize !== undefined) {
             url += "&pagesize=" + pagesize;
         }
+        if (filterRules !== null && filterRules !== undefined) {
+            url += "&filterRules=" + encodeURIComponent(filterRules);
+        }
+
         return this.get(encodeURI(url)).then(json => {return json});
     };
 
-    this.getCocktails = function(page, pagesize, query) {
-        return this.search("cocktails", page, pagesize, query);
+    this.getIngredients = function(page, pagesize, query, filterRules) {
+        return this.search("ingredients", page, pagesize, query, filterRules);
     };
 
-    this.getIngredients = function(page, pagesize, query) {
-        return this.search("ingredients", page, pagesize, query);
+    this.getCountries = function(page, pagesize, query, filterRules) {
+        return this.search("countries", page, pagesize, query, filterRules);
     };
 
-    this.getCountries = function(page, pagesize, query) {
-        return this.search("countries", page, pagesize, query);
-    };
-
-    this.getBrands = function(page, pagesize, query) {
-        return this.search("brands", page, pagesize, query);
+    this.getBrands = function(page, pagesize, query, filterRules) {
+        return this.search("brands", page, pagesize, query, filterRules);
     };
 
     this.getCocktailDetail = function(slug) {
