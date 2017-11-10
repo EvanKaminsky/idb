@@ -42,7 +42,21 @@ class SqlTest(unittest.TestCase):
         self.assertTrue(noResult is None)
 
     # test uniqueness of ids
+    def test_uniqueIDs(self):
+        cocktailIDs = sql.sql_select("id", "COCKTAILS")
+        for cocktail in cocktailIDs:
+            for cocktail2 in cocktailIDs:
+                if not cocktail is cocktail2:
+                    self.assertTrue( cocktail["id"] != cocktail2["id"])
+
     # test uniqueness of stdame
+    def test_uniquestdNames(self):
+        ingredientstdnames = sql.sql_select("stdname", "INGREDIENTS")
+        for ingredient in ingredientstdnames:
+            for ingredient2 in ingredientstdnames:
+                if not ingredient is ingredient2:
+                    self.assertTrue(ingredient["stdname"] != ingredient2["stdname"])
+
     # test linking tables match up in the 2 directions
         # cocktail a -> ingredient b
         #    ==>
