@@ -175,10 +175,13 @@ def main():
     cnx.commit()
     cnx.close()
 
-    ##########################################
-    ######  Create Whoosh Lucene Index  ######
-    ##########################################
+    createIndex()
 
+##########################################
+######  Create Whoosh Lucene Index  ######
+##########################################
+
+def createIndex():
     if not os.path.exists(COCKTAIL_INDEX_PATH):
         os.mkdir(COCKTAIL_INDEX_PATH)
     ixCocktail = create_in(COCKTAIL_INDEX_PATH, schema)

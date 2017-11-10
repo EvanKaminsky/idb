@@ -3,17 +3,32 @@ from decimal import Decimal
 from whoosh.fields import *
 from whoosh.index import *
 from whoosh.qparser import QueryParser
+import whoosh.highlight as highlight
+
 
 ###########################
 ######  Index Setup  ######
 ###########################
 
-schema = Schema(title=TEXT(stored=True, field_boost=2.5), id=ID(stored=True), body=TEXT)
+schema = Schema(title=TEXT(stored=True, field_boost=2.5), id=ID(stored=True), body=TEXT(stored=True))
 COCKTAIL_INDEX_PATH = os.path.join(os.path.dirname(__file__), "cocktail_index")
 INGREDIENT_INDEX_PATH = os.path.join(os.path.dirname(__file__), "ingredient_index")
 BRAND_INDEX_PATH = os.path.join(os.path.dirname(__file__), "brand_index")
 COUNTRY_INDEX_PATH = os.path.join(os.path.dirname(__file__), "country_index")
 
+
+##########################
+######  Highlighter ######
+##########################
+
+NUM_TERMS_MAX = 5
+HIGHLIGHT_TAG = "span"
+SURROUND_CHAR_MAX = 30
+
+
+#############################
+######  Search Engine  ######
+#############################
 
 # Query parser and intelligent search engine implementation
 
@@ -42,8 +57,15 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
             parser = QueryParser("body", ix.schema)
             pquery = parser.parse(query)
             res = searcher.search(pquery)
+            res.fragmenter.surround = SURROUND_CHAR_MAX
+            fmt = SpanFormatter()
+            res.formatter = fmt
             resID = [int(x.get("id")) for x in res]
             results = [x for x in allEntries if (int(x.get("id")) in resID)]
+            for r in results:
+                for x in res:
+                    if int(r.get("id")) == int(x.get("id")):
+                        r.update({"highlights": x.highlights("body", top=NUM_TERMS_MAX)})
 
     results = applyFilterRules(results, filterRules)
 
@@ -152,7 +174,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             ix1 = open_dir(COCKTAIL_INDEX_PATH)
             ix2 = open_dir(BRAND_INDEX_PATH)
             ix3 = open_dir(INGREDIENT_INDEX_PATH)
-            ix4 = open_dir(COUNTRIES_INDEX_PATH)
+            ix4 = open_dir(COUNTRY_INDEX_PATH)
         except Exception as e:
             print(e)
             ix1 = None
@@ -166,7 +188,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             with ix1.searcher() as searcher:
                 parser = QueryParser("body", ix1.schema)
                 pquery = parser.parse(query)
-                r1 = searcher.search(pquery)
+                r1 = len(searcher.search(pquery))
 
         if ix2 is None:
             r2 = []
@@ -174,7 +196,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             with ix2.searcher() as searcher:
                 parser = QueryParser("body", ix2.schema)
                 pquery = parser.parse(query)
-                r2 = searcher.search(pquery)
+                r2 = len(searcher.search(pquery))
 
         if ix3 is None:
             r3 = []
@@ -182,7 +204,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             with ix3.searcher() as searcher:
                 parser = QueryParser("body", ix3.schema)
                 pquery = parser.parse(query)
-                r3 = searcher.search(pquery)
+                r3 = len(searcher.search(pquery))
 
         if ix4 is None:
             r4 = []
@@ -190,39 +212,39 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             with ix4.searcher() as searcher:
                 parser = QueryParser("body", ix4.schema)
                 pquery = parser.parse(query)
-                r4 = searcher.search(pquery)
+                r4 = len(searcher.search(pquery))
 
         # Someone better at python could probably make this cleaner
         # Find the variable containing the longest array, and return a string
         #    corresponding to it
 
         mc = [None, True, True, True, True]
-        if len(r1) > len(r2):
+        if (r1) > (r2):
             mc[2] = False
-        if len(r1) > len(r3):
+        if (r1) > (r3):
             mc[3] = False
-        if len(r1) > len(r4):
+        if (r1) > (r4):
             mc[4] = False
 
-        if len(r2) > len(r1):
+        if (r2) > (r1):
             mc[1] = False
-        if len(r2) > len(r3):
+        if (r2) > (r3):
             mc[3] = False
-        if len(r2) > len(r4):
+        if (r2) > (r4):
             mc[4] = False
 
-        if len(r3) > len(r1):
+        if (r3) > (r1):
             mc[1] = False
-        if len(r3) > len(r2):
+        if (r3) > (r2):
             mc[2] = False
-        if len(r3) > len(r4):
+        if (r3) > (r4):
             mc[4] = False
 
-        if len(r4) > len(r1):
+        if (r4) > (r1):
             mc[1] = False
-        if len(r4) > len(r2):
+        if (r4) > (r2):
             mc[2] = False
-        if len(r4) > len(r3):
+        if (r4) > (r3):
             mc[3] = False
 
         if (mc[1]):
@@ -235,3 +257,11 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             return "COUNTRIES"
 
     return "COCKTAILS"
+
+
+# Custom Search Engine text formatter
+
+class SpanFormatter(highlight.Formatter):
+    def format_token(self, text, token, replace=False):
+        tokentext = highlight.get_text(text, token, replace)
+        return "<" + str(HIGHLIGHT_TAG) + ">" + tokentext + "</" + str(HIGHLIGHT_TAG) + ">"
