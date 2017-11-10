@@ -22,7 +22,7 @@ COUNTRY_INDEX_PATH = os.path.join(os.path.dirname(__file__), "country_index")
 ##########################
 
 NUM_TERMS_MAX = 5
-HIGHLIGHT_TAG = "span"
+HIGHLIGHT_TAG = "mark"
 SURROUND_CHAR_MAX = 30
 
 
