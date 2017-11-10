@@ -19,12 +19,12 @@ export default class TipsySearchbar extends React.Component {
 
     search(category, event, spin) {
         event.preventDefault();
-        if (this.state.input === "") {
-            return Promise.resolve(null);
-        } else {
+        //if (this.state.input === "") {
+        //    return Promise.resolve(null);
+        //} else {
             spin();
             return window.constants.api.search(category, null, null, this.state.input);
-        }
+        //}
     }
 
     render() {
@@ -32,12 +32,18 @@ export default class TipsySearchbar extends React.Component {
         const category    = this.props.category ? this.props.category : null;
 
         return (
-             <div id = "searchForm">
-                 <input type="text" className="search" placeholder={placeholder} onChange={this.edit}/><br/>
+            <div id = "searchForm">
+                <input type="text" className="search" placeholder={placeholder} onChange={this.edit} onKeyPress={ (event) => {
+                    if (event.charCode === 13) {
+                        this.search(category, event, this.props.spin).then(results => this.props.relayout(results));
+                    }
+                }}/>
 
-                 <TipsyButton onClick={ (event) =>
-                     this.search(category, event, this.props.spin).then(results => this.props.relayout(results))
-                 }/>
+                <br/>
+
+                <TipsyButton onClick={ (event) =>
+                    this.search(category, event, this.props.spin).then(results => this.props.relayout(results))
+                }/>
             </div>
         )
     }

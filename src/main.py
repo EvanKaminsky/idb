@@ -5,6 +5,7 @@ TipsyMix's Flask Backend Interface
 
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS, cross_origin
+from urllib import unquote
 
 from backend import api
 
@@ -33,6 +34,11 @@ def search():
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
+
+    if query is not None:
+        query = unquote(query)
+    if filter_rules is not None:
+        filter_rules = unquote(filter_rules)
 
     response = api.search(category, query, filter_rules, count, page, pagesize)
     return jsonify(response)
