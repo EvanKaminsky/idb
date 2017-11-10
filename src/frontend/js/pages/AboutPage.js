@@ -23,7 +23,7 @@ export default class AboutPage extends React.Component {
 
                     <Typography color='inherit' type='display1'>Stats:</Typography>
                     <Typography color='inherit' type='headline'>
-                    Total Commits: 99 <br/>
+                    Total Commits: 258 <br/>
                     Total Issues: 57 <br/>
                     Total Unit Tests: 30 <br/><br/></Typography>
 
