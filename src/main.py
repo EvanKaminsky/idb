@@ -5,6 +5,7 @@ TipsyMix's Flask Backend Interface
 
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS, cross_origin
+from urllib import unquote, unquote_plus
 
 from backend import api
 
@@ -29,7 +30,7 @@ base_api = "/api/"
 def search():
     category =      request.args.get('category', default=None, type=str)
     query =         request.args.get('query', default=None, type=str)
-    filter_rules =  request.args.get('filterRules', default=None, type=str)
+    filter_rules =  request.args.get(unquote('filterRules'), default=None, type=str)
     count =         request.args.get('count', default=None, type=int)
     page =          request.args.get('page', default=None, type=int)
     pagesize =      request.args.get('pagesize', default=None, type=int)
