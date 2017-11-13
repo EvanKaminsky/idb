@@ -2,7 +2,8 @@ from sql import sql_fetchAll
 from decimal import Decimal
 from whoosh.fields import *
 from whoosh.index import *
-from whoosh.qparser import QueryParser
+from whoosh.qparser import MultifieldParser
+from whoosh.analysis import StemmingAnalyzer
 import whoosh.highlight as highlight
 
 
@@ -10,7 +11,11 @@ import whoosh.highlight as highlight
 ######  Index Setup  ######
 ###########################
 
-schema = Schema(title=TEXT(stored=True, field_boost=2.5), id=ID(stored=True), body=TEXT(stored=True))
+# rank highlights, only give them from desc, summ
+# figure out sentences
+
+ana = StemmingAnalyzer(minsize=1)
+schema = Schema(name=TEXT(stored=True, field_boost=2.5, analyzer=ana), id=ID(stored=True), description=TEXT(stored=True, analyzer=ana), summary=TEXT(stored=True, field_boost=1.3, analyzer=ana), tags=TEXT(stored=False, field_boost=2, analyzer=ana))
 COCKTAIL_INDEX_PATH = os.path.join(os.path.dirname(__file__), "cocktail_index")
 INGREDIENT_INDEX_PATH = os.path.join(os.path.dirname(__file__), "ingredient_index")
 BRAND_INDEX_PATH = os.path.join(os.path.dirname(__file__), "brand_index")
@@ -23,7 +28,7 @@ COUNTRY_INDEX_PATH = os.path.join(os.path.dirname(__file__), "country_index")
 
 NUM_TERMS_MAX = 5
 HIGHLIGHT_TAG = "mark"
-SURROUND_CHAR_MAX = 30
+SURROUND_CHAR_MAX = 200
 
 
 #############################
@@ -34,7 +39,7 @@ SURROUND_CHAR_MAX = 30
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
-    query = query if query else ""
+    query = query.decode("utf-8", "ignore") if query else ""
     page = page if page else 1
     pageSize = pageSize if pageSize else 10
     count = count if count else 1000
@@ -48,13 +53,13 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     ix = getIndex(category)
 
     results = []
-    if query == "":
+    if len(ana(query)) == 0:
         results = allEntries
     elif ix is None:
         results = [x for x in allEntries if (query in x.get("name"))]
     else:
         with ix.searcher() as searcher:
-            parser = QueryParser("body", ix.schema)
+            parser = MultifieldParser(["name", "description", "summary", "tags"], ix.schema)
             pquery = parser.parse(query)
             res = searcher.search(pquery)
             res.fragmenter.surround = SURROUND_CHAR_MAX
@@ -65,7 +70,18 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
             for r in results:
                 for x in res:
                     if int(r.get("id")) == int(x.get("id")):
-                        r.update({"highlights": x.highlights("body", top=NUM_TERMS_MAX)})
+                        summaryHighlights = x.highlights("summary", top=NUM_TERMS_MAX)
+                        descHighlights = x.highlights("description", top=NUM_TERMS_MAX)
+                        highlights = ""
+                        if summaryHighlights == "":
+                            if descHighlights == "":
+                                highlights = r.get("summary")
+                            else:
+                                highlights = descHighlights
+                        else:
+                            highlights = summaryHighlights
+
+                        r.update({"highlights": })
 
     results = list(applyFilterRules(results, filterRules))
 
@@ -266,5 +282,5 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
 class SpanFormatter(highlight.Formatter):
     def format_token(self, text, token, replace=False):
         tokentext = highlight.get_text(text, token, replace)
-        #return "<" + str(HIGHLIGHT_TAG) + ">" + tokentext + "</" + str(HIGHLIGHT_TAG) + ">"
-        return tokentext.upper()
+        return "<" + str(HIGHLIGHT_TAG) + ">" + tokentext + "</" + str(HIGHLIGHT_TAG) + ">"
+        #return tokentext.upper()

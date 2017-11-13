@@ -23,6 +23,7 @@ from engine import COCKTAIL_INDEX_PATH
 from engine import INGREDIENT_INDEX_PATH
 from engine import BRAND_INDEX_PATH
 from engine import COUNTRY_INDEX_PATH
+import api
 
 DEFAULT_COLOR = 255
 
@@ -80,7 +81,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
         print("brands inserted")
 
     with open('cocktails.txt') as co:
@@ -90,7 +91,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
         print("cocktails inserted")
 
     with open('countries.txt') as cu:
@@ -100,7 +101,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
         print("countries inserted")
 
     with open('ingredients.txt') as ig:
@@ -112,7 +113,7 @@ def main():
             s.insert(4, DEFAULT_COLOR)
             if s[6].strip() == 'NULL':
                 s[6] = 0
-            c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
         print("ingredients inserted")
 
     with open('cocktail_country.txt') as cc:
@@ -139,11 +140,13 @@ def main():
             a = [int(s[0].strip()), int(s[1].strip())]
             c.execute('INSERT INTO BRAND_COUNTRY values (%s, %s)', a)
 
+    print("links created")
+
     with open('tags.txt') as cc:
         for line9 in cc:
             s = line9.split(' ')
             s[0] = int(s[0])
-            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: filter(lambda x: x in printable, str(t).strip()), s)))
+            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
 
     with open('brand_tags.txt') as cc:
         for line10 in cc:
@@ -169,7 +172,7 @@ def main():
             a = [int(s[0].strip()), int(s[1].strip())]
             c.execute('INSERT INTO INGREDIENT_TAGS values (%s, %s)', a)
 
-    print("links created")
+    print("tags created")
 
     c.close()
     cnx.commit()
@@ -195,6 +198,8 @@ def createIndex():
         os.mkdir(COUNTRY_INDEX_PATH)
     ixCo = create_in(COUNTRY_INDEX_PATH, schema)
 
+    print("index allocated")
+
     cocktailData = sql_fetchAll("COCKTAILS")
     ingData = sql_fetchAll("INGREDIENTS")
     brData = sql_fetchAll("BRANDS")
@@ -202,23 +207,33 @@ def createIndex():
 
     writer = ixCocktail.writer()
     for data in cocktailData:
-        writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+        tags = [api.tagQuery(ID) for ID in api.tagsInCocktailQuery(data.get("id"))]
+        tagStr = " ".join(tags)
+        writer.add_document(name=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), description=data.get("description").decode('utf-8'), summary=data.get("summary").decode('utf-8'), tags=tagStr.decode('utf-8'))
     writer.commit()
 
     writer = ixIng.writer()
     for data in ingData:
-        writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+        tags = [api.tagQuery(ID) for ID in api.tagsInIngredientQuery(data.get("id"))]
+        tagStr = " ".join(tags)
+        writer.add_document(name=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), description=data.get("description").decode('utf-8'), summary=data.get("summary").decode('utf-8'), tags=tagStr.decode('utf-8'))
     writer.commit()
 
     writer = ixBr.writer()
     for data in brData:
-        writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+        tags = [api.tagQuery(ID) for ID in api.tagsInBrandQuery(data.get("id"))]
+        tagStr = " ".join(tags)
+        writer.add_document(name=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), description=data.get("description").decode('utf-8'), summary=data.get("summary").decode('utf-8'), tags=tagStr.decode('utf-8'))
     writer.commit()
 
     writer = ixCo.writer()
     for data in coData:
-        writer.add_document(title=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), body=data.get("description").decode('utf-8'))
+        tags = [api.tagQuery(ID) for ID in api.tagsInCocktailQuery(data.get("id"))]
+        tagStr = " ".join(tags)
+        writer.add_document(name=data.get("name").decode('utf-8'), id=str(data.get("id")).decode('utf-8'), description=data.get("description").decode('utf-8'), summary=data.get("summary").decode('utf-8'), tags=tagStr.decode('utf-8'))
     writer.commit()
+
+    print("index created")
 
     print("done")
 
