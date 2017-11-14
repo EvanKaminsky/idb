@@ -11,7 +11,7 @@ import whoosh.highlight as highlight
 ######  Index Setup  ######
 ###########################
 
-# rank highlights, only give them from desc, summ
+# rank highlights
 # figure out sentences
 
 ana = StemmingAnalyzer(minsize=1)
@@ -39,7 +39,7 @@ SURROUND_CHAR_MAX = 200
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
     category = inferCategory(category, query, filterRules, count, page, pageSize)
-    query = query.decode("utf-8", "ignore") if query else ""
+    query = query.decode("utf-8", "ignore") if query else "".decode("utf-8", "ignore")
     page = page if page else 1
     pageSize = pageSize if pageSize else 10
     count = count if count else 1000
@@ -53,7 +53,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     ix = getIndex(category)
 
     results = []
-    if len(ana(query)) == 0:
+    if len(list(ana(query))) == 0:
         results = allEntries
     elif ix is None:
         results = [x for x in allEntries if (query in x.get("name"))]
@@ -81,7 +81,7 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
                         else:
                             highlights = summaryHighlights
 
-                        r.update({"highlights": })
+                        r.update({"highlights": highlights})
 
     results = list(applyFilterRules(results, filterRules))
 
