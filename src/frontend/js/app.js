@@ -11,6 +11,7 @@ import IngredientsPage  from './pages/IngredientsPage.js';
 import BrandsPage       from './pages/BrandsPage.js';
 import CountriesPage    from './pages/CountriesPage.js';
 import AboutPage        from './pages/AboutPage.js';
+import NotFoundPage     from "./pages/NotFoundPage.js";
 
 import CocktailDetailPage   from "./details/cocktail_model.js";
 import IngredientDetailPage from "./details/ingredient_model.js";
@@ -46,6 +47,8 @@ class TipsyApp extends React.Component {
                     <Route path='/ingredient-detail/:slug'  component={IngredientDetailPage}/>
                     <Route path='/brand-detail/:slug'       component={BrandDetailPage}/>
                     <Route path='/country-detail/:slug'     component={CountryDetailPage}/>
+
+                    <Route path="*" component={NotFoundPage}/>
                 </Switch>
             </div>
         </BrowserRouter>
