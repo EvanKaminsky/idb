@@ -7,6 +7,7 @@ from sql import sql_select, sql_describe_simple
 # The return format is JSON objects (python dictionaries/lists) as defined in apiary
 # Author: Balazs
 
+
 ###################
 ###  Constants  ###
 ###################
@@ -93,7 +94,6 @@ def cocktailDetail(slug):
     spirit = scrapeSpirit(description)
     preparation = scrapePreparation(description)
     instructions = scrapeInstructions(description)
-
 
     brands = [brandLinkdataQuery(ID) for ID in brandsInCocktailQuery(cocktailID)]
     ingredients = [ingredientLinkdataQuery(ID) for ID in ingredientsInCocktailQuery(cocktailID)]
@@ -266,6 +266,7 @@ def countryDetail(slug):
 ###  Helper Methods ###
 #######################
 
+
 # Changes category to the correct form expected by our search engine
 
 def fixCategory(category):
@@ -347,6 +348,7 @@ def scrapeInstructions(description):
 ### SQL Wrappers  ###
 #####################
 
+
 ################### Link Data ###################
 
 # returns the label, id, and url of a desired cocktail
@@ -400,6 +402,7 @@ def ingredientsInCocktailQuery(ID):
 def countriesInCocktailQuery(ID):
     return [match.get("countryID") for match in sql_select("countryID", TABLE_COCKTAIL_COUNTRY, "cocktailID = " + str(ID))]
 
+
 ################### In Ingredient ###################
 
 
@@ -423,6 +426,7 @@ def countriesInIngredientQuery(ID):
 
 ################### In Brand ###################
 
+
 # returns a list of ingredientIDs of ingredients linked to by a given brand
 
 def ingredientsInBrandQuery(ID):
@@ -443,6 +447,7 @@ def countriesInBrandQuery(ID):
 
 ################### In Country ###################
 
+
 # returns a list of ingredientIDs of ingredients linked to by a given country
 
 def ingredientsInCountryQuery(ID):
@@ -462,6 +467,7 @@ def brandsInCountryQuery(ID):
 
 
 ###################### Tags ######################
+
 
 # returns the list of tags associated with a given cocktail
 
@@ -494,6 +500,7 @@ def tagQuery(ID):
 
 
 ################ Instance Queries #################
+
 
 # returns the cocktail instance for the given ID
 
