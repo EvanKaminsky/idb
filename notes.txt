@@ -68,6 +68,10 @@ python src/backend/write_to_db.py
 # Launch the SQL server proxy
 ./cloud_sql_proxy -instances="tipsymix-ttp:us-central1:tipsy-db"=tcp:3306
 
+# Install Selenium Driver (linux)
+# Just get it into your PATH
+sudo cp "src/tests/selenium drivers/chromedriver" "/usr/local/bin"
+
 # Launch all unit tests
 # (must be run from the src directory)
 python -m unittest discover
