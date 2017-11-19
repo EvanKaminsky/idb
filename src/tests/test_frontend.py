@@ -6,6 +6,7 @@ class SampleTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_search_in_python_org(self):
         driver = self.driver
@@ -26,6 +27,7 @@ class HomeTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
@@ -44,6 +46,7 @@ class CocktailsTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
@@ -62,6 +65,7 @@ class IngredientsTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
@@ -80,6 +84,7 @@ class BrandsTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
@@ -98,6 +103,7 @@ class CountriesTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
@@ -116,13 +122,14 @@ class DetailPageTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_detailBox(self):
         driver = self.driver
         driver.get("http://tipsymix.com/cocktail-detail/1")
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
 
-        self.assertTrue(len(list(driver.find_elements_by_class("detail-box"))) > 0)
+        self.assertTrue(len(list(driver.find_elements_by_class_name("detail-box"))) > 0)
 
     def tearDown(self):
         self.driver.close()
@@ -134,6 +141,7 @@ class AboutUsTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
+        self.driver.implicitly_wait(5)
 
     def test_title(self):
         driver = self.driver
