@@ -2,10 +2,30 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+#CHROME_PATH = '/usr/bin/google-chrome'
+CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
+WINDOW_SIZE = "1920,1080"
+
+def createWebdriver():
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
+
+    try:
+        # if we defined a custom path
+        chrome_options.binary_location = CHROME_PATH
+    except NameError:
+        pass
+
+    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,
+                                                    chrome_options=chrome_options)
+    return driver
+
+
 class SampleTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_search_in_python_org(self):
@@ -26,7 +46,7 @@ class SampleTest(unittest.TestCase):
 class HomeTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
@@ -45,7 +65,7 @@ class HomeTest(unittest.TestCase):
 class CocktailsTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
@@ -64,7 +84,7 @@ class CocktailsTest(unittest.TestCase):
 class IngredientsTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
@@ -83,7 +103,7 @@ class IngredientsTest(unittest.TestCase):
 class BrandsTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
@@ -102,7 +122,7 @@ class BrandsTest(unittest.TestCase):
 class CountriesTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
@@ -121,7 +141,7 @@ class CountriesTest(unittest.TestCase):
 class DetailPageTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_detailBox(self):
@@ -140,7 +160,7 @@ class DetailPageTest(unittest.TestCase):
 class AboutUsTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
