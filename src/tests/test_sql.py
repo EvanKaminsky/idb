@@ -4,7 +4,9 @@
 from backend import sql
 import unittest
 
+CONNECTED = sql.sql_test()
 
+@unittest.skipIf(not CONNECTED, "Not Connected to Database")
 class SqlTest(unittest.TestCase):
     def test_fetchAll(self):
         cocktails = sql.sql_fetchAll("cocktails")
@@ -47,7 +49,7 @@ class SqlTest(unittest.TestCase):
         for cocktail in cocktailIDs:
             for cocktail2 in cocktailIDs:
                 if not cocktail is cocktail2:
-                    self.assertTrue( cocktail["id"] != cocktail2["id"])
+                    self.assertTrue(cocktail["id"] != cocktail2["id"])
 
     # test uniqueness of stdame
     def test_uniquestdNames(self):
