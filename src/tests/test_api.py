@@ -2,10 +2,14 @@
 # Unit Test Suite for api.py
 
 from backend import api
+from backend import sql
 import unittest
 
+CONNECTED = sql.sql_test()
 
 class APITest(unittest.TestCase):
+
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_api(self):
         self.assertTrue(len(api.search(query="mint", category="cocktail")) > 0)
 
@@ -16,6 +20,7 @@ class APITest(unittest.TestCase):
         self.assertEquals(api.fixCategory("IngredieNt"), "INGREDIENTS")
         self.assertEquals(api.fixCategory("braNd"), "BRANDS")
 
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_countryDetail(self):
         country1 = api.countryDetail(1)
         country1Again = api.countryDetail(1)
@@ -31,6 +36,7 @@ class APITest(unittest.TestCase):
         self.assertFalse(country5["cocktails"] is None)
         self.assertFalse(country5["ingredients"] is None)
 
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_cocktailDetail(self):
         cocktail1 = api.cocktailDetail(1)
         cocktail1Again = api.cocktailDetail(1)
@@ -49,6 +55,7 @@ class APITest(unittest.TestCase):
         self.assertFalse(cocktail5["countries"] is None)
         self.assertFalse(cocktail5["ingredients"] is None)
 
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_ingredientDetail(self):
         ingredient1 = api.ingredientDetail(1)
         ingredient1Again = api.ingredientDetail(1)
@@ -63,6 +70,7 @@ class APITest(unittest.TestCase):
         self.assertFalse(ingredient5["cocktails"] is None)
         self.assertFalse(ingredient5["countries"] is None)
 
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_brandDetail(self):
         brand1 = api.brandDetail(1)
         brand1Again = api.brandDetail(1)
@@ -77,6 +85,7 @@ class APITest(unittest.TestCase):
         self.assertFalse(brand5["cocktails"] is None)
         self.assertFalse(brand5["ingredients"] is None)
 
+    @unittest.skipIf(not CONNECTED, "Not Connected to Database")
     def test_describe(self):
         description_response = api.describe()
         self.assertFalse(description_response["cocktail_fields"] is None)

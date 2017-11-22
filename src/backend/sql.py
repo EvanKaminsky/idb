@@ -30,30 +30,50 @@ class DB:
         return cursor
 
     def connect_to_cloudsql(self):
-        # When deployed to App Engine, the `SERVER_SOFTWARE` environment variable
-        # will be set to 'Google App Engine/version'.
-        if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
-            # Connect using the unix socket located at
-            # /cloudsql/cloudsql-connection-name.
-            cloudsql_unix_socket = os.path.join(
-                '/cloudsql', CLOUDSQL_CONNECTION_NAME)
+        try:
+            # When deployed to App Engine, the `SERVER_SOFTWARE` environment variable
+            # will be set to 'Google App Engine/version'.
 
-            db = MySQLdb.connect(
-                unix_socket=cloudsql_unix_socket,
-                user=CLOUDSQL_USER,
-                passwd=CLOUDSQL_PASSWORD,
-                db='tipsy_backend')
+            if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
 
-        # If the unix socket is unavailable, then try to connect using TCP. This
-        # will work if you're running a local MySQL server or using the Cloud SQL
-        # proxy, for example:
-        #
-        #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
-        #
-        else:
-            db = MySQLdb.connect(
-                host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
-        return db
+                # Connect using the unix socket located at
+                # /cloudsql/cloudsql-connection-name.
+
+                cloudsql_unix_socket = os.path.join(
+                    '/cloudsql', CLOUDSQL_CONNECTION_NAME)
+
+                db = MySQLdb.connect(
+                    unix_socket=cloudsql_unix_socket,
+                    user=CLOUDSQL_USER,
+                    passwd=CLOUDSQL_PASSWORD,
+                    db='tipsy_backend')
+
+            # If the unix socket is unavailable, then try to connect using TCP. This
+            # will work only while running a local MySQL server or using the Cloud SQL
+            # proxy, for example:
+            #
+            #   $ cloud_sql_proxy -instances=your-connection-name=tcp:3306
+            #
+            else:
+                db = MySQLdb.connect(
+                    host='127.0.0.1', user='root', passwd='tipsymix', db='tipsy_backend')
+            return db
+
+        except Exception as e:
+            return None
+
+
+# Tests the connection status
+
+def sql_test():
+    try:
+        db = DB()
+        if db is None or db.conn is None:
+            return False
+    except:
+        return False
+    return True
+
 
 # SELECT query
 #   + SELECT select_q FROM from_q WHERE where_q

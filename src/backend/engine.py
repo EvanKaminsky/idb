@@ -11,9 +11,6 @@ import whoosh.highlight as highlight
 ######  Index Setup  ######
 ###########################
 
-# rank highlights
-# figure out sentences
-
 ana = StemmingAnalyzer(minsize=1)
 schema = Schema(name=TEXT(stored=True, field_boost=2.5, analyzer=ana), id=ID(stored=True), description=TEXT(stored=True, analyzer=ana), summary=TEXT(stored=True, field_boost=1.3, analyzer=ana), tags=TEXT(stored=False, field_boost=2, analyzer=ana))
 COCKTAIL_INDEX_PATH = os.path.join(os.path.dirname(__file__), "cocktail_index")
@@ -38,6 +35,9 @@ SURROUND_CHAR_MAX = 200
 # Query parser and intelligent search engine implementation
 
 def runSearch(category=None, query=None, filterRules=None, count=None, page=None, pageSize=None):
+
+    ### Compute non-provided values ###
+
     category = inferCategory(category, query, filterRules, count, page, pageSize)
     query = query.decode("utf-8", "ignore") if query else "".decode("utf-8", "ignore")
     page = page if page else 1
@@ -46,9 +46,13 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     if page > (count // pageSize):
         page = 1
 
+    ### Fetch All Instances ###
+
     allEntries = sql_fetchAll(category)
     if allEntries is None:
         return [{"error": "an sql access error occurred"}]
+
+    ### Apply Search Algorithm ###
 
     ix = getIndex(category)
 
@@ -58,6 +62,9 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
     elif ix is None:
         results = [x for x in allEntries if (query in x.get("name"))]
     else:
+
+        ### Use Search Index ###
+
         with ix.searcher() as searcher:
             parser = MultifieldParser(["name", "description", "summary", "tags"], ix.schema)
             pquery = parser.parse(query)
@@ -82,6 +89,8 @@ def runSearch(category=None, query=None, filterRules=None, count=None, page=None
                             highlights = summaryHighlights
 
                         r.update({"highlights": highlights})
+
+    ### Sort and Filter Results ###
 
     results = list(applyFilterRules(results, filterRules))
 
@@ -128,6 +137,7 @@ def getIndex(category):
         print(e)
         return None
 
+
 # Applies a set of filtering and sorting rules to the result set
 
 def applyFilterRules(results, filterRules):
@@ -168,14 +178,16 @@ def applySort(results, sortString):
 # Filters results by a given set of filtering rules
 
 def applyFilter(results, filterString):
-    rules = filterString.split("-")
+    rules = filterString.split(")-(")
+    rules[0] = rules[0][1:]
+    rules[-1] = rules[-1][0:-1]
     for r in rules:
-        params = r[2:-2].split("][")
-        if len(params) != 2:
-            continue
+        r = r[1:-1]
+        p1 = r[0:r.find("]")]
+        p2 = r[r.find("[") + 1:]
 
-        rex = re.compile(params[1])
-        results = (x for x in results if (rex.search(x.get(params[0])) is not None))
+        rex = re.compile(p2)
+        results = (x for x in results if (rex.search(x.get(p1)) is not None))
     return results
 
 
@@ -232,9 +244,10 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
                 pquery = parser.parse(query)
                 r4 = len(searcher.search(pquery))
 
-        # Someone better at python could probably make this cleaner
         # Find the variable containing the longest array, and return a string
         #    corresponding to it
+
+        # This is done by eliminating the arrays failing the maximality condition
 
         mc = [None, True, True, True, True]
         if (r1) > (r2):

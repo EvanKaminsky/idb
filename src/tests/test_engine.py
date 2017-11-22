@@ -2,8 +2,10 @@
 # Unit Test Suite for engine.py
 
 from backend import engine
+from backend import sql
 import unittest
 
+CONNECTED = sql.sql_test()
 
 class EngineTest(unittest.TestCase):
     def test_default(self):

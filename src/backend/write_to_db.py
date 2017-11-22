@@ -54,6 +54,9 @@ def get_average_color(image):
         count += 1
     return ((r // count), (g // count), (b // count))
 
+
+# Write all available data into database
+
 def main():
     printable = set(string.printable)
 
