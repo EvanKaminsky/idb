@@ -7,6 +7,8 @@ import TipsyGrid from "../components/TipsyGrid.js";
 import Stepper from "../components/Stepper.js"
 import FilterSort from "../components/FilterSort.js";
 
+import { backgroundStyle } from "../constants.js";
+
 export default class GridPage extends React.Component {
 
     // Required Props: category, parentState, parentHistory, detailURL, descriptorFields, constructCard
@@ -133,7 +135,7 @@ export default class GridPage extends React.Component {
         const placeholder = "Search for " + this.props.category + "...";
 
         return (
-            <div>
+            <div className={{backgroundStyle}}>
                 <h1>Tipsy Mix</h1>
                 <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
 
