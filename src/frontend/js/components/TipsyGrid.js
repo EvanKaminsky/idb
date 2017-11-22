@@ -19,7 +19,7 @@ class TipsyGrid extends React.Component {
 
         return (
             <form className={classes.container} noValidate autoComplete="off">
-            <Grid container className={classes.root}>
+            <Grid container style={{margin: 0, width: '100%',}} className={classes.root}>
                 <Grid item xs={12}>
                     <Grid container justify="center" spacing={16}>
                         {this.props.elements}

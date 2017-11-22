@@ -37,12 +37,15 @@ export default class GridPage extends React.Component {
         this.nextPage = this.nextPage.bind(this);
         this.previousPage = this.previousPage.bind(this);
         this.relayout = this.relayout.bind(this);
-        this.setDescriptors = this.setDescriptors.bind(this);
         this.openDetail = this.openDetail.bind(this);
     }
 
     componentDidMount() {
-        window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
+        window.constants.api.getDescriptions(this.props.descriptorFields).then(fields => {
+            if (this.state.descriptors === null && fields !== null) {
+                this.setState({descriptors: fields});
+            }
+        });
     }
 
 
@@ -96,12 +99,6 @@ export default class GridPage extends React.Component {
         }
     }
 
-    setDescriptors(json) {
-        if (this.state.descriptors === null && json !== null && json[this.props.descriptorFields] !== null) {
-            this.setState({descriptors: json[this.props.descriptorFields].map(field => field.Field)});
-        }
-    }
-
 
     // Local //
 
@@ -139,9 +136,11 @@ export default class GridPage extends React.Component {
             <div>
                 <h1>Tipsy Mix</h1>
                 <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
+
                 <FilterSort descriptors={this.state.descriptors} state={this.filter_state} filterAction={this.filter}/>;
-                <TipsyGrid elements={display}/>
                 {stepper}
+
+                <TipsyGrid elements={display}/>
             </div>
         )
     }
