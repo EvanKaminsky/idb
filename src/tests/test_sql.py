@@ -4,10 +4,9 @@
 from backend import sql
 import unittest
 
-CONNECTED = sql.sql_test()
-
-@unittest.skipIf(not CONNECTED, "Not Connected to Database")
 class SqlTest(unittest.TestCase):
+
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_fetchAll(self):
         cocktails = sql.sql_fetchAll("cocktails")
         ingredients = sql.sql_fetchAll("ingredients")
@@ -29,6 +28,7 @@ class SqlTest(unittest.TestCase):
         self.assertTrue(sql.sql_select("*", "BRANDS") == brands)
         self.assertTrue(sql.sql_select("*", "COUNTRIES") == countries)
 
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_returnType(self):
         cocktailNames = sql.sql_select("name", "COCKTAILS")
         self.assertTrue(type(cocktailNames) is list or type(cocktailNames) is tuple)
@@ -37,6 +37,7 @@ class SqlTest(unittest.TestCase):
         self.assertTrue("name" in firstCocktail)
         self.assertTrue("id" not in firstCocktail)
 
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_badQuery(self):
         noResult = sql.sql_select("label", "COCKTAILS")
         self.assertTrue(noResult is None)
@@ -44,6 +45,7 @@ class SqlTest(unittest.TestCase):
         self.assertTrue(noResult is None)
 
     # test uniqueness of ids
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_uniqueIDs(self):
         cocktailIDs = sql.sql_select("id", "COCKTAILS")
         for cocktail in cocktailIDs:
@@ -52,6 +54,7 @@ class SqlTest(unittest.TestCase):
                     self.assertTrue(cocktail["id"] != cocktail2["id"])
 
     # test uniqueness of stdame
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_uniquestdNames(self):
         ingredientstdnames = sql.sql_select("stdname", "INGREDIENTS")
         for ingredient in ingredientstdnames:
