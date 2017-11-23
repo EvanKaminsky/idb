@@ -8,4 +8,5 @@ sed -i -e 's/from backend //g' *.py
 coverage2 run --omit=/usr/* --include=./*.py runTests.py || coverage run --omit=/usr/* --include=./*.py runTests.py
 coverage2 html || coverage html
 coverage2 report -m || coverage report -m
+rm -rf *.py*
 open ./htmlcov/index.html || xdg-open ./htmlcov/index.html

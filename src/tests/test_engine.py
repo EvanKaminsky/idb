@@ -5,8 +5,6 @@ from backend import engine
 from backend import sql
 import unittest
 
-CONNECTED = sql.sql_test()
-
 class EngineTest(unittest.TestCase):
     def test_default(self):
         default = engine.inferCategory()
@@ -19,6 +17,8 @@ class EngineTest(unittest.TestCase):
         self.assertTrue(engine.inferCategory("BRANDS") == "BRANDS")
         self.assertTrue(engine.inferCategory("COUNTRIES") == "COUNTRIES")
 
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_blankSearch(self):
         blankSearch = engine.runSearch()
         self.assertTrue(type(blankSearch) is dict)
         self.assertTrue("results" in blankSearch)

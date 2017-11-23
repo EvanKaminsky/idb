@@ -111,7 +111,7 @@ def sql_describe(category):
         cursor.close()
         return result
     except Exception as e:
-        print(e)
+        # print(e)
         return None
 
 
