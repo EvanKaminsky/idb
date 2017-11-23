@@ -84,7 +84,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
+            c.execute('INSERT INTO BRANDS values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: str(t).decode("utf-8", "ignore").strip(), s)))
         print("brands inserted")
 
     with open('cocktails.txt') as co:
@@ -94,7 +94,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
+            c.execute('INSERT INTO COCKTAILS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: str(t).decode("utf-8", "ignore").strip(), s)))
         print("cocktails inserted")
 
     with open('countries.txt') as cu:
@@ -104,7 +104,7 @@ def main():
                 break
             s[0] = int(s[0])
             s.insert(4, DEFAULT_COLOR)
-            c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
+            c.execute('INSERT INTO COUNTRIES values (%s, %s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: str(t).decode("utf-8", "ignore").strip(), s)))
         print("countries inserted")
 
     with open('ingredients.txt') as ig:
@@ -116,7 +116,7 @@ def main():
             s.insert(4, DEFAULT_COLOR)
             if s[6].strip() == 'NULL':
                 s[6] = 0
-            c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
+            c.execute('INSERT INTO INGREDIENTS values (%s, %s, %s, %s, %s, %s, %s, %s)', tuple(map(lambda t: str(t).decode("utf-8", "ignore").strip(), s)))
         print("ingredients inserted")
 
     with open('cocktail_country.txt') as cc:
@@ -149,7 +149,7 @@ def main():
         for line9 in cc:
             s = line9.split(' ')
             s[0] = int(s[0])
-            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: t.decode("utf-8", "ignore").strip(), s)))
+            c.execute('INSERT INTO TAGS values (%s, %s)', tuple(map(lambda t: str(t).decode("utf-8", "ignore").strip(), s)))
 
     with open('brand_tags.txt') as cc:
         for line10 in cc:
