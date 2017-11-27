@@ -12,12 +12,23 @@ export default class HomePage extends React.Component {
         super(props);
         this.state = {isLoading: false};
 
+        this.search = this.search.bind(this);
         this.relayout = this.relayout.bind(this);
         this.spin = this.spin.bind(this);
     }
 
     spin() {
         this.setState({isLoading: true});
+    }
+
+    search(query) {
+        if (this.state.isLoading) {
+            return;
+        }
+        this.state.isLoading = true;
+        window.constants.api.search(null, null, null, query, null).then(json => {
+            this.relayout(json);
+        });
     }
 
     relayout(json) {
@@ -49,7 +60,7 @@ export default class HomePage extends React.Component {
     }
 
     render() {
-        const display = this.state.isLoading ? <Spinner/> : <TipsySearchbar spin={this.spin} relayout={this.relayout}/>;
+        const display = this.state.isLoading ? <Spinner/> : <TipsySearchbar spin={this.spin} searchAction={this.search}/>;
 
         return (
             <div style={backgroundStyle}>

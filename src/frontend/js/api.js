@@ -60,7 +60,9 @@ function API() {
             modified = true;
         }
          if (query !== null && query !== undefined) {
-            url += (modified ? "&query=" : "query=") + encodeURIComponent(query);
+            if (query !== "") {
+                url += (modified ? "&query=" : "query=") + encodeURIComponent(query);
+            }
         }
         if (page !== null && page !== undefined) {
             url += "&page=" + page;
