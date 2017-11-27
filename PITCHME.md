@@ -12,7 +12,7 @@ Group 3
 - Mica: 
 - Abhi:
 - Evan:
-- Balazs: 
+- Balazs: I designed the backend of our website. This includes the interface to our database, the implementation of our api calls, as well as our search engine (complete with support for sorting, filtering, and paginating results on the backend). I also set up our python unit testing suite, implemented automatic code styling, scraped card colors from our image urls, and maintained our API documentation.
 
 ---
 
@@ -30,10 +30,13 @@ Group 3
 *NOTE: We should include screenshots to accompany our points*
 
 - What did we do well?
+	red-zone offense
 - What did we learn?
+	not as much as we could have
 - What can we do better?
+	start earlier, get past the simple mistakes faster
 - What puzzles us?
-
+	why we had nobody to teach us react/sqlalchemy/GCP/selenium/"what is an api" etc
 ---
 
 ### Other Critique
