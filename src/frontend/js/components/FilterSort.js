@@ -1,16 +1,24 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
+import Typography from 'material-ui/Typography';
 
 import FilterSortForm from "./FilterSortForm.js";
 import FilterSortField from "./FilterSortField.js";
 
 const styles = theme => ({
     root: {
-        backgroundColor: '#FFFFFF',
+        display: 'flex',
+        backgroundColor: '#FAFAFA',
         margin: 0
+    },
+    pagination: {
+        color: '#686565',
+        marginRight: theme.spacing.unit * 4,
+        marginTop: 'auto',
+        marginLeft: 'auto',
+        marginBottom: 'auto',
     }
 });
 
@@ -66,7 +74,15 @@ class FilterSort extends React.Component {
 
         const sort_option_elements = [<option key={1} value={"a"}>A-Z</option>, <option key={2} value={"d"}>Z-A</option>];
 
+        const current_page = this.props.pagination[0];
+        const total_pages = this.props.pagination[1];
+        var pagination = null;
+        if (total_pages > 0) {
+            pagination = <div className={classes.pagination}>{"Page " + current_page + " of "+ total_pages}</div>
+        }
+
         return (
+            <div>
             <Grid className={classes.root}>
                 <FilterSortForm title="Sort" id="sort" default={this.state.sort} options={field_option_elements} onChange={ (event) => {
                     this.setState({sort: event.target.value}, function stateUpdateComplete() {
@@ -88,7 +104,11 @@ class FilterSort extends React.Component {
                         this.generateFilterSortString();
                     }.bind(this));
                 }}/>
+
+                {pagination}
+
             </Grid>
+            </div>
         );
     }
 }

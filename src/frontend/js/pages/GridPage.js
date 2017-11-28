@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from 'material-ui/Grid';
+import Typography from 'material-ui/Typography';
 
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
@@ -139,7 +140,13 @@ export default class GridPage extends React.Component {
                 <h1>Tipsy Mix</h1>
                 <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
 
-                <FilterSort descriptors={this.state.descriptors} state={this.filter_state} filterAction={this.filter}/>;
+                <FilterSort
+                    descriptors={this.state.descriptors}
+                    state={this.filter_state}
+                    filterAction={this.filter}
+                    pagination={[this.state.page, this.state.total_pages]}
+                />
+
                 {stepper}
 
                 <TipsyGrid elements={display}/>
