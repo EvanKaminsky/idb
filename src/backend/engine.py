@@ -216,7 +216,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             r1 = []
         else:
             with ix1.searcher() as searcher:
-                parser = QueryParser("body", ix1.schema)
+                parser = MultifieldParser(["name", "description", "summary", "tags"], ix1.schema)
                 pquery = parser.parse(query)
                 r1 = len(searcher.search(pquery))
 
@@ -224,7 +224,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             r2 = []
         else:
             with ix2.searcher() as searcher:
-                parser = QueryParser("body", ix2.schema)
+                parser = MultifieldParser(["name", "description", "summary", "tags"], ix2.schema)
                 pquery = parser.parse(query)
                 r2 = len(searcher.search(pquery))
 
@@ -232,7 +232,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             r3 = []
         else:
             with ix3.searcher() as searcher:
-                parser = QueryParser("body", ix3.schema)
+                parser = MultifieldParser(["name", "description", "summary", "tags"], ix3.schema)
                 pquery = parser.parse(query)
                 r3 = len(searcher.search(pquery))
 
@@ -240,7 +240,7 @@ def inferCategory(category=None, query=None, filterRules=None, count=None, page=
             r4 = []
         else:
             with ix4.searcher() as searcher:
-                parser = QueryParser("body", ix4.schema)
+                parser = MultifieldParser(["name", "description", "summary", "tags"], ix4.schema)
                 pquery = parser.parse(query)
                 r4 = len(searcher.search(pquery))
 

@@ -56,6 +56,21 @@ class HomeTest(unittest.TestCase):
 
         self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
 
+     def test_search_navigation(self):
+     	driver = self.driver
+        driver.get("http://tipsymix.com")
+        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        searchButton = list(driver.find_elements_by_class_name("detail-box"))[0]
+        prevUrl = driver.getCurrentUrl()
+        searchButton.send_keys(Keys.RETURN)
+        self.assertTrue(driver.getCurrentUrl() != prevUrl)
+
+        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        searchButton = list(driver.find_elements_by_class_name("detail-box"))[0]
+        prevUrl = driver.getCurrentUrl()
+        searchButton.click()
+        self.assertTrue(driver.getCurrentUrl() != prevUrl)
+
     def tearDown(self):
         self.driver.close()
 
