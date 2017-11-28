@@ -52,7 +52,7 @@ export default class HomePage extends React.Component {
             pathname: path,
             state: {
                 elements:     json.results,
-                current_page: json.page,             // Stepper back bug | json.results.length > 0 ? json.page : 0,
+                page:         json.page,             // Stepper back bug | json.results.length > 0 ? json.page : 0,
                 total_pages:  json.totalPages,
                 page_size:    json.count
             }

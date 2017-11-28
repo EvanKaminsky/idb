@@ -93,9 +93,9 @@ export default class GridPage extends React.Component {
         this.state.isLoading = false;
         if (json !== null) {
             this.setState({
-                elements:      json.results,
-                total_pages:   json.totalPages,
-                page:  json.page,
+                elements:    json.results,
+                total_pages: json.totalPages,
+                page:   json.page,
                 filter: json.filter,
                 query:  json.query
             });
