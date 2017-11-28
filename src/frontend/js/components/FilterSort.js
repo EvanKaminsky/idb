@@ -8,13 +8,9 @@ import FilterSortForm from "./FilterSortForm.js";
 import FilterSortField from "./FilterSortField.js";
 
 const styles = theme => ({
-    container: {
-        display: 'flex',
-        flexWrap: 'wrap',
-    },
-    root :{
+    root: {
         backgroundColor: '#FFFFFF',
-        margin: theme.spacing.unit,
+        margin: 0
     }
 });
 
@@ -71,7 +67,7 @@ class FilterSort extends React.Component {
         const sort_option_elements = [<option key={1} value={"a"}>A-Z</option>, <option key={2} value={"d"}>Z-A</option>];
 
         return (
-            <Grid container className={classes.root}>
+            <Grid className={classes.root}>
                 <FilterSortForm title="Sort" id="sort" default={this.state.sort} options={field_option_elements} onChange={ (event) => {
                     this.setState({sort: event.target.value}, function stateUpdateComplete() {
                         this.generateFilterSortString();
