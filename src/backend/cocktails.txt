@@ -1,578 +1,1327 @@
 1
+like_hand_grenade
+Like Hand Grenade
+http://www.1001cocktails.com/images/like-hand-grenade-5504.jpg
+Stir ingredients together in a collins glass filled with ice cubes. Add water and sugar if desired, to taste, and serve.
+The specialty cocktail drink known as the Hand Grenade is sold frozen or on-the-rocks exclusively by 721 Bourbon, Inc.
+NULL
+2
+woo_woo
+Woo Woo
+http://www.1001cocktails.com/images/woo-woo-3715.jpg
+Pour all ingredients into a highball glass over ice cubes, stir, and serve.
+A Woo Woo is an alcoholic beverage made of vodka, peach schnapps, and cranberry juice.
+NULL
+3
+flaming_lamborghini
+Flaming Lamborghini
+http://www.1001cocktails.com/images/flaming-lamborghini-5541.jpg
+Pour the sambuca and kahlua into a cocktail glass. Pour the baileys and blue curacao into two seperate shot glasses either side of the cocktail glass. Set light the concoction in the cocktail glass and start to drink through a straw (this drink should be drunk in one). As the bottom of the glass is reached put out the fire by pouring the baileys and blue curacao into the cocktail glass and keep drinking till it's all gone.
+A cocktail served in a shot glass.
+NULL
+4
+miami_vice
+Miami Vice
+http://www.1001cocktails.com/images/miami-vice-5505.jpg
+1. Mix pina colada with 2.5 oz. of rum w/ ice. Set aside.	2. Mix daiquiri with 2.5 oz. of rum w/ ice.	3. While frozen, add pina colada mix to a cocktail glass. Add the daiquiri mix on top, keeping it seperated from the pina colada mix.
+A shaked cocktail made with pina colada.
+NULL
+5
+blue_lagoon
+Blue Lagoon
+http://www.1001cocktails.com/images/blue-lagoon-50.jpg
+Pour vodka and curacao over ice in a highball glass. Fill with lemonade, top with the cherry, and serve. 
+Blue Lagoon is a popular summer cocktail featuring blue Curacao.
+NULL
+6
+blow_job
+Blow Job
+http://www.1001cocktails.com/images/blowjob3.jpg
+Pour liqueurs into a shot glass and top with whipped cream. Have an individual place their hands behind their back, then, pick-up the filled shot glass with their mouth, tilt head back, and drink.
+A cocktail served in a shot glass.
+NULL
+7
+virgin_sex_on_the_beach
+Virgin Sex On The Beach
+http://www.1001cocktails.com/images/pas_de_photo.jpg
+Mix equal parts of orange juice and cranberry juice, add nectar, and pour over ice. Sink the grenadine, garnish with a pineapple wedge, and serve.
+A cocktail served in a tumbler.
+NULL
+8
+french_kiss
+French Kiss
+http://www.1001cocktails.com/images/french-kiss-1920.jpg
+Shake and strain into a champagne flute. Garnish with a speared cherry or raspberry, and serve.
+A cocktail served in a champagne flute.
+NULL
+9
+pomegranate_martini
+Pomegranate Martini
+http://www.1001cocktails.com/images/pas_de_photo.jpg
+Shake all ingredients well with ice and strain into a chilled martini glass. Add a dash of rose water if available. Garnish with flamed orange peel, and serve.
+A martini flavored with pomegranate, also called a "Pomtini".
+NULL
+10
+malibu_paradise
+Malibu Paradise
+http://www.1001cocktails.com/images/pas_de_photo.jpg
+Pour the Malibu coconut rum, Absolut vodka, cranberry and pineapple juice into a cocktail shaker half-filled with ice cubes. Shake well, pour into a chilled cocktail glass, and serve.
+A coconut flavored drink served in a cocktail glass.
+NULL
+11
+blue_shark
+Blue Shark
+http://www.1001cocktails.com/images/blue-shark-114.jpg
+Combine vodka and rum in a cocktail shaker with cracked ice. Add several dashes of blue curacao, and shake well. Strain into a chilled old-fashioned glass, and serve.
+A drink consisting primarily of vodka and blue curacao.
+NULL
+12
+toblerone
+Toblerone
+http://www.1001cocktails.com/images/toblerone-5729.jpg
+Blend with ice and serve in a tall glass. Garnish with chocolate flakes and optionally chocolate topping drizzled down the inside of the glass.
+A drink garnished with toblerone chocolate flakes to sweeten it up.
+NULL
+13
+fidel_castro
+Fidel Castro
+http://www.1001cocktails.com/images/fidel-castro-5548.jpg
+Fill the glass with ice. Add the rum and lime juice. Fill with ginger ale.
+A drink taking its name after the Cuban dictator because of its Cuban rum.
+NULL
+14
+hurricane
+Hurricane
+http://www.1001cocktails.com/images/hurricane.jpg
+Pour all but the juices, in order listed, into a hurricane glass three-quarters filled with ice. Fill with equal parts of grapefruit and pineapple juice, and serve.
+The hurricane is a sweet alcoholic drink made with rum, fruit juice, and syrup or grenadine.
+NULL
+15
+dirty_shirley
+Dirty Shirley
+http://www.1001cocktails.com/images/pas_de_photo.jpg
+Pour the vodka over ice cubes in a highball glass. Fill the glass the rest of the way with Sprite. Add grenadine, garnish with a cherry, and serve.
+A vodka-based drink served in a highball glass.
+NULL
+16
+pink_panty_dropper
+Pink Panty Dropper
+http://www.1001cocktails.com/images/pink-panty-dropper-5731.jpg
+First add all 18 cans of beer to a large container. Add bottles of Everclear and tequila and last but not least add the pink lemonade. Place lemon slices in the mixture for extra flavor. Let sit for a few hours, then serve.
+A porchcrawler or porchclimb is a mixed drink made primarily of beer, vodka, gin, and a sweetening agent.
+NULL
+17
+after_sex
+After Sex
+http://www.1001cocktails.com/images/after-sex-3297.jpg
+Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice. to make it beuty full make the top of the glass with a grenadine and sugar.
+A vodka-based drink consisting of creme de bananes and served in a collins glass.
+NULL
+18
+painkiller
+Painkiller
+http://www.1001cocktails.com/images/painkiller.jpg
+Shake or stir ingredients, and pour over ice in a tall glass. Sprinkle nutmeg on top, and serve.
+A Painkiller is a rum cocktail trademarked by Pusser's Rum Ltd, their signature drink.
+NULL
+19
+lychee_martini
+Lychee Martini
+http://www.1001cocktails.com/images/lychee-martini-4880.jpg
+Combine all ingredients in a cocktail shaker with/without ice. Shake well, strain into a cocktail glass, and serve.
+A martini consisting of lychee liqueur served in a cocktail glass.
+NULL
+20
+sex_appeal
+Sex Appeal
+http://www.1001cocktails.com/images/sex-appeal-1651.jpg
+Mix two rums, melon, peach and blue curacao in a mixing tin with the sour mix. Pour into a collins glass with ice and add a dash of lemonade. Garnish with lemon squeeze.
+A flavorful cocktail with coconut rum and peach schnapps served in a collins glass.
+NULL
+21
+rasberry_martini
+Rasberry Martini
+http://www.1001cocktails.com/images/raspberry-martini-5831.jpg
+Pour all ingredients into a cocktail shaker. Shake well, strain into a cocktail/martini glass, and serve.
+A martini consisting of rasberry flavored vodka.
+NULL
+22
+afterglow
+Afterglow
+http://www.1001cocktails.com/images/afterglow.jpg
+Mix. Serve over ice.
+A nonalcoholic fruity drink.
+NULL
+23
+sea_breeze
+Sea Breeze
+http://www.1001cocktails.com/images/sea-breeze.jpg
+Pour vodka into an iced highball glass. Fill partially with grapefruit juice and top with cranberry juice. Garnish with a lime wedge, and serve.
+A Sea Breeze is a cocktail containing vodka with cranberry juice and grapefruit juice.
+NULL
+24
+coco_loco
+Coco Loco
+http://www.1001cocktails.com/images/coco-loco-5535.jpg
+Pour the rums, vodka, creme de bananes, pineapple juice, coconut cream and sugar syrup into a cocktail shaker half-filled with ice cubes. Shake well, and strain into a chilled highball glass. Garnish with a pineapple wedge, and serve.
+A vodka-based drink that contains coconut cream served in a highball glass.
+NULL
+25
+orange_whip
+Orange Whip
+http://www.1001cocktails.com/images/orange-whip-5782.jpg
+Pour ingredients over ice cubes and stir.
+A simple creamy cocktail mainly formed with orange juice.
+NULL
+26
+monaco
+Monaco
+http://www.1001cocktails.com/images/monaco.jpg
+Pour grenadine syrup into a collins glass filled with ice cubes. Add the beer and 7-up, and stir well.
+A lager inspired by the city of Monaco in France.
+NULL
+27
+caribbean_dream
+Caribbean Dream
+http://www.1001cocktails.com/images/caribbeandream.jpg
+Combine ingredients in a highball glass. Stir, add ice and serve.
+A relaxing cocktail originating in the Caribbean.
+NULL
+28
+pink_panther
+Pink Panther
+http://www.1001cocktails.com/images/pink-panther-3843.jpg
+Mix strawberry-kiwi crystal light, add your favorite brand of vodka, and serve over ice.
+A strawberry-kiwi flavored drink made with vodka and lemonade.
+NULL
+29
+san_francisco
+San Francisco
+http://www.1001cocktails.com/images/sanfr.jpg
+Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the "creme", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. Garnish with orange and strawberry.
+A drink inspired by the city in California made with vodka and grenadine.
+NULL
+30
+mai_tai
+Mai Tai
+http://www.1001cocktails.com/images/maitai6.jpg
+Pour light rum, creme de almond and triple sec, in order, into a collins glass. Almost fill with equal parts of sweet and sour mix and pineapple juice. Add dark rum, a large straw, and serve unstirred.
+The Mai Tai is an alcoholic cocktail based on rum, Curaçao liqueur, orgeat syrup, and lime juice, associated with Polynesian-style settings.
+NULL
+31
+bramble
+Bramble
+http://www.1001cocktails.com/images/horton.jpg
+Shake the gin, lime juice and syrup well with ice, and strain into a highball glass filled with crushed ice. Dribble the creme de mure down through the ice, and garnish with a lime wheel and raspberries.
+The Bramble is a cocktail created by Dick Bradsell in 1980s London, England.
+NULL
+32
+angels_kiss
+Angel's Kiss
+http://www.1001cocktails.com/images/angekiss.jpg
+Pour ingredients carefully, in order given, into a pousse cafe glass so that they do not mix.
+A classic cocktail served with cream in a pousse cafe glass.
+NULL
+33
+apple_mojito
+Apple Mojito
+http://www.1001cocktails.com/images/apple-mojito-3881.jpg
+Add the lime, sugar and mint sprigs to a highball glass and muddle with a muddler. Add several ice cubes and pour in the Bacardi apple rum. Top with club soda (adjust to taste), and stir. Garnish with an apple slice and a lime wedge, and serve.
+A cocktail conjured with apple flavored rum.
+NULL
+34
+tequila_sunset
+Tequila Sunset
+http://www.1001cocktails.com/images/tequilasunset.jpg
+Pour tequila into a collins glass filled with ice cubes. Fill with orange juice and stir well. Top with blackberry brandy and stir lightly. Add the cherry on top and serve.
+A tequila flavored with orange juice.
+NULL
+35
+blind_russian
+Blind Russian
+http://www.1001cocktails.com/images/blind-russian-5617.jpg
+Fill glass with ice. Add all liqueurs. Add milk. shake.
+A milk-based drink that almost resembles a coffee, created in Russia.
+NULL
+36
+agent_orange
+Agent Orange
+http://www.1001cocktails.com/images/agent-orange-5543.jpg
+Have a hurricane glass filled with ice.	Add ingredients, and shake. Garnish with cherry and orange.
+An Agent Orange is a highball drink made with carrot juice, vodka, and rum.
+NULL
+37
+pina_colada
+Pina Colada
+http://www.1001cocktails.com/images/pina-colada-104.jpg
+Put all ingredients into an electric blender with 2 cups of crushed ice. Blend at a high speed for a short length of time. Strain into a collins glass and serve with a straw.
+The piña colada is a sweet cocktail made with rum, coconut cream or coconut milk, and pineapple juice.
+NULL
+38
+caipiroska
+Caipiroska
+http://www.1001cocktails.com/images/caipiroska-2935.jpg
+Crush sugar into the lime wedges with a spoon. Place the lime wedges in the bottom of an 8 oz. glass. Cover with crushed ice, fill glass with vodka, and serve.
+Caipiroska is a form of Caipirinha prepared with vodka instead of the usual cachaca.
+NULL
+39
+alabama_slammer
+Alabama Slammer
+http://www.1001cocktails.com/images/alabaa.jpg
+Pour above ingredients into a stainless steel shaker over ice and shake until completely cold. Strain into an old-fashioned glass and serve.
+An Alabama Slammer is a cocktail made with amaretto, Southern Comfort, sloe gin, and orange juice.
+NULL
+40
+sweet_dream
+Sweet Dream
+http://www.1001cocktails.com/images/tropical-dream.jpg
+Blend all ingredients together in a medium-sized cocktail glass. Top with a dollop of whipped cream, sprinkle with chocolate and coconut shavings, and serve.
+Devised in Peru, it's known as the Cocktail of the Year in 2012.
+NULL
+41
+vodka_salty_dog
+Vodka Salty Dog
+http://www.1001cocktails.com/images/vodkasaltydog.jpg
+Pour ingredients into a highball glass over ice cubes, stir well, and serve.
+A salty dog is a cocktail of gin and grapefruit juice, served in a highball glass with a salted rim.
+NULL
+42
+vesper
+Vesper
+http://www.1001cocktails.com/images/vesper.jpg
+Shake well until ice cold, strain into a deep champagne goblet. Add a thin slice of lemon-peel.
+The Vesper or Vesper Martini is a cocktail that was originally made of gin, vodka, and Kina Lillet.
+NULL
+43
+red_snapper
+Red Snapper
+http://www.1001cocktails.com/images/bloody_mary.jpg
+Shake, pour into an old-fashioned glass, and serve.
+A shot flavored with whisky and cranberry juice.
+NULL
+44
+vodka_stinger
+Vodka Stinger
+http://www.1001cocktails.com/images/vodka_stinger.jpg
+Shake ingredients with ice, strain into a cocktail glass, and serve.
+A Stinger is a duo cocktail made by adding crème de menthe to brandy.
+NULL
+45
+jager_bomb
+Jager Bomb
+http://www.1001cocktails.com/images/jagerbomb.jpg
+Pour red bull into a pint glass. Drop in a shot glass filled with jagermeister, and chug.
+The Jagerbomb is a bomb shot mixed drink that was originally mixed by dropping a shot of Jagermeister into a glass of beer.
+NULL
+46
+b_53
+B-53
+http://www.1001cocktails.com/images/b-53-4555.jpg
+Layer the Kahlua, Sambucca and Grand Marnier into a shot glass in that order. Better than B-52.
+An "improved" version of the B-52 shot.
+NULL
+47
+red_white_and_blue
+Red, White and Blue
+http://www.1001cocktails.com/images/Redwhiteblue.jpg
+Carefully layer, in order, into a shot glass, aftershock, goldschlager, then schnapps.
+An American inspired shot made with cinnamon.
+NULL
+48
+caipirinha
+Caipirinha
+http://www.1001cocktails.com/images/caipirinha3.jpg
+Muddle the sugar into the lime wedges in an old-fashioned glass. Fill the glass with ice cubes. Pour the cachaca into the glass. Stir well.
+Caipirinha is Brazil's national cocktail, made with cachaca, sugar and lime.
+NULL
+49
+whiskey_sour
+Whisky Sour
+http://www.1001cocktails.com/images/whiskey-sour-5752.jpg
+Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with the half-slice of lemon, top with the cherry, and serve.
+The whiskey sour is a mixed drink containing whiskey, lemon juice, sugar, and optionally, a dash of egg white.
+NULL
+50
+zombie
+Zombie
+http://www.1001cocktails.com/images/zombie.jpg
+Blend all ingredients with ice except Bacardi 151 proof rum. Pour into a collins glass. Float Bacardi 151 proof rum on top. Garnish with a fruit slice, sprig of mint and a cherry.
+The Zombie is a cocktail made of fruit juices, liqueurs, and various rums.
+NULL
+51
+el_diablo
+El Diablo
+http://www.1001cocktails.com/images/eldiablo.jpg
+Stir tequila and creme de cassis over ice in a chilled collins glass. Fill with ginger ale, squeeze in the lime wedge's juice and drop in the spent shell.
+A tequila based drink named after the DC comic book character.
+NULL
+52
+vodka_collins
+Vodka Collins
+http://www.1001cocktails.com/images/tom_collins2.jpg
+Shake vodka, lemon juice and powdered sugar with ice and strain into a collins glass. Add several ice cubes, fill with carbonated water, and stir. Garnish with slices of orange and lemon, and top with a cherry. Serve with a straw.
+A cocktail inspired by the Japanese-American rock band of the same name.
+NULL
+53
+pink_lady
+Pink Lady
+http://www.1001cocktails.com/images/pink-lady-1138.jpg
+Shake ingredients with ice, strain into a cocktail glass, and serve.
+The Pink Lady is a classic gin-based cocktail with a long history.
+NULL
+54
+crantini
+Crantini
+http://www.1001cocktails.com/images/crantini.jpg
+Add all the ingredients in a martini shaker with ice. Then shake, pour into martini glass and add a few cranberries to complete the drink.( Soak the cranberries in vodka first) 
+A vodka based cocktail flavored with cranberry juice.
+NULL
+55
+harvey_wallbanger
+Harvey Wallbanger
+http://www.1001cocktails.com/images/harvey_wallbanger.jpg
+Pour vodka and orange juice into a collins glass over ice cubes and stir. Float galliano on top and serve.
+The Harvey Wallbanger is a mixed drink made with vodka, Galliano, and orange juice.
+NULL
+56
+flatliner
+Flatliner
+http://www.1001cocktails.com/images/flatline.jpg
+Layer the tequila over sambuca. Add tabasco sauce.
+A spicy shot made with tequila.
+NULL
+57
+bloody_mary
+Bloody Mary
+http://www.1001cocktails.com/images/bloody_mary.jpg
+Shake all ingredients (except lime wedge) with ice and strain into an old-fashioned glass over ice cubes. Add salt and pepper to taste. Add the wedge of lime and serve. 
+A Bloody Mary is a cocktail containing vodka, tomato juice, and combinations of other spices and flavorings.
+NULL
+58
+lemon_drop
+Lemon Drop
+http://www.1001cocktails.com/images/lemondrop.jpg
+Add sugar to the rim of an old-fashioned glass, and drop a cube or packet of sugar into the bottom of the glass. Pour vodka and lemon juice into a stainless steel shaker over ice, and shake until completely cold. Pour into the prepared old-fashioned glass, and serve.
+A lemon drop is a vodka-based cocktail that has a lemony, sweet and sour flavor.
+NULL
+59
+astronaut
+Astronaut
+http://www.1001cocktails.com/images/astronaut.jpg
+Pour the vodka, light rum and dark rum into a cocktail shaker half-filled with ice cubes. Shake well, and strain into a highball glass filled with ice cubes. Add Sprite and a splash of pineapple juice. Serve with a twist of lime (or lemon), and serve.
+A vodka based drink made with rum.
+NULL
+60
+shirley_temple
+Shirley Temple
+http://www.1001cocktails.com/images/shirley_temple.jpg
+Build in a highball glass. Add ginger ale over ice and sprinkle grenadine syrup over it. Garnish with a lemon slice and a cherry.
+A Shirley Temple is a non-alcoholic mixed drink traditionally made with ginger ale.
+NULL
+61
+godmother
+Godmother
+http://www.1001cocktails.com/images/god_mother.jpg
+Pour vodka and amaretto into an old-fashioned glass over ice and serve.
+A cocktail inspired by the "Godfather" cocktail.
+NULL
+62
+daiquiri
+Daiquiri
+http://www.1001cocktails.com/images/daiquirii.jpg
+Shake all ingredients with ice, strain into a cocktail glass, and serve.
+Daiquiri is a family of cocktails whose main ingredients are rum, citrus juice, and sugar or other sweetener.
+NULL
+63
+fallen_angel
+Fallen Angel
+http://www.1001cocktails.com/images/fallenangel.jpg
+Shake all ingredients (except cherry) with ice and strain into a cocktail glass. Top with the cherry and serve.
+The Fallen Angel is a gin cocktail.
+NULL
+64
+bora_bora
+Bora Bora
+http://www.1001cocktails.com/images/borabora.jpg
+Prepare in a blender or shaker, serve in a highball glass on the rocks. Garnish with 1 slice of pineapple and one cherry.
+A non-alcoholic beverage consisting of lemon juice and grenadine.
+NULL
+65
+oatmeal_cookie
+Oatmeal Cookie
+http://www.1001cocktails.com/images/oatmeal.jpg
+Pour ingredients into a stainless steel shaker over ice, and shake until completely cold. Strain into an old-fashioned glass, and serve.
+A shot prepared with Bailey's Irish cream.
+NULL
+66
+aviation
+Aviation
+http://www.1001cocktails.com/images/aviation2.jpg
+Fill cocktail shaker with ice. Juice the lemon and add to the shaker. Add a little sugar, if desired. Pour in gin and maraschino, and shake. Serve straight up in a cocktail glass.	The strict recipe does not have any sugar, but I like to add a little.
+The Aviation is a classic cocktail made with gin, maraschino liqueur, crème de violette, and lemon juice.
+NULL
+67
+blue_blazer
+Blue Blazer
+http://www.1001cocktails.com/images/blueblazer.jpg
+Boil water and whisky in seperate glasses, ignite whisky, then slowly mix the whisky and water 4-6 times.
+A shot composed of whisky and boiling water.
+NULL
+68
+chocolate_martini
+Chocolate Martini
+http://www.1001cocktails.com/images/chocolatemartini.jpg
+Pour ingredients into shaker filled with ice then pour into martini glass.
+A martini made with creme de cacao and vodka.
+NULL
+69
+alaska
+Alaska
+http://www.1001cocktails.com/images/alaska.jpg
+In a mixing glass half-filled with crushed ice, combine all of the ingredients. Stir well. Strain into a cocktail glass.
+A classic cocktail taking its name from the largest state in the U.S.A.
+NULL
+70
+fruit_punch
+Fruit Punch
+http://www.1001cocktails.com/images/fruit-punch-220.jpg
+Make up the kool-aid ahead of time, by dissolving in a small amount on water (as little as possible). Don't add sugar! Cool this mixture. -- With everything cold, mix it all together, just before the party. You can add sherbert to keep it cold, or make ice cubes, or an ice cube ring, using the kool-aid mixture. You probably won't need to add any sugar to this, as the soda, lemonade, and pineapple juice should contain plenty.
+A non-alcoholic drink made with soda and fruit juice.
+NULL
+71
+diesel
+Diesel
+http://www.1001cocktails.com/images/diesel-667.jpg
+Pour the lager first then add the blackcurrant cordial. Top up with the cider. The colour should be very dark approaching the colour of Guiness. Drink several of these and watch the room spin around! N.B. Only the cheapest lager and cider from the students union bar should be used.
+A drink made with beer and cider served in a Tumbler glass.
+NULL
+72
+old_fashioned
+Old Fashioned
+http://www.1001cocktails.com/images/oldfashined2.jpg
+Mix sugar, water and angostura bitters in an old-fashioned glass. Drop in a cherry and an orange wedge. Muddle into a paste using a muddler or the back end of a spoon. Pour in bourbon, fill with ice cubes, and stir.
+The Old Fashioned is a cocktail made by muddling sugar with bitters, then adding whiskey.
+NULL
+73
+virgin_bellini
+Virgin Bellini
+http://www.1001cocktails.com/images/virgin-bellini-5593.jpg
+Pour into a wine glass, and serve.
+A non-alcoholic drink made with soda and grenadine.
+NULL
+74
+coconut_kiss
+Coconut Kiss
+http://www.1001cocktails.com/images/coconut-kiss.jpg
+Shake over ice cubes in a shaker. Strain into a large highball glass over crushed ice, garnish with an amarelle cherry, and serve.
+A non-alcoholic cocktail composed of coconut cream and grenadine.
+NULL
+75
+coconut_lips
+Coconut Lips
+http://www.1001cocktails.com/images/coconutlips.jpg
+Shake well over ice cubes in a shaker. Strain into a large highball glass over crushed ice, add a pineapple chunk and an amarelle cherry, and serve.
+A non-alcoholic drink made with coconut cream.
+NULL
+76
+pink_paradise
+Pink Paradise
+http://www.1001cocktails.com/images/pink-paradise-5696.jpg
+Pour the tequila into a mixing glass half-filled with ice cubes, and stir. Pour the bitters into a brandy snifter and swirl around in order to coat the glass. Discard any excess bitters from the glass, then strain the tequila into the glass, and serve.
+A tequila based drink served in a Brandy Snifter.
+NULL
+77
+cucaracha
+Cucaracha
+http://www.1001cocktails.com/images/cucaracha-124.jpg
+Place equal measures of tequila and kahlua in a glass with ice, stir, and serve.
+A tequila based drink taking its name after the famous song.
+NULL
+78
+french_martini
+French Martini
+http://www.1001cocktails.com/images/french-martini-756.jpg
+Pour each of the above into a tall bar glass. Shake with ice, pour into a cocktail or martini glass, and serve.
+The French Martini was invented in the 1980s at one of Keith McNally's New York City bars.
+NULL
+79
+brooklyn
+Brooklyn
+http://www.1001cocktails.com/images/brookly.jpg
+Stir well in a mixing glass filled with ice cubes. Strain into a chilled cocktail glass, and serve.
+The Brooklyn is one of five cocktails named for the boroughs of New York City.
+NULL
+80
+fox_poison
+Fox Poison
+http://www.1001cocktails.com/images/ravgift.jpg
+Begin with vodka, then blue curacao. After that, add the lime liqueur. Mix in the grenadine. Stir gently. Fill up with sprite and put in some ice cubes.
+A vodka based drink made with blue curacao and grenadine.
+NULL
+81
+french_coffee
+French Coffee
+http://www.1001cocktails.com/images/french_coffee.jpg
+Pour coffee, cointreau and kahlua into an irish coffee cup and sweeten to taste. Gently float the cream on top, add a teaspoon of cointreau, and serve.
+A liqueur coffee is a coffee drink with a shot of liqueur.
+NULL
+82
+new_york_sour
+New York Sour
+http://www.1001cocktails.com/images/new-york-sour-5750.jpg
+Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret red wine on top, and serve with a half-slice of lemon and a cherry.
+A whisky based drink made with lemon juice.
+NULL
+83
+virgin_mary
+Virgin Mary
+http://www.1001cocktails.com/images/virginmary.jpg
+Pour tomato juice over ice cubes in a large highball glass. Season to taste, stir, and garnish with celery.
+A non-alcoholic version of the Bloody Mary.
+NULL
+84
+mexicola
+Mexicola
+http://www.1001cocktails.com/images/mexicola.jpg
+Pour tequila and juice of lime over ice cubes in a collins glass. Fill with cola, stir, and serve.
+A tequila based drink mixed with coca cola.
+NULL
+85
+perfect_martini
+Perfect Martini
+http://www.1001cocktails.com/images/perfect-martini-3229.jpg
+Stir ingredients and strain into a frosted cocktail glass. Garnish with a twist of lemon, and serve.
+A martini made with gin.
+NULL
+86
+banana_cow
+Banana Cow
+http://www.1001cocktails.com/images/bananacow.jpg
+Shake rum, creme de banana, cream, and grenadine with crushed ice and strain into a cocktail glass. Decorate with the banana slice, sprinkle nutmeg on top, and serve.
+A shaked cocktail made with creme de bananes.
+NULL
+87
+black_dog
+Black Dog
+http://www.1001cocktails.com/images/blackdog.jpg
+Pour the light rum and vermouth into a mixing glass half-filled with cracked ice. Stir well. Strain into a chilled cocktail glass. Garnish with a black pitted olive, and serve.
+A shaked cocktail made with rum and dry vermouth.
+NULL
+88
+corcovado
+Corcovado
+http://www.1001cocktails.com/images/corco.jpg
+Pour ingredients into a cocktail glass and fill with crushed ice. Garnish with a slice of lime and a cherry. Serve with short straws.
+A shaked cocktail with its name taken from the mountain in Brazil.
+NULL
+89
+brandy_manhattan
+Brandy Manhattan
+http://www.1001cocktails.com/images/14578345.jpg
+Fill rocks glass with ice. Add Cherry juice and cherry, then bitters. Add brandy, then sweet vermouth. Add water, stir. Enjoy!
+A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters.
+NULL
+90
+mexican_coffee
+Mexican Coffee
+http://www.1001cocktails.com/images/mexicancoffee.jpg
+Pour coffee and kahlua into an irish coffee cup, and sweeten to taste. Gently float the cream on top, and sprinkle with grated chocolate.
+A coffee with its origins in Mexico.
+NULL
+91
+orangeade
+Orangeade
+http://www.1001cocktails.com/images/orangeade-2962.jpg
+Pour lemon juice, orange juice, and sugar syrup into a large tumbler or highball glass over ice cubes. Stir well, and top up with cold soda water. Serve with a drinking straw.
+Orange soft drinks are carbonated orange drinks.
+NULL
+92
+metropolitan
+Metropolitan
+http://www.1001cocktails.com/images/metropolitain.jpg
+In a shaker half-filled with crushed ice, combine all of the ingredients. Shake well and strain into a cocktail glass.
+A shaked cocktail made with brandy.
+NULL
+93
+green_angel
+Green Angel
+http://www.1001cocktails.com/images/inija_550.jpg
+Blend pisang ambon, peachtree schnapps, malibu and lemon squash together in a blender. Put ice cubes in a collins glass and pour the mix over. Fill up with sprite, and add a drop of blue syrup. Stir and serve.
+A blended drink made with coconut rum, lemonade, and soda.
+NULL
+94
+breakfast_martini
+Breakfast Martini
+http://www.1001cocktails.com/images/breakfastmartini.jpg
+Shake ingredients with ice and strain into a chilled martini glass. Garnish with a piece of a slice of toast.
+A breakfast martini is a form of cocktail created by bartender Salvatore Calabrese.
+NULL
+95
+batida_de_maracuja
+Batida de Maracuja
+http://www.1001cocktails.com/images/batidademaracu.jpg
+Combine ingredients in a blender. Strain into a large highball glass over crushed ice, and serve.
+A blended drink made with cachaca and lime juice.
+NULL
+96
+bahia
+Bahia
+http://www.1001cocktails.com/images/bahia.jpg
+Pour pineapple juice, coconut cream and white rum into a shaker. Add a barspoon of cream. Shake well and strain into a large highball glass half-filled with crushed ice. Garnish with a pineapple chunk and amarelle cherry, and serve.
+A non-alcoholic drink with its name inspired by the Brazilian state.
+NULL
+97
+durango
+Durango
+http://www.1001cocktails.com/images/durango-259.jpg
+Pour the tequila, grapefruit juice and orgeat syrup into a cocktail shaker half-filled with ice cubes. Shake well, and strain into an old-fashioned glass. Fill with water, garnish with mint sprigs, and serve.
+A tequila based drink mixed with grapefruit juice.
+NULL
+98
+mandarin
+Mandarin
+http://www.1001cocktails.com/images/etus_992.jpg
+Blend briefly with three-quarters of a glassful of crushed ice. Serve in a double-cocktail glass garnished with a slice of orange speared with a cherry.
+A blended drink with its name from the Chinese dialect.
+NULL
+99
+pelican
+Pelican
+http://www.1001cocktails.com/images/pelican-5522.jpg
+Shake well over ice cubes in a shaker, strain into a large highball glass over ice cubes, and serve.
+A non-alcoholic drink made with lemon juice and grenadine.
+NULL
+100
+tampico
+Tampico
+http://www.1001cocktails.com/images/tampico.jpg
+Pour into glass and fill with tonic wafer. Garnish with an orange slice or peel.
+A cocktail that is named after the city in Mexico.
+NULL
+101
+dirty_martini
+Dirty Martini
+http://www.1001cocktails.com/images/dirtymartini.jpg
+1. Place an ice cube and a small amount of water in a cocktail glass. Place in freezer for 2 - 3 minutes.	2. Fill a mixer with all ingredients including garnish. Cover and shake hard 3 - 4 times.	3. Remove cocktail glass from freezer, and empty. Strain contents of the mixer into the cocktail glass, include one of the olives, and serve with a mysterious smile.
+A type of martini made with olive juice.
+NULL
+102
+red_witch
+Red Witch
+http://www.1001cocktails.com/images/red-witch-5748.jpg
+Put Pernod in a pint glass. Fill almost to the top with cider and add the blackcurrant. After that, it's up to you.
+An ale made with apple cider and served in a mug.
+NULL
+103
+mont_blanc
+Mont Blanc
+http://www.1001cocktails.com/images/mont-blanc-1032.jpg
+Combine all ingredients in a blender for 20 seconds. Pour into a wine glass, and serve.
+A blended drink made with vodka and cream.
+NULL
+104
+lassi
+Lassi
+http://www.1001cocktails.com/images/lassi-2257.jpg
+Blend in a blender for 3 seconds. Serve cold. Lassi is a south indian drink, and one of the easiest things to make. There are many ways of making it, but essentially it is buttermilk (yoghurt whisked with water), and you can choose almost any consistency that you like, from the thinnest to the thickest.
+Lassi is a popular traditional yogurt-based drink from the Indian Subcontinent.
+NULL
+105
+lady_scarlett
+Lady Scarlett
+http://www.1001cocktails.com/images/scarlett.jpg
+Shake. Garnish with a cherry and lemon-peel.
+A shaked cocktail made with lime juice and gin.
+NULL
+106
+strawberry_margarita
+Strawberry Margarita
+http://www.1001cocktails.com/images/strawmargarita.jpg
+Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.
+A margarita made with lemon juice and strawberries.
+NULL
+107
+zorro
+Zorro
+http://www.1001cocktails.com/images/zorro-1494.jpg
+Pour all ingredients into an irish coffee cup. Add hot black coffee, top with whipped cream, and serve.
+A coffee made with Bailey's Irish cream.
+NULL
+108
 singani
 Singani
 https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Singani_major_brands.png/1024px-Singani_major_brands.png
 Singani is a pomace brandy distilled from white Muscat of Alexandria grapes. It is produced only in the Bolivian high valleys and is considered the national liquor of Bolivia and a cultural patrimony. Its character and production methods are closest to eau-de-vie but it is classified as a brandy for purposes of international trade. Singani has been declared a Domain of Origin (Denominación de Origen or DO) and a Geographical Indication (GI) by the Bolivian government.
 Singani is produced from white muscatel grapes grown at elevations of 5,250 feet or higher.
 NULL
-2
+109
 soju
 Soju
 https://upload.wikimedia.org/wikipedia/commons/a/a2/Soju_jinro_gfdl.jpg
 Soju is a clear, colorless distilled beverage of Korean origin. It is usually consumed neat, and its alcohol content varies from about 16.8% to 53% alcohol by volume (ABV). Most brands of soju are made in South Korea. While it is traditionally made from rice, wheat, or barley, modern producers often replace rice with other starches such as potatoes, sweet potatoes, or tapioca.
 Soju has a taste comparable to vodka yet slightly sweeter.
 NULL
-3
+110
 cachaca
 Cachaca
 https://wine-searcher1.freetls.fastly.net/images/labels/05/19/mangaroca-cachaca-brazil-10420519.jpg
 Cachaca is a distilled spirit made from fermented sugarcane juice. Also known as aguardente, pinga, caninha and other names, it is the most popular spirit among distilled alcoholic beverage in Brazil. Outside Brazil, cachaca is used almost exclusively as an ingredient in tropical drinks, with the caipirinha being the most famous cocktail.
 Cachaca, or Brazilian rum, has over four centuries’ worth of nicknames coined by its various consumers.
 NULL
-4
+111
 whisky
 Whisky
 http://www.scotlandwhisky.com/wp-content/uploads/2016/04/cropped-scott.jpg
 Scotch whisky is malt whisky or grain whisky made in Scotland. Scotch whisky must be made in a manner specified by law. All Scotch whisky was originally made from malted barley. Commercial distilleries began introducing whisky made from wheat and rye in the late 18th century. Scotch whisky is divided into five distinct categories: single malt Scotch whisky, single grain Scotch whisky, blended malt Scotch whisky (formerly called "vatted malt" or "pure malt"), blended grain Scotch whisky, and blended Scotch whisky.
 Scotch whisky is always spelled without an “e” (as is whisky from Canada and Japan).
 NULL
-5
+112
 bourbon
 Bourbon
 https://wine-searcher1.freetls.fastly.net/images/labels/24/05/charles-medley-distillers-medley-s-bourbon-whiskey-kentucky-usa-10782405.jpg
 Bourbon whiskey is a type of American whiskey, a barrel-aged distilled spirit made primarily from corn. The name is derived from the French Bourbon dynasty, although it is unclear precisely what inspired the whiskey's name (contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans). Bourbon has been distilled since the 18th century. The use of the term "bourbon" for the whiskey has been traced to the 1820s, and the term began to be used consistently in Kentucky in the 1870s. While bourbon may be made anywhere in the United States, it is strongly associated with the American South, and with Kentucky in particular.
 Bourbon is made with corn and obtains its distinct flavor as it’s aged in barrels.
 NULL
-6
+113
 pisco
 Pisco
 https://bubblyprofessor.files.wordpress.com/2013/11/pisco-sour.jpg
 Pisco is a colorless or yellowish-to-amber colored brandy produced in winemaking regions of Peru and Chile. Made by distilling fermented grape juice into a high-proof spirit, it was developed by 16th century Spanish settlers as an alternative to orujo, a pomace brandy that was being imported from Spain. It had the advantages of being produced from abundant domestically grown fruit and reducing the volume of alcoholic beverages transported to remote locations.
 Its “smooth and almost non-alcoholic flavor” deceives many first-time drinkers, who quickly become inebriated without noticing.
 NULL
-7
+114
 caesar
 Caesar
 https://www.baconismagic.ca/wp-content/uploads/2016/05/caesar-drink-a.jpg
 A Caesar is a cocktail created and primarily consumed in Canada. It typically contains vodka, a caesar mix (a blend of tomato juice and clam broth), hot sauce, and Worcestershire sauce, and is served with ice in a large, celery salt-rimmed glass, typically garnished with a stalk of celery and wedge of lime. What distinguishes it from a Bloody Mary is the inclusion of clam broth. The cocktail may also be contrasted with the Michelada, which has similar flavouring ingredients but uses beer instead of vodka.
 Spaghetti alle vongole, or spaghetti with tomato sauce and clams, served as Walter Chell’s inspiration for the Caesar, taking this classic from Venice, Italy all across Canada.
 NULL
-8
+115
 maotai
 Maotai
 http://www.chinaiplawyer.com/wp-content/uploads/2012/08/3f637d5683589513c7f5be1a4398808f.jpg
 Maotai or Moutai is a brand of baijiu, a distilled Chinese liquor (spirit), made in the town of Maotai in China's Guizhou province. Produced by the state-owned Kweichow Moutai Company, the beverage is distilled from fermented sorghum and now comes in several different varieties.
 Maotai, or moutai, is pricey and has a very strong, potent taste.
 NULL
-9
+116
 tequila
 Tequila
 https://travelyucatan.com/wp-content/uploads/2015/09/Tequila-Mexico.jpg
 Tequila is a regionally specific distilled beverage and type of alcoholic drink made from the blue agave plant, primarily in the area surrounding the city of Tequila, 65 km (40 mi) northwest of Guadalajara, and in the highlands (Los Altos) of the central western Mexican state of Jalisco. Aside from differences in region of origin, tequila is a type of mezcal (and the regions of production of the two drinks are overlapping). The distinction in the method of production is that tequila must use only blue agave plants rather than any type of agave. Tequila is commonly served neat in Mexico and as a shot with salt and lime across the rest of the world.
 A popular “tequila worm” myth rumors that worms can be found in bottles of tequila.
 NULL
-10
+117
 mojito
 Mojito
 http://intelligenttravel.nationalgeographic.com/files/2016/02/mojito-bodeguita-del-medio-cuba-590.jpg
 Traditionally, a mojito is a cocktail that consists of five ingredients: white rum, sugar (traditionally sugar cane juice), lime juice, soda water, and mint. The original Cuban recipe uses spearmint or yerba buena, a mint variety very popular on the island. Its combination of sweetness, citrus, and mint flavors is intended to complement the rum, and has made the mojito a popular summer drink. The cocktail has a relatively low alcohol content (about 10% alcohol by volume).
 The mojito is made from rum, sugar, lime juice, sparkling water, and mint.
 NULL
-11
+118
 guinness
 Guinness
 https://www.irishcarrentals.com/images/guinness.jpg
 Guinness is an Irish dry stout that originated in the brewery of Arthur Guinness (1725–1803) at St. James's Gate brewery in the capital city of Dublin, Ireland. Guinness, produced by the Diageo beverages company, is one of the most successful beer brands worldwide. It is brewed in almost 50 countries and is available in over 120. Annual sales total of Guinness in 2011 was 850 million litres (220,000,000 US gal).
 Ireland brews this dry stout in a brewery right in Dublin.
 NULL
-12
+119
 becherovka
 Becherovka
 http://assets.coolhunting.com/coolhunting/mt_asset_cache/2014/04/BecherovkaHerbal-thumb-620x413-79757.jpg
 Becherovka, formerly Karlsbader Becherbitter, is a herbal bitters, often drunk as a digestive aid, that is produced in Karlovy Vary, Czech Republic by the Jan Becher company. The brand is owned by Pernod Ricard. Becherovka is often described as having a gingery or cinnamony flavor. It is made from a secret recipe based on a wide variety of herbs and spices. Its alcohol content is 38% ABV (76 proof). It is usually served chilled.
 “It tastes like Christmas” is the common reaction after someone takes a first sip of Becherovka.
 NULL
-13
+120
 nsafufuo
 Nsafufuo
 https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/13573630_206490343081822_808357504_n.jpg?ig_cache_key=MTI4OTExMDUxODU0MzkxOTY4MQ%3D%3D.2&se=7
 Palm wine is an alcoholic beverage created from the sap of various species of palm tree such as the palmyra, date palms, and coconut palms. It is known by various names in different regions and is common in various parts of Asia, Africa the Caribbean and South America. Palm wine production by small holders and individual farmers may promote conservation as palm trees become a source of regular household income that may economically be worth more than the value of timber sold.
 Nsafufuo is palm wine made from the sap of palm trees.
 NULL
-14
+121
 nihonshu
 Nihonshu
 https://www.japantimes.co.jp/wp-content/uploads/2015/07/p20-gordenker-wth-a-20150726-870x697.jpg
 Sake, also spelled saké, also referred to as a Japanese rice wine, is made by fermenting rice that has been polished to remove the bran. Unlike wine, in which alcohol (ethanol) is produced by fermenting sugar that is naturally present in fruit, typically grapes, sake is produced by a brewing process more akin to that of beer, where starch is converted into sugars which ferment into alcohol.
 Nihonshu is a Japanese rice wine made with fermented ice.
 NULL
-15
+122
 mama_juana
 Mama Juana
 https://static.vinepair.com/wp-content/uploads/2016/04/Mamajuana-inside.jpg
 Mama Juana (or mamajuana) is a drink from the Dominican Republic that is concocted by allowing rum, red wine, and honey to soak in a bottle with tree bark and herbs. The taste is similar to port wine and the color is a deep red. The specific herbs that make up Mamajuana were originally prepared as an herbal tea by the native Taino Indians; post-Columbus, alcohol was added to the recipe. Besides being rumored to be an aphrodisiac, Mamajuana is also consumed for its purported medicinal value.
 Mama Juana is a mixture of rum, red wine, honey, tree bark, and herbs soaked in a bottle.
 NULL
-16
+123
 schnapps
 Schnapps
 http://21271-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2014/01/schnapps.jpg
 Schnapps or schnaps is a type of alcoholic beverage that may take several forms, including distilled fruit brandies, herbal liqueurs, infusions, and "flavored liqueurs" made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits. The English loanword "schnapps" is derived from the colloquial German word Schnaps which is used in reference to spirit drinks.
 The word Schnapps itself comes from the German word for “swallow".
 NULL
-17
+124
 brennivin
 Brennivin
 https://upload.wikimedia.org/wikipedia/commons/c/cd/Brennivin2.jpg
 Brennivín is a clear, unsweetened schnapps that is considered to be Iceland's signature distilled beverage. It is a popular Icelandic liquor and special-occasion alcohol shot, and the traditional drink for the mid-winter feast of Þorrablót. It is made from fermented grain or potato mash and flavoured with caraway, and for this reason can be considered an aquavit. The steeping of herbs in alcohol to create schnapps is a long-held folk tradition in Nordic countries. Brennivín has a taste similar to vodka or Scandinavian akvavit. It is typically bottled at 37.5 or 40% ABV (75 or 80 proof).
 Brennivin is Iceland’s version of gin.
 NULL
-18
+125
 waragi
 Waragi
 http://liquorstate.com/wp-content/uploads/2016/10/UG.jpg
 Waragi is a generic term in Uganda for domestic distilled beverages. Waragi is also given different names, depending on region of origin, the distillation process, or both. Waragi is known as a form of homemade Gin. It is commonly called Waragi in the central area of Uganda but in the West it is sometimes called "Kasese". In northern Uganda it is more commonly called "Lira Lira." The manufacturing of Waragi does not vary too much in the different parts of Uganda - only the ingredients are slightly different. A commercial brand called Uganda Waragi is produced and marketed by East African Breweries Limited.
 Waragi is comparable to gin, with a subtle flavor that’s easily overpowered when used in mixed drinks.
 NULL
-19
+126
 jinmen_gaoliang
 Jinmen gaoliang
 https://edit.taiwantoday.tw/images/content/img120160803084019294.jpg
 Kaoliang wine, Gaoliang wine or sorghum wine is a strong distilled liquor of Chinese origin made from fermented sorghum. It is a type of unflavoured baijiu. The liquor originates from Dazhigu, first appearing in the Ming Dynasty. It is now primarily made and sold in mainland China and Taiwan and also popular in Korea, where it is called goryangju or bbaegal. Kaoliang is an important product of the islands Kinmen and Matsu which are part of Taiwan. Kaoliang ranges between 38 and 63 percent alcohol by volume.
 Jinmen gaoliang is made from fermented sorghum in Taiwan.
 NULL
-20
+127
 slivovitz
 Slivovitz
 https://wine-searcher1.freetls.fastly.net/images/labels/05/65/navip-slivovitz-plum-brandy-serbia-10430565.jpg
 Slivovitz is a fruit brandy made from damson plums, often referred to as plum brandy. Slivovitz is produced in East-Central and South-East Europe both commercially and privately. Primary producers are in Bosnia, Bulgaria, Croatia, Czech Republic, Hungary, Poland, Romania, Serbia, Slovakia and Slovenia. In the Balkans, Slivovitz is considered a kind of Rakia, in Hungary Pálinka and in the Czech Republic and Slovakia Pálenka, corresponding to the distilled spirits category.
 Slivovitz is the national drink of Serbia and plum is the national fruit.
 NULL
-21
+128
 raki
 Raki
 http://istanbul.for91days.com/photos/Istanbul/Rak%C4%B1%20and%20Boza/Yeni-Rak%C4%B1.jpg
 Raki is an unsweetened, occasionally (depending on area of production) anise-flavored, alcoholic drink that is popular in Turkey, Albania, Greece (where it is distinctly different and comes as an unflavoured distillate, unlike its Turkish counterpart), Iran, Turkic countries, and in the Balkan countries as an apéritif. It is often served with seafood or meze. It is similar to several other alcoholic beverages available around the Mediterranean and the Middle East, e.g. pastis, ouzo, sambuca, arak, Aragh Sagi and aguardiente. In Turkey and Greece, it is considered a national drink.
 Raki is an anise-flavored drink, traditionally consumed straight or chilled with ice or diluted with a small amount of cold water.
 NULL
-22
+129
 sangria
 Sangria
 http://spanishsabores.com/wp-content/uploads/2017/03/DSC09500.jpg
 Sangria is an alcoholic beverage of Spanish and Portuguese origin. A punch, the sangria traditionally consists of red wine and chopped fruit, often with other ingredients such as orange juice or brandy.
 Named after the Spanish word for blood, “sangre,” for its distinct deep red color.
 NULL
-23
+130
 kumis
 Kumis
 https://lordsofthedrinks.files.wordpress.com/2013/03/kumis.jpg
 Kumis is a fermented dairy product traditionally made from mare's milk. The drink remains important to the peoples of the Central Asian steppes, of Huno-Bulgar, Turkic and Mongol origin: Kazakhs, Bashkirs, Kalmyks, Kyrgyz, Mongols, and Yakuts.
 Kumis is unique in the respect that it’s a fermented alcoholic drink distilled from a dairy product, rather than a grain or fruit.
 NULL
-24
+131
 pitorro
 Pitorro
 http://www.puertoricodaytrips.com/wp-images-post/pitorico-1a.jpg
 Pitorro is a distilled spirit from Puerto Rico, referred to as "moonshine rum." Pitorro is usually much stronger than commercial rum. At times its alcohol content surpasses 100 proof. It is often homemade and a part of traditional Puerto Rican holiday celebrations, and used in Coquito.
 Also known as ron caña (cane rum), this is your basic illegal distilled moonshine, made from sugarcane.
 NULL
-25
+132
 chibuku
 Chibuku
 https://www.newsday.co.zw/wp-content/uploads/2016/02/chibuku-super-1.jpg
 Chibuku is a commercial sorghum beer based on the traditional Umqombothi home made African beers, the main grains used are malted sorghum and maize but may also contain millet. It was first brewed during the 1950s in Kitwe, Zambia by Max Heinrich, who trained in brewing in Berlin.
 Zimbabwe’s homebrew is a combination of water, sorghum, yeast, and enzymes that makes for the chunky, strong liquid known as Chibuku.
 NULL
-26
+133
 chapalo
 Chapalo
 http://3.bp.blogspot.com/-0iCG6RphuLM/T7Qf2-X6ILI/AAAAAAAAAQw/JmIjGtLhd5A/s1600/IMG_9192.JPG
 Chapalo is a handcrafted millet beer found in Niger.
 Chapalo is a handcrafted millet beer found in Niger.
 NULL
-27
+134
 arak
 Arak
 http://3.bp.blogspot.com/_2IZruYZ3HGY/SfxQZ0QFylI/AAAAAAAAALY/2BSpgpu4ShM/s1600/2835795066_ff22e1c223.jpg
 Arak or araq is a Levantine alcoholic spirit (~40–63% Alc. Vol./~80–126 proof, commonly 50% Alc. Vol./100 proof) in the anis drinks family. It is a clear, colorless, unsweetened anise-flavored distilled alcoholic drink. The Persian (Iranian) version of Arak (commonly called Arak Saggi) does not contain anise, as it is usually produced from raisins, dates or saccharum plant. Despite the majority of the Middle East being Muslim, arak is the traditional alcoholic beverage in the Arab world, especially in the Levant/Mashriq and also in the Maghreb, as well in Iran and Turkey.
 The word arak comes from the Arabic word ‘araq,’ meaning “sweat.”
 NULL
-28
+135
 grappa
 Grappa
 https://wine-searcher1.freetls.fastly.net/images/labels/66/28/mazzetti-d-altavilla-grappa-di-moscato-invecchiata-decanter-piedmont-italy-10726628.jpg
 Grappa is an alcoholic beverage, a fragrant, grape-based pomace brandy of Italian origin that contains 35 to 60 percent alcohol by volume (70 to 120 US proof).
 Grappa is a “fragrant grape based pomace brandy;” it’s strong, ranging from 70-120 proof, so it’s served in small, ornate flute glasses.
 NULL
-29
+136
 ouzo
 Ouzo
 https://upload.wikimedia.org/wikipedia/commons/b/be/Ouzo_Theiko18v.JPG
 Ouzo is an anise-flavoured aperitif that is widely consumed in Greece, Cyprus and Lebanon. Its taste is similar to other anise liquors like pastis, sambuca, arak, raki, and mastika, that are traditionally produced and consumed in Mediterranean countries.
 Ouzo is exclusively Greek.
 NULL
-30
+137
 arak_
 Arak
 https://baliskytour.files.wordpress.com/2011/06/arak.jpg
 Arak is a Balinese liquor which is distilled from tuak, a sweet wine made from the coconut palm flower. Tuak is about 5% alcohol. Good arak can contain over 50%. Some arak is distilled from brem, which is a wine made from black glutinous rice and coconut milk.
 Not to be confused with arak found in Jordan, arak from Bali is made from distilled coconut palm sap, or from a mixture of coconut milk and black sticky rice.
 NULL
-31
+138
 sombai
 Sombai
 https://travelbeckons.files.wordpress.com/2015/09/travelbeckons_sombai4.jpg
 Sombai Cambodian Liqueur (Sombai) is a local beverage produced in Siem Reap. This liqueur was created by a Mauritian lady installed in Cambodia in 2012. It has become the iconic beverage of Siem Reap, and for some also of Cambodia.
 Sombai, or rice wine, is incredibly popular in Cambodia.
 NULL
-32
+139
 sang_som_rum
 Sang som rum
 http://www.thai-food-online.co.uk/images/products/drinks/sangsom_whiskey-large.jpg
 SangSom is a rum from Thailand, distilled from sugarcane. It was introduced in November 1977 and has since become a dominant brand in the Thai spirits market. Over 70 million litres are sold in Thailand each year, achieving a market share of more than 70 percent in its category.
 Sugarcane-distilled rum from Thailand, sang som rum “makes you fall on your head,” according to Matador staff writer Katie Scott Aiton.
 NULL
-33
+140
 gin
 Gin
 https://wine-searcher1.freetls.fastly.net/images/labels/74/60/gibson-s-london-dry-gin-england-10517460.jpg
 Gin is a spirit which derives its predominant flavour from juniper berries (Juniperus communis). From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry. Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary. Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient.
 Gin is distilled from juniper berries and enjoyed worldwide due to its versatility as well as the popularity of the martini.
 NULL
-34
+141
 fernet
 Fernet
 http://road2argentina.com/wp-content/uploads/2015/05/Vaso.jpg
 Fernet is an Italian type of amaro, a bitter, aromatic spirit. Fernet is made from a number of herbs and spices which vary according to the brand, but usually include myrrh, rhubarb, chamomile, cardamom, aloe, and especially saffron, with a base of grape distilled spirits.
 Described as having a smell “like black licorice-flavored Listerine,” fernet is a “bitter aromatic spirit” typically served as a digestif, but sometimes with coffee or Coke.
 NULL
-35
+142
 kilimanjaro_lager
 Kilimanjaro Lager
 http://graphene.limited/_Media/kilimanjaro_beer_in_tanzani.jpeg
 Beer (known as pombe in Swahili) and alcohol is an integral part of Tanzanian society and local brands hold a strong sense of national pride among the Tanzanian population. There is a considerable amount of brewing and drinking done in the country. Tanzania ranks 6th in Africa for beer consumption and contributes to over 3% of the African consumption. However, over 90% of the national consumption is either homemade or from the informal sector. Bottled beer is expensive for the majority of the population and is almost 6 times more expensive than the maize beers. Nonetheless, beer sales and taxes are a vital part of the Tanzanian Economy.
 With a picture of Mount Kilimanjaro plastered on each label, Kilimanjaro Lager is a local favorite with its golden color and crisp, mild flavor.
 NULL
-36
+143
 rakshi
 Rakshi
 https://c1.staticflickr.com/9/8562/16055467555_0e0f107494_b.jpg
 Raksi is usually made from kodo millet (kodo) or rice; different grains produce different flavors. It is a strong drink, clear like vodka or gin, tasting somewhat like Japanese sake. In the CNN's list of World's 50 most delicious drinks, it was ranked 41st and was described as "Made from millet or rice, Raksi is strong on the nose and sends a burning sensation straight down your throat that resolves itself into a surprisingly smooth, velvety sensation.”
 This clear, strong drink made from kodo millet or rice has a taste similar to Japanese sake.
 NULL
-37
+144
 rum
 Rum
 https://static.webshopapp.com/shops/052573/files/083634140/cane-island-rum-cane-island-jamaica-rum-single-ori.jpg?_ga=2.55425323.1830129875.1509847114-657005316.1509847114
 Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses or honeys, or directly from sugarcane juice, by a process of fermentation and distillation. The distillate, a clear liquid, is then usually aged in oak barrels.
 Rum is produced in pot stills, and its color varies drastically from dark to light.
 NULL
-38
+145
 singapore_sling
 Singapore sling
 http://www.ladyironchef.com/wp-content/uploads/2016/07/singapore-sling.jpg
 The Singapore Sling is a gin-based cocktail from Singapore. This long drink was developed sometime before 1915 by Ngiam Tong Boon, a Hainanese bartender working at the Long Bar in Raffles Hotel, Singapore. It was initially called the gin sling – a sling was originally an North American drink composed of spirit and water, sweetened and flavored.
 Originally called the gin sling, the Singapore sling was created at the Raffles Hotel in Singapore.
 NULL
-39
+146
 vodka
 Vodka
 http://www.foodrepublic.com/wp-content/uploads/2014/04/vodka.jpg
 Vodka is a distilled beverage composed primarily of water and ethanol, sometimes with traces of impurities and flavorings. Traditionally, vodka is made by the distillation of cereal grains or potatoes that have been fermented, though some modern brands use other substances, such as fruits or sugar.
 Vodka is often drunk neat but is used in a variety of cocktails such as the Screwdriver, vodka tonic, and Bloody Mary.
 NULL
-40
+147
 koskenkorva_viina
 Koskenkorva Viina
 https://upload.wikimedia.org/wikipedia/commons/d/d2/Koskenkorva50cl.jpg
 Koskenkorva Viina is the most common clear spirit drink (38%) in Finland, produced by Altia in the Koskenkorva distillery in Ilmajoki and bottled in Rajamaki. The grain (barley) alcohol is produced using 200-step continuous distillation designed to produce high-purity industrial ethanol. The drink is produced by diluting this alcohol with spring water and a very small amount of sugar.
 This alcohol is produced with a 200-step continuous distillation process.
 NULL
-41
+148
 port_wine
 Port wine
 http://www.c-ville.com/wp-content/uploads/2013/12/DSC_1722-660x335-1387299441.jpg
 Port wine is a Portuguese fortified wine produced exclusively in the Douro Valley in the northern provinces of Portugal. It is typically a sweet, red wine, often served as a dessert wine, though it also comes in dry, semi-dry, and white varieties. Fortified wines in the style of port are also produced outside Portugal, most notably in Australia, France, South Africa, Canada, India, Argentina, and the United States. Under European Union Protected Designation of Origin guidelines, only the product from Portugal may be labelled as port or Porto.
 Port is a sweet red wine, typically used as a dessert wine.
 NULL
-42
+149
 canelazo
 Canelazo
 https://i1.wp.com/katieatthekitchendoor.com/wp-content/uploads/2014/11/2014-11-15-041-800x1200.jpg
 Canelazo is a hot alcoholic beverage consumed in the Andean highlands of Ecuador, Colombia, Peru and northern Argentina. It typically consists of aguardiente (sugar cane alcohol), sugar or panela, and agua de canela (water boiled with cinnamon). Canelazo is traditionally made with homemade aguardiente, but bottled alcohol is also used.
 Served hot, canelazo is sugarcane alcohol (aguardiente), sugar, and water boiled with cinnamon.
 NULL
-43
+150
 tej
 Tej
 http://www.lakechkebede.com/s/cc_images/teaserbox_4094656955.jpg?t=1436884801
 Tej is a mead or honey wine that is brewed and consumed in Ethiopia and Eritrea. It is flavored with the powdered leaves and twigs of gesho (Rhamnus prinoides), a hops-like bittering agent that is a species of buckthorn. Tej is usually homemade, but throughout Ethiopia it is available in "tej houses".
 Tej is mead or honey wine, flavored with powdered leaves and gesho twigs.
 NULL
-44
+151
 jenever
 Jenever
 http://nebula.wsimg.com/8f08cbc108b3dfe6be3fc9cfef4845ab?AccessKeyId=CD0CB219D037137779C3&disposition=0&alloworigin=1
 Jenever is the juniper-flavored national and traditional liquor of the Netherlands and Belgium, from which gin evolved.[2] Traditional jenever is still very popular in the Netherlands, Belgium and nearby French and German regions.
 Jenever is a strong juniper-flavored liquor.
 NULL
-45
+152
 guaro
 Guaro
 http://news.co.cr/wp-content/uploads/2013/07/Screen-Shot-2017-06-14-at-1.22.07-AM-e1497548942199.png
 Guaro is a liquor made in many places in Latin America. A clear liquid distilled from sugar cane juices, it has a slightly sweeter taste than comparable liquors (40% Alcohol). It is popular in Colombia, Panama, Costa Rica, Ecuador, El Salvador, Guatemala, Honduras, and Nicaragua, although in many places the word "guaro" can refer to almost any liquor. The name "guaro" came from Central America. Colombians call it aguardiente. Sometimes it is referred to as a "soft vodka" because it has a lower alcohol content than vodka.
 Guaro is sweet liquor made from sugarcane and is clear in color.
 NULL
-46
+153
 unicum
 Unicum
 https://wine-searcher1.freetls.fastly.net/images/labels/52/38/zwack-unicum-liqueur-hungary-10535238.jpg
 Unicum is a Hungarian herbal liqueur or bitters, drunk as a digestif and apéritif. The liqueur is today produced by Zwack according to a secret formula of more than forty herbs; the drink is aged in oak casks. During Communism in Hungary, the Zwack family lived in exile in New York City and Chicago, and Unicum in Hungary was produced using a different formula. Before moving to the US Janos Zwack had entrusted a family friend in Milan with the production of Unicum based on the original recipe. After the fall of communism, Péter Zwack returned to Hungary and resumed production of the original Unicum.
 Unicum is an herbal digestif liqueur aged in oak casts, with an ingredient list of over 40 herbs.
 NULL
-47
+154
 pastis
 Pastis
 https://upload.wikimedia.org/wikipedia/commons/0/0b/Pastis1.jpg
 Pastis is an anise-flavoured spirit and apéritif from France, typically containing less than 100 g/l sugar and from 40–45% ABV (alcohol by volume).
 Pastis is an anise-flavored liqueur and aperitif.
 NULL
-48
+155
 horilka
 Horilka
 http://stevensirski.com/wp-content/uploads/2011/11/Ukrainian-Vodka.jpg
 Horilka is a Ukrainian alcoholic beverage. The word horilka may also be used in a generic sense in the Ukrainian language to mean vodka or other strong spirits and etymologically is similar to the Ukrainian word for burning - hority. Home-distilled horilka, moonshine, is called samohon. Horilka is usually distilled from grain (usually wheat or rye), though it can, exceptionally, also be distilled from potatoes, honey, sugar beets, etc. One type of horilka, called pertsivka, is horilka with chili peppers. Historically, outside Ukraine, pertsivka is generally referred to when people speak of horilka, although pertsivka itself is just one type of horilka.
 This Ukrainian vodka is usually distilled from wheat.
 NULL
-49
+156
 tuba
 Tuba
 http://lambanog.org/wp-content/uploads/2012/03/coconut-wine-tuba.jpg
 Palm wine is an alcoholic beverage created from the sap of various species of palm tree such as the palmyra, date palms, and coconut palms. It is known by various names in different regions and is common in various parts of Asia, Africa the Caribbean and South America.
 Palm wine, commonly referred to as “kallu” or “toddy,” is called tuba in the Philippines.
 NULL
-50
+157
 akevitt
 Akevitt
 http://www.norsk-akevitt.org//avApr/objects/Lysholm%20Linie.low.jpg
 Akvavit or aquavit is a flavoured spirit that is principally produced in Scandinavia, where it has been produced since the 15th century. Akvavit gets its distinctive flavour from spices and herbs, and the main spice should (according to the European Union) be caraway or dill. It typically contains 40% alcohol by volume. The EU has established a minimum of 37.5% ABV for akvavit to be named as such.
 Referred to as “water of life,” Akevitt is made from potatoes, along with various spices and herbs.
 NULL
-51
+158
 riga_black_balsam
 Riga Black Balsam
 https://upload.wikimedia.org/wikipedia/commons/4/46/Rigas_Balzams.JPG
 Riga Black Balsam is a traditional Latvian herbal liqueur made with many different natural ingredients mixed in pure vodka, giving a 45% abv (90 proof) drink. It can be had as it is, on the rocks or mixed with schnapps, akvavit, or vodka, or warm, in tea, coffee or black currant juice, or mixed with soda water or a soft drink, or in any variety of cocktails. It is also occasionally enjoyed as a topping on ice-cream. The drink itself is black and very bitter, but with a distinct sweetness.
 Riga Black Balsam is Latvia’s specific type of balsam, an herbal liqueur.
 NULL
-52
+159
 rhum_barbancourt
 Rhum Barbancourt
 https://img.thewhiskyexchange.com/900/rum_bar3.jpg
 Barbancourt is a rum produced and bottled in Haiti by Société du Rhum Barbancourt, D. Gardère & Cie. The company is one of Haiti's oldest, and its rum is one of the country's most famous exports, widely regarded as among the finest rums in the world.
 One of the finest rums in the world, Rhum Barbancourt is exclusively produced and bottled by the Societe de Rhum Barbancourt, making it one of Haiti’s most famous exports.
 NULL
-53
+160
 vana_tallinn
 Vana Tallinn
 https://upload.wikimedia.org/wikipedia/commons/f/fb/Vana_Tallinn_Bottles.jpg
 Vana Tallinn (Estonian for Old Tallinn) is a dark brown and robust rum-based liqueur developed in the 1960s and produced by the Estonian company Liviko. The liqueur is sweet with a hint of Jamaican rum, flavoured by various natural spices, including citrus oil, cinnamon and vanilla.
 This rum based liqueur has a full-bodied flavor. Vana Tallinn is “sweet with a hint of Jamaican rum,”[24] and is flavored with spices such as citrus oil, cinnamon, and vanilla.
 NULL
-54
+161
 akvavit
 Akvavit
 https://wine-searcher1.freetls.fastly.net/images/labels/89/14/aalborg-taffel-akvavit-denmark-10288914.jpg
 Akvavit is a flavoured spirit that is principally produced in Scandinavia, where it has been produced since the 15th century. Akvavit gets its distinctive flavour from spices and herbs, and the main spice should (according to the European Union) be caraway or dill. It typically contains 40% alcohol by volume. The EU has established a minimum of 37.5% ABV for akvavit to be named as such.
 Akvavit, also referred to as “snaps” in Denmark, is dry flavored liquor with a strong presence of caraway.
 NULL
-55
+162
 seco_herrerano
 Seco Herrerano
 http://www.potomacwines.com/image/cache/data/Rum%202/Seco%20Herrerano%20Rum-500x500.JPG
 Seco Herrerano is an alcoholic beverage distilled from sugar cane. It is distilled three times. It is traditionally used straight or in mixed drinks as a replacement for rumor vodka. It is a clear liquor that is sold at 35 percent alcohol by volume (70 US proof). Seco Herrerano is made by the Varela family who invented the Seco in 1908, is the most widely available and popular of all brands. Varela Hermanos produces more than a million cases of Seco every year and it is sold to more than 65 countries around the world.
 Seco Herrerano is the national alcoholic beverage of Panama made from triple-distilled sugarcane.
 NULL
-56
+163
 tuica
 Tuica
 https://static1.squarespace.com/static/558b47d0e4b0aa58431377b4/t/565a1a53e4b022a251091b26/1448745555488/?format=500w
 Tuica is a traditional Romanian spirit that contains 24–65% alcohol by volume (usually 40–55%), prepared only from plums. Other spirits that are produced from other fruit or from a cereal grain are called "rachiu" or "rachie".
 Tuica is strong alcoholic drink prepared through a complex, specific process.
 NULL
-57
+164
 mastika
 Mastika
 http://balkon3.com/mk/wp-content/uploads/2012/10/3grozd_slika1.gif
 Mastika is a liqueur seasoned with mastic, a resin gathered from the mastic tree, a small evergreen tree native to the Mediterranean region. The name of the resin, hence the name of the drink, is derived from the Greek "to chew, to gnash the teeth".
 Mastika is “liquor seasoned with mastic, (resin from the mastic tree, a small evergreen tree native to the Mediterranean Region).”
 NULL
-58
+165
 rakia
 Rakia
 https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg
 Rakia or Rakija is the collective term for fruit brandy popular in Central Europe and Southeast Europe. The alcohol content of rakia is normally 40% ABV, but home-produced rakia can be stronger (typically 50% to 80%, even going as high as 90% at times).
 Rakija, also known as rakia throughout the Balkans, can be made from a variety of distilled fermented fruits including plums, grapes, apricots, peaches, mulberries, apples, pears, figs and cherries.
 NULL
-59
+166
 aguardiente
 Aguardiente
 https://wine-searcher1.freetls.fastly.net/images/labels/95/27/aguardiente-antioqueno-sin-azucar-colombia-10539527.jpg
 Aguardiente is a generic term for alcoholic beverages that contain between 29% and 60% alcohol by volume. The word is a compound of the Romance languages' words for "water" and "fiery", similarly to the English term "firewater". Both aguardiente and brandy—from the Dutch expression for "burnt (i.e., distilled) wine"—originated as terms for distilled spirits using whatever ingredients were available locally.	
 Aguardiente, also called “guaro,” “is an anise-flavored liquor derived from sugarcane” typically drunk straight.
 NULL
-60
+167
 cosmopolitan
 Cosmopolitan
 http://cdn.barmano.com/recipe-images/cosmopolitan-cocktail-56-small.jpg
 There are several ways to make a Cosmopolitan, also known as a Cosmo, here is one of our favorite recipes. You will want to have your ingredients, accessories and garnishes ready. Chill a cocktail glass with ice and pour it out when you are ready to pour the ingredients in the glass. Pour the cointreau, cranberry juice, lime juice, and lemon vodka into a cocktail shaker filled with ice. Shake well, and strain in large, cocktail glass. Garnish with lemon slice or lime wedge. Optional: chilling (or frosting) the glass, and/or adding sugar to the rim of the glass, can have a nice effect. Enjoy your Cosmopolitan cocktail!
 There are several ways to make a Cosmopolitan, also known as a Cosmo, here is one of our favorite recipes.
 NULL
-61
+168
 screaming_orgasm
 Screaming Orgasm
 http://cdn.barmano.com/recipe-images/screaming-orgasm-cocktail-143-small.jpg
 To make a Screaming Orgasm cocktail, use the following recipe instructions. You're checking out this cocktail because you love vodka and Kahlua, and not because of the name, right? Pour vodka, Bailey's and Kahlua into a shaker with ice.* Shake well, strain into a cocktail glass, and serve. *Be sure to use a higher quality vodka, to ensure it mixes well with the Bailey's. You can experiment with a chocolate sauce squeeze bottle to decorate the glass before you pour the ingredients into the glass, for an extra touch of flair and flavor. Enjoy your Screaming Orgasm cocktail!
 To make a Screaming Orgasm cocktail, use the following recipe instructions.
 NULL
-62
+169
 sex_on_the_beach
 Sex On The Beach
 http://cdn.barmano.com/recipe-images/sex-on-the-beach-cocktail-68-small.jpg
 The Sex On The Beach cocktail, a vacation and on the beach favorite, is probably ordered more for the name than the ingredients. Here's one of our favorite variations of this classic recipe. Chill a highball glass with ice and pour it out when you are ready to pour the ingredients in the glass. Empty the glass and pour the ingredients into the glass in the listed order. Pour the vodka, peach liqueur (or schnapps), cranberry juice, and finally orange juice into a glass filled with ice. Garnish with orange slice, and serve! Enjoy your Sex On The Beach, hopefully on a beach!
 The Sex On The Beach cocktail, a vacation and on the beach favorite, is probably ordered more for the name than the ingredients.
 NULL
-63
+170
 baby_guinness_shot
 Baby Guinness shot
 http://cdn.barmano.com/recipe-images/baby-guinness-cocktail-176-small.jpg
 Get in the Irish spirit with this Baby Guinness shooter! To make a Baby Guinness, follow this simple shot recipe. Pour the coffee liqueur into a shot glass. Gently pour the Irish cream over the back of a barspoon next. Serve with a stirrer on the side. Enjoy your Baby Guinness shot!
 Get in the Irish spirit with this Baby Guinness shooter!
 NULL
-64
+171
 swimming_pool
 Swimming Pool
 http://cdn.barmano.com/recipe-images/swimming-pool-cocktail-158-small.jpg
 To mix a Swimming Pool Cocktail use the following instructions. Chill a hurricane glass with ice and pour it out when you are ready to pour the ingredients in the glass. Pour pineapple juice, vodka, cream and cream of coconut with ice into a blender. Blend until smooth. Pour into a Hurricane glass. Float the blue curacao on top and serve it. Add a straw and garish with a slice of pineapple and a cherry. Enjoy your Swimming Pool!
 To mix a Swimming Pool Cocktail use the following instructions.
 NULL
-65
+172
 shit_on_grass
 Shit On Grass
 http://cdn.barmano.com/recipe-images/shit-on-grass-cocktail-141-small.jpg
 To make this curiously named shooter, the Shit on Grass, follow these easy instructions. Add half a shot of Midori Melon Liqueur to a shot glass. Next, layer Kahlua over the back of a bar spoon on top of the melon liqueur. Serve with a stirrer on the side. If you've followed through with your curiosity and decided to make this colorfully named shooter, we hope you enjoy your Shit on Grass shot!
 To make this curiously named shooter, the Shit on Grass, follow these easy instructions.
 NULL
-66
+173
 almond_joy_martini
 Almond Joy Martini
 http://cdn.barmano.com/recipe-images/almond-joy-martini-cocktail-114-small.jpg
 Also known as a Almond Joy Cocktail, while not technically a martini, is delicious dessert style cocktail. To make an Almond Joy Martini follow these simple instructions. Pour the creme de cacao and coconut rum into a shaker with ice, including a generous splash of Frangelico, and shake well. Strain into a chilled martini glass and serve. Garnish with shaved coconut if desired. As an optional touch, you can decorate the inside of the glass with chocolate syrup before you gently pour the drink in the glass.  Enjoy your Almond Joy Cocktail!
 Also known as a Almond Joy Cocktail, while not technically a martini, is delicious dessert style cocktail.
 NULL
-67
+174
 caribou_lou
 Caribou Lou
 http://mixnsip.com/wp-content/uploads/2011/09/drink-66e154c4d524.jpg
 Caribou Lou shares it's name with a song by rapper Tech N9ne, strong and great tasting rum based cocktail. It's a simple recipe containing pineapple juice, 151-proof rum and coconut-flavored rum. There's a couple ways to mix it, in a jug as noted in the song, or the following recipe we've broken it down for you in a highball glass. Chill a highball glass with ice and pour it out when you are ready to pour the ingredients in the glass. Pour the pineapple juice, 151-proof rum and coconut-flavored rum into a shaker with ice. Strain into a highball glass with fresh ice. Garnish with a wedge of pineapple and serve. Another easy to remember mix is one shot 151, one shot malibu rum and 3 shots pineapple juice. The jug version (drink with friends and don't plan to go anywhere afterwards!): using a 1 gallon jug, use one bottle of 151 rum, 1 cup of Malibu rum and fill the rest with pineapple juice. Enjoy your Caribou Lou!
 Caribou Lou shares it's name with a song by rapper Tech N9ne, strong and great tasting rum based cocktail.
 NULL
-68
+175
 blue_lady
 Blue Lady
 http://cdn.barmano.com/recipe-images/blue-lady-cocktail-145-small.jpg
 Here's our favorite version of a Blue Lady cocktail. You will want to have your ingredients and accessories ready. Chill the glass with fresh ice and pour it out when ready to pour the ingredients in the glass. Pour the gin, lemon juice and blue curaçao in a shaker with ice.* Shake well, and strain in chilled cocktail glass. We recommend adding sugar to the rim of the glass. Enjoy your Blue Lady!
 Here's our favorite version of a Blue Lady cocktail.
 NULL
-69
+176
 black_russian
 Black Russian
 http://cdn.barmano.com/recipe-images/black-russian-cocktail-3-small.jpg
 To mix a Black Russian cocktail use the following recipe instructions: Pour the Vodka and Kahlua into the glass filled with ice cubes. Stir gently, and serve. Enjoy this classic, the Black Russian!
 To mix a Black Russian cocktail use the following recipe instructions.
 NULL
-70
+177
 margarita
 Margarita
 http://cdn.barmano.com/recipe-images/margarita-cocktail-17-small.jpg
 The Margarita is one of the most popular cocktails in the United States. We prefer to 100% agave white bottling, also known as silver or blanco. Chill and rim the glass with salt (optional). Pour the tequila, lemon juice and orange liqueur into shaker with ice. Shake well. Strain into chilled cocktail glass rimmed with crusted salt. No garnish is necessary. Lime juice can be used in place of lemon juice. For fruit Margaritas, blend desired fruit with the above recipe. Enjoy your Margarita!
 The Margarita is one of the most popular cocktails in the United States.
 NULL
-71
+178
 irish_flag
 Irish Flag
 http://cdn.barmano.com/recipe-images/irish-flag-cocktail-240-small.jpg
 To make an Irish Flag, a popular St Patrick's Day shooter, use the following recipe instructions by carefully layering each of the ingredients in order. Pour the creme de menthe into a shot glass. Gently pour the Bailey's Irish cream over the back of a barspoon next. Finish by pouring the brandy over the back of a barspoon. Serve with a stirrer on the side. Enjoy your Irish Flag shooter!
 To make an Irish Flag, a popular St Patrick's Day shooter, use the following recipe instructions.
 NULL
-72
+179
 apple_martini
 Apple Martini
 http://cdn.barmano.com/recipe-images/apple-martini-cocktail-69-small.jpg
 Welcome to the Apple Martini, the non-martini martini. There are several ways to make a Apple Martini, here is one of our favorites. You will want to have your ingredients, accessories and garnishes ready. Chill the glass with fresh ice and pour it out when ready to pour the ingredients in the glass. Pour the vodka, orange liqueur and apple schnapps into mixing glass with ice cubes. Stir well, and strain in chilled cocktail glass. Garnish with a slice of apple. Serve and enjoy your Apple Martini!
 Welcome to the Apple Martini, the non-martini martini.
 NULL
-73
+180
 bubble_gum_shot
 Bubble Gum Shot
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 To make a Bubble Gum shooter: Pour the vodka, creme de bananes, peach schnapps, and orange juice into a shaker filled with ice. Shake well. Pour into 2 shot glasses. Enjoy your Bubble Gum shot!
 To make a Bubble Gum shooter...
 NULL
-74
+181
 tequila_sunrise
 Tequila Sunrise
 http://cdn.barmano.com/recipe-images/tequila-sunrise-cocktail-54-small.jpg
 To make a Tequila Sunrise cocktail follow these simple recipe instructions: Adding a splash of Grenadine syrup will give the look of a sunrise, do not stir. Garnish with orange slice and cherry. Enjoy your Tequila Sunrise! Pour tequila and orange juice directly into highball with ice cubes. Add a splash of Grenadine syrup (do not stir, to get the sunrise coloring effect). Enjoy your Tequila Sunrise cocktail!
 To make a Tequila Sunrise cocktail follow these simple recipe instructions.
 NULL
-75
+182
 blue_hawaiian
 Blue Hawaiian
 http://cdn.barmano.com/recipe-images/blue-hawaiian-cocktail-279-small.jpg
 There are very few people who don't like the Blue Hawaiian, it's a vacation in liquid form. This festive blue cocktail recipe will help you get in the vacation mood! A Blue Hawaii is typically served on the rocks, but here is one of our favorite Blue Hawaiian recipes pureed in a blender. We like our vacation drinks smooth. Chill a hurricane or highball glass with ice and pour it out when you are ready to pour the ingredients in the glass. Combine rum, blue Curacao, pineapple juice, cream of coconut, and 1 cup crushed ice in blender. Puree on high speed until smooth. Pour into your chilled glass. Garnish with a slice of pineapple and a maraschino cherry. Enjoy your Blue Hawaiian and start dreaming of beaches and Elvis.
 There are very few people who don't like the Blue Hawaiian, it's a vacation in liquid form.
 NULL
-76
+183
 grasshopper
 Grasshopper
 http://cdn.barmano.com/recipe-images/grasshopper-cocktail-34-small.jpg
 If you love the after dinner mint chocolates your grandparents used to have, then you'll love the Grasshopper. It's a dessert and a drink in one. To make a Grasshopper use the following recipe instructions: Pour the cream, white creme de cacao and creme de menthe into shaker filled with ice. Shake briskly for a few seconds. Strain into a chilled cocktail glass. Optional: Top with chocolate shavings. Enjoy your Grasshopper cocktail!
 If you love the after dinner mint chocolates your grandparents used to have, then you'll love the Grasshopper.
 NULL
-77
+184
 long_island_iced_tea
 Long Island Iced Tea
 http://cdn.barmano.com/recipe-images/long-island-iced-tea-cocktail-61-small.jpg
 To make a classic Long Island Iced Tea cocktail, a refreshing summer time favorite, try out the following famously odd mix of base spirits. Chill a collins glass with ice and pour it out when you are ready to mix your drink. Add the gin, vodka, sugar syrup, tequila, cola, lemon juice, rum and light rum into highball glass filled with ice. Stir gently. Garnish with lemon spiral, and serve with straw. *You could also try adding all the ingredients except the cola, in a shaker with ice, shake well, strain into an ice-filled glass and finally top it off with cola. Enjoy your Long Island Iced Tea, and pace yourself with this one!
 To make a classic Long Island Iced Tea cocktail, a refreshing summer time favorite, try out the following famously odd mix of base spirits.
 NULL
-78
+185
 french_connection
 French Connection
 http://cdn.barmano.com/recipe-images/french-connection-cocktail-4-small.jpg
 To mix a French Connection cocktail use the following recipe instructions: Pour the Cognac and Amaretto directly into a glass with ice cubes. Stir gently, and serve. Enjoy your French Connection!
 To mix a French Connection cocktail use the following recipe instructions.
 NULL
-79
+186
 german_chocolate_cake_shooter
 German Chocolate Cake shooter
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
 To make a German Chocolate Cake shooter: Pour the white creme de cacao, Frangelico, Malibu, butterscotch schnapps into a mixing glass. Stir. Strain into a shot glass and serve. Enjoy your German Chocolate Cake shot!
 To make a German Chocolate Cake shooter...
 NULL
-80
+187
 godfather
 Godfather
 http://cdn.barmano.com/recipe-images/god-father-cocktail-31-small.jpg
 To make a Godfather cocktail follow these simple recipe instructions: Pour the amaretto and the scotch directly into old fashioned glass filled with ice cubes. Stir well. You can also try the Godmother, which has vodka instead of whiskey. Enjoy your Godfather cocktail!
 To make a Godfather cocktail follow these simple recipe instructions.
 NULL
-81
+188
 white_russian
 White Russian
 http://cdn.barmano.com/recipe-images/white-russian-cocktail-2-small.jpg
 One of our favorite, classic cocktails, and the Dude's, The White Russian. To mix a White Russian use the following recipe instructions: Pour Kahlúa and vodka into old fashioned glass filled with ice. Float fresh cream on the top. Stir in slowly, and serve. For a lighter drink, the cream can be substituted for milk. Enjoy your White Russian!
 One of our favorite, classic cocktails, and the Dude's, The White Russian.
 NULL
-82
+189
 b-52_shot
 B-52 shot
 http://cdn.barmano.com/recipe-images/b-52-cocktail-5-small.jpg
 To make this classic B-52 shooter (or B52), use the following recipe instructions by carefully layering each of the ingredients in order. Pour the Kahlua into a shot glass. Followed by floating the Bailey's Irish cream. Finish by floating the Grand Marnier. Serve with a stirrer on the side. Enjoy your B-52!
 To make this classic B-52 shooter (or B52), use the following recipe instructions by carefully layering each of the ingredients in order.
 NULL
-83
+190
 atomic_cat
 Atomic Cat
 http://cdn.barmano.com/common-images/cocktail-small-default.gif
