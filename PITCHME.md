@@ -8,7 +8,7 @@ Group 3
 
 *- Every member of the group must participate
 - Each member introduces themselves and explains what their contribution was*
-- Rohit: 
+- Rohit: I worked on getting the data on many instances of each model and making connections between them through APIs and scraping websites with BeautifulSoup. I also made use of TF-IDF to generate tags for the instances so that they could be prioritized in the search results. Finally, I wrote all this data to our database.
 - Mica: 
 - Abhi: I worked on the frontend of our website. This includes the filter bar as well as the carousel pages displaying the results of a search. I also used D3 and Dimple JS to visualize the data of Group 5, brewtiful.world.
 - Evan:
