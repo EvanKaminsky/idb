@@ -10,7 +10,7 @@ Group 3
 - Each member introduces themselves and explains what their contribution was
 - Rohit: 
 - Mica: 
-- Abhi:
+- Abhi: I worked on the frontend of our website. This includes the filter bar as well as the carousel pages displaying the results of a search. I also used D3 and Dimple JS to visualize the data of Group 5, brewtiful.world.
 - Evan:
 - Balazs: I designed the backend of our website. This includes the interface to our database, the implementation of our api calls, as well as our search engine (complete with support for sorting, filtering, and paginating results on the backend). I also set up our python unit testing suite, implemented automatic code styling, scraped card colors from our image urls, and maintained our API documentation.
 
@@ -52,6 +52,8 @@ We critiqued Group 5
 ---
 
 ### Visualization
+
+- [Visualization](https://shinobhi.github.com/tipsy-data)
 
 - Exercise the API of another group in an interesting and useful way.
 - Use D3.
