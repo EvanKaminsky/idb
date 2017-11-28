@@ -175,6 +175,12 @@ def main():
             a = [int(s[0].strip()), int(s[1].strip())]
             c.execute('INSERT INTO INGREDIENT_TAGS values (%s, %s)', a)
 
+    with open('ingredient_country.txt') as cc:
+        for line14 in cc:
+            s = line14.split(' ')
+            a = [int(s[0].strip()), int(s[1].strip())]
+            c.execute('INSERT INTO INGREDIENT_COUNTRY values (%s, %s)', a)
+
     print("tags created")
 
     c.close()
