@@ -403,7 +403,7 @@ Waragi
 http://liquorstate.com/wp-content/uploads/2016/10/UG.jpg
 Waragi is a generic term in Uganda for domestic distilled beverages. Waragi is also given different names, depending on region of origin, the distillation process, or both. Waragi is known as a form of homemade Gin. It is commonly called Waragi in the central area of Uganda but in the West it is sometimes called "Kasese". In northern Uganda it is more commonly called "Lira Lira." The manufacturing of Waragi does not vary too much in the different parts of Uganda - only the ingredients are slightly different. A commercial brand called Uganda Waragi is produced and marketed by East African Breweries Limited.
 Waragi is comparable to gin, with a subtle flavor that’s easily overpowered when used in mixed drinks.
-NULL
+0.4
 61
 raki
 Raki
@@ -417,7 +417,7 @@ Kumis
 https://lordsofthedrinks.files.wordpress.com/2013/03/kumis.jpg
 Kumis is a fermented dairy product traditionally made from mare's milk. The drink remains important to the peoples of the Central Asian steppes, of Huno-Bulgar, Turkic and Mongol origin: Kazakhs, Bashkirs, Kalmyks, Kyrgyz, Mongols, and Yakuts.
 Kumis is unique in the respect that it’s a fermented alcoholic drink distilled from a dairy product, rather than a grain or fruit.
-0.045
+0.05
 63
 pitorro
 Pitorro
@@ -459,7 +459,7 @@ Arak
 https://baliskytour.files.wordpress.com/2011/06/arak.jpg
 Arak is a Balinese liquor which is distilled from tuak, a sweet wine made from the coconut palm flower. Tuak is about 5% alcohol. Good arak can contain over 50%. Some arak is distilled from brem, which is a wine made from black glutinous rice and coconut milk.
 Not to be confused with arak found in Jordan, arak from Bali is made from distilled coconut palm sap, or from a mixture of coconut milk and black sticky rice.
-NULL
+0.4
 69
 sang_som_rum
 Sang som rum
@@ -564,7 +564,7 @@ Akevitt
 http://www.norsk-akevitt.org//avApr/objects/Lysholm%20Linie.low.jpg
 Akvavit or aquavit is a flavoured spirit that is principally produced in Scandinavia, where it has been produced since the 15th century. Akvavit gets its distinctive flavour from spices and herbs, and the main spice should (according to the European Union) be caraway or dill. It typically contains 40% alcohol by volume. The EU has established a minimum of 37.5% ABV for akvavit to be named as such.
 Referred to as “water of life,” Akevitt is made from potatoes, along with various spices and herbs.
-0.375
+0.38
 84
 riga_black_balsam
 Riga Black Balsam
