@@ -95,6 +95,25 @@ class CocktailsTest(unittest.TestCase):
 
         self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
 
+    def test_navigation(self):
+        pass
+        # test each tab's navigation
+
+    def test_active_tab(self):
+        driver = self.driver
+        driver.get("http://tipsymix.com/cocktails")
+        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+
+        tabs = list(driver.find_elements_by_tag_name("li"))
+        self.assertIn("Home", tabs[0].get_attribute("outerHTML"))
+        self.assertIn("Cocktails", tabs[1].get_attribute("outerHTML"))
+        self.assertIn("Ingredients", tabs[2].get_attribute("outerHTML"))
+        self.assertIn("Brands", tabs[3].get_attribute("outerHTML"))
+        self.assertIn("Countries", tabs[4].get_attribute("outerHTML"))
+        self.assertIn("About", tabs[5].get_attribute("outerHTML"))
+
+        self.assertTrue(tabs[1].get_attribute("class") == "active")
+
     def tearDown(self):
         self.driver.close()
 
