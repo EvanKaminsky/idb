@@ -16,6 +16,9 @@ CLOUDSQL_PASSWORD = os.environ.get('CLOUDSQL_PASSWORD')
 class DB:
     conn = None
 
+    def __init__(self):
+        self.connect()
+
     def connect(self):
         self.conn = self.connect_to_cloudsql()
 
@@ -60,6 +63,7 @@ class DB:
             return db
 
         except Exception as e:
+            print(e)
             return None
 
 

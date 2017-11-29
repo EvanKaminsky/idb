@@ -2,6 +2,9 @@ import unittest
 from sys import platform
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from contextlib import contextmanager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.expected_conditions import staleness_of
 
 #CHROME_PATH = '/usr/bin/google-chrome'
 CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
@@ -24,6 +27,12 @@ def createWebdriver():
         driver = webdriver.Chrome(chrome_options=chrome_options)
 
     return driver
+
+@contextmanager
+def wait_for_page_load(driver, timeout=5):
+    old_page = driver.find_element_by_tag_name('html')
+    yield
+    WebDriverWait(driver, timeout).until(staleness_of(old_page))
 
 
 class SampleTest(unittest.TestCase):
@@ -74,6 +83,7 @@ class HomeTest(unittest.TestCase):
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.click()
+        wait_for_page_load(driver, 5)
         self.assertTrue(driver.current_url != prevUrl)
 
     def tearDown(self):
