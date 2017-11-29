@@ -32,8 +32,8 @@ export default class AboutPage extends React.Component {
                         <Button color='primary' href="https://github.com/EvanKaminsky/idb"> GitHub </Button>
                         <Button color='primary' href="https://trello.com/b/0Ks1mfas/primary"> Trello</Button>
                         <Button color='primary' href="http://docs.evankaminsky.apiary.io/"> Apiary API </Button>
-                        <Button color='primary' href="https://utexas.box.com/s/mczsxwvbu0r0pq2k541asou4maczaxz0">Technical Report</Button>
-                        <Button color='primary' href="https://utexas.box.com/s/gktvgjswvitlivx5hub9vjv48lzmpshp">UML</Button>
+                        <Button color='primary' href="https://rohitbhatta.gitbooks.io/technical-report/content/">Technical Report</Button>
+                        <Button color='primary' href="https://rohitbhatta.gitbooks.io/uml-diagram/content/">UML</Button>
                         <Button color='primary' href="https://utexas.box.com/s/5vtuyat2nzw7cpu1rzyf3evy2g59xlli">PlanIt Poker</Button>
                         <br/><br/></div>
 
