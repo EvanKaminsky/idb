@@ -67,6 +67,13 @@ class SqlTest(unittest.TestCase):
         #    ==>
         # ingredient b -> cocktail a
 
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_tableLinks(self):
+        cocktails = sql.sql_fetchAll("cocktails")
+        cocktailA = cocktails[0]
+        ingredientB = cocktailA["ingredients"][0]
+        ingredientBCocktails = ingredientB["cocktails"]
+        self.assertIn(cocktailA, ingredientBCocktails)
 
 if __name__ == '__main__':
     unittest.main()
