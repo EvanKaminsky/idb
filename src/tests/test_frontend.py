@@ -63,14 +63,15 @@ class HomeTest(unittest.TestCase):
     def test_search_navigation(self):
         driver = self.driver
         driver.get("http://tipsymix.com")
+
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-        searchButton = list(driver.find_elements_by_class_name("search"))[0]
+        searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.send_keys(Keys.RETURN)
         self.assertTrue(driver.current_url == prevUrl)
 
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-        searchButton = list(driver.find_elements_by_class_name("search"))[0]
+        searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.click()
         self.assertTrue(driver.current_url != prevUrl)
