@@ -54,24 +54,47 @@ class SampleTest(unittest.TestCase):
         self.driver.close()
 
 
-### Tests for the Homepage
+# General Tests
+def test_navbar(tester):
+    driver = tester.driver
+    driver.get(tester.url)
+    html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
 
+    tabs = list(driver.find_elements_by_tag_name("li"))
+    tester.assertIn("Home", tabs[0].get_attribute("outerHTML"))
+    tester.assertIn("Cocktails", tabs[1].get_attribute("outerHTML"))
+    tester.assertIn("Ingredients", tabs[2].get_attribute("outerHTML"))
+    tester.assertIn("Brands", tabs[3].get_attribute("outerHTML"))
+    tester.assertIn("Countries", tabs[4].get_attribute("outerHTML"))
+    tester.assertIn("About", tabs[5].get_attribute("outerHTML"))
+
+    tester.assertTrue(tabs[tester.nav_index].get_attribute("class") == "active")
+
+def test_title(tester, title="Tipsy Mix"):
+    driver = tester.driver
+    driver.get(tester.url)
+    html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+    tester.assertIn(title, list(driver.find_elements_by_tag_name("h1"))[0].text)
+
+
+### Tests for the Homepage
 class HomeTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com"
+        self.nav_index = 0
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        test_title(self)
 
-        self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
+    def test_active_tab(self):
+        test_navbar(self)
 
     def test_search_navigation(self):
         driver = self.driver
-        driver.get("http://tipsymix.com")
+        driver.get(self.url)
 
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
@@ -95,34 +118,16 @@ class HomeTest(unittest.TestCase):
 class CocktailsTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com/cocktails"
+        self.nav_index = 1
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/cocktails")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-
-        self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
-
-    def test_navigation(self):
-        pass
-        # test each tab's navigation
+        test_title(self)
 
     def test_active_tab(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/cocktails")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-
-        tabs = list(driver.find_elements_by_tag_name("li"))
-        self.assertIn("Home", tabs[0].get_attribute("outerHTML"))
-        self.assertIn("Cocktails", tabs[1].get_attribute("outerHTML"))
-        self.assertIn("Ingredients", tabs[2].get_attribute("outerHTML"))
-        self.assertIn("Brands", tabs[3].get_attribute("outerHTML"))
-        self.assertIn("Countries", tabs[4].get_attribute("outerHTML"))
-        self.assertIn("About", tabs[5].get_attribute("outerHTML"))
-
-        self.assertTrue(tabs[1].get_attribute("class") == "active")
+        test_navbar(self)
 
     def tearDown(self):
         self.driver.close()
@@ -133,60 +138,60 @@ class CocktailsTest(unittest.TestCase):
 class IngredientsTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com/ingredients"
+        self.nav_index = 2
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/ingredients")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        test_title(self)
 
-        self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
+    def test_active_tab(self):
+        test_navbar(self)
 
     def tearDown(self):
         self.driver.close()
 
 
 ### Tests for the Brands List Page
-
 class BrandsTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com/brands"
+        self.nav_index = 3
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/brands")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        test_title(self)
 
-        self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
+    def test_active_tab(self):
+        test_navbar(self)
 
     def tearDown(self):
         self.driver.close()
 
 
 ### Tests for the Countries List Page
-
 class CountriesTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com/countries"
+        self.nav_index = 4
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/countries")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        test_title(self)
 
-        self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
+    def test_active_tab(self):
+        test_navbar(self)
 
     def tearDown(self):
         self.driver.close()
 
 
 ### Tests for detail pages
-
 class DetailPageTest(unittest.TestCase):
 
     def setUp(self):
@@ -197,7 +202,6 @@ class DetailPageTest(unittest.TestCase):
         driver = self.driver
         driver.get("http://tipsymix.com/cocktail-detail/1")
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-
         self.assertTrue(len(list(driver.find_elements_by_class_name("detail-box"))) > 0)
 
     def tearDown(self):
@@ -205,19 +209,19 @@ class DetailPageTest(unittest.TestCase):
 
 
 ### Tests for the About-Us Page
-
 class AboutUsTest(unittest.TestCase):
 
     def setUp(self):
+        self.url = "http://tipsymix.com/about"
+        self.nav_index = 5
         self.driver = createWebdriver()
         self.driver.implicitly_wait(5)
 
     def test_title(self):
-        driver = self.driver
-        driver.get("http://tipsymix.com/about")
-        html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        test_title(self, title="About")
 
-        self.assertIn("About", list(driver.find_elements_by_tag_name("h1"))[0].text)
+    def test_active_tab(self):
+        test_navbar(self)
 
     def tearDown(self):
         self.driver.close()
