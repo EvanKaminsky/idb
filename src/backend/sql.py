@@ -63,7 +63,7 @@ class DB:
             return db
 
         except Exception as e:
-            print(e)
+            # print(e)
             return None
 
 

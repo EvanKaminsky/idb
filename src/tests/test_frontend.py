@@ -4,6 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from contextlib import contextmanager
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.expected_conditions import staleness_of
 
 #CHROME_PATH = '/usr/bin/google-chrome'
@@ -12,7 +15,7 @@ WINDOW_SIZE = "1920,1080"
 
 def createWebdriver():
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
 
     try:
@@ -100,13 +103,27 @@ class HomeTest(unittest.TestCase):
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.send_keys(Keys.RETURN)
-        self.assertTrue(driver.current_url == prevUrl)
+        timeout = 5
+        try:
+            element_present = EC.presence_of_element_located((By.ID, 'grid'))
+            WebDriverWait(driver, timeout).until(element_present)
+            self.assertTrue(True)
+        except TimeoutException:
+            self.assertTrue(False)
+
+        driver.get(self.url)
 
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.click()
-        wait_for_page_load(driver, 5)
+
+        timeout = 5
+        try:
+            element_present = EC.presence_of_element_located((By.ID, 'grid'))
+            WebDriverWait(driver, timeout).until(element_present)
+        except TimeoutException:
+            self.assertTrue(False)
         self.assertTrue(driver.current_url != prevUrl)
 
     def tearDown(self):
