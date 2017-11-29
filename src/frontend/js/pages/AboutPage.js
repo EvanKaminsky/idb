@@ -35,6 +35,8 @@ export default class AboutPage extends React.Component {
                         <Button color='primary' href="https://rohitbhatta.gitbooks.io/technical-report/content/">Technical Report</Button>
                         <Button color='primary' href="https://rohitbhatta.gitbooks.io/uml-diagram/content/">UML</Button>
                         <Button color='primary' href="https://utexas.box.com/s/5vtuyat2nzw7cpu1rzyf3evy2g59xlli">PlanIt Poker</Button>
+                        <Button color='primary' href="https://shinobhi.github.com/tipsy-data">Visualization</Button>
+                        <Button color='primary' href="https://gitpitch.com/EvanKaminsky/idb/staging">GitPitch</Button>
                         <br/><br/></div>
 
                     <Typography color='inherit' type='display1'>Data Sources:</Typography>
