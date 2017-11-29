@@ -1,4 +1,5 @@
 import unittest
+from sys import platform
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -17,8 +18,11 @@ def createWebdriver():
     except NameError:
         pass
 
-    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,
-                                                    chrome_options=chrome_options)
+    if platform == "win32":
+        driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+    else:
+        driver = webdriver.Chrome(chrome_options=chrome_options)
+
     return driver
 
 
@@ -56,20 +60,20 @@ class HomeTest(unittest.TestCase):
 
         self.assertIn("Tipsy Mix", list(driver.find_elements_by_tag_name("h1"))[0].text)
 
-     def test_search_navigation(self):
-     	driver = self.driver
+    def test_search_navigation(self):
+        driver = self.driver
         driver.get("http://tipsymix.com")
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-        searchButton = list(driver.find_elements_by_class_name("detail-box"))[0]
-        prevUrl = driver.getCurrentUrl()
+        searchButton = list(driver.find_elements_by_class_name("search"))[0]
+        prevUrl = driver.current_url
         searchButton.send_keys(Keys.RETURN)
-        self.assertTrue(driver.getCurrentUrl() != prevUrl)
+        self.assertTrue(driver.current_url == prevUrl)
 
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
-        searchButton = list(driver.find_elements_by_class_name("detail-box"))[0]
-        prevUrl = driver.getCurrentUrl()
+        searchButton = list(driver.find_elements_by_class_name("search"))[0]
+        prevUrl = driver.current_url
         searchButton.click()
-        self.assertTrue(driver.getCurrentUrl() != prevUrl)
+        self.assertTrue(driver.current_url != prevUrl)
 
     def tearDown(self):
         self.driver.close()
