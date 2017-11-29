@@ -28,9 +28,40 @@ class EngineTest(unittest.TestCase):
         self.assertTrue(blankSearch["page"] > 0)
 
     # test that query finds relevant results
-    # test pagination
-    # test sorting
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_queryRelevantResults(self):
+        testSearch = engine.runSearch(query="cocktail")
+        self.assertTrue(type(testSearch) is dict)
+        self.assertTrue("results" in testSearch)
+        self.assertTrue(len(testSearch["results"]) > 0)
+        self.assertTrue(testSearch["category"] == "COCKTAILS")
 
+
+    # test pagination
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_pagination(self):
+        testSearch = engine.runSearch(query="cocktail", page=1, pageSize=5)
+        self.assertEqual(len(testSearch["results"]), 5)
+        testSearchP2 = engine.runSearch(query="cocktail", page=2, pageSize=5)
+        self.assertNotEqual(testSearch["results"][0], testSearchP2["results"][0])
+        self.assertNotIn(testSearch["results"][0], testSearchP2["results"])
+
+    # test sorting
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_sorting(self):
+        testSearch = engine.runSearch(query="cocktail")
+        sorted = engine.applySort(testSearch["results"], "[name][a]")
+        self.assertLessEqual(sorted[0]["name"], sorted[1]["name"])
+        self.assertLessEqual(sorted[0]["name"], sorted[len(sorted) - 1]["name"])
+        self.assertLessEqual(sorted[1]["name"], sorted[2]["name"])
+
+    unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    def test_sortingReverse(self):
+        testSearch = engine.runSearch(query="cocktail")
+        sortedReverse = engine.applySort(testSearch["results"], "[name][d]")
+        self.assertLessEqual(sortedReverse[1]["name"], sortedReverse[0]["name"])
+        self.assertLessEqual(sortedReverse[len(sortedReverse) - 1]["name"], sortedReverse[0]["name"])
+        self.assertLessEqual(sortedReverse[2]["name"], sortedReverse[1]["name"])
 
 if __name__ == '__main__':
     unittest.main()
