@@ -136,7 +136,7 @@ export default class GridPage extends React.Component {
         const placeholder = "Search for " + this.props.category + "...";
 
         return (
-            <div className={{backgroundStyle}}>
+            <div id="grid" className={{backgroundStyle}}>
                 <h1>Tipsy Mix</h1>
                 <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
 
