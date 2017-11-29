@@ -29,3 +29,13 @@ Story Title,Estimate,Vote Started,Voting Duration,Avg Voting Time,Fastest,Slowes
 "As someone celebrating the 4th of July, I want to only find American drinks and brands.",5,31/10/2017 00:45:26,0:00:35,0:00:30,Rohit,Evan,13
 "As an investor, I want to see a list of popular brands and their values all in one website.",8,31/10/2017 00:46:32,0:00:27,0:00:22,Mica,Rohit,13
 "As a study abroad student, I want to see what kind of cocktails I can find abroad.",5,31/10/2017 00:47:22,0:00:29,0:00:26,Mica,Abhi,13
+"As a cautious developer, I want to be able to test the GUI of our website using Selenium before it goes into production.",5,16/11/2017 00:23:07,0:00:35,0:00:29,Rohit,Abhi,5
+"As a backend developer, I want to unit test my RESTful API so that we don't have any 500 errors.",5,16/11/2017 00:24:15,0:00:32,0:00:26,Evan,Abhi,5
+"As a visual learner, I would like to see all our data visualized using D3.",8,16/11/2017 00:25:31,0:00:44,0:00:34,Rohit,Balazs,5
+"As a database specialist, I would like to construct a UML diagram of our database design.",8,16/11/2017 00:26:08,0:00:27,0:00:20,Rohit,Mica,8
+"As a software developer, I want to build an efficient search engine.",13,16/11/2017 00:27:02,0:00:53,0:00:42,Balazs,Evan,13
+"As a UX designer, I want to highlight search terms so they can easily be seen.",5,16/11/2017 00:27:59,0:00:36,0:00:30,Evan,Mica,8
+"As a software developer, I want to document my ideas well so that I can read it several months from now and understood what I did.",5,16/11/2017 00:28:35,0:00:25,0:00:18,Mica,Rohit,5
+"As a QA tester, I want to be able to guarantee my team wrote unit tests of their code.",5,16/11/2017 00:29:16,0:00:43,0:00:31,Evan,Rohit,5
+"As a product manager on a development team, I want to be able to give a quick and informative presentation on our website.",8,16/11/2017 00:30:03,0:00:38,0:00:28,Abhi,Mica,5
+"As a web developer, I want to get useful information through APIs and scraping.",13,16/11/2017 00:31:15,0:00:35,0:00:26,Abhi,Balazs,13
