@@ -185,6 +185,8 @@ def applyFilter(results, filterString):
     rules[0] = rules[0][1:]
     rules[-1] = rules[-1][0:-1]
     for r in rules:
+        if r == "":
+            continue
         try:
             r = r[1:-1]
             p1 = r[0:r.find("]")]
