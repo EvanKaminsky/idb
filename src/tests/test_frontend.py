@@ -15,7 +15,7 @@ WINDOW_SIZE = "1920,1080"
 
 def createWebdriver():
     chrome_options = webdriver.ChromeOptions()
-    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
 
     try:
@@ -102,10 +102,11 @@ class HomeTest(unittest.TestCase):
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
+        titleElement = list(driver.find_elements_by_tag_name("h1"))[0]
         searchButton.send_keys(Keys.RETURN)
         timeout = 5
         try:
-            element_present = EC.presence_of_element_located((By.ID, 'grid'))
+            element_present = EC.staleness_of(titleElement)
             WebDriverWait(driver, timeout).until(element_present)
             self.assertTrue(True)
         except TimeoutException:
@@ -114,13 +115,14 @@ class HomeTest(unittest.TestCase):
         driver.get(self.url)
 
         html = list(driver.find_elements_by_tag_name("body"))[0].get_attribute('outerHTML')
+        titleElement = list(driver.find_elements_by_tag_name("h1"))[0]
         searchButton = list(driver.find_elements_by_class_name("TipsyButton-button-1"))[0]
         prevUrl = driver.current_url
         searchButton.click()
 
         timeout = 5
         try:
-            element_present = EC.presence_of_element_located((By.ID, 'grid'))
+            element_present = EC.staleness_of(titleElement)
             WebDriverWait(driver, timeout).until(element_present)
         except TimeoutException:
             self.assertTrue(False)
