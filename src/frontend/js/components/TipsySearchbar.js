@@ -2,7 +2,6 @@ import React from 'react';
 
 import "../../static/css/TipsySearchbar.css";
 import TipsyButton from "./TipsyButton.js";
-import TipsySearchField from "./TipsySearchField.js";
 
 export default class TipsySearchbar extends React.Component {
 

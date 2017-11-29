@@ -1,11 +1,14 @@
 import React from 'react';
 import Grid from 'material-ui/Grid';
+import Typography from 'material-ui/Typography';
 
 import TipsySearchbar from "../components/TipsySearchbar";
 import Spinner from "../components/Spinner";
 import TipsyGrid from "../components/TipsyGrid.js";
 import Stepper from "../components/Stepper.js"
 import FilterSort from "../components/FilterSort.js";
+
+import { backgroundStyle } from "../constants.js";
 
 export default class GridPage extends React.Component {
 
@@ -37,12 +40,15 @@ export default class GridPage extends React.Component {
         this.nextPage = this.nextPage.bind(this);
         this.previousPage = this.previousPage.bind(this);
         this.relayout = this.relayout.bind(this);
-        this.setDescriptors = this.setDescriptors.bind(this);
         this.openDetail = this.openDetail.bind(this);
     }
 
     componentDidMount() {
-        window.constants.api.getDescriptions().then(json => this.setDescriptors(json));
+        window.constants.api.getDescriptions(this.props.descriptorFields).then(fields => {
+            if (this.state.descriptors === null && fields !== null) {
+                this.setState({descriptors: fields});
+            }
+        });
     }
 
 
@@ -87,18 +93,12 @@ export default class GridPage extends React.Component {
         this.state.isLoading = false;
         if (json !== null) {
             this.setState({
-                elements:      json.results,
-                total_pages:   json.totalPages,
-                page:  json.page,
+                elements:    json.results,
+                total_pages: json.totalPages,
+                page:   json.page,
                 filter: json.filter,
                 query:  json.query
             });
-        }
-    }
-
-    setDescriptors(json) {
-        if (this.state.descriptors === null && json !== null && json[this.props.descriptorFields] !== null) {
-            this.setState({descriptors: json[this.props.descriptorFields].map(field => field.Field)});
         }
     }
 
@@ -136,12 +136,20 @@ export default class GridPage extends React.Component {
         const placeholder = "Search for " + this.props.category + "...";
 
         return (
-            <div>
+            <div className={{backgroundStyle}}>
                 <h1>Tipsy Mix</h1>
                 <TipsySearchbar category={this.props.category} placeholder={placeholder} searchAction={this.search}/>
-                <FilterSort descriptors={this.state.descriptors} state={this.filter_state} filterAction={this.filter}/>;
-                <TipsyGrid elements={display}/>
+
+                <FilterSort
+                    descriptors={this.state.descriptors}
+                    state={this.filter_state}
+                    filterAction={this.filter}
+                    pagination={[this.state.page, this.state.total_pages]}
+                />
+
                 {stepper}
+
+                <TipsyGrid elements={display}/>
             </div>
         )
     }

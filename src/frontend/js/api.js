@@ -60,7 +60,9 @@ function API() {
             modified = true;
         }
          if (query !== null && query !== undefined) {
-            url += (modified ? "&query=" : "query=") + encodeURIComponent(query);
+            if (query !== "") {
+                url += (modified ? "&query=" : "query=") + encodeURIComponent(query);
+            }
         }
         if (page !== null && page !== undefined) {
             url += "&page=" + page;
@@ -73,18 +75,6 @@ function API() {
         }
 
         return this.get(encodeURI(url)).then(json => {return json});
-    };
-
-    this.getIngredients = function(page, pagesize, query, filterRules) {
-        return this.search("ingredients", page, pagesize, query, filterRules);
-    };
-
-    this.getCountries = function(page, pagesize, query, filterRules) {
-        return this.search("countries", page, pagesize, query, filterRules);
-    };
-
-    this.getBrands = function(page, pagesize, query, filterRules) {
-        return this.search("brands", page, pagesize, query, filterRules);
     };
 
     this.getCocktailDetail = function(slug) {
@@ -103,8 +93,13 @@ function API() {
         return this.get("brands/" + slug);
     };
 
-    this.getDescriptions = function() {
-        return this.get("describe/");
+    this.getDescriptions = function(descriptorFields) {
+        const ignored = ["id", "stdname", "imageurl", "websiteurl"];
+        return this.get("describe/").then(json => {
+            return json[descriptorFields].map(field => field.Field).filter(function(field) {
+                return !ignored.includes(field);
+            });
+        });
     }
 
 }

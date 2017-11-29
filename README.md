@@ -3,10 +3,16 @@
 # TipsyMix
 The TTP Project's IDB
 
-https://tipsymix-ttp.appspot.com
+https://www.tipsymix.com  
 
-## Helpful Links
-[Assignment](https://www.cs.utexas.edu/users/downing/cs373/projects/IDB1.html)  
+## Resources
+[Assignment](https://www.cs.utexas.edu/users/downing/cs373/projects/IDB4.html)  
+[GitPitch](https://gitpitch.com/EvanKaminsky/idb/staging)  
+[GitBook](https://www.gitbook.com/book/evankaminsky/tipsymix/)  
+[Appspot](https://tipsymix-ttp.appspot.com)    
+[Visualization](https://shinobhi.github.com/tipsy-data)
+
+## Tools
 [Slack](https://ttp-project.slack.com/messages/C76A1MN20/)  
 [Trello](https://trello.com/thettpproject)  
 [Travis CI](https://travis-ci.org/EvanKaminsky/idb)  

@@ -164,15 +164,18 @@ def applyFilterRules(results, filterRules):
 # Sorts results by a given sorting rule
 
 def applySort(results, sortString):
-    sortField = sortString[sortString.find("[") + 1:sortString.find("]")]
-    sortString = sortString[sortString.find("]") + 2:]
     if (sortString is None or len(sortString) == 0):
         #default to returning as-is in case the regex fails
         return results
     else:
-        sortMode = sortString[0]
-        results = sorted(results, key=lambda item: item.get(sortField), reverse=(sortMode == "d"))
-        return results
+        try:
+            sortField = sortString[sortString.find("[") + 1:sortString.find("]")]
+            sortString = sortString[sortString.find("]") + 2:]
+            sortMode = sortString[0]
+            results = sorted(results, key=lambda item: item.get(sortField), reverse=(sortMode == "d"))
+            return results
+        except Exception as e:
+            return results
 
 
 # Filters results by a given set of filtering rules
@@ -182,12 +185,17 @@ def applyFilter(results, filterString):
     rules[0] = rules[0][1:]
     rules[-1] = rules[-1][0:-1]
     for r in rules:
-        r = r[1:-1]
-        p1 = r[0:r.find("]")]
-        p2 = r[r.find("[") + 1:]
+        if r == "":
+            continue
+        try:
+            r = r[1:-1]
+            p1 = r[0:r.find("]")]
+            p2 = r[r.find("[") + 1:]
 
-        rex = re.compile(p2)
-        results = (x for x in results if (rex.search(x.get(p1)) is not None))
+            rex = re.compile(p2)
+            results = (x for x in results if ((x.get(p1) is not None) and (rex.search(x.get(p1)) is not None)))
+        except:
+            pass
     return results
 
 

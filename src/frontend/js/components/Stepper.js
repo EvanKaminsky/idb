@@ -58,11 +58,7 @@ class Stepper extends React.Component {
         const back = this.props.back;
 
         return (
-            <div>
             <div className={classes.root}>
-                <Paper square elevation={0} className={classes.header}>
-                    <Typography>Page {currentPage} of {pageCount}</Typography>
-                </Paper>
                 <MobileStepper
                     type="text"
                     steps={pageCount}
@@ -82,7 +78,6 @@ class Stepper extends React.Component {
                         </Button>
                     }
                 />
-            </div>
             </div>
         );
     }
