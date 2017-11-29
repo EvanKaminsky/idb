@@ -184,7 +184,6 @@ def applyFilter(results, filterString):
     rules = filterString.split(")-(")
     rules[0] = rules[0][1:]
     rules[-1] = rules[-1][0:-1]
-    print(rules)
     for r in rules:
         try:
             r = r[1:-1]
@@ -193,6 +192,8 @@ def applyFilter(results, filterString):
 
             rex = re.compile(p2)
             results = (x for x in results if ((x.get(p1) is not None) and (rex.search(x.get(p1)) is not None)))
+        except:
+            pass
     return results
 
 
