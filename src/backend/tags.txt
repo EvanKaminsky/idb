@@ -850,9 +850,9 @@
 850 waragi
 851 uganda
 852 called
-853 waragi
-854 uganda
-855 called
+853 slivovitz
+854 slovakia
+855 czech
 856 turkey
 857 greece
 858 countries
@@ -946,6 +946,6 @@
 946 rakia
 947 europe
 948 rakija
-949 for
-950 aguardiente
-951 term
+949 term
+950 for
+951 aguardiente
