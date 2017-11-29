@@ -55,7 +55,7 @@ class EngineTest(unittest.TestCase):
         self.assertLessEqual(sorted[0]["name"], sorted[len(sorted) - 1]["name"])
         self.assertLessEqual(sorted[1]["name"], sorted[2]["name"])
 
-    unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
+    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
     def test_sortingReverse(self):
         testSearch = engine.runSearch(query="cocktail")
         sortedReverse = engine.applySort(testSearch["results"], "[name][d]")
