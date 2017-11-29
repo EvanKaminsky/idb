@@ -6,22 +6,29 @@ Group 3
 
 ### Introduction
 
-*- Every member of the group must participate
-- Each member introduces themselves and explains what their contribution was*
-- Rohit: I worked on getting the data on many instances of each model and making connections between them through APIs and scraping websites with BeautifulSoup. I also made use of TF-IDF to generate tags for the instances so that they could be prioritized in the search results. Finally, I wrote all this data to our database.
+- Rohit: Data acquisition (APIs + BeautifulSoup scraper), TF-IDF keyword generation
 - Mica: 
-- Abhi: I worked on the frontend of our website. This includes the filter bar as well as the carousel pages displaying the results of a search. I also used D3 and Dimple JS to visualize the data of Group 5, brewtiful.world.
-- Evan:
-- Balazs: I designed the backend of our website. This includes the interface to our database, the implementation of our api calls, as well as our search engine (complete with support for sorting, filtering, and paginating results on the backend). I also set up our python unit testing suite, implemented automatic code styling, scraped card colors from our image urls, and maintained our API documentation.
+- Abhi: React UI, D3 + Dimple JS visualization of brewtiful.world (Group 5)
+- Evan: React UI + UX, Flask API interface, GCP deployment
+- Balazs: Python backend (DB interface, API implementation, full search engine), Testing suite
 
 ---
 
-### Demonstration
+### TipsyMix
 
-- [Website](http://www.tipsymix.com/)
-- Navigate
-- Search
-- Unit Tests
+- Cocktail database for amateur and professional bartenders
+- Stores cocktails, ingredients, brands, and countries
+- Use cases for recipe lookup, cocktail discovery, and general drink info
+
+---
+
+### Demo
+
+- [Website](https://www.tipsymix.com/)
+- Best category search engine
+- Sort, filter, and pagination for all model types
+- Detail cards with intermodel links
+- Suite of frontend and backend unit tests
 
 ---
 
