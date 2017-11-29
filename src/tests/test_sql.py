@@ -55,25 +55,17 @@ class SqlTest(unittest.TestCase):
 
     # test uniqueness of stdame
     @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
-    def test_uniquestdNames(self):
-        ingredientstdnames = sql.sql_select("stdname", "INGREDIENTS")
-        for ingredient in ingredientstdnames:
-            for ingredient2 in ingredientstdnames:
-                if not ingredient is ingredient2:
-                    self.assertTrue(ingredient["stdname"] != ingredient2["stdname"])
+    def test_uniqueSTDNames(self):
+        brandstdnames = sql.sql_select("stdname", "BRANDS")
+        for brand in brandstdnames:
+            for brand2 in brandstdnames:
+                if not brand is brand2:
+                    self.assertTrue(brand["stdname"] != brand2["stdname"])
 
     # test linking tables match up in the 2 directions
         # cocktail a -> ingredient b
         #    ==>
         # ingredient b -> cocktail a
-
-    @unittest.skipIf(not sql.sql_test(), "Not Connected to Database")
-    def test_tableLinks(self):
-        cocktails = sql.sql_fetchAll("cocktails")
-        cocktailA = cocktails[0]
-        ingredientB = cocktailA["ingredients"][0]
-        ingredientBCocktails = ingredientB["cocktails"]
-        self.assertIn(cocktailA, ingredientBCocktails)
 
 if __name__ == '__main__':
     unittest.main()
