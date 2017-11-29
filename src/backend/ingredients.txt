@@ -398,12 +398,12 @@ Waragi is a generic term in Uganda for domestic distilled beverages. Waragi is a
 Waragi is comparable to gin, with a subtle flavor that’s easily overpowered when used in mixed drinks.
 0.4
 60
-waragi
-Waragi
-http://liquorstate.com/wp-content/uploads/2016/10/UG.jpg
-Waragi is a generic term in Uganda for domestic distilled beverages. Waragi is also given different names, depending on region of origin, the distillation process, or both. Waragi is known as a form of homemade Gin. It is commonly called Waragi in the central area of Uganda but in the West it is sometimes called "Kasese". In northern Uganda it is more commonly called "Lira Lira." The manufacturing of Waragi does not vary too much in the different parts of Uganda - only the ingredients are slightly different. A commercial brand called Uganda Waragi is produced and marketed by East African Breweries Limited.
-Waragi is comparable to gin, with a subtle flavor that’s easily overpowered when used in mixed drinks.
-0.4
+slivovitz
+Slivovitz
+https://wine-searcher1.freetls.fastly.net/images/labels/05/65/navip-slivovitz-plum-brandy-serbia-10430565.jpg
+Slivovitz is a fruit brandy made from damson plums, often referred to as plum brandy. Slivovitz is produced in East-Central and South-East Europe both commercially and privately. Primary producers are in Bosnia, Bulgaria, Croatia, Czech Republic, Hungary, Poland, Romania, Serbia, Slovakia and Slovenia. In the Balkans, Slivovitz is considered a kind of Rakia, in Hungary Pálinka and in the Czech Republic and Slovakia Pálenka, corresponding to the distilled spirits category.
+Slivovitz is the national drink of Serbia and plum is the national fruit.
+0.5
 61
 raki
 Raki
