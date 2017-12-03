@@ -32,7 +32,7 @@ Group 3
 
 ---
 
-### Self Critque
+### Self Critique
 
 *NOTE: We should include screenshots to accompany our points*
 
@@ -48,17 +48,26 @@ Group 3
 
 ### Other Critique
 
-*We critiqued Group 5*
-*NOTE: We should include screenshots to accompany our points*
+*We critiqued Group 5: brewtiful.world*
 
 - What did they do well?
-	They had a lot of data and clear images.
+-- They had a lot of data and connections and clear images.
+-- Aesthetic design, Ex.: hovering over instances in model pages
+-- Search was quick and worked correctly:w
+
 - What did we learn from their website?
-	We learned a lot about the different styles of craft beer and the breweries that make them.
+--The different styles of craft beer and the breweries that make them.
+--The Reviews model page
+
+---
+
+### Other Critique
+
 - What can they do better?
-	The mobile site has some issues.
+--Models pages take a while to load.
+--The mobile site has some issues.
 - What puzzles us about their website?
-	The home and about pages are the same page, so there's no need to have two links.
+Home and About pages are the same.
 
 ---
 
