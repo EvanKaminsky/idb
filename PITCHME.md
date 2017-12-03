@@ -60,7 +60,7 @@ Group 3
 
 ### Picture
 
-![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+![picture alt](https://i.gyazo.com/67a06f508deb26b49d95853a67b2c70e.png)
 
 
 ---
