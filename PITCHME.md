@@ -51,11 +51,17 @@ Group 3
 - What did they do well?
     * They had a lot of data and connections and clear images.
     * Aesthetic design, Ex.: hovering over instances in model pages
-    * Search was quick and worked correctly
 
 - What did we learn from their website?
     * The different styles of craft beer and the breweries that make them.
     * The Reviews model page
+
+---
+
+### Picture
+
+![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+
 
 ---
 
