@@ -51,23 +51,23 @@ Group 3
 *We critiqued Group 5: brewtiful.world*
 
 - What did they do well?
--- They had a lot of data and connections and clear images.
--- Aesthetic design, Ex.: hovering over instances in model pages
--- Search was quick and worked correctly:w
+* They had a lot of data and connections and clear images.
+* Aesthetic design, Ex.: hovering over instances in model pages
+* Search was quick and worked correctly
 
 - What did we learn from their website?
---The different styles of craft beer and the breweries that make them.
---The Reviews model page
+* The different styles of craft beer and the breweries that make them.
+* The Reviews model page
 
 ---
 
 ### Other Critique
 
 - What can they do better?
---Models pages take a while to load.
---The mobile site has some issues.
+* Models pages take a while to load.
+* The mobile site has some issues.
 - What puzzles us about their website?
-Home and About pages are the same.
+* Home and About pages are the same.
 
 ---
 
