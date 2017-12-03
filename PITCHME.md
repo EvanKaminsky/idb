@@ -58,7 +58,7 @@ Group 3
 
 ---
 
-### Picture
+### Hovering Example
 
 ![picture alt](https://i.gyazo.com/67a06f508deb26b49d95853a67b2c70e.png)
 
@@ -73,6 +73,12 @@ Group 3
 
 - What puzzles us about their website?
     * Home and About pages are the same.
+
+---
+
+### Mobile Screenshot
+
+![picture alt](https://i.gyazo.com/d74f38747448f748562a03ea7ddaccfc.png)
 
 ---
 
