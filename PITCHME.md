@@ -48,8 +48,6 @@ Group 3
 
 ### Other Critique
 
-*We critiqued Group 5: brewtiful.world*
-
 - What did they do well?
     * They had a lot of data and connections and clear images.
     * Aesthetic design, Ex.: hovering over instances in model pages
@@ -66,6 +64,7 @@ Group 3
 - What can they do better?
     * Models pages take a while to load.
     * The mobile site has some issues.
+
 - What puzzles us about their website?
     * Home and About pages are the same.
 
