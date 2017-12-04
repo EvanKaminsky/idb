@@ -4,17 +4,13 @@ Group 3
 
 ---
 
-### Introduction
+## Introduction
 
-- Rohit: Data acquisition (APIs + BeautifulSoup scraper), TF-IDF keyword generation
-- Mica: React UI, Styling, GCP, Unit Tests
-- Abhi: React UI, D3 + Dimple JS visualization of brewtiful.world (Group 5)
-- Evan: React UI + UX, Flask API interface, GCP deployment
-- Balazs: Python backend (DB interface, API implementation, full search engine), Testing suite
+Rohit | Mica | Abhi | Evan | Balazs
 
 ---
 
-### TipsyMix
+## TipsyMix
 
 - Cocktail database for amateur and professional bartenders
 - Stores cocktails, ingredients, brands, and countries
@@ -22,7 +18,7 @@ Group 3
 
 ---
 
-### Demo
+## Demo
 
 - [Website](https://www.tipsymix.com/)
 - Best category search engine
@@ -32,7 +28,7 @@ Group 3
 
 ---
 
-### Self Critique
+## Self Critique
 
 - What did we do well?
 	red-zone offense
@@ -44,7 +40,7 @@ Group 3
 	why we had nobody to teach us react/sqlalchemy/GCP/selenium/"what is an api" etc
 ---
 
-### Other Critique
+## Other Critique
 
 - What did they do well?
     * They had a lot of data and connections and clear images.
@@ -56,14 +52,14 @@ Group 3
 
 ---
 
-### Hovering Example
+## Hovering Example
 
 ![picture alt](https://i.gyazo.com/67a06f508deb26b49d95853a67b2c70e.png)
 
 
 ---
 
-### Other Critique
+## Other Critique
 
 - What can they do better?
     * Models pages take a while to load.
@@ -74,13 +70,13 @@ Group 3
 
 ---
 
-### Mobile Screenshot
+## Mobile Screenshot
 
 ![picture alt](https://i.gyazo.com/d74f38747448f748562a03ea7ddaccfc.png)
 
 ---
 
-### Visualization
+## Visualization
 
-- [Visualization](https://shinobhi.github.com/tipsy-data)
+[Visualization](https://shinobhi.github.com/tipsy-data)
 
