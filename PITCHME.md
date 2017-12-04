@@ -35,6 +35,10 @@ Rohit | Mica | Abhi | Evan | Balazs
   * Played to our strengths
   * Learned quickly
   * Red-zone offense
+
+---
+
+## Self Critique
   
 * **What did we learn?**
   * Tools and Libraries
@@ -49,8 +53,12 @@ Rohit | Mica | Abhi | Evan | Balazs
   * The Incident
   * Test-driven development
 
+---
+
+## Self Critique
+
 * **What puzzles us?**
-  * www.tipsymix.com mystery
+  * www.tipsymix.com domain mapping mystery
   * Why gcp refused to deploy until after the first deadline
   * Error code 204
   
