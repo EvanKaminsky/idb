@@ -30,27 +30,27 @@ Rohit | Mica | Abhi | Evan | Balazs
 
 ## Self Critique
 
-**What did we do well?**
+* **What did we do well?**
   * red-zone offense
   
-**What did we learn?**
+* **What did we learn?**
   * not as much as we could have
 
-**What can we do better?**
+* **What can we do better?**
   * start earlier, get past the simple mistakes faster
 
-**What puzzles us?**
+* **What puzzles us?**
   * why we had nobody to teach us react/sqlalchemy/GCP/selenium/"what is an api" etc
   
 ---
 
 ## Other Critique
 
-**What did they do well?**
+* **What did they do well?**
   * They had a lot of data and connections and clear images.
   * Aesthetic design, Ex.: hovering over instances in model pages
 
-**What did we learn from their website?**
+* **What did we learn from their website?**
   * The different styles of craft beer and the breweries that make them.
   * The Reviews model page
 
@@ -65,11 +65,11 @@ Rohit | Mica | Abhi | Evan | Balazs
 
 ## Other Critique
 
-**What can they do better?**
+* **What can they do better?**
   * Models pages take a while to load.
   * The mobile site has some issues.
 
-**What puzzles us about their website?**
+* **What puzzles us about their website?**
   * Home and About pages are the same.
 
 ---
