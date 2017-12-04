@@ -36,6 +36,10 @@ Rohit | Mica | Abhi | Evan | Balazs
 * **What did we learn?**
   * not as much as we could have
 
+---
+
+## Self Critique
+
 * **What can we do better?**
   * start earlier, get past the simple mistakes faster
 
