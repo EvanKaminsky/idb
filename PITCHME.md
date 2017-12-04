@@ -7,7 +7,7 @@ Group 3
 ### Introduction
 
 - Rohit: Data acquisition (APIs + BeautifulSoup scraper), TF-IDF keyword generation
-- Mica: 
+- Mica: React UI, Styling, GCP, Unit Tests
 - Abhi: React UI, D3 + Dimple JS visualization of brewtiful.world (Group 5)
 - Evan: React UI + UX, Flask API interface, GCP deployment
 - Balazs: Python backend (DB interface, API implementation, full search engine), Testing suite
@@ -33,8 +33,6 @@ Group 3
 ---
 
 ### Self Critique
-
-*NOTE: We should include screenshots to accompany our points*
 
 - What did we do well?
 	red-zone offense
@@ -85,8 +83,4 @@ Group 3
 ### Visualization
 
 - [Visualization](https://shinobhi.github.com/tipsy-data)
-
-- Exercise the API of another group in an interesting and useful way.
-- Use D3.
-- The page must have a clear English description and be rendered attractively.
 
