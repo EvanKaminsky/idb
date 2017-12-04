@@ -31,20 +31,28 @@ Rohit | Mica | Abhi | Evan | Balazs
 ## Self Critique
 
 * **What did we do well?**
-  * red-zone offense
+  * Iterated well
+  * Played to our strengths
+  * Learned quickly
+  * Red-zone offense
   
 * **What did we learn?**
-  * not as much as we could have
+  * Tools and Libraries
+  * The value of communication
 
 ---
 
 ## Self Critique
 
 * **What can we do better?**
-  * start earlier, get past the simple mistakes faster
+  * We underestimated the difficulty of some tasks
+  * The Incident
+  * Test-driven development
 
 * **What puzzles us?**
-  * why we had nobody to teach us react/sqlalchemy/GCP/selenium/"what is an api" etc
+  * www.tipsymix.com mystery
+  * Why gcp refused to deploy until after the first deadline
+  * Error code 204
   
 ---
 
